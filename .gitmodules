@@ -1,0 +1,135 @@
+[submodule "tools/rocket-chip"]
+	path = tools/rocket-chip
+	url = git@github.com:chipsalliance/rocket-chip.git
+[submodule "tools/openpiton"]
+	path = tools/openpiton
+	url = git@github.com:PrincetonUniversity/openpiton.git
+[submodule "tools/gemmini"]
+	path = tools/gemmini
+	url = git@github.com:ucb-bar/gemmini.git
+[submodule "tools/SoC_Automation"]
+	path = tools/SoC_Automation
+	url = git@github.com:habibagamal/SoC_Automation.git
+[submodule "tools/riscv_vhdl"]
+	path = tools/riscv_vhdl
+	url = git@github.com:sergeykhbr/riscv_vhdl.git
+[submodule "tools/hero"]
+	path = tools/hero
+	url = git@github.com:pulp-platform/hero.git
+[submodule "tools/iob-soc"]
+	path = tools/iob-soc
+	url = git@github.com:IObundle/iob-soc.git
+[submodule "tools/neorv32"]
+	path = tools/neorv32
+	url = git@github.com:stnolting/neorv32.git
+[submodule "tools/mflowgen"]
+	path = tools/mflowgen
+	url = git@github.com:mflowgen/mflowgen.git
+[submodule "tools/chipyard"]
+	path = tools/chipyard
+	url = git@github.com:ucb-bar/chipyard.git
+[submodule "tools/ibex"]
+	path = tools/ibex
+	url = git@github.com:lowRISC/ibex.git
+[submodule "tools/verilator"]
+	path = tools/verilator
+	url = https://github.com/verilator/verilator.git
+[submodule "tools/amaranth"]
+	path = tools/amaranth
+	url = https://github.com/amaranth-lang/amaranth
+[submodule "tools/xls"]
+	path = tools/xls
+	url = https://github.com/google/xls.git
+[submodule "tools/aha"]
+	path = tools/aha
+	url = https://github.com/StanfordAHA/aha.git
+[submodule "tools/bambu"]
+	path = tools/bambu
+	url = https://github.com/ferrandi/PandA-bambu.git
+[submodule "tools/pipelinec"]
+	path = tools/pipelinec
+	url = https://github.com/JulianKemmerer/PipelineC.git
+[submodule "tools/chisel"]
+	path = tools/chisel
+	url = https://github.com/chipsalliance/chisel.git
+[submodule "tools/spinalhdl"]
+	path = tools/spinalhdl
+	url = https://github.com/SpinalHDL/SpinalHDL.git
+[submodule "tools/myhdl"]
+	path = tools/myhdl
+	url = https://github.com/myhdl/myhdl.git
+[submodule "tools/pymtl3"]
+	path = tools/pymtl3
+	url = https://github.com/pymtl/pymtl3.git
+[submodule "tools/peakrdl"]
+	path = tools/peakrdl
+	url = https://github.com/SystemRDL/PeakRDL.git
+[submodule "tools/rggen"]
+	path = tools/rggen
+	url = https://github.com/rggen/rggen.git
+[submodule "tools/rv-tracer"]
+	path = tools/rv-tracer
+	url = https://github.com/pulp-platform/rv_tracer.git
+[submodule "tools/ara"]
+	path = tools/ara
+	url = https://github.com/pulp-platform/ara.git
+[submodule "tools/mempool"]
+	path = tools/mempool
+	url = https://github.com/pulp-platform/mempool.git
+[submodule "tools/spatz"]
+	path = tools/spatz
+	url = https://github.com/pulp-platform/spatz.git
+[submodule "tools/snitch-cluster"]
+	path = tools/snitch-cluster
+	url = https://github.com/pulp-platform/snitch_cluster.git
+[submodule "tools/pulpissimo"]
+	path = tools/pulpissimo
+	url = https://github.com/pulp-platform/pulpissimo.git
+[submodule "tools/occamy"]
+	path = tools/occamy
+	url = https://github.com/pulp-platform/occamy.git
+[submodule "tools/cheshire"]
+	path = tools/cheshire
+	url = https://github.com/pulp-platform/cheshire.git
+[submodule "tools/cva6"]
+	path = tools/cva6
+	url = https://github.com/pulp-platform/cva6.git
+[submodule "tools/carfield"]
+	path = tools/carfield
+	url = https://github.com/pulp-platform/carfield.git
+[submodule "tools/croc"]
+	path = tools/croc
+	url = https://github.com/pulp-platform/croc.git
+[submodule "tools/pulp-cluster"]
+	path = tools/pulp-cluster
+	url = https://github.com/pulp-platform/pulp_cluster.git
+[submodule "tools/pulp-soc"]
+	path = tools/pulp-soc
+	url = https://github.com/pulp-platform/pulp_soc.git
+[submodule "tools/chimera"]
+	path = tools/chimera
+	url = https://github.com/pulp-platform/chimera.git
+[submodule "tools/picobello"]
+	path = tools/picobello
+	url = https://github.com/pulp-platform/picobello.git
+[submodule "tools/safety-island"]
+	path = tools/safety-island
+	url = https://github.com/pulp-platform/safety_island.git
+[submodule "tools/cheshire-ihp130-o"]
+	path = tools/cheshire-ihp130-o
+	url = https://github.com/pulp-platform/cheshire-ihp130-o.git
+[submodule "tools/magia"]
+	path = tools/magia
+	url = https://github.com/pulp-platform/MAGIA.git
+[submodule "tools/auteur"]
+	path = tools/auteur
+	url = https://github.com/pulp-platform/auteur.git
+[submodule "tools/astral"]
+	path = tools/astral
+	url = https://github.com/pulp-platform/astral.git
+[submodule "tools/araxl"]
+	path = tools/araxl
+	url = https://github.com/pulp-platform/AraXL.git
+[submodule "tools/rv12"]
+	path = tools/rv12
+	url = https://github.com/RoaLogic/RV12.git

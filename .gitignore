@@ -1,0 +1,26 @@
+# Logs and temporary files
+logs/
+
+# Bender nested git mirrors under dataset snapshots (large .pack files; do not commit)
+**/.bender/git/
+
+# Build artifacts and cache
+*.log
+*.tmp
+*.cache
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~ 

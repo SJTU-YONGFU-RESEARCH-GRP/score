@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+#
+# picobello (pulp-platform/picobello): source before bender checkout or generate_picobello.sh.
+# Bender is typically installed to ~/.local/bin by scripts/install_picobello.sh.
+#
+# Usage (from SCORE repo root):
+#   source scripts/picobello_env.sh
+#
+
+# When sourced from a parent with `set -u`, relax nounset for this file only.
+if [[ "${-}" == *u* ]]; then
+    trap 'set -u; trap - RETURN' RETURN
+    set +u
+fi
+
+export PATH="${HOME}/.local/bin:${PATH}"
+
+export PICOBELLO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")/../tools/picobello" && pwd)"
+
+echo "picobello environment loaded"
+echo "PICOBELLO_DIR: $PICOBELLO_DIR"
