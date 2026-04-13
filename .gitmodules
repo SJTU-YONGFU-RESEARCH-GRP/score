@@ -28,9 +28,6 @@
 [submodule "tools/chipyard"]
 	path = tools/chipyard
 	url = git@github.com:ucb-bar/chipyard.git
-[submodule "tools/ibex"]
-	path = tools/ibex
-	url = git@github.com:lowRISC/ibex.git
 [submodule "tools/verilator"]
 	path = tools/verilator
 	url = https://github.com/verilator/verilator.git
