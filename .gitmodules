@@ -126,7 +126,7 @@
 	url = https://github.com/pulp-platform/astral.git
 [submodule "tools/araxl"]
 	path = tools/araxl
-	url = https://github.com/pulp-platform/AraXL.git
+	url = git@github.com:pulp-platform/AraXL.git
 [submodule "tools/rv12"]
 	path = tools/rv12
 	url = https://github.com/RoaLogic/RV12.git

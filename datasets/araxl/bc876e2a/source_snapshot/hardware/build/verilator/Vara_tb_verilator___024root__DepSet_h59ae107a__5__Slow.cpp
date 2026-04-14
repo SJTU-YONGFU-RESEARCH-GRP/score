@@ -1,0 +1,7089 @@
+// Verilated -*- C++ -*-
+// DESCRIPTION: Verilator output: Design implementation internals
+// See Vara_tb_verilator.h for the primary calling header
+
+#include "verilated.h"
+#include "verilated_dpi.h"
+
+#include "Vara_tb_verilator__Syms.h"
+#include "Vara_tb_verilator___024root.h"
+
+VL_ATTR_COLD void Vara_tb_verilator___024root___stl_comb__TOP__496(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___stl_comb__TOP__496\n"); );
+    // Init
+    CData/*7:0*/ __Vfunc_is_rs1_fpr__73__op;
+    __Vfunc_is_rs1_fpr__73__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs1_fpr__76__op;
+    __Vfunc_is_rs1_fpr__76__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs1_fpr__79__op;
+    __Vfunc_is_rs1_fpr__79__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs1_fpr__82__op;
+    __Vfunc_is_rs1_fpr__82__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs1_fpr__85__op;
+    __Vfunc_is_rs1_fpr__85__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs1_fpr__88__op;
+    __Vfunc_is_rs1_fpr__88__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs1_fpr__91__op;
+    __Vfunc_is_rs1_fpr__91__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs1_fpr__94__op;
+    __Vfunc_is_rs1_fpr__94__op = 0;
+    // Body
+    __Vfunc_is_rs1_fpr__73__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((((0x5bU <= (IData)(__Vfunc_is_rs1_fpr__73__op)) 
+                     & (0x62U >= (IData)(__Vfunc_is_rs1_fpr__73__op))) 
+                    | (0x63U == (IData)(__Vfunc_is_rs1_fpr__73__op))) 
+                   | (0x65U == (IData)(__Vfunc_is_rs1_fpr__73__op))) 
+                  | (0x66U == (IData)(__Vfunc_is_rs1_fpr__73__op))) 
+                 | (0x67U == (IData)(__Vfunc_is_rs1_fpr__73__op))) 
+                | (0x69U == (IData)(__Vfunc_is_rs1_fpr__73__op))) 
+               | (0x6aU == (IData)(__Vfunc_is_rs1_fpr__73__op))) 
+              | ((0x6bU <= (IData)(__Vfunc_is_rs1_fpr__73__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rs1_fpr__73__op)))) 
+             | (0xa7U == (IData)(__Vfunc_is_rs1_fpr__73__op)))) {
+            vlSelf->__Vfunc_is_rs1_fpr__73__Vfuncout = 1U;
+            goto __Vlabel296;
+        } else {
+            vlSelf->__Vfunc_is_rs1_fpr__73__Vfuncout = 0U;
+            goto __Vlabel296;
+        }
+        __Vlabel296: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req 
+        = ((0x1fdfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req)) 
+           | (0x1e0U & ((((((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x10U] 
+                             >> 0x1aU) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_iro_sb)) 
+                           << 5U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x13U] 
+                                     >> 0x17U)) & (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0xeU] 
+                                                   >> 0x14U)) 
+                        & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x13U] 
+                                   >> 0x1bU)) == (IData)(vlSelf->__Vfunc_is_rs1_fpr__73__Vfuncout)) 
+                           << 5U))));
+    __Vfunc_is_rs1_fpr__76__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((((0x5bU <= (IData)(__Vfunc_is_rs1_fpr__76__op)) 
+                     & (0x62U >= (IData)(__Vfunc_is_rs1_fpr__76__op))) 
+                    | (0x63U == (IData)(__Vfunc_is_rs1_fpr__76__op))) 
+                   | (0x65U == (IData)(__Vfunc_is_rs1_fpr__76__op))) 
+                  | (0x66U == (IData)(__Vfunc_is_rs1_fpr__76__op))) 
+                 | (0x67U == (IData)(__Vfunc_is_rs1_fpr__76__op))) 
+                | (0x69U == (IData)(__Vfunc_is_rs1_fpr__76__op))) 
+               | (0x6aU == (IData)(__Vfunc_is_rs1_fpr__76__op))) 
+              | ((0x6bU <= (IData)(__Vfunc_is_rs1_fpr__76__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rs1_fpr__76__op)))) 
+             | (0xa7U == (IData)(__Vfunc_is_rs1_fpr__76__op)))) {
+            vlSelf->__Vfunc_is_rs1_fpr__76__Vfuncout = 1U;
+            goto __Vlabel297;
+        } else {
+            vlSelf->__Vfunc_is_rs1_fpr__76__Vfuncout = 0U;
+            goto __Vlabel297;
+        }
+        __Vlabel297: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req 
+        = ((0x1fbfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req)) 
+           | (0x1fc0U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x24U] 
+                                       >> 0x17U)) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_iro_sb)) 
+                            << 6U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x27U] 
+                                      >> 0x13U)) & 
+                          (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x22U] 
+                           >> 0x10U)) & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x27U] 
+                                                 >> 0x18U)) 
+                                          == (IData)(vlSelf->__Vfunc_is_rs1_fpr__76__Vfuncout)) 
+                                         << 6U))));
+    __Vfunc_is_rs1_fpr__79__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((((0x5bU <= (IData)(__Vfunc_is_rs1_fpr__79__op)) 
+                     & (0x62U >= (IData)(__Vfunc_is_rs1_fpr__79__op))) 
+                    | (0x63U == (IData)(__Vfunc_is_rs1_fpr__79__op))) 
+                   | (0x65U == (IData)(__Vfunc_is_rs1_fpr__79__op))) 
+                  | (0x66U == (IData)(__Vfunc_is_rs1_fpr__79__op))) 
+                 | (0x67U == (IData)(__Vfunc_is_rs1_fpr__79__op))) 
+                | (0x69U == (IData)(__Vfunc_is_rs1_fpr__79__op))) 
+               | (0x6aU == (IData)(__Vfunc_is_rs1_fpr__79__op))) 
+              | ((0x6bU <= (IData)(__Vfunc_is_rs1_fpr__79__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rs1_fpr__79__op)))) 
+             | (0xa7U == (IData)(__Vfunc_is_rs1_fpr__79__op)))) {
+            vlSelf->__Vfunc_is_rs1_fpr__79__Vfuncout = 1U;
+            goto __Vlabel298;
+        } else {
+            vlSelf->__Vfunc_is_rs1_fpr__79__Vfuncout = 0U;
+            goto __Vlabel298;
+        }
+        __Vlabel298: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req 
+        = ((0x1f7fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req)) 
+           | (0x1ff80U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x38U] 
+                                        >> 0x14U)) 
+                              == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_iro_sb)) 
+                             << 7U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x3bU] 
+                                       >> 0xfU)) & 
+                           (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x36U] 
+                            >> 0xcU)) & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x3bU] 
+                                                 >> 0x15U)) 
+                                          == (IData)(vlSelf->__Vfunc_is_rs1_fpr__79__Vfuncout)) 
+                                         << 7U))));
+    __Vfunc_is_rs1_fpr__82__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((((0x5bU <= (IData)(__Vfunc_is_rs1_fpr__82__op)) 
+                     & (0x62U >= (IData)(__Vfunc_is_rs1_fpr__82__op))) 
+                    | (0x63U == (IData)(__Vfunc_is_rs1_fpr__82__op))) 
+                   | (0x65U == (IData)(__Vfunc_is_rs1_fpr__82__op))) 
+                  | (0x66U == (IData)(__Vfunc_is_rs1_fpr__82__op))) 
+                 | (0x67U == (IData)(__Vfunc_is_rs1_fpr__82__op))) 
+                | (0x69U == (IData)(__Vfunc_is_rs1_fpr__82__op))) 
+               | (0x6aU == (IData)(__Vfunc_is_rs1_fpr__82__op))) 
+              | ((0x6bU <= (IData)(__Vfunc_is_rs1_fpr__82__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rs1_fpr__82__op)))) 
+             | (0xa7U == (IData)(__Vfunc_is_rs1_fpr__82__op)))) {
+            vlSelf->__Vfunc_is_rs1_fpr__82__Vfuncout = 1U;
+            goto __Vlabel299;
+        } else {
+            vlSelf->__Vfunc_is_rs1_fpr__82__Vfuncout = 0U;
+            goto __Vlabel299;
+        }
+        __Vlabel299: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req 
+        = ((0x1effU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req)) 
+           | (0x1fff00U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x4cU] 
+                                         >> 0x11U)) 
+                               == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_iro_sb)) 
+                              << 8U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x4fU] 
+                                        >> 0xbU)) & 
+                            (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x4aU] 
+                             >> 8U)) & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x4fU] 
+                                                >> 0x12U)) 
+                                         == (IData)(vlSelf->__Vfunc_is_rs1_fpr__82__Vfuncout)) 
+                                        << 8U))));
+    __Vfunc_is_rs1_fpr__85__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((((0x5bU <= (IData)(__Vfunc_is_rs1_fpr__85__op)) 
+                     & (0x62U >= (IData)(__Vfunc_is_rs1_fpr__85__op))) 
+                    | (0x63U == (IData)(__Vfunc_is_rs1_fpr__85__op))) 
+                   | (0x65U == (IData)(__Vfunc_is_rs1_fpr__85__op))) 
+                  | (0x66U == (IData)(__Vfunc_is_rs1_fpr__85__op))) 
+                 | (0x67U == (IData)(__Vfunc_is_rs1_fpr__85__op))) 
+                | (0x69U == (IData)(__Vfunc_is_rs1_fpr__85__op))) 
+               | (0x6aU == (IData)(__Vfunc_is_rs1_fpr__85__op))) 
+              | ((0x6bU <= (IData)(__Vfunc_is_rs1_fpr__85__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rs1_fpr__85__op)))) 
+             | (0xa7U == (IData)(__Vfunc_is_rs1_fpr__85__op)))) {
+            vlSelf->__Vfunc_is_rs1_fpr__85__Vfuncout = 1U;
+            goto __Vlabel300;
+        } else {
+            vlSelf->__Vfunc_is_rs1_fpr__85__Vfuncout = 0U;
+            goto __Vlabel300;
+        }
+        __Vlabel300: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req 
+        = ((0x1dffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req)) 
+           | (0x1fffe00U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x60U] 
+                                          >> 0xeU)) 
+                                == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_iro_sb)) 
+                               << 9U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x63U] 
+                                         >> 7U)) & 
+                             (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x5eU] 
+                              >> 4U)) & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x63U] 
+                                                 >> 0xfU)) 
+                                          == (IData)(vlSelf->__Vfunc_is_rs1_fpr__85__Vfuncout)) 
+                                         << 9U))));
+    __Vfunc_is_rs1_fpr__88__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((((0x5bU <= (IData)(__Vfunc_is_rs1_fpr__88__op)) 
+                     & (0x62U >= (IData)(__Vfunc_is_rs1_fpr__88__op))) 
+                    | (0x63U == (IData)(__Vfunc_is_rs1_fpr__88__op))) 
+                   | (0x65U == (IData)(__Vfunc_is_rs1_fpr__88__op))) 
+                  | (0x66U == (IData)(__Vfunc_is_rs1_fpr__88__op))) 
+                 | (0x67U == (IData)(__Vfunc_is_rs1_fpr__88__op))) 
+                | (0x69U == (IData)(__Vfunc_is_rs1_fpr__88__op))) 
+               | (0x6aU == (IData)(__Vfunc_is_rs1_fpr__88__op))) 
+              | ((0x6bU <= (IData)(__Vfunc_is_rs1_fpr__88__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rs1_fpr__88__op)))) 
+             | (0xa7U == (IData)(__Vfunc_is_rs1_fpr__88__op)))) {
+            vlSelf->__Vfunc_is_rs1_fpr__88__Vfuncout = 1U;
+            goto __Vlabel301;
+        } else {
+            vlSelf->__Vfunc_is_rs1_fpr__88__Vfuncout = 0U;
+            goto __Vlabel301;
+        }
+        __Vlabel301: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req 
+        = ((0x1bffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req)) 
+           | (0x1ffffc00U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x74U] 
+                                           >> 0xbU)) 
+                                 == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_iro_sb)) 
+                                << 0xaU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x77U] 
+                                            >> 3U)) 
+                              & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x72U]) 
+                             & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x77U] 
+                                        >> 0xcU)) == (IData)(vlSelf->__Vfunc_is_rs1_fpr__88__Vfuncout)) 
+                                << 0xaU))));
+    __Vfunc_is_rs1_fpr__91__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((((0x5bU <= (IData)(__Vfunc_is_rs1_fpr__91__op)) 
+                     & (0x62U >= (IData)(__Vfunc_is_rs1_fpr__91__op))) 
+                    | (0x63U == (IData)(__Vfunc_is_rs1_fpr__91__op))) 
+                   | (0x65U == (IData)(__Vfunc_is_rs1_fpr__91__op))) 
+                  | (0x66U == (IData)(__Vfunc_is_rs1_fpr__91__op))) 
+                 | (0x67U == (IData)(__Vfunc_is_rs1_fpr__91__op))) 
+                | (0x69U == (IData)(__Vfunc_is_rs1_fpr__91__op))) 
+               | (0x6aU == (IData)(__Vfunc_is_rs1_fpr__91__op))) 
+              | ((0x6bU <= (IData)(__Vfunc_is_rs1_fpr__91__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rs1_fpr__91__op)))) 
+             | (0xa7U == (IData)(__Vfunc_is_rs1_fpr__91__op)))) {
+            vlSelf->__Vfunc_is_rs1_fpr__91__Vfuncout = 1U;
+            goto __Vlabel302;
+        } else {
+            vlSelf->__Vfunc_is_rs1_fpr__91__Vfuncout = 0U;
+            goto __Vlabel302;
+        }
+        __Vlabel302: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req 
+        = ((0x17ffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req)) 
+           | (0xfffff800U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x88U] 
+                                           >> 8U)) 
+                                 == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_iro_sb)) 
+                                << 0xbU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x8bU] 
+                                            << 1U)) 
+                              & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x86U] 
+                                 << 4U)) & (((1U & 
+                                              (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x8bU] 
+                                               >> 9U)) 
+                                             == (IData)(vlSelf->__Vfunc_is_rs1_fpr__91__Vfuncout)) 
+                                            << 0xbU))));
+    __Vfunc_is_rs1_fpr__94__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((((0x5bU <= (IData)(__Vfunc_is_rs1_fpr__94__op)) 
+                     & (0x62U >= (IData)(__Vfunc_is_rs1_fpr__94__op))) 
+                    | (0x63U == (IData)(__Vfunc_is_rs1_fpr__94__op))) 
+                   | (0x65U == (IData)(__Vfunc_is_rs1_fpr__94__op))) 
+                  | (0x66U == (IData)(__Vfunc_is_rs1_fpr__94__op))) 
+                 | (0x67U == (IData)(__Vfunc_is_rs1_fpr__94__op))) 
+                | (0x69U == (IData)(__Vfunc_is_rs1_fpr__94__op))) 
+               | (0x6aU == (IData)(__Vfunc_is_rs1_fpr__94__op))) 
+              | ((0x6bU <= (IData)(__Vfunc_is_rs1_fpr__94__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rs1_fpr__94__op)))) 
+             | (0xa7U == (IData)(__Vfunc_is_rs1_fpr__94__op)))) {
+            vlSelf->__Vfunc_is_rs1_fpr__94__Vfuncout = 1U;
+            goto __Vlabel303;
+        } else {
+            vlSelf->__Vfunc_is_rs1_fpr__94__Vfuncout = 0U;
+            goto __Vlabel303;
+        }
+        __Vlabel303: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req 
+        = ((0xfffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req)) 
+           | (0xfffff000U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x9cU] 
+                                           >> 5U)) 
+                                 == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_iro_sb)) 
+                                << 0xcU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x9fU] 
+                                            << 5U)) 
+                              & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x9aU] 
+                                 << 8U)) & (((1U & 
+                                              (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x9fU] 
+                                               >> 6U)) 
+                                             == (IData)(vlSelf->__Vfunc_is_rs1_fpr__94__Vfuncout)) 
+                                            << 0xcU))));
+}
+
+VL_ATTR_COLD void Vara_tb_verilator___024root___stl_comb__TOP__497(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___stl_comb__TOP__497\n"); );
+    // Init
+    CData/*7:0*/ __Vfunc_is_rs2_fpr__74__op;
+    __Vfunc_is_rs2_fpr__74__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs2_fpr__77__op;
+    __Vfunc_is_rs2_fpr__77__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs2_fpr__80__op;
+    __Vfunc_is_rs2_fpr__80__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs2_fpr__83__op;
+    __Vfunc_is_rs2_fpr__83__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs2_fpr__86__op;
+    __Vfunc_is_rs2_fpr__86__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs2_fpr__89__op;
+    __Vfunc_is_rs2_fpr__89__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs2_fpr__92__op;
+    __Vfunc_is_rs2_fpr__92__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs2_fpr__95__op;
+    __Vfunc_is_rs2_fpr__95__op = 0;
+    // Body
+    __Vfunc_is_rs2_fpr__74__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((0x55U <= (IData)(__Vfunc_is_rs2_fpr__74__op)) 
+                   & (0x58U >= (IData)(__Vfunc_is_rs2_fpr__74__op))) 
+                  | ((0x59U <= (IData)(__Vfunc_is_rs2_fpr__74__op)) 
+                     & (0x5dU >= (IData)(__Vfunc_is_rs2_fpr__74__op)))) 
+                 | ((0x5fU <= (IData)(__Vfunc_is_rs2_fpr__74__op)) 
+                    & (0x62U >= (IData)(__Vfunc_is_rs2_fpr__74__op)))) 
+                | (0x65U == (IData)(__Vfunc_is_rs2_fpr__74__op))) 
+               | ((0x66U <= (IData)(__Vfunc_is_rs2_fpr__74__op)) 
+                  & (0x67U >= (IData)(__Vfunc_is_rs2_fpr__74__op)))) 
+              | (0x69U == (IData)(__Vfunc_is_rs2_fpr__74__op))) 
+             | ((0x6bU <= (IData)(__Vfunc_is_rs2_fpr__74__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_rs2_fpr__74__op))))) {
+            vlSelf->__Vfunc_is_rs2_fpr__74__Vfuncout = 1U;
+            goto __Vlabel304;
+        } else {
+            vlSelf->__Vfunc_is_rs2_fpr__74__Vfuncout = 0U;
+            goto __Vlabel304;
+        }
+        __Vlabel304: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req 
+        = ((0x1fdfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req)) 
+           | (0x1e0U & ((((((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x10U] 
+                             >> 0x1aU) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_iro_sb)) 
+                           << 5U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x13U] 
+                                     >> 0x17U)) & (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0xeU] 
+                                                   >> 0x14U)) 
+                        & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x13U] 
+                                   >> 0x1bU)) == (IData)(vlSelf->__Vfunc_is_rs2_fpr__74__Vfuncout)) 
+                           << 5U))));
+    __Vfunc_is_rs2_fpr__77__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((0x55U <= (IData)(__Vfunc_is_rs2_fpr__77__op)) 
+                   & (0x58U >= (IData)(__Vfunc_is_rs2_fpr__77__op))) 
+                  | ((0x59U <= (IData)(__Vfunc_is_rs2_fpr__77__op)) 
+                     & (0x5dU >= (IData)(__Vfunc_is_rs2_fpr__77__op)))) 
+                 | ((0x5fU <= (IData)(__Vfunc_is_rs2_fpr__77__op)) 
+                    & (0x62U >= (IData)(__Vfunc_is_rs2_fpr__77__op)))) 
+                | (0x65U == (IData)(__Vfunc_is_rs2_fpr__77__op))) 
+               | ((0x66U <= (IData)(__Vfunc_is_rs2_fpr__77__op)) 
+                  & (0x67U >= (IData)(__Vfunc_is_rs2_fpr__77__op)))) 
+              | (0x69U == (IData)(__Vfunc_is_rs2_fpr__77__op))) 
+             | ((0x6bU <= (IData)(__Vfunc_is_rs2_fpr__77__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_rs2_fpr__77__op))))) {
+            vlSelf->__Vfunc_is_rs2_fpr__77__Vfuncout = 1U;
+            goto __Vlabel305;
+        } else {
+            vlSelf->__Vfunc_is_rs2_fpr__77__Vfuncout = 0U;
+            goto __Vlabel305;
+        }
+        __Vlabel305: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req 
+        = ((0x1fbfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req)) 
+           | (0x1fc0U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x24U] 
+                                       >> 0x17U)) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_iro_sb)) 
+                            << 6U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x27U] 
+                                      >> 0x13U)) & 
+                          (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x22U] 
+                           >> 0x10U)) & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x27U] 
+                                                 >> 0x18U)) 
+                                          == (IData)(vlSelf->__Vfunc_is_rs2_fpr__77__Vfuncout)) 
+                                         << 6U))));
+    __Vfunc_is_rs2_fpr__80__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((0x55U <= (IData)(__Vfunc_is_rs2_fpr__80__op)) 
+                   & (0x58U >= (IData)(__Vfunc_is_rs2_fpr__80__op))) 
+                  | ((0x59U <= (IData)(__Vfunc_is_rs2_fpr__80__op)) 
+                     & (0x5dU >= (IData)(__Vfunc_is_rs2_fpr__80__op)))) 
+                 | ((0x5fU <= (IData)(__Vfunc_is_rs2_fpr__80__op)) 
+                    & (0x62U >= (IData)(__Vfunc_is_rs2_fpr__80__op)))) 
+                | (0x65U == (IData)(__Vfunc_is_rs2_fpr__80__op))) 
+               | ((0x66U <= (IData)(__Vfunc_is_rs2_fpr__80__op)) 
+                  & (0x67U >= (IData)(__Vfunc_is_rs2_fpr__80__op)))) 
+              | (0x69U == (IData)(__Vfunc_is_rs2_fpr__80__op))) 
+             | ((0x6bU <= (IData)(__Vfunc_is_rs2_fpr__80__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_rs2_fpr__80__op))))) {
+            vlSelf->__Vfunc_is_rs2_fpr__80__Vfuncout = 1U;
+            goto __Vlabel306;
+        } else {
+            vlSelf->__Vfunc_is_rs2_fpr__80__Vfuncout = 0U;
+            goto __Vlabel306;
+        }
+        __Vlabel306: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req 
+        = ((0x1f7fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req)) 
+           | (0x1ff80U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x38U] 
+                                        >> 0x14U)) 
+                              == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_iro_sb)) 
+                             << 7U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x3bU] 
+                                       >> 0xfU)) & 
+                           (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x36U] 
+                            >> 0xcU)) & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x3bU] 
+                                                 >> 0x15U)) 
+                                          == (IData)(vlSelf->__Vfunc_is_rs2_fpr__80__Vfuncout)) 
+                                         << 7U))));
+    __Vfunc_is_rs2_fpr__83__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((0x55U <= (IData)(__Vfunc_is_rs2_fpr__83__op)) 
+                   & (0x58U >= (IData)(__Vfunc_is_rs2_fpr__83__op))) 
+                  | ((0x59U <= (IData)(__Vfunc_is_rs2_fpr__83__op)) 
+                     & (0x5dU >= (IData)(__Vfunc_is_rs2_fpr__83__op)))) 
+                 | ((0x5fU <= (IData)(__Vfunc_is_rs2_fpr__83__op)) 
+                    & (0x62U >= (IData)(__Vfunc_is_rs2_fpr__83__op)))) 
+                | (0x65U == (IData)(__Vfunc_is_rs2_fpr__83__op))) 
+               | ((0x66U <= (IData)(__Vfunc_is_rs2_fpr__83__op)) 
+                  & (0x67U >= (IData)(__Vfunc_is_rs2_fpr__83__op)))) 
+              | (0x69U == (IData)(__Vfunc_is_rs2_fpr__83__op))) 
+             | ((0x6bU <= (IData)(__Vfunc_is_rs2_fpr__83__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_rs2_fpr__83__op))))) {
+            vlSelf->__Vfunc_is_rs2_fpr__83__Vfuncout = 1U;
+            goto __Vlabel307;
+        } else {
+            vlSelf->__Vfunc_is_rs2_fpr__83__Vfuncout = 0U;
+            goto __Vlabel307;
+        }
+        __Vlabel307: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req 
+        = ((0x1effU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req)) 
+           | (0x1fff00U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x4cU] 
+                                         >> 0x11U)) 
+                               == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_iro_sb)) 
+                              << 8U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x4fU] 
+                                        >> 0xbU)) & 
+                            (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x4aU] 
+                             >> 8U)) & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x4fU] 
+                                                >> 0x12U)) 
+                                         == (IData)(vlSelf->__Vfunc_is_rs2_fpr__83__Vfuncout)) 
+                                        << 8U))));
+    __Vfunc_is_rs2_fpr__86__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((0x55U <= (IData)(__Vfunc_is_rs2_fpr__86__op)) 
+                   & (0x58U >= (IData)(__Vfunc_is_rs2_fpr__86__op))) 
+                  | ((0x59U <= (IData)(__Vfunc_is_rs2_fpr__86__op)) 
+                     & (0x5dU >= (IData)(__Vfunc_is_rs2_fpr__86__op)))) 
+                 | ((0x5fU <= (IData)(__Vfunc_is_rs2_fpr__86__op)) 
+                    & (0x62U >= (IData)(__Vfunc_is_rs2_fpr__86__op)))) 
+                | (0x65U == (IData)(__Vfunc_is_rs2_fpr__86__op))) 
+               | ((0x66U <= (IData)(__Vfunc_is_rs2_fpr__86__op)) 
+                  & (0x67U >= (IData)(__Vfunc_is_rs2_fpr__86__op)))) 
+              | (0x69U == (IData)(__Vfunc_is_rs2_fpr__86__op))) 
+             | ((0x6bU <= (IData)(__Vfunc_is_rs2_fpr__86__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_rs2_fpr__86__op))))) {
+            vlSelf->__Vfunc_is_rs2_fpr__86__Vfuncout = 1U;
+            goto __Vlabel308;
+        } else {
+            vlSelf->__Vfunc_is_rs2_fpr__86__Vfuncout = 0U;
+            goto __Vlabel308;
+        }
+        __Vlabel308: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req 
+        = ((0x1dffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req)) 
+           | (0x1fffe00U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x60U] 
+                                          >> 0xeU)) 
+                                == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_iro_sb)) 
+                               << 9U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x63U] 
+                                         >> 7U)) & 
+                             (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x5eU] 
+                              >> 4U)) & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x63U] 
+                                                 >> 0xfU)) 
+                                          == (IData)(vlSelf->__Vfunc_is_rs2_fpr__86__Vfuncout)) 
+                                         << 9U))));
+    __Vfunc_is_rs2_fpr__89__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((0x55U <= (IData)(__Vfunc_is_rs2_fpr__89__op)) 
+                   & (0x58U >= (IData)(__Vfunc_is_rs2_fpr__89__op))) 
+                  | ((0x59U <= (IData)(__Vfunc_is_rs2_fpr__89__op)) 
+                     & (0x5dU >= (IData)(__Vfunc_is_rs2_fpr__89__op)))) 
+                 | ((0x5fU <= (IData)(__Vfunc_is_rs2_fpr__89__op)) 
+                    & (0x62U >= (IData)(__Vfunc_is_rs2_fpr__89__op)))) 
+                | (0x65U == (IData)(__Vfunc_is_rs2_fpr__89__op))) 
+               | ((0x66U <= (IData)(__Vfunc_is_rs2_fpr__89__op)) 
+                  & (0x67U >= (IData)(__Vfunc_is_rs2_fpr__89__op)))) 
+              | (0x69U == (IData)(__Vfunc_is_rs2_fpr__89__op))) 
+             | ((0x6bU <= (IData)(__Vfunc_is_rs2_fpr__89__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_rs2_fpr__89__op))))) {
+            vlSelf->__Vfunc_is_rs2_fpr__89__Vfuncout = 1U;
+            goto __Vlabel309;
+        } else {
+            vlSelf->__Vfunc_is_rs2_fpr__89__Vfuncout = 0U;
+            goto __Vlabel309;
+        }
+        __Vlabel309: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req 
+        = ((0x1bffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req)) 
+           | (0x1ffffc00U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x74U] 
+                                           >> 0xbU)) 
+                                 == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_iro_sb)) 
+                                << 0xaU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x77U] 
+                                            >> 3U)) 
+                              & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x72U]) 
+                             & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x77U] 
+                                        >> 0xcU)) == (IData)(vlSelf->__Vfunc_is_rs2_fpr__89__Vfuncout)) 
+                                << 0xaU))));
+    __Vfunc_is_rs2_fpr__92__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((0x55U <= (IData)(__Vfunc_is_rs2_fpr__92__op)) 
+                   & (0x58U >= (IData)(__Vfunc_is_rs2_fpr__92__op))) 
+                  | ((0x59U <= (IData)(__Vfunc_is_rs2_fpr__92__op)) 
+                     & (0x5dU >= (IData)(__Vfunc_is_rs2_fpr__92__op)))) 
+                 | ((0x5fU <= (IData)(__Vfunc_is_rs2_fpr__92__op)) 
+                    & (0x62U >= (IData)(__Vfunc_is_rs2_fpr__92__op)))) 
+                | (0x65U == (IData)(__Vfunc_is_rs2_fpr__92__op))) 
+               | ((0x66U <= (IData)(__Vfunc_is_rs2_fpr__92__op)) 
+                  & (0x67U >= (IData)(__Vfunc_is_rs2_fpr__92__op)))) 
+              | (0x69U == (IData)(__Vfunc_is_rs2_fpr__92__op))) 
+             | ((0x6bU <= (IData)(__Vfunc_is_rs2_fpr__92__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_rs2_fpr__92__op))))) {
+            vlSelf->__Vfunc_is_rs2_fpr__92__Vfuncout = 1U;
+            goto __Vlabel310;
+        } else {
+            vlSelf->__Vfunc_is_rs2_fpr__92__Vfuncout = 0U;
+            goto __Vlabel310;
+        }
+        __Vlabel310: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req 
+        = ((0x17ffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req)) 
+           | (0xfffff800U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x88U] 
+                                           >> 8U)) 
+                                 == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_iro_sb)) 
+                                << 0xbU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x8bU] 
+                                            << 1U)) 
+                              & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x86U] 
+                                 << 4U)) & (((1U & 
+                                              (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x8bU] 
+                                               >> 9U)) 
+                                             == (IData)(vlSelf->__Vfunc_is_rs2_fpr__92__Vfuncout)) 
+                                            << 0xbU))));
+    __Vfunc_is_rs2_fpr__95__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((0x55U <= (IData)(__Vfunc_is_rs2_fpr__95__op)) 
+                   & (0x58U >= (IData)(__Vfunc_is_rs2_fpr__95__op))) 
+                  | ((0x59U <= (IData)(__Vfunc_is_rs2_fpr__95__op)) 
+                     & (0x5dU >= (IData)(__Vfunc_is_rs2_fpr__95__op)))) 
+                 | ((0x5fU <= (IData)(__Vfunc_is_rs2_fpr__95__op)) 
+                    & (0x62U >= (IData)(__Vfunc_is_rs2_fpr__95__op)))) 
+                | (0x65U == (IData)(__Vfunc_is_rs2_fpr__95__op))) 
+               | ((0x66U <= (IData)(__Vfunc_is_rs2_fpr__95__op)) 
+                  & (0x67U >= (IData)(__Vfunc_is_rs2_fpr__95__op)))) 
+              | (0x69U == (IData)(__Vfunc_is_rs2_fpr__95__op))) 
+             | ((0x6bU <= (IData)(__Vfunc_is_rs2_fpr__95__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_rs2_fpr__95__op))))) {
+            vlSelf->__Vfunc_is_rs2_fpr__95__Vfuncout = 1U;
+            goto __Vlabel311;
+        } else {
+            vlSelf->__Vfunc_is_rs2_fpr__95__Vfuncout = 0U;
+            goto __Vlabel311;
+        }
+        __Vlabel311: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req 
+        = ((0xfffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req)) 
+           | (0xfffff000U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x9cU] 
+                                           >> 5U)) 
+                                 == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_iro_sb)) 
+                                << 0xcU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x9fU] 
+                                            << 5U)) 
+                              & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x9aU] 
+                                 << 8U)) & (((1U & 
+                                              (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x9fU] 
+                                               >> 6U)) 
+                                             == (IData)(vlSelf->__Vfunc_is_rs2_fpr__95__Vfuncout)) 
+                                            << 0xcU))));
+}
+
+VL_ATTR_COLD void Vara_tb_verilator___024root___stl_comb__TOP__498(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___stl_comb__TOP__498\n"); );
+    // Init
+    CData/*7:0*/ __Vfunc_is_rs1_fpr__97__op;
+    __Vfunc_is_rs1_fpr__97__op = 0;
+    // Body
+    __Vfunc_is_rs1_fpr__97__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((((0x5bU <= (IData)(__Vfunc_is_rs1_fpr__97__op)) 
+                     & (0x62U >= (IData)(__Vfunc_is_rs1_fpr__97__op))) 
+                    | (0x63U == (IData)(__Vfunc_is_rs1_fpr__97__op))) 
+                   | (0x65U == (IData)(__Vfunc_is_rs1_fpr__97__op))) 
+                  | (0x66U == (IData)(__Vfunc_is_rs1_fpr__97__op))) 
+                 | (0x67U == (IData)(__Vfunc_is_rs1_fpr__97__op))) 
+                | (0x69U == (IData)(__Vfunc_is_rs1_fpr__97__op))) 
+               | (0x6aU == (IData)(__Vfunc_is_rs1_fpr__97__op))) 
+              | ((0x6bU <= (IData)(__Vfunc_is_rs1_fpr__97__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rs1_fpr__97__op)))) 
+             | (0xa7U == (IData)(__Vfunc_is_rs1_fpr__97__op)))) {
+            vlSelf->__Vfunc_is_rs1_fpr__97__Vfuncout = 1U;
+            goto __Vlabel312;
+        } else {
+            vlSelf->__Vfunc_is_rs1_fpr__97__Vfuncout = 0U;
+            goto __Vlabel312;
+        }
+        __Vlabel312: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_valid_sb_iro 
+        = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__i_sel_rs1__DOT__gen_arbiter__DOT__req_nodes) 
+           & ((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_iro_sb)) 
+              | (IData)(vlSelf->__Vfunc_is_rs1_fpr__97__Vfuncout)));
+}
+
+VL_ATTR_COLD void Vara_tb_verilator___024root___stl_comb__TOP__499(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___stl_comb__TOP__499\n"); );
+    // Init
+    CData/*7:0*/ __Vfunc_is_rs2_fpr__98__op;
+    __Vfunc_is_rs2_fpr__98__op = 0;
+    // Body
+    __Vfunc_is_rs2_fpr__98__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((0x55U <= (IData)(__Vfunc_is_rs2_fpr__98__op)) 
+                   & (0x58U >= (IData)(__Vfunc_is_rs2_fpr__98__op))) 
+                  | ((0x59U <= (IData)(__Vfunc_is_rs2_fpr__98__op)) 
+                     & (0x5dU >= (IData)(__Vfunc_is_rs2_fpr__98__op)))) 
+                 | ((0x5fU <= (IData)(__Vfunc_is_rs2_fpr__98__op)) 
+                    & (0x62U >= (IData)(__Vfunc_is_rs2_fpr__98__op)))) 
+                | (0x65U == (IData)(__Vfunc_is_rs2_fpr__98__op))) 
+               | ((0x66U <= (IData)(__Vfunc_is_rs2_fpr__98__op)) 
+                  & (0x67U >= (IData)(__Vfunc_is_rs2_fpr__98__op)))) 
+              | (0x69U == (IData)(__Vfunc_is_rs2_fpr__98__op))) 
+             | ((0x6bU <= (IData)(__Vfunc_is_rs2_fpr__98__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_rs2_fpr__98__op))))) {
+            vlSelf->__Vfunc_is_rs2_fpr__98__Vfuncout = 1U;
+            goto __Vlabel313;
+        } else {
+            vlSelf->__Vfunc_is_rs2_fpr__98__Vfuncout = 0U;
+            goto __Vlabel313;
+        }
+        __Vlabel313: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_valid_iro_sb 
+        = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__i_sel_rs2__DOT__gen_arbiter__DOT__req_nodes) 
+           & ((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_iro_sb)) 
+              | (IData)(vlSelf->__Vfunc_is_rs2_fpr__98__Vfuncout)));
+}
+
+VL_ATTR_COLD void Vara_tb_verilator___024root___stl_comb__TOP__510(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___stl_comb__TOP__510\n"); );
+    // Init
+    CData/*3:0*/ __Vfunc_get_opgroup__125__op;
+    __Vfunc_get_opgroup__125__op = 0;
+    // Body
+    __Vfunc_get_opgroup__125__op = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__0__KET____DOT__i_opgroup_block__DOT__gen_parallel_slices__BRA__2__KET____DOT__active_format__DOT__i_fmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fma__DOT__inp_pipe_op_q;
+    {
+        if ((8U & (IData)(__Vfunc_get_opgroup__125__op))) {
+            if ((4U & (IData)(__Vfunc_get_opgroup__125__op))) {
+                if ((2U & (IData)(__Vfunc_get_opgroup__125__op))) {
+                    if ((1U & (IData)(__Vfunc_get_opgroup__125__op))) {
+                        vlSelf->__Vfunc_get_opgroup__125__Vfuncout = 2U;
+                        goto __Vlabel314;
+                    } else {
+                        vlSelf->__Vfunc_get_opgroup__125__Vfuncout = 3U;
+                        goto __Vlabel314;
+                    }
+                } else {
+                    vlSelf->__Vfunc_get_opgroup__125__Vfuncout = 3U;
+                    goto __Vlabel314;
+                }
+            } else if ((2U & (IData)(__Vfunc_get_opgroup__125__op))) {
+                vlSelf->__Vfunc_get_opgroup__125__Vfuncout = 3U;
+                goto __Vlabel314;
+            } else {
+                vlSelf->__Vfunc_get_opgroup__125__Vfuncout = 2U;
+                goto __Vlabel314;
+            }
+        } else if ((4U & (IData)(__Vfunc_get_opgroup__125__op))) {
+            if ((2U & (IData)(__Vfunc_get_opgroup__125__op))) {
+                vlSelf->__Vfunc_get_opgroup__125__Vfuncout = 2U;
+                goto __Vlabel314;
+            } else {
+                vlSelf->__Vfunc_get_opgroup__125__Vfuncout = 1U;
+                goto __Vlabel314;
+            }
+        } else {
+            vlSelf->__Vfunc_get_opgroup__125__Vfuncout = 0U;
+            goto __Vlabel314;
+        }
+        __Vlabel314: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__fpu_in_ready 
+        = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__fpu_in_valid) 
+           & (((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__in_valid) 
+                 & ((4U >= (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT____Vcellinp__fpu_gen__DOT__i_fpnew_bulk__dst_fmt_i)) 
+                    & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__fmt_in_ready) 
+                       >> (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT____Vcellinp__fpu_gen__DOT__i_fpnew_bulk__dst_fmt_i)))) 
+                << 3U) | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__2__KET____DOT__in_valid) 
+                            & ((4U >= (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT____Vcellinp__fpu_gen__DOT__i_fpnew_bulk__dst_fmt_i)) 
+                               & (((4U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__2__KET____DOT__i_opgroup_block__DOT__gen_parallel_slices__BRA__2__KET____DOT__active_format__DOT__i_fmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_noncomp__DOT__inp_pipe_ready) 
+                                          << 1U)) | 
+                                   ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__2__KET____DOT__i_opgroup_block__DOT__gen_parallel_slices__BRA__1__KET____DOT__active_format__DOT__i_fmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_noncomp__DOT__inp_pipe_ready)) 
+                                    | (1U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__2__KET____DOT__i_opgroup_block__DOT__gen_parallel_slices__BRA__0__KET____DOT__active_format__DOT__i_fmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_noncomp__DOT__inp_pipe_ready) 
+                                             >> 1U)))) 
+                                  >> (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT____Vcellinp__fpu_gen__DOT__i_fpnew_bulk__dst_fmt_i)))) 
+                           << 2U) | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__1__KET____DOT__in_valid) 
+                                       & ((4U >= (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT____Vcellinp__fpu_gen__DOT__i_fpnew_bulk__dst_fmt_i)) 
+                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__1__KET____DOT__i_opgroup_block__DOT__fmt_in_ready) 
+                                             >> (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT____Vcellinp__fpu_gen__DOT__i_fpnew_bulk__dst_fmt_i)))) 
+                                      << 1U) | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__0__KET____DOT__in_valid) 
+                                                & ((4U 
+                                                    >= (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT____Vcellinp__fpu_gen__DOT__i_fpnew_bulk__dst_fmt_i)) 
+                                                   & (((4U 
+                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__0__KET____DOT__i_opgroup_block__DOT__gen_parallel_slices__BRA__2__KET____DOT__active_format__DOT__i_fmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fma__DOT__mid_pipe_ready) 
+                                                           << 1U)) 
+                                                       | ((2U 
+                                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__0__KET____DOT__i_opgroup_block__DOT__gen_parallel_slices__BRA__1__KET____DOT__active_format__DOT__i_fmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fma__DOT__inp_pipe_ready)) 
+                                                          | (1U 
+                                                             & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__0__KET____DOT__i_opgroup_block__DOT__gen_parallel_slices__BRA__0__KET____DOT__active_format__DOT__i_fmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fma__DOT__inp_pipe_ready) 
+                                                                >> 1U)))) 
+                                                      >> (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT____Vcellinp__fpu_gen__DOT__i_fpnew_bulk__dst_fmt_i))))))) 
+              >> (IData)(vlSelf->__Vfunc_get_opgroup__125__Vfuncout)));
+}
+
+extern const VlWide<10>/*319:0*/ Vara_tb_verilator__ConstPool__CONST_h895f8a77_0;
+
+VL_ATTR_COLD void Vara_tb_verilator___024root___stl_comb__TOP__540(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___stl_comb__TOP__540\n"); );
+    // Init
+    SData/*11:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__input_exp;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__input_exp = 0;
+    SData/*11:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_exp;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_exp = 0;
+    SData/*11:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__final_exp;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__final_exp = 0;
+    VlWide<5>/*128:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__preshift_mant;
+    VL_ZERO_W(129, ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__preshift_mant);
+    VlWide<5>/*128:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant;
+    VL_ZERO_W(129, ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant);
+    CData/*6:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__denorm_shamt;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__denorm_shamt = 0;
+    CData/*1:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__round_sticky_bits;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__round_sticky_bits = 0;
+    QData/*63:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__pre_round_abs;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__pre_round_abs = 0;
+    QData/*63:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__rounded_int_res;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__rounded_int_res = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_hdca02594__0;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_hdca02594__0 = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_h0bf5fbc6__0;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_h0bf5fbc6__0 = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_h56a8bf0a__0;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_h56a8bf0a__0 = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_hb8f90c41__0;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_hb8f90c41__0 = 0;
+    IData/*31:0*/ __Vfunc_bias__139__Vfuncout;
+    __Vfunc_bias__139__Vfuncout = 0;
+    CData/*2:0*/ __Vfunc_bias__139__fmt;
+    __Vfunc_bias__139__fmt = 0;
+    CData/*1:0*/ __Vfunc_int_width__142__ifmt;
+    __Vfunc_int_width__142__ifmt = 0;
+    IData/*31:0*/ __Vfunc_exp_bits__143__Vfuncout;
+    __Vfunc_exp_bits__143__Vfuncout = 0;
+    CData/*2:0*/ __Vfunc_exp_bits__143__fmt;
+    __Vfunc_exp_bits__143__fmt = 0;
+    IData/*31:0*/ __Vfunc_man_bits__145__Vfuncout;
+    __Vfunc_man_bits__145__Vfuncout = 0;
+    CData/*2:0*/ __Vfunc_man_bits__145__fmt;
+    __Vfunc_man_bits__145__fmt = 0;
+    IData/*31:0*/ __Vfunc_man_bits__146__Vfuncout;
+    __Vfunc_man_bits__146__Vfuncout = 0;
+    CData/*2:0*/ __Vfunc_man_bits__146__fmt;
+    __Vfunc_man_bits__146__fmt = 0;
+    VlWide<5>/*159:0*/ __Vtemp_h3fe08518__0;
+    VlWide<5>/*159:0*/ __Vtemp_hbee60b45__0;
+    VlWide<5>/*159:0*/ __Vtemp_h41f562eb__0;
+    VlWide<10>/*319:0*/ __Vtemp_h3c9957fa__0;
+    // Body
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_exp_q 
+        = ((0xfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_exp_q) 
+           | (0xfff000U & (((0xcU == (0xfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_op_q)))
+                             ? ((IData)(0x3fU) - (0x3fU 
+                                                  & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__i_lzc__DOT__gen_lzc__DOT__index_nodes[0U]))
+                             : ((((((0x3bU >= (0x3fU 
+                                               & ((IData)(0xcU) 
+                                                  * 
+                                                  (7U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_src_fmt_q)))))
+                                     ? (IData)(((0xffffff000000000ULL 
+                                                 | (((QData)((IData)(
+                                                                     (0xfffU 
+                                                                      & VL_EXTENDS_II(12,6, 
+                                                                                (0x1fU 
+                                                                                & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_operands_q[0U] 
+                                                                                >> 0xaU)))))) 
+                                                     << 0x18U) 
+                                                    | (QData)((IData)(
+                                                                      ((0x7ff000U 
+                                                                        & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_operands_q[1U] 
+                                                                           >> 8U)) 
+                                                                       | (0xfffU 
+                                                                          & VL_EXTENDS_II(12,9, 
+                                                                                (0xffU 
+                                                                                & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_operands_q[0U] 
+                                                                                >> 0x17U))))))))) 
+                                                >> 
+                                                (0x3fU 
+                                                 & ((IData)(0xcU) 
+                                                    * 
+                                                    (7U 
+                                                     & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_src_fmt_q))))))
+                                     : 0U) + VL_EXTENDS_II(12,2, 
+                                                           ((0x27U 
+                                                             >= 
+                                                             ((IData)(6U) 
+                                                              + 
+                                                              (0x38U 
+                                                               & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_src_fmt_q) 
+                                                                  << 3U)))) 
+                                                            & (IData)(
+                                                                      (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__info 
+                                                                       >> 
+                                                                       ((IData)(6U) 
+                                                                        + 
+                                                                        (0x38U 
+                                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_src_fmt_q) 
+                                                                            << 3U)))))))) 
+                                  - (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__src_bias)) 
+                                 - (0x3fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__i_lzc__DOT__gen_lzc__DOT__index_nodes[0U])) 
+                                + ((0x3bU >= (0x3fU 
+                                              & ((IData)(0xcU) 
+                                                 * 
+                                                 (7U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_src_fmt_q)))))
+                                    ? (IData)((0xffffff03500b028ULL 
+                                               >> (0x3fU 
+                                                   & ((IData)(0xcU) 
+                                                      * 
+                                                      (7U 
+                                                       & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_src_fmt_q))))))
+                                    : 0U))) << 0xcU)));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__input_exp 
+        = (0xfffU & ((0xcU == (0xfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_op_q)))
+                      ? ((IData)(0x3fU) - (0x3fU & 
+                                           vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__i_lzc__DOT__gen_lzc__DOT__index_nodes[0U]))
+                      : ((((((0x3bU >= (0x3fU & ((IData)(0xcU) 
+                                                 * 
+                                                 (7U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_src_fmt_q)))))
+                              ? (IData)(((0xffffff000000000ULL 
+                                          | (((QData)((IData)(
+                                                              (0xfffU 
+                                                               & VL_EXTENDS_II(12,6, 
+                                                                               (0x1fU 
+                                                                                & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_operands_q[0U] 
+                                                                                >> 0xaU)))))) 
+                                              << 0x18U) 
+                                             | (QData)((IData)(
+                                                               ((0x7ff000U 
+                                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_operands_q[1U] 
+                                                                    >> 8U)) 
+                                                                | (0xfffU 
+                                                                   & VL_EXTENDS_II(12,9, 
+                                                                                (0xffU 
+                                                                                & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_operands_q[0U] 
+                                                                                >> 0x17U))))))))) 
+                                         >> (0x3fU 
+                                             & ((IData)(0xcU) 
+                                                * (7U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_src_fmt_q))))))
+                              : 0U) + VL_EXTENDS_II(12,2, 
+                                                    ((0x27U 
+                                                      >= 
+                                                      ((IData)(6U) 
+                                                       + 
+                                                       (0x38U 
+                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_src_fmt_q) 
+                                                           << 3U)))) 
+                                                     & (IData)(
+                                                               (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__info 
+                                                                >> 
+                                                                ((IData)(6U) 
+                                                                 + 
+                                                                 (0x38U 
+                                                                  & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_src_fmt_q) 
+                                                                     << 3U)))))))) 
+                           - (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__src_bias)) 
+                          - (0x3fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__i_lzc__DOT__gen_lzc__DOT__index_nodes[0U])) 
+                         + ((0x3bU >= (0x3fU & ((IData)(0xcU) 
+                                                * (7U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_src_fmt_q)))))
+                             ? (IData)((0xffffff03500b028ULL 
+                                        >> (0x3fU & 
+                                            ((IData)(0xcU) 
+                                             * (7U 
+                                                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_src_fmt_q))))))
+                             : 0U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_mant_q[2U] 
+        = (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__encoded_mant 
+                   << (0x3fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__i_lzc__DOT__gen_lzc__DOT__index_nodes[0U])));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_mant_q[3U] 
+        = (IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__encoded_mant 
+                    << (0x3fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__i_lzc__DOT__gen_lzc__DOT__index_nodes[0U])) 
+                   >> 0x20U));
+    __Vfunc_int_width__142__ifmt = (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_int_fmt_q));
+    {
+        if ((2U & (IData)(__Vfunc_int_width__142__ifmt))) {
+            if ((1U & (IData)(__Vfunc_int_width__142__ifmt))) {
+                vlSelf->__Vfunc_int_width__142__Vfuncout = 0x40U;
+                goto __Vlabel315;
+            } else {
+                vlSelf->__Vfunc_int_width__142__Vfuncout = 0x20U;
+                goto __Vlabel315;
+            }
+        } else if ((1U & (IData)(__Vfunc_int_width__142__ifmt))) {
+            vlSelf->__Vfunc_int_width__142__Vfuncout = 0x10U;
+            goto __Vlabel315;
+        } else {
+            vlSelf->__Vfunc_int_width__142__Vfuncout = 8U;
+            goto __Vlabel315;
+        }
+        __Vlabel315: ;
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_hdca02594__0 
+        = VL_GTES_III(32, VL_EXTENDS_II(32,12, (0xfffU 
+                                                & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_exp_q)), 
+                      ((vlSelf->__Vfunc_int_width__142__Vfuncout 
+                        - (IData)(1U)) + (1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_op_mod_q))));
+    __Vfunc_bias__139__fmt = (7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__inp_pipe_dst_fmt_q));
+    __Vfunc_bias__139__Vfuncout = (VL_POWSS_III(32,32,32, (IData)(2U), 
+                                                (((0x13fU 
+                                                   >= 
+                                                   (0x1ffU 
+                                                    & ((IData)(0x20U) 
+                                                       + 
+                                                       (((IData)(4U) 
+                                                         - (IData)(__Vfunc_bias__139__fmt)) 
+                                                        << 6U))))
+                                                   ? 
+                                                  (((0U 
+                                                     == 
+                                                     (0x1fU 
+                                                      & ((IData)(0x20U) 
+                                                         + 
+                                                         (((IData)(4U) 
+                                                           - (IData)(__Vfunc_bias__139__fmt)) 
+                                                          << 6U))))
+                                                     ? 0U
+                                                     : 
+                                                    (Vara_tb_verilator__ConstPool__CONST_h895f8a77_0[
+                                                     (((IData)(0x1fU) 
+                                                       + 
+                                                       (0x1ffU 
+                                                        & ((IData)(0x20U) 
+                                                           + 
+                                                           (((IData)(4U) 
+                                                             - (IData)(__Vfunc_bias__139__fmt)) 
+                                                            << 6U)))) 
+                                                      >> 5U)] 
+                                                     << 
+                                                     ((IData)(0x20U) 
+                                                      - 
+                                                      (0x1fU 
+                                                       & ((IData)(0x20U) 
+                                                          + 
+                                                          (((IData)(4U) 
+                                                            - (IData)(__Vfunc_bias__139__fmt)) 
+                                                           << 6U)))))) 
+                                                   | (Vara_tb_verilator__ConstPool__CONST_h895f8a77_0[
+                                                      (0xfU 
+                                                       & (((IData)(0x20U) 
+                                                           + 
+                                                           (((IData)(4U) 
+                                                             - (IData)(__Vfunc_bias__139__fmt)) 
+                                                            << 6U)) 
+                                                          >> 5U))] 
+                                                      >> 
+                                                      (0x1fU 
+                                                       & ((IData)(0x20U) 
+                                                          + 
+                                                          (((IData)(4U) 
+                                                            - (IData)(__Vfunc_bias__139__fmt)) 
+                                                           << 6U)))))
+                                                   : 0U) 
+                                                 - (IData)(1U)), 1,0) 
+                                   - (IData)(1U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_exp 
+        = (0xfffU & (VL_EXTENDS_II(12,12, (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__input_exp)) 
+                     + __Vfunc_bias__139__Vfuncout));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dest_exp_q 
+        = ((0xfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dest_exp_q) 
+           | ((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_exp) 
+              << 0xcU));
+    __Vfunc_man_bits__145__fmt = (7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dst_fmt_q));
+    __Vfunc_man_bits__145__Vfuncout = ((0x13fU >= (0x1ffU 
+                                                   & (((IData)(4U) 
+                                                       - (IData)(__Vfunc_man_bits__145__fmt)) 
+                                                      << 6U)))
+                                        ? (((0U == 
+                                             (0x1fU 
+                                              & (((IData)(4U) 
+                                                  - (IData)(__Vfunc_man_bits__145__fmt)) 
+                                                 << 6U)))
+                                             ? 0U : 
+                                            (Vara_tb_verilator__ConstPool__CONST_h895f8a77_0[
+                                             (((IData)(0x1fU) 
+                                               + (0x1ffU 
+                                                  & (((IData)(4U) 
+                                                      - (IData)(__Vfunc_man_bits__145__fmt)) 
+                                                     << 6U))) 
+                                              >> 5U)] 
+                                             << ((IData)(0x20U) 
+                                                 - 
+                                                 (0x1fU 
+                                                  & (((IData)(4U) 
+                                                      - (IData)(__Vfunc_man_bits__145__fmt)) 
+                                                     << 6U))))) 
+                                           | (Vara_tb_verilator__ConstPool__CONST_h895f8a77_0[
+                                              (0xeU 
+                                               & (((IData)(4U) 
+                                                   - (IData)(__Vfunc_man_bits__145__fmt)) 
+                                                  << 1U))] 
+                                              >> (0x1fU 
+                                                  & (((IData)(4U) 
+                                                      - (IData)(__Vfunc_man_bits__145__fmt)) 
+                                                     << 6U))))
+                                        : 0U);
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_h56a8bf0a__0 
+        = (VL_GTS_III(32, 1U, VL_EXTENDS_II(32,12, 
+                                            (0xfffU 
+                                             & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dest_exp_q))) 
+           & VL_GTES_III(32, VL_EXTENDS_II(32,12, (0xfffU 
+                                                   & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dest_exp_q)), 
+                         (- __Vfunc_man_bits__145__Vfuncout)));
+    __Vfunc_man_bits__146__fmt = (7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dst_fmt_q));
+    __Vfunc_man_bits__146__Vfuncout = ((0x13fU >= (0x1ffU 
+                                                   & (((IData)(4U) 
+                                                       - (IData)(__Vfunc_man_bits__146__fmt)) 
+                                                      << 6U)))
+                                        ? (((0U == 
+                                             (0x1fU 
+                                              & (((IData)(4U) 
+                                                  - (IData)(__Vfunc_man_bits__146__fmt)) 
+                                                 << 6U)))
+                                             ? 0U : 
+                                            (Vara_tb_verilator__ConstPool__CONST_h895f8a77_0[
+                                             (((IData)(0x1fU) 
+                                               + (0x1ffU 
+                                                  & (((IData)(4U) 
+                                                      - (IData)(__Vfunc_man_bits__146__fmt)) 
+                                                     << 6U))) 
+                                              >> 5U)] 
+                                             << ((IData)(0x20U) 
+                                                 - 
+                                                 (0x1fU 
+                                                  & (((IData)(4U) 
+                                                      - (IData)(__Vfunc_man_bits__146__fmt)) 
+                                                     << 6U))))) 
+                                           | (Vara_tb_verilator__ConstPool__CONST_h895f8a77_0[
+                                              (0xeU 
+                                               & (((IData)(4U) 
+                                                   - (IData)(__Vfunc_man_bits__146__fmt)) 
+                                                  << 1U))] 
+                                              >> (0x1fU 
+                                                  & (((IData)(4U) 
+                                                      - (IData)(__Vfunc_man_bits__146__fmt)) 
+                                                     << 6U))))
+                                        : 0U);
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_hb8f90c41__0 
+        = VL_LTS_III(32, VL_EXTENDS_II(32,12, (0xfffU 
+                                               & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dest_exp_q)), 
+                     (- __Vfunc_man_bits__146__Vfuncout));
+    __Vfunc_exp_bits__143__fmt = (7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dst_fmt_q));
+    __Vfunc_exp_bits__143__Vfuncout = ((0x13fU >= (0x1ffU 
+                                                   & ((IData)(0x20U) 
+                                                      + 
+                                                      (((IData)(4U) 
+                                                        - (IData)(__Vfunc_exp_bits__143__fmt)) 
+                                                       << 6U))))
+                                        ? (((0U == 
+                                             (0x1fU 
+                                              & ((IData)(0x20U) 
+                                                 + 
+                                                 (((IData)(4U) 
+                                                   - (IData)(__Vfunc_exp_bits__143__fmt)) 
+                                                  << 6U))))
+                                             ? 0U : 
+                                            (Vara_tb_verilator__ConstPool__CONST_h895f8a77_0[
+                                             (((IData)(0x1fU) 
+                                               + (0x1ffU 
+                                                  & ((IData)(0x20U) 
+                                                     + 
+                                                     (((IData)(4U) 
+                                                       - (IData)(__Vfunc_exp_bits__143__fmt)) 
+                                                      << 6U)))) 
+                                              >> 5U)] 
+                                             << ((IData)(0x20U) 
+                                                 - 
+                                                 (0x1fU 
+                                                  & ((IData)(0x20U) 
+                                                     + 
+                                                     (((IData)(4U) 
+                                                       - (IData)(__Vfunc_exp_bits__143__fmt)) 
+                                                      << 6U)))))) 
+                                           | (Vara_tb_verilator__ConstPool__CONST_h895f8a77_0[
+                                              (0xfU 
+                                               & (((IData)(0x20U) 
+                                                   + 
+                                                   (((IData)(4U) 
+                                                     - (IData)(__Vfunc_exp_bits__143__fmt)) 
+                                                    << 6U)) 
+                                                  >> 5U))] 
+                                              >> (0x1fU 
+                                                  & ((IData)(0x20U) 
+                                                     + 
+                                                     (((IData)(4U) 
+                                                       - (IData)(__Vfunc_exp_bits__143__fmt)) 
+                                                      << 6U)))))
+                                        : 0U);
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_h0bf5fbc6__0 
+        = (1U & (VL_GTES_III(32, VL_EXTENDS_II(32,12, 
+                                               (0xfffU 
+                                                & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dest_exp_q)), 
+                             (VL_POWSS_III(32,32,32, (IData)(2U), __Vfunc_exp_bits__143__Vfuncout, 1,0) 
+                              - (IData)(1U))) | ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_src_is_int_q)) 
+                                                 & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_info_q) 
+                                                    >> 4U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__of_before_round = 0U;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__final_exp 
+        = (0xfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dest_exp_q);
+    __Vtemp_h3fe08518__0[0U] = (IData)((((QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_mant_q[1U])) 
+                                         << 0x20U) 
+                                        | (QData)((IData)(
+                                                          vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_mant_q[0U]))));
+    __Vtemp_h3fe08518__0[1U] = (IData)(((((QData)((IData)(
+                                                          vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_mant_q[1U])) 
+                                          << 0x20U) 
+                                         | (QData)((IData)(
+                                                           vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_mant_q[0U]))) 
+                                        >> 0x20U));
+    __Vtemp_h3fe08518__0[2U] = 0U;
+    __Vtemp_h3fe08518__0[3U] = 0U;
+    __Vtemp_h3fe08518__0[4U] = 0U;
+    VL_SHIFTL_WWI(129,129,32, __Vtemp_hbee60b45__0, __Vtemp_h3fe08518__0, 0x41U);
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__preshift_mant[0U] 
+        = __Vtemp_hbee60b45__0[0U];
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__preshift_mant[1U] 
+        = __Vtemp_hbee60b45__0[1U];
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__preshift_mant[2U] 
+        = __Vtemp_hbee60b45__0[2U];
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__preshift_mant[3U] 
+        = __Vtemp_hbee60b45__0[3U];
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__preshift_mant[4U] 
+        = (1U & __Vtemp_hbee60b45__0[4U]);
+    if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dst_is_int_q)))) {
+        if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_h0bf5fbc6__0) {
+            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__final_exp 
+                = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_h52133aaf__0;
+            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__preshift_mant[0U] = 0xffffffffU;
+            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__preshift_mant[1U] = 0xffffffffU;
+            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__preshift_mant[2U] = 0xffffffffU;
+            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__preshift_mant[3U] = 0xffffffffU;
+            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__preshift_mant[4U] = 1U;
+        } else if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_h56a8bf0a__0) {
+            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__final_exp = 0U;
+        } else if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_hb8f90c41__0) {
+            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__final_exp = 0U;
+        }
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__denorm_shamt 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_h80475cf1__0;
+    if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dst_is_int_q))) {
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__denorm_shamt 
+            = (0x7fU & ((IData)(0x3fU) - vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_exp_q));
+        if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_hdca02594__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__of_before_round = 1U;
+            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__denorm_shamt = 0U;
+        } else if (VL_GTS_III(32, 0xffffffffU, VL_EXTENDS_II(32,12, 
+                                                             (0xfffU 
+                                                              & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_exp_q)))) {
+            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__denorm_shamt = 0x41U;
+        }
+    } else {
+        if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_h0bf5fbc6__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__of_before_round = 1U;
+        }
+        if ((1U & (~ (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_h0bf5fbc6__0)))) {
+            if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_h56a8bf0a__0) {
+                ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__denorm_shamt 
+                    = (0x7fU & (((IData)(1U) + (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__denorm_shamt)) 
+                                - (0xfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dest_exp_q)));
+            } else if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT____VdfgExtracted_hb8f90c41__0) {
+                vlSelf->__Vfunc_man_bits__140__fmt 
+                    = (7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dst_fmt_q));
+                vlSelf->__Vfunc_man_bits__140__Vfuncout 
+                    = ((0x13fU >= (0x1ffU & (((IData)(4U) 
+                                              - (IData)(vlSelf->__Vfunc_man_bits__140__fmt)) 
+                                             << 6U)))
+                        ? (((0U == (0x1fU & (((IData)(4U) 
+                                              - (IData)(vlSelf->__Vfunc_man_bits__140__fmt)) 
+                                             << 6U)))
+                             ? 0U : (Vara_tb_verilator__ConstPool__CONST_h895f8a77_0[
+                                     (((IData)(0x1fU) 
+                                       + (0x1ffU & 
+                                          (((IData)(4U) 
+                                            - (IData)(vlSelf->__Vfunc_man_bits__140__fmt)) 
+                                           << 6U))) 
+                                      >> 5U)] << ((IData)(0x20U) 
+                                                  - 
+                                                  (0x1fU 
+                                                   & (((IData)(4U) 
+                                                       - (IData)(vlSelf->__Vfunc_man_bits__140__fmt)) 
+                                                      << 6U))))) 
+                           | (Vara_tb_verilator__ConstPool__CONST_h895f8a77_0[
+                              (0xeU & (((IData)(4U) 
+                                        - (IData)(vlSelf->__Vfunc_man_bits__140__fmt)) 
+                                       << 1U))] >> 
+                              (0x1fU & (((IData)(4U) 
+                                         - (IData)(vlSelf->__Vfunc_man_bits__140__fmt)) 
+                                        << 6U)))) : 0U);
+                ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__denorm_shamt 
+                    = (0x7fU & ((IData)(2U) + ((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__denorm_shamt) 
+                                               + vlSelf->__Vfunc_man_bits__140__Vfuncout)));
+            }
+        }
+    }
+    VL_SHIFTR_WWI(129,129,7, __Vtemp_h41f562eb__0, ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__preshift_mant, (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__denorm_shamt));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[0U] 
+        = __Vtemp_h41f562eb__0[0U];
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[1U] 
+        = __Vtemp_h41f562eb__0[1U];
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[2U] 
+        = __Vtemp_h41f562eb__0[2U];
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[3U] 
+        = __Vtemp_h41f562eb__0[3U];
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[4U] 
+        = (1U & __Vtemp_h41f562eb__0[4U]);
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_pre_round_abs[4U] 
+        = (IData)((- (QData)((IData)((1U & ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[3U])))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_pre_round_abs[5U] 
+        = (IData)(((- (QData)((IData)((1U & ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[3U])))) 
+                   >> 0x20U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_pre_round_abs[4U] 
+        = ((ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[3U] 
+            << 0x1fU) | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[2U] 
+                         >> 1U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_pre_round_abs[6U] 
+        = (IData)((- (QData)((IData)((1U & ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[4U])))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_pre_round_abs[7U] 
+        = (IData)(((- (QData)((IData)((1U & ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[4U])))) 
+                   >> 0x20U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_pre_round_abs[6U] 
+        = (IData)((((QData)((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[4U])) 
+                    << 0x3fU) | (((QData)((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[3U])) 
+                                  << 0x1fU) | ((QData)((IData)(
+                                                               ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[2U])) 
+                                               >> 1U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_pre_round_abs[7U] 
+        = (IData)(((((QData)((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[4U])) 
+                     << 0x3fU) | (((QData)((IData)(
+                                                   ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[3U])) 
+                                   << 0x1fU) | ((QData)((IData)(
+                                                                ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[2U])) 
+                                                >> 1U))) 
+                   >> 0x20U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__fp_round_sticky_bits 
+        = ((2U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[2U] 
+                  >> 0xaU)) | (0U != ((ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[0U] 
+                                       | ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[1U]) 
+                                      | (0x7ffU & ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[2U]))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__int_round_sticky_bits 
+        = ((2U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[2U] 
+                  << 1U)) | (0U != (((QData)((IData)(
+                                                     ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[1U])) 
+                                     << 0x20U) | (QData)((IData)(
+                                                                 ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[0U])))));
+    __Vtemp_h3c9957fa__0[0U] = (IData)((QData)((IData)(
+                                                       ((0x7f800000U 
+                                                         & ((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__final_exp) 
+                                                            << 0x17U)) 
+                                                        | (0x7fffffU 
+                                                           & ((ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[3U] 
+                                                               << 0x14U) 
+                                                              | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[2U] 
+                                                                 >> 0xcU)))))));
+    __Vtemp_h3c9957fa__0[1U] = (IData)(((QData)((IData)(
+                                                        ((0x7f800000U 
+                                                          & ((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__final_exp) 
+                                                             << 0x17U)) 
+                                                         | (0x7fffffU 
+                                                            & ((ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[3U] 
+                                                                << 0x14U) 
+                                                               | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[2U] 
+                                                                  >> 0xcU)))))) 
+                                        >> 0x20U));
+    __Vtemp_h3c9957fa__0[2U] = (IData)((0xfffffffffffffULL 
+                                        & (((QData)((IData)(
+                                                            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[3U])) 
+                                            << 0x14U) 
+                                           | ((QData)((IData)(
+                                                              ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[2U])) 
+                                              >> 0xcU))));
+    __Vtemp_h3c9957fa__0[3U] = ((0x7ff00000U & ((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__final_exp) 
+                                                << 0x14U)) 
+                                | (IData)(((0xfffffffffffffULL 
+                                            & (((QData)((IData)(
+                                                                ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[3U])) 
+                                                << 0x14U) 
+                                               | ((QData)((IData)(
+                                                                  ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[2U])) 
+                                                  >> 0xcU))) 
+                                           >> 0x20U)));
+    __Vtemp_h3c9957fa__0[4U] = ((0x7c00U & ((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__final_exp) 
+                                            << 0xaU)) 
+                                | (0x3ffU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__destination_mant[2U] 
+                                             >> 0xcU)));
+    __Vtemp_h3c9957fa__0[5U] = 0U;
+    __Vtemp_h3c9957fa__0[6U] = 0xffffffffU;
+    __Vtemp_h3c9957fa__0[7U] = 0xffffffffU;
+    __Vtemp_h3c9957fa__0[8U] = 0xffffffffU;
+    __Vtemp_h3c9957fa__0[9U] = 0xffffffffU;
+    if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dst_is_int_q))) {
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__pre_round_abs 
+            = (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_pre_round_abs[
+                                (((IData)(0x3fU) + 
+                                  (0xc0U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_int_fmt_q) 
+                                            << 6U))) 
+                                 >> 5U)])) << 0x20U) 
+               | (QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_pre_round_abs[
+                                 (6U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_int_fmt_q) 
+                                        << 1U))])));
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__round_sticky_bits 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__int_round_sticky_bits;
+    } else {
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__pre_round_abs 
+            = ((0x13fU >= (0x1c0U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dst_fmt_q) 
+                                     << 6U))) ? (((QData)((IData)(
+                                                                  __Vtemp_h3c9957fa__0[
+                                                                  (((IData)(0x3fU) 
+                                                                    + 
+                                                                    (0x1c0U 
+                                                                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dst_fmt_q) 
+                                                                        << 6U))) 
+                                                                   >> 5U)])) 
+                                                  << 0x20U) 
+                                                 | (QData)((IData)(
+                                                                   __Vtemp_h3c9957fa__0[
+                                                                   (0xeU 
+                                                                    & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dst_fmt_q) 
+                                                                       << 1U))])))
+                : 0ULL);
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__round_sticky_bits 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__fp_round_sticky_bits;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__rounded_abs 
+        = (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__pre_round_abs 
+           + (QData)((IData)((1U & ((4U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_rnd_mode_q))
+                                     ? (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_rnd_mode_q) 
+                                         >> 1U) | (
+                                                   (1U 
+                                                    & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_rnd_mode_q))
+                                                    ? 
+                                                   ((~ (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__pre_round_abs)) 
+                                                    & (0U 
+                                                       != (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__round_sticky_bits)))
+                                                    : 
+                                                   ((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__round_sticky_bits) 
+                                                    >> 1U)))
+                                     : ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_rnd_mode_q))
+                                         ? ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_rnd_mode_q))
+                                             ? ((0U 
+                                                 != (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__round_sticky_bits)) 
+                                                & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_sign_q)))
+                                             : ((0U 
+                                                 != (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__round_sticky_bits)) 
+                                                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_sign_q)))
+                                         : ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_rnd_mode_q)) 
+                                            & (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__round_sticky_bits) 
+                                                >> 1U) 
+                                               & ((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__round_sticky_bits) 
+                                                  | (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__pre_round_abs))))))))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__fmt_uf_after_round 
+        = ((0x1cU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__fmt_uf_after_round)) 
+           | (((0U == (0x7ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__rounded_abs 
+                                         >> 0x34U)))) 
+               << 1U) | (0U == (0xffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__rounded_abs 
+                                                 >> 0x17U))))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__fmt_uf_after_round 
+        = ((0x1bU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__fmt_uf_after_round)) 
+           | ((0U == (0x1fU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__rounded_abs 
+                                       >> 0xaU)))) 
+              << 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__fmt_of_after_round 
+        = ((0x1cU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__fmt_of_after_round)) 
+           | (((0x7ffU == (0x7ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__rounded_abs 
+                                             >> 0x34U)))) 
+               << 1U) | (0xffU == (0xffU & (IData)(
+                                                   (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__rounded_abs 
+                                                    >> 0x17U))))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__fmt_of_after_round 
+        = ((0x1bU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__fmt_of_after_round)) 
+           | ((0x1fU == (0x1fU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__rounded_abs 
+                                          >> 0xaU)))) 
+              << 2U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__rounded_int_res 
+        = ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_sign_q))
+            ? (- vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__rounded_abs)
+            : vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__rounded_abs);
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_of_after_round 
+        = (0xbU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_of_after_round));
+    if (((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_sign_q)) 
+         & (VL_EXTENDS_II(32,12, (0xfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_exp_q)) 
+            == ((IData)(0x1eU) + (1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_op_mod_q)))))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_of_after_round 
+            = ((0xbU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_of_after_round)) 
+               | (4U & ((~ (IData)((ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__rounded_int_res 
+                                    >> (0x3fU & ((IData)(0x1eU) 
+                                                 + 
+                                                 (1U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_op_mod_q))))))) 
+                        << 2U)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_of_after_round 
+        = (7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_of_after_round));
+    if (((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_sign_q)) 
+         & (VL_EXTENDS_II(32,12, (0xfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_exp_q)) 
+            == ((IData)(0x3eU) + (1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_op_mod_q)))))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_of_after_round 
+            = ((7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_of_after_round)) 
+               | (8U & ((~ (IData)((ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__rounded_int_res 
+                                    >> (0x3fU & ((IData)(0x3eU) 
+                                                 + 
+                                                 (1U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_op_mod_q))))))) 
+                        << 3U)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__of_after_round 
+        = (1U & ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dst_is_int_q))
+                  ? ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_of_after_round) 
+                     >> (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_int_fmt_q)))
+                  : ((4U >= (7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dst_fmt_q))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__fmt_of_after_round) 
+                        >> (7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dst_fmt_q))))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__int_result_is_special 
+        = (1U & ((((1U != (0x19U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_info_q))) 
+                   | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__of_before_round)) 
+                  | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__of_after_round)) 
+                 | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_input_sign_q) 
+                    & ((0ULL != ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__rounded_int_res) 
+                       & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_op_mod_q)))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__int_result 
+        = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__int_result_is_special)
+            ? (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_special_result[
+                                (((IData)(0x3fU) + 
+                                  (0xc0U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_int_fmt_q) 
+                                            << 6U))) 
+                                 >> 5U)])) << 0x20U) 
+               | (QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__ifmt_special_result[
+                                 (6U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_int_fmt_q) 
+                                        << 1U))])))
+            : ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__rounded_int_res);
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit 
+        = ((0xeU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit)) 
+           | (1U & ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__mid_pipe_dst_is_int_q)) 
+                    | (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__gen_num_lanes__BRA__0__KET____DOT__active_lane__DOT__lane_instance__DOT__i_fpnew_cast_multi__DOT__int_result 
+                               >> 0x3fU)))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT____VdfgTmp_h53843fc6__0 
+        = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit) 
+            << 0x1fU) | ((0x40000000U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit) 
+                                         << 0x1eU)) 
+                         | ((0x20000000U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit) 
+                                            << 0x1dU)) 
+                            | ((0x10000000U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit) 
+                                               << 0x1cU)) 
+                               | ((0x8000000U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit) 
+                                                 << 0x1bU)) 
+                                  | ((0x4000000U & 
+                                      ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit) 
+                                       << 0x1aU)) | 
+                                     ((0x2000000U & 
+                                       ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit) 
+                                        << 0x19U)) 
+                                      | ((0x1000000U 
+                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit) 
+                                             << 0x18U)) 
+                                         | ((0x800000U 
+                                             & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit) 
+                                                << 0x17U)) 
+                                            | ((0x400000U 
+                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit) 
+                                                   << 0x16U)) 
+                                               | ((0x200000U 
+                                                   & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit) 
+                                                      << 0x15U)) 
+                                                  | ((0x100000U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit) 
+                                                         << 0x14U)) 
+                                                     | ((0x80000U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit) 
+                                                            << 0x13U)) 
+                                                        | ((0x40000U 
+                                                            & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit) 
+                                                               << 0x12U)) 
+                                                           | ((0x20000U 
+                                                               & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit) 
+                                                                  << 0x11U)) 
+                                                              | ((0x10000U 
+                                                                  & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit) 
+                                                                     << 0x10U)) 
+                                                                 | (0xffffU 
+                                                                    & (- (IData)(
+                                                                                (1U 
+                                                                                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__fpu_gen__DOT__fpu_i__DOT__fpu_gen__DOT__i_fpnew_bulk__DOT__gen_operation_groups__BRA__3__KET____DOT__i_opgroup_block__DOT__gen_merged_slice__DOT__i_multifmt_slice__DOT__lane_ext_bit)))))))))))))))))))));
+}
+
+VL_ATTR_COLD void Vara_tb_verilator___024root___stl_comb__TOP__553(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___stl_comb__TOP__553\n"); );
+    // Init
+    CData/*7:0*/ __Vfunc_is_rs1_fpr__58__op;
+    __Vfunc_is_rs1_fpr__58__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs1_fpr__61__op;
+    __Vfunc_is_rs1_fpr__61__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs1_fpr__64__op;
+    __Vfunc_is_rs1_fpr__64__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs1_fpr__67__op;
+    __Vfunc_is_rs1_fpr__67__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs1_fpr__70__op;
+    __Vfunc_is_rs1_fpr__70__op = 0;
+    // Body
+    __Vfunc_is_rs1_fpr__58__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((((0x5bU <= (IData)(__Vfunc_is_rs1_fpr__58__op)) 
+                     & (0x62U >= (IData)(__Vfunc_is_rs1_fpr__58__op))) 
+                    | (0x63U == (IData)(__Vfunc_is_rs1_fpr__58__op))) 
+                   | (0x65U == (IData)(__Vfunc_is_rs1_fpr__58__op))) 
+                  | (0x66U == (IData)(__Vfunc_is_rs1_fpr__58__op))) 
+                 | (0x67U == (IData)(__Vfunc_is_rs1_fpr__58__op))) 
+                | (0x69U == (IData)(__Vfunc_is_rs1_fpr__58__op))) 
+               | (0x6aU == (IData)(__Vfunc_is_rs1_fpr__58__op))) 
+              | ((0x6bU <= (IData)(__Vfunc_is_rs1_fpr__58__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rs1_fpr__58__op)))) 
+             | (0xa7U == (IData)(__Vfunc_is_rs1_fpr__58__op)))) {
+            vlSelf->__Vfunc_is_rs1_fpr__58__Vfuncout = 1U;
+            goto __Vlabel316;
+        } else {
+            vlSelf->__Vfunc_is_rs1_fpr__58__Vfuncout = 0U;
+            goto __Vlabel316;
+        }
+        __Vlabel316: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req 
+        = ((0x1ffeU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req)) 
+           | ((((((0x13e7U >= ((IData)(0x21aU) + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i))))))
+                   ? (0x3fU & (((0U == (0x1fU & ((IData)(0x21aU) 
+                                                 + 
+                                                 (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i)))))))
+                                 ? 0U : (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                         (((IData)(0x21fU) 
+                                           + (0x1fffU 
+                                              & ((IData)(0x27dU) 
+                                                 * 
+                                                 (7U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i))))) 
+                                          >> 5U)] << 
+                                         ((IData)(0x20U) 
+                                          - (0x1fU 
+                                             & ((IData)(0x21aU) 
+                                                + (0x1fffU 
+                                                   & ((IData)(0x27dU) 
+                                                      * 
+                                                      (7U 
+                                                       & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i))))))))) 
+                               | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                  (((IData)(0x21aU) 
+                                    + (0x1fffU & ((IData)(0x27dU) 
+                                                  * 
+                                                  (7U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i))))) 
+                                   >> 5U)] >> (0x1fU 
+                                               & ((IData)(0x21aU) 
+                                                  + 
+                                                  (0x1fffU 
+                                                   & ((IData)(0x27dU) 
+                                                      * 
+                                                      (7U 
+                                                       & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i)))))))))
+                   : 0U) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_iro_sb)) 
+                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__wt_valid_ex_id)) 
+               & (~ vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__ex_ex_i[0U])) 
+              & (((0x13e7U >= ((IData)(0x27bU) + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i)))))) 
+                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                     (((IData)(0x27bU) + (0x1fffU & 
+                                          ((IData)(0x27dU) 
+                                           * (7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i))))) 
+                      >> 5U)] >> (0x1fU & ((IData)(0x27bU) 
+                                           + (0x1fffU 
+                                              & ((IData)(0x27dU) 
+                                                 * 
+                                                 (7U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i)))))))) 
+                 == (IData)(vlSelf->__Vfunc_is_rs1_fpr__58__Vfuncout))));
+    __Vfunc_is_rs1_fpr__61__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((((0x5bU <= (IData)(__Vfunc_is_rs1_fpr__61__op)) 
+                     & (0x62U >= (IData)(__Vfunc_is_rs1_fpr__61__op))) 
+                    | (0x63U == (IData)(__Vfunc_is_rs1_fpr__61__op))) 
+                   | (0x65U == (IData)(__Vfunc_is_rs1_fpr__61__op))) 
+                  | (0x66U == (IData)(__Vfunc_is_rs1_fpr__61__op))) 
+                 | (0x67U == (IData)(__Vfunc_is_rs1_fpr__61__op))) 
+                | (0x69U == (IData)(__Vfunc_is_rs1_fpr__61__op))) 
+               | (0x6aU == (IData)(__Vfunc_is_rs1_fpr__61__op))) 
+              | ((0x6bU <= (IData)(__Vfunc_is_rs1_fpr__61__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rs1_fpr__61__op)))) 
+             | (0xa7U == (IData)(__Vfunc_is_rs1_fpr__61__op)))) {
+            vlSelf->__Vfunc_is_rs1_fpr__61__Vfuncout = 1U;
+            goto __Vlabel317;
+        } else {
+            vlSelf->__Vfunc_is_rs1_fpr__61__Vfuncout = 0U;
+            goto __Vlabel317;
+        }
+        __Vlabel317: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req 
+        = ((0x1ffdU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req)) 
+           | (0xfffffffeU & (((((((0x13e7U >= ((IData)(0x21aU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 3U))))))
+                                   ? (0x3fU & (((0U 
+                                                 == 
+                                                 (0x1fU 
+                                                  & ((IData)(0x21aU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 3U)))))))
+                                                 ? 0U
+                                                 : 
+                                                (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                 (((IData)(0x21fU) 
+                                                   + 
+                                                   (0x1fffU 
+                                                    & ((IData)(0x27dU) 
+                                                       * 
+                                                       (7U 
+                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                           >> 3U))))) 
+                                                  >> 5U)] 
+                                                 << 
+                                                 ((IData)(0x20U) 
+                                                  - 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 3U))))))))) 
+                                               | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                  (((IData)(0x21aU) 
+                                                    + 
+                                                    (0x1fffU 
+                                                     & ((IData)(0x27dU) 
+                                                        * 
+                                                        (7U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                            >> 3U))))) 
+                                                   >> 5U)] 
+                                                  >> 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 3U)))))))))
+                                   : 0U) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_iro_sb)) 
+                                << 1U) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__wt_valid_ex_id)) 
+                              & ((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__ex_ex_i[4U] 
+                                     >> 1U)) << 1U)) 
+                             & ((((0x13e7U >= ((IData)(0x27bU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 3U)))))) 
+                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                     (((IData)(0x27bU) 
+                                       + (0x1fffU & 
+                                          ((IData)(0x27dU) 
+                                           * (7U & 
+                                              ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                               >> 3U))))) 
+                                      >> 5U)] >> (0x1fU 
+                                                  & ((IData)(0x27bU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 3U)))))))) 
+                                 == (IData)(vlSelf->__Vfunc_is_rs1_fpr__61__Vfuncout)) 
+                                << 1U))));
+    __Vfunc_is_rs1_fpr__64__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((((0x5bU <= (IData)(__Vfunc_is_rs1_fpr__64__op)) 
+                     & (0x62U >= (IData)(__Vfunc_is_rs1_fpr__64__op))) 
+                    | (0x63U == (IData)(__Vfunc_is_rs1_fpr__64__op))) 
+                   | (0x65U == (IData)(__Vfunc_is_rs1_fpr__64__op))) 
+                  | (0x66U == (IData)(__Vfunc_is_rs1_fpr__64__op))) 
+                 | (0x67U == (IData)(__Vfunc_is_rs1_fpr__64__op))) 
+                | (0x69U == (IData)(__Vfunc_is_rs1_fpr__64__op))) 
+               | (0x6aU == (IData)(__Vfunc_is_rs1_fpr__64__op))) 
+              | ((0x6bU <= (IData)(__Vfunc_is_rs1_fpr__64__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rs1_fpr__64__op)))) 
+             | (0xa7U == (IData)(__Vfunc_is_rs1_fpr__64__op)))) {
+            vlSelf->__Vfunc_is_rs1_fpr__64__Vfuncout = 1U;
+            goto __Vlabel318;
+        } else {
+            vlSelf->__Vfunc_is_rs1_fpr__64__Vfuncout = 0U;
+            goto __Vlabel318;
+        }
+        __Vlabel318: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req 
+        = ((0x1ffbU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req)) 
+           | (0xfffffffcU & (((((((0x13e7U >= ((IData)(0x21aU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 6U))))))
+                                   ? (0x3fU & (((0U 
+                                                 == 
+                                                 (0x1fU 
+                                                  & ((IData)(0x21aU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 6U)))))))
+                                                 ? 0U
+                                                 : 
+                                                (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                 (((IData)(0x21fU) 
+                                                   + 
+                                                   (0x1fffU 
+                                                    & ((IData)(0x27dU) 
+                                                       * 
+                                                       (7U 
+                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                           >> 6U))))) 
+                                                  >> 5U)] 
+                                                 << 
+                                                 ((IData)(0x20U) 
+                                                  - 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 6U))))))))) 
+                                               | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                  (((IData)(0x21aU) 
+                                                    + 
+                                                    (0x1fffU 
+                                                     & ((IData)(0x27dU) 
+                                                        * 
+                                                        (7U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                            >> 6U))))) 
+                                                   >> 5U)] 
+                                                  >> 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 6U)))))))))
+                                   : 0U) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_iro_sb)) 
+                                << 2U) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__wt_valid_ex_id)) 
+                              & ((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__ex_ex_i[8U] 
+                                     >> 2U)) << 2U)) 
+                             & ((((0x13e7U >= ((IData)(0x27bU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 6U)))))) 
+                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                     (((IData)(0x27bU) 
+                                       + (0x1fffU & 
+                                          ((IData)(0x27dU) 
+                                           * (7U & 
+                                              ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                               >> 6U))))) 
+                                      >> 5U)] >> (0x1fU 
+                                                  & ((IData)(0x27bU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 6U)))))))) 
+                                 == (IData)(vlSelf->__Vfunc_is_rs1_fpr__64__Vfuncout)) 
+                                << 2U))));
+    __Vfunc_is_rs1_fpr__67__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((((0x5bU <= (IData)(__Vfunc_is_rs1_fpr__67__op)) 
+                     & (0x62U >= (IData)(__Vfunc_is_rs1_fpr__67__op))) 
+                    | (0x63U == (IData)(__Vfunc_is_rs1_fpr__67__op))) 
+                   | (0x65U == (IData)(__Vfunc_is_rs1_fpr__67__op))) 
+                  | (0x66U == (IData)(__Vfunc_is_rs1_fpr__67__op))) 
+                 | (0x67U == (IData)(__Vfunc_is_rs1_fpr__67__op))) 
+                | (0x69U == (IData)(__Vfunc_is_rs1_fpr__67__op))) 
+               | (0x6aU == (IData)(__Vfunc_is_rs1_fpr__67__op))) 
+              | ((0x6bU <= (IData)(__Vfunc_is_rs1_fpr__67__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rs1_fpr__67__op)))) 
+             | (0xa7U == (IData)(__Vfunc_is_rs1_fpr__67__op)))) {
+            vlSelf->__Vfunc_is_rs1_fpr__67__Vfuncout = 1U;
+            goto __Vlabel319;
+        } else {
+            vlSelf->__Vfunc_is_rs1_fpr__67__Vfuncout = 0U;
+            goto __Vlabel319;
+        }
+        __Vlabel319: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req 
+        = ((0x1ff7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req)) 
+           | (0xfffffff8U & (((((((0x13e7U >= ((IData)(0x21aU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 9U))))))
+                                   ? (0x3fU & (((0U 
+                                                 == 
+                                                 (0x1fU 
+                                                  & ((IData)(0x21aU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 9U)))))))
+                                                 ? 0U
+                                                 : 
+                                                (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                 (((IData)(0x21fU) 
+                                                   + 
+                                                   (0x1fffU 
+                                                    & ((IData)(0x27dU) 
+                                                       * 
+                                                       (7U 
+                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                           >> 9U))))) 
+                                                  >> 5U)] 
+                                                 << 
+                                                 ((IData)(0x20U) 
+                                                  - 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 9U))))))))) 
+                                               | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                  (((IData)(0x21aU) 
+                                                    + 
+                                                    (0x1fffU 
+                                                     & ((IData)(0x27dU) 
+                                                        * 
+                                                        (7U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                            >> 9U))))) 
+                                                   >> 5U)] 
+                                                  >> 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 9U)))))))))
+                                   : 0U) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_iro_sb)) 
+                                << 3U) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__wt_valid_ex_id)) 
+                              & ((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__ex_ex_i[0xcU] 
+                                     >> 3U)) << 3U)) 
+                             & ((((0x13e7U >= ((IData)(0x27bU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 9U)))))) 
+                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                     (((IData)(0x27bU) 
+                                       + (0x1fffU & 
+                                          ((IData)(0x27dU) 
+                                           * (7U & 
+                                              ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                               >> 9U))))) 
+                                      >> 5U)] >> (0x1fU 
+                                                  & ((IData)(0x27bU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 9U)))))))) 
+                                 == (IData)(vlSelf->__Vfunc_is_rs1_fpr__67__Vfuncout)) 
+                                << 3U))));
+    __Vfunc_is_rs1_fpr__70__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((((0x5bU <= (IData)(__Vfunc_is_rs1_fpr__70__op)) 
+                     & (0x62U >= (IData)(__Vfunc_is_rs1_fpr__70__op))) 
+                    | (0x63U == (IData)(__Vfunc_is_rs1_fpr__70__op))) 
+                   | (0x65U == (IData)(__Vfunc_is_rs1_fpr__70__op))) 
+                  | (0x66U == (IData)(__Vfunc_is_rs1_fpr__70__op))) 
+                 | (0x67U == (IData)(__Vfunc_is_rs1_fpr__70__op))) 
+                | (0x69U == (IData)(__Vfunc_is_rs1_fpr__70__op))) 
+               | (0x6aU == (IData)(__Vfunc_is_rs1_fpr__70__op))) 
+              | ((0x6bU <= (IData)(__Vfunc_is_rs1_fpr__70__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rs1_fpr__70__op)))) 
+             | (0xa7U == (IData)(__Vfunc_is_rs1_fpr__70__op)))) {
+            vlSelf->__Vfunc_is_rs1_fpr__70__Vfuncout = 1U;
+            goto __Vlabel320;
+        } else {
+            vlSelf->__Vfunc_is_rs1_fpr__70__Vfuncout = 0U;
+            goto __Vlabel320;
+        }
+        __Vlabel320: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req 
+        = ((0x1fefU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs1_fwd_req)) 
+           | (0xfffffff0U & (((((((0x13e7U >= ((IData)(0x21aU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 0xcU))))))
+                                   ? (0x3fU & (((0U 
+                                                 == 
+                                                 (0x1fU 
+                                                  & ((IData)(0x21aU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 0xcU)))))))
+                                                 ? 0U
+                                                 : 
+                                                (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                 (((IData)(0x21fU) 
+                                                   + 
+                                                   (0x1fffU 
+                                                    & ((IData)(0x27dU) 
+                                                       * 
+                                                       (7U 
+                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                           >> 0xcU))))) 
+                                                  >> 5U)] 
+                                                 << 
+                                                 ((IData)(0x20U) 
+                                                  - 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 0xcU))))))))) 
+                                               | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                  (((IData)(0x21aU) 
+                                                    + 
+                                                    (0x1fffU 
+                                                     & ((IData)(0x27dU) 
+                                                        * 
+                                                        (7U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                            >> 0xcU))))) 
+                                                   >> 5U)] 
+                                                  >> 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 0xcU)))))))))
+                                   : 0U) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_iro_sb)) 
+                                << 4U) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__wt_valid_ex_id)) 
+                              & ((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__ex_ex_i[0x10U] 
+                                     >> 4U)) << 4U)) 
+                             & ((((0x13e7U >= ((IData)(0x27bU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 0xcU)))))) 
+                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                     (((IData)(0x27bU) 
+                                       + (0x1fffU & 
+                                          ((IData)(0x27dU) 
+                                           * (7U & 
+                                              ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                               >> 0xcU))))) 
+                                      >> 5U)] >> (0x1fU 
+                                                  & ((IData)(0x27bU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 0xcU)))))))) 
+                                 == (IData)(vlSelf->__Vfunc_is_rs1_fpr__70__Vfuncout)) 
+                                << 4U))));
+}
+
+VL_ATTR_COLD void Vara_tb_verilator___024root___stl_comb__TOP__554(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___stl_comb__TOP__554\n"); );
+    // Init
+    CData/*7:0*/ __Vfunc_is_rs2_fpr__59__op;
+    __Vfunc_is_rs2_fpr__59__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs2_fpr__62__op;
+    __Vfunc_is_rs2_fpr__62__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs2_fpr__65__op;
+    __Vfunc_is_rs2_fpr__65__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs2_fpr__68__op;
+    __Vfunc_is_rs2_fpr__68__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs2_fpr__71__op;
+    __Vfunc_is_rs2_fpr__71__op = 0;
+    // Body
+    __Vfunc_is_rs2_fpr__59__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((0x55U <= (IData)(__Vfunc_is_rs2_fpr__59__op)) 
+                   & (0x58U >= (IData)(__Vfunc_is_rs2_fpr__59__op))) 
+                  | ((0x59U <= (IData)(__Vfunc_is_rs2_fpr__59__op)) 
+                     & (0x5dU >= (IData)(__Vfunc_is_rs2_fpr__59__op)))) 
+                 | ((0x5fU <= (IData)(__Vfunc_is_rs2_fpr__59__op)) 
+                    & (0x62U >= (IData)(__Vfunc_is_rs2_fpr__59__op)))) 
+                | (0x65U == (IData)(__Vfunc_is_rs2_fpr__59__op))) 
+               | ((0x66U <= (IData)(__Vfunc_is_rs2_fpr__59__op)) 
+                  & (0x67U >= (IData)(__Vfunc_is_rs2_fpr__59__op)))) 
+              | (0x69U == (IData)(__Vfunc_is_rs2_fpr__59__op))) 
+             | ((0x6bU <= (IData)(__Vfunc_is_rs2_fpr__59__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_rs2_fpr__59__op))))) {
+            vlSelf->__Vfunc_is_rs2_fpr__59__Vfuncout = 1U;
+            goto __Vlabel321;
+        } else {
+            vlSelf->__Vfunc_is_rs2_fpr__59__Vfuncout = 0U;
+            goto __Vlabel321;
+        }
+        __Vlabel321: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req 
+        = ((0x1ffeU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req)) 
+           | ((((((0x13e7U >= ((IData)(0x21aU) + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i))))))
+                   ? (0x3fU & (((0U == (0x1fU & ((IData)(0x21aU) 
+                                                 + 
+                                                 (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i)))))))
+                                 ? 0U : (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                         (((IData)(0x21fU) 
+                                           + (0x1fffU 
+                                              & ((IData)(0x27dU) 
+                                                 * 
+                                                 (7U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i))))) 
+                                          >> 5U)] << 
+                                         ((IData)(0x20U) 
+                                          - (0x1fU 
+                                             & ((IData)(0x21aU) 
+                                                + (0x1fffU 
+                                                   & ((IData)(0x27dU) 
+                                                      * 
+                                                      (7U 
+                                                       & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i))))))))) 
+                               | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                  (((IData)(0x21aU) 
+                                    + (0x1fffU & ((IData)(0x27dU) 
+                                                  * 
+                                                  (7U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i))))) 
+                                   >> 5U)] >> (0x1fU 
+                                               & ((IData)(0x21aU) 
+                                                  + 
+                                                  (0x1fffU 
+                                                   & ((IData)(0x27dU) 
+                                                      * 
+                                                      (7U 
+                                                       & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i)))))))))
+                   : 0U) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_iro_sb)) 
+                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__wt_valid_ex_id)) 
+               & (~ vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__ex_ex_i[0U])) 
+              & (((0x13e7U >= ((IData)(0x27bU) + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i)))))) 
+                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                     (((IData)(0x27bU) + (0x1fffU & 
+                                          ((IData)(0x27dU) 
+                                           * (7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i))))) 
+                      >> 5U)] >> (0x1fU & ((IData)(0x27bU) 
+                                           + (0x1fffU 
+                                              & ((IData)(0x27dU) 
+                                                 * 
+                                                 (7U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i)))))))) 
+                 == (IData)(vlSelf->__Vfunc_is_rs2_fpr__59__Vfuncout))));
+    __Vfunc_is_rs2_fpr__62__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((0x55U <= (IData)(__Vfunc_is_rs2_fpr__62__op)) 
+                   & (0x58U >= (IData)(__Vfunc_is_rs2_fpr__62__op))) 
+                  | ((0x59U <= (IData)(__Vfunc_is_rs2_fpr__62__op)) 
+                     & (0x5dU >= (IData)(__Vfunc_is_rs2_fpr__62__op)))) 
+                 | ((0x5fU <= (IData)(__Vfunc_is_rs2_fpr__62__op)) 
+                    & (0x62U >= (IData)(__Vfunc_is_rs2_fpr__62__op)))) 
+                | (0x65U == (IData)(__Vfunc_is_rs2_fpr__62__op))) 
+               | ((0x66U <= (IData)(__Vfunc_is_rs2_fpr__62__op)) 
+                  & (0x67U >= (IData)(__Vfunc_is_rs2_fpr__62__op)))) 
+              | (0x69U == (IData)(__Vfunc_is_rs2_fpr__62__op))) 
+             | ((0x6bU <= (IData)(__Vfunc_is_rs2_fpr__62__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_rs2_fpr__62__op))))) {
+            vlSelf->__Vfunc_is_rs2_fpr__62__Vfuncout = 1U;
+            goto __Vlabel322;
+        } else {
+            vlSelf->__Vfunc_is_rs2_fpr__62__Vfuncout = 0U;
+            goto __Vlabel322;
+        }
+        __Vlabel322: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req 
+        = ((0x1ffdU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req)) 
+           | (0xfffffffeU & (((((((0x13e7U >= ((IData)(0x21aU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 3U))))))
+                                   ? (0x3fU & (((0U 
+                                                 == 
+                                                 (0x1fU 
+                                                  & ((IData)(0x21aU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 3U)))))))
+                                                 ? 0U
+                                                 : 
+                                                (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                 (((IData)(0x21fU) 
+                                                   + 
+                                                   (0x1fffU 
+                                                    & ((IData)(0x27dU) 
+                                                       * 
+                                                       (7U 
+                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                           >> 3U))))) 
+                                                  >> 5U)] 
+                                                 << 
+                                                 ((IData)(0x20U) 
+                                                  - 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 3U))))))))) 
+                                               | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                  (((IData)(0x21aU) 
+                                                    + 
+                                                    (0x1fffU 
+                                                     & ((IData)(0x27dU) 
+                                                        * 
+                                                        (7U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                            >> 3U))))) 
+                                                   >> 5U)] 
+                                                  >> 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 3U)))))))))
+                                   : 0U) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_iro_sb)) 
+                                << 1U) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__wt_valid_ex_id)) 
+                              & ((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__ex_ex_i[4U] 
+                                     >> 1U)) << 1U)) 
+                             & ((((0x13e7U >= ((IData)(0x27bU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 3U)))))) 
+                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                     (((IData)(0x27bU) 
+                                       + (0x1fffU & 
+                                          ((IData)(0x27dU) 
+                                           * (7U & 
+                                              ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                               >> 3U))))) 
+                                      >> 5U)] >> (0x1fU 
+                                                  & ((IData)(0x27bU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 3U)))))))) 
+                                 == (IData)(vlSelf->__Vfunc_is_rs2_fpr__62__Vfuncout)) 
+                                << 1U))));
+    __Vfunc_is_rs2_fpr__65__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((0x55U <= (IData)(__Vfunc_is_rs2_fpr__65__op)) 
+                   & (0x58U >= (IData)(__Vfunc_is_rs2_fpr__65__op))) 
+                  | ((0x59U <= (IData)(__Vfunc_is_rs2_fpr__65__op)) 
+                     & (0x5dU >= (IData)(__Vfunc_is_rs2_fpr__65__op)))) 
+                 | ((0x5fU <= (IData)(__Vfunc_is_rs2_fpr__65__op)) 
+                    & (0x62U >= (IData)(__Vfunc_is_rs2_fpr__65__op)))) 
+                | (0x65U == (IData)(__Vfunc_is_rs2_fpr__65__op))) 
+               | ((0x66U <= (IData)(__Vfunc_is_rs2_fpr__65__op)) 
+                  & (0x67U >= (IData)(__Vfunc_is_rs2_fpr__65__op)))) 
+              | (0x69U == (IData)(__Vfunc_is_rs2_fpr__65__op))) 
+             | ((0x6bU <= (IData)(__Vfunc_is_rs2_fpr__65__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_rs2_fpr__65__op))))) {
+            vlSelf->__Vfunc_is_rs2_fpr__65__Vfuncout = 1U;
+            goto __Vlabel323;
+        } else {
+            vlSelf->__Vfunc_is_rs2_fpr__65__Vfuncout = 0U;
+            goto __Vlabel323;
+        }
+        __Vlabel323: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req 
+        = ((0x1ffbU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req)) 
+           | (0xfffffffcU & (((((((0x13e7U >= ((IData)(0x21aU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 6U))))))
+                                   ? (0x3fU & (((0U 
+                                                 == 
+                                                 (0x1fU 
+                                                  & ((IData)(0x21aU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 6U)))))))
+                                                 ? 0U
+                                                 : 
+                                                (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                 (((IData)(0x21fU) 
+                                                   + 
+                                                   (0x1fffU 
+                                                    & ((IData)(0x27dU) 
+                                                       * 
+                                                       (7U 
+                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                           >> 6U))))) 
+                                                  >> 5U)] 
+                                                 << 
+                                                 ((IData)(0x20U) 
+                                                  - 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 6U))))))))) 
+                                               | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                  (((IData)(0x21aU) 
+                                                    + 
+                                                    (0x1fffU 
+                                                     & ((IData)(0x27dU) 
+                                                        * 
+                                                        (7U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                            >> 6U))))) 
+                                                   >> 5U)] 
+                                                  >> 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 6U)))))))))
+                                   : 0U) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_iro_sb)) 
+                                << 2U) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__wt_valid_ex_id)) 
+                              & ((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__ex_ex_i[8U] 
+                                     >> 2U)) << 2U)) 
+                             & ((((0x13e7U >= ((IData)(0x27bU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 6U)))))) 
+                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                     (((IData)(0x27bU) 
+                                       + (0x1fffU & 
+                                          ((IData)(0x27dU) 
+                                           * (7U & 
+                                              ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                               >> 6U))))) 
+                                      >> 5U)] >> (0x1fU 
+                                                  & ((IData)(0x27bU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 6U)))))))) 
+                                 == (IData)(vlSelf->__Vfunc_is_rs2_fpr__65__Vfuncout)) 
+                                << 2U))));
+    __Vfunc_is_rs2_fpr__68__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((0x55U <= (IData)(__Vfunc_is_rs2_fpr__68__op)) 
+                   & (0x58U >= (IData)(__Vfunc_is_rs2_fpr__68__op))) 
+                  | ((0x59U <= (IData)(__Vfunc_is_rs2_fpr__68__op)) 
+                     & (0x5dU >= (IData)(__Vfunc_is_rs2_fpr__68__op)))) 
+                 | ((0x5fU <= (IData)(__Vfunc_is_rs2_fpr__68__op)) 
+                    & (0x62U >= (IData)(__Vfunc_is_rs2_fpr__68__op)))) 
+                | (0x65U == (IData)(__Vfunc_is_rs2_fpr__68__op))) 
+               | ((0x66U <= (IData)(__Vfunc_is_rs2_fpr__68__op)) 
+                  & (0x67U >= (IData)(__Vfunc_is_rs2_fpr__68__op)))) 
+              | (0x69U == (IData)(__Vfunc_is_rs2_fpr__68__op))) 
+             | ((0x6bU <= (IData)(__Vfunc_is_rs2_fpr__68__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_rs2_fpr__68__op))))) {
+            vlSelf->__Vfunc_is_rs2_fpr__68__Vfuncout = 1U;
+            goto __Vlabel324;
+        } else {
+            vlSelf->__Vfunc_is_rs2_fpr__68__Vfuncout = 0U;
+            goto __Vlabel324;
+        }
+        __Vlabel324: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req 
+        = ((0x1ff7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req)) 
+           | (0xfffffff8U & (((((((0x13e7U >= ((IData)(0x21aU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 9U))))))
+                                   ? (0x3fU & (((0U 
+                                                 == 
+                                                 (0x1fU 
+                                                  & ((IData)(0x21aU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 9U)))))))
+                                                 ? 0U
+                                                 : 
+                                                (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                 (((IData)(0x21fU) 
+                                                   + 
+                                                   (0x1fffU 
+                                                    & ((IData)(0x27dU) 
+                                                       * 
+                                                       (7U 
+                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                           >> 9U))))) 
+                                                  >> 5U)] 
+                                                 << 
+                                                 ((IData)(0x20U) 
+                                                  - 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 9U))))))))) 
+                                               | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                  (((IData)(0x21aU) 
+                                                    + 
+                                                    (0x1fffU 
+                                                     & ((IData)(0x27dU) 
+                                                        * 
+                                                        (7U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                            >> 9U))))) 
+                                                   >> 5U)] 
+                                                  >> 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 9U)))))))))
+                                   : 0U) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_iro_sb)) 
+                                << 3U) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__wt_valid_ex_id)) 
+                              & ((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__ex_ex_i[0xcU] 
+                                     >> 3U)) << 3U)) 
+                             & ((((0x13e7U >= ((IData)(0x27bU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 9U)))))) 
+                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                     (((IData)(0x27bU) 
+                                       + (0x1fffU & 
+                                          ((IData)(0x27dU) 
+                                           * (7U & 
+                                              ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                               >> 9U))))) 
+                                      >> 5U)] >> (0x1fU 
+                                                  & ((IData)(0x27bU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 9U)))))))) 
+                                 == (IData)(vlSelf->__Vfunc_is_rs2_fpr__68__Vfuncout)) 
+                                << 3U))));
+    __Vfunc_is_rs2_fpr__71__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((0x55U <= (IData)(__Vfunc_is_rs2_fpr__71__op)) 
+                   & (0x58U >= (IData)(__Vfunc_is_rs2_fpr__71__op))) 
+                  | ((0x59U <= (IData)(__Vfunc_is_rs2_fpr__71__op)) 
+                     & (0x5dU >= (IData)(__Vfunc_is_rs2_fpr__71__op)))) 
+                 | ((0x5fU <= (IData)(__Vfunc_is_rs2_fpr__71__op)) 
+                    & (0x62U >= (IData)(__Vfunc_is_rs2_fpr__71__op)))) 
+                | (0x65U == (IData)(__Vfunc_is_rs2_fpr__71__op))) 
+               | ((0x66U <= (IData)(__Vfunc_is_rs2_fpr__71__op)) 
+                  & (0x67U >= (IData)(__Vfunc_is_rs2_fpr__71__op)))) 
+              | (0x69U == (IData)(__Vfunc_is_rs2_fpr__71__op))) 
+             | ((0x6bU <= (IData)(__Vfunc_is_rs2_fpr__71__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_rs2_fpr__71__op))))) {
+            vlSelf->__Vfunc_is_rs2_fpr__71__Vfuncout = 1U;
+            goto __Vlabel325;
+        } else {
+            vlSelf->__Vfunc_is_rs2_fpr__71__Vfuncout = 0U;
+            goto __Vlabel325;
+        }
+        __Vlabel325: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req 
+        = ((0x1fefU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs2_fwd_req)) 
+           | (0xfffffff0U & (((((((0x13e7U >= ((IData)(0x21aU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 0xcU))))))
+                                   ? (0x3fU & (((0U 
+                                                 == 
+                                                 (0x1fU 
+                                                  & ((IData)(0x21aU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 0xcU)))))))
+                                                 ? 0U
+                                                 : 
+                                                (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                 (((IData)(0x21fU) 
+                                                   + 
+                                                   (0x1fffU 
+                                                    & ((IData)(0x27dU) 
+                                                       * 
+                                                       (7U 
+                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                           >> 0xcU))))) 
+                                                  >> 5U)] 
+                                                 << 
+                                                 ((IData)(0x20U) 
+                                                  - 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 0xcU))))))))) 
+                                               | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                  (((IData)(0x21aU) 
+                                                    + 
+                                                    (0x1fffU 
+                                                     & ((IData)(0x27dU) 
+                                                        * 
+                                                        (7U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                            >> 0xcU))))) 
+                                                   >> 5U)] 
+                                                  >> 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 0xcU)))))))))
+                                   : 0U) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_iro_sb)) 
+                                << 4U) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__wt_valid_ex_id)) 
+                              & ((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__ex_ex_i[0x10U] 
+                                     >> 4U)) << 4U)) 
+                             & ((((0x13e7U >= ((IData)(0x27bU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 0xcU)))))) 
+                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                     (((IData)(0x27bU) 
+                                       + (0x1fffU & 
+                                          ((IData)(0x27dU) 
+                                           * (7U & 
+                                              ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                               >> 0xcU))))) 
+                                      >> 5U)] >> (0x1fU 
+                                                  & ((IData)(0x27bU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 0xcU)))))))) 
+                                 == (IData)(vlSelf->__Vfunc_is_rs2_fpr__71__Vfuncout)) 
+                                << 4U))));
+}
+
+extern const VlWide<9>/*287:0*/ Vara_tb_verilator__ConstPool__CONST_h4a851b67_0;
+
+VL_ATTR_COLD void Vara_tb_verilator___024root___stl_comb__TOP__556(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___stl_comb__TOP__556\n"); );
+    // Init
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_empty;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_empty = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_push;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_push = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_pop;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_pop = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_push;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_push = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_pop;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_pop = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_push;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_push = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_pop;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_pop = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_clear;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_clear = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_en;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_en = 0;
+    CData/*4:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__i_w_fifo__data_o;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__i_w_fifo__data_o = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____VdfgExtracted_h4eb7fded__0;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____VdfgExtracted_h4eb7fded__0 = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_ready;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_ready = 0;
+    VlWide<4>/*104:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0;
+    VL_ZERO_W(105, ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0);
+    VlWide<3>/*73:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0;
+    VL_ZERO_W(74, ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0);
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h69fa6092__0;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h69fa6092__0 = 0;
+    VlWide<4>/*98:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0;
+    VL_ZERO_W(99, ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0);
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8ace5bb3__0;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8ace5bb3__0 = 0;
+    CData/*5:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__atop;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__atop = 0;
+    CData/*1:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__burst;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__burst = 0;
+    CData/*3:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__cache;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__cache = 0;
+    CData/*7:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__len;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__len = 0;
+    CData/*7:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__len_limit;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__len_limit = 0;
+    CData/*5:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__atop;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__atop = 0;
+    CData/*1:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__burst;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__burst = 0;
+    CData/*3:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__cache;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__cache = 0;
+    CData/*7:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__len;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__len = 0;
+    CData/*7:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__len_limit;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__len_limit = 0;
+    // Body
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[1U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[2U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[5U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[6U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[9U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xbU] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xdU] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xfU] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0x10U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0x11U] = 0U;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[0U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[6U] 
+            << 0xeU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[5U] 
+                        >> 0x12U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[1U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[7U] 
+            << 0xeU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[6U] 
+                        >> 0x12U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[2U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[8U] 
+            << 0xeU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[7U] 
+                        >> 0x12U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[3U] 
+        = (0x1ffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[8U] 
+                     >> 0x12U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[5U] 
+        = ((0x1ffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[5U]) 
+           | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[0U] 
+              << 0x12U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[6U] 
+        = ((0x1ffffU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[0U] 
+                        >> 0xeU)) | ((0x20000U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[0U] 
+                                                  >> 0xeU)) 
+                                     | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[1U] 
+                                        << 0x12U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U] 
+        = ((0x1ffffU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[1U] 
+                        >> 0xeU)) | ((0x20000U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[1U] 
+                                                  >> 0xeU)) 
+                                     | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[2U] 
+                                        << 0x12U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U] 
+        = ((0xf8000000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U]) 
+           | ((0x1ffffU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[2U] 
+                           >> 0xeU)) | ((0x20000U & 
+                                         (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[2U] 
+                                          >> 0xeU)) 
+                                        | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[3U] 
+                                           << 0x12U))));
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__aw_valid) 
+         & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_aw_select_spill_reg__DOT____Vcellout__spill_register_flushable_i__data_o)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[5U] 
+            = (0x20000U | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[5U]);
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[0U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[4U] 
+            << 0x19U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[3U] 
+                         >> 7U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[1U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[5U] 
+            << 0x19U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[4U] 
+                         >> 7U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[2U] 
+        = (0x3ffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[5U] 
+                     >> 7U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U] 
+        = ((0x3fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U]) 
+           | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[0U] 
+              << 7U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U] 
+        = ((0x3fU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[0U] 
+                     >> 0x19U)) | ((0x40U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[0U] 
+                                             >> 0x19U)) 
+                                   | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[1U] 
+                                      << 7U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[5U] 
+        = ((0xfffe0000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[5U]) 
+           | ((0x3fU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[1U] 
+                        >> 0x19U)) | ((0x40U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[1U] 
+                                                >> 0x19U)) 
+                                      | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[2U] 
+                                         << 7U))));
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__w_select_valid) 
+         & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__w_select)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h695caa5f__1 
+            = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[3U] 
+                     >> 6U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U] 
+            = ((0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h695caa5f__1) 
+                  << 6U));
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h69fa6092__0 
+        = (1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__mst_b_readies));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U] 
+        = ((0xffffffdfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U]) 
+           | ((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h69fa6092__0) 
+              << 5U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[0U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[1U] 
+            << 0x1eU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[0U] 
+                         >> 2U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[1U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[2U] 
+            << 0x1eU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[1U] 
+                         >> 2U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[2U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[3U] 
+            << 0x1eU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[2U] 
+                         >> 2U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[3U] 
+        = (7U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[3U] 
+                 >> 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U] 
+        = ((1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U]) 
+           | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[0U] 
+              << 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[1U] 
+        = ((1U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[0U] 
+                  >> 0x1eU)) | ((2U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[0U] 
+                                       >> 0x1eU)) | 
+                                (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[1U] 
+                                 << 2U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[2U] 
+        = ((1U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[1U] 
+                  >> 0x1eU)) | ((2U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[1U] 
+                                       >> 0x1eU)) | 
+                                (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[2U] 
+                                 << 2U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U] 
+        = ((0xffffffe0U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U]) 
+           | ((1U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[2U] 
+                     >> 0x1eU)) | ((2U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[2U] 
+                                          >> 0x1eU)) 
+                                   | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[3U] 
+                                      << 2U))));
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__ar_valid) 
+         & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_ar_sel_spill_reg__DOT____Vcellout__spill_register_flushable_i__data_o)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U] 
+            = (2U | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U]);
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8ace5bb3__0 
+        = (1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__mst_r_readies));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U] 
+        = ((0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U]) 
+           | (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8ace5bb3__0));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[0U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[6U] 
+            << 0xeU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[5U] 
+                        >> 0x12U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[1U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[7U] 
+            << 0xeU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[6U] 
+                        >> 0x12U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[2U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[8U] 
+            << 0xeU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[7U] 
+                        >> 0x12U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[3U] 
+        = (0x1ffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[8U] 
+                     >> 0x12U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+        = ((0xfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU]) 
+           | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[0U] 
+              << 0xdU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xfU] 
+        = ((0xfffU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[0U] 
+                      >> 0x13U)) | ((0x1000U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[0U] 
+                                                >> 0x13U)) 
+                                    | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[1U] 
+                                       << 0xdU)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0x10U] 
+        = ((0xfffU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[1U] 
+                      >> 0x13U)) | ((0x1000U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[1U] 
+                                                >> 0x13U)) 
+                                    | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[2U] 
+                                       << 0xdU)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0x11U] 
+        = (0x3fffffU & ((0xfffU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[2U] 
+                                   >> 0x13U)) | ((0x1000U 
+                                                  & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[2U] 
+                                                     >> 0x13U)) 
+                                                 | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hbbbb3d2f__0[3U] 
+                                                    << 0xdU))));
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__aw_valid) 
+         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_aw_select_spill_reg__DOT____Vcellout__spill_register_flushable_i__data_o))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+            = (0x1000U | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU]);
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[0U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[4U] 
+            << 0x19U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[3U] 
+                         >> 7U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[1U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[5U] 
+            << 0x19U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[4U] 
+                         >> 7U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[2U] 
+        = (0x3ffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[5U] 
+                     >> 7U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+        = ((1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU]) 
+           | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[0U] 
+              << 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xdU] 
+        = ((1U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[0U] 
+                  >> 0x1eU)) | ((2U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[0U] 
+                                       >> 0x1eU)) | 
+                                (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[1U] 
+                                 << 2U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+        = ((0xfffff000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU]) 
+           | ((1U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[1U] 
+                     >> 0x1eU)) | ((2U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[1U] 
+                                          >> 0x1eU)) 
+                                   | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hca197813__0[2U] 
+                                      << 2U))));
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__w_select_valid) 
+         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__w_select))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h695caa5f__1 
+            = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[3U] 
+                     >> 6U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+            = ((0xfffffffdU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h695caa5f__1) 
+                  << 1U));
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h69fa6092__0 
+        = (1U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__mst_b_readies) 
+                 >> 1U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+        = ((0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU]) 
+           | (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h69fa6092__0));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[0U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[1U] 
+            << 0x1eU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[0U] 
+                         >> 2U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[1U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[2U] 
+            << 0x1eU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[1U] 
+                         >> 2U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[2U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[3U] 
+            << 0x1eU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[2U] 
+                         >> 2U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[3U] 
+        = (7U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[3U] 
+                 >> 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U] 
+        = ((0xfffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U]) 
+           | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[0U] 
+              << 0x1dU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[9U] 
+        = ((0xfffffffU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[0U] 
+                          >> 3U)) | ((0x10000000U & 
+                                      (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[0U] 
+                                       >> 3U)) | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[1U] 
+                                                  << 0x1dU)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+        = ((0xfffffffU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[1U] 
+                          >> 3U)) | ((0x10000000U & 
+                                      (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[1U] 
+                                       >> 3U)) | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[2U] 
+                                                  << 0x1dU)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xbU] 
+        = ((0xfffffffU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[2U] 
+                          >> 3U)) | ((0x10000000U & 
+                                      (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[2U] 
+                                       >> 3U)) | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8f78fd59__0[3U] 
+                                                  << 0x1dU)));
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__ar_valid) 
+         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_ar_sel_spill_reg__DOT____Vcellout__spill_register_flushable_i__data_o))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U] 
+            = (0x10000000U | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U]);
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8ace5bb3__0 
+        = (1U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__mst_r_readies) 
+                 >> 1U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U] 
+        = ((0xf7ffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U]) 
+           | ((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h8ace5bb3__0) 
+              << 0x1bU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_push_valid = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__id_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__id_q;
+    if ((1U & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q) 
+                  >> 2U)))) {
+        if ((1U & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q) 
+                      >> 1U)))) {
+            if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+                if (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+                      >> 0xcU) & (0U != (3U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+                                               >> 0x12U))))) {
+                    if ((0x80000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU])) {
+                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_push_valid = 1U;
+                    }
+                    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__id_d 
+                        = (0x1fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0x11U] 
+                                    >> 0x11U));
+                }
+            }
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[5U] 
+        = ((0x3ffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[5U]) 
+           | (0xfffc0000U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+                             << 5U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[6U] 
+        = (((0x3ffe0U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xfU] 
+                         << 5U)) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+                                    >> 0x1bU)) | (0xfffc0000U 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xfU] 
+                                                     << 5U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[7U] 
+        = (((0x3ffe0U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0x10U] 
+                         << 5U)) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xfU] 
+                                    >> 0x1bU)) | (0xfffc0000U 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0x10U] 
+                                                     << 5U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[8U] 
+        = (0x7ffffffU & (((0x3ffe0U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0x11U] 
+                                       << 5U)) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0x10U] 
+                                                  >> 0x1bU)) 
+                         | (0x7fc0000U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0x11U] 
+                                          << 5U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[5U] 
+        = (0xfe07ffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[5U]);
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U] 
+        = ((1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U]) 
+           | ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[9U] 
+               << 5U) | (0x1eU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U] 
+                                  >> 0x1bU))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[1U] 
+        = ((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[9U] 
+                  >> 0x1bU)) | ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+                                 << 5U) | (0x1eU & 
+                                           (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[9U] 
+                                            >> 0x1bU))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[2U] 
+        = ((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+                  >> 0x1bU)) | ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xbU] 
+                                 << 5U) | (0x1eU & 
+                                           (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+                                            >> 0x1bU))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+        = ((0xffffffe0U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U]) 
+           | ((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xbU] 
+                     >> 0x1bU)) | (0x1eU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xbU] 
+                                            >> 0x1bU))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+        = ((0x7fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U]) 
+           | (0xffffff80U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+                             << 5U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[4U] 
+        = (((0x60U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xdU] 
+                      << 5U)) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+                                 >> 0x1bU)) | (0xffffff80U 
+                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xdU] 
+                                                  << 5U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[5U] 
+        = ((0xfffe0000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[5U]) 
+           | (((0x60U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+                         << 5U)) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xdU] 
+                                    >> 0x1bU)) | (0x1ff80U 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+                                                     << 5U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U] 
+        = ((0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U]) 
+           | (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U] 
+                    >> 0x1bU)));
+    if ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_q))) {
+        if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_q)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U] 
+                = (0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U]);
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[5U] 
+        = (0xfffdffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[5U]);
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+        = ((0xffffff9fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U]) 
+           | (0x20U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+                       << 5U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x11U] 
+        = ((0x3fffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x11U]) 
+           | ((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[0U] 
+               & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U]) 
+              << 0x16U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x12U] 
+        = (((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[0U] 
+             & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U]) 
+            >> 0xaU) | ((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[1U] 
+                         & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[1U]) 
+                        << 0x16U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x13U] 
+        = (((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[1U] 
+             & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[1U]) 
+            >> 0xaU) | ((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[2U] 
+                         & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[2U]) 
+                        << 0x16U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x14U] 
+        = (((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[2U] 
+             & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[2U]) 
+            >> 0xaU) | ((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[3U] 
+                         & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U]) 
+                        << 0x16U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x15U] 
+        = (((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[3U] 
+             & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U]) 
+            >> 0xaU) | ((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[4U] 
+                         & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U]) 
+                        << 0x16U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x16U] 
+        = (((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[4U] 
+             & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U]) 
+            >> 0xaU) | ((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[5U] 
+                         & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[5U]) 
+                        << 0x16U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x17U] 
+        = (((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[5U] 
+             & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[5U]) 
+            >> 0xaU) | ((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[6U] 
+                         & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[6U]) 
+                        << 0x16U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x18U] 
+        = (((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[6U] 
+             & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[6U]) 
+            >> 0xaU) | ((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[7U] 
+                         & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U]) 
+                        << 0x16U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x19U] 
+        = (((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[7U] 
+             & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U]) 
+            >> 0xaU) | ((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[8U] 
+                         & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U]) 
+                        << 0x16U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x1aU] 
+        = (0x1ffffU & ((Vara_tb_verilator__ConstPool__CONST_h4a851b67_0[8U] 
+                        & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U]) 
+                       >> 0xaU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_busy_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_busy_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_busy_load = 0U;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_en = 0U;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_clear = 0U;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_pop = 0U;
+    if ((4U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+        if ((1U & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q) 
+                      >> 1U)))) {
+            if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+                    = (0xffffffdfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U]);
+            }
+        }
+    } else if ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+        if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q)))) {
+            if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__aw_without_complete_w_downstream) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+                    = ((0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U]) 
+                       | (0x40U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+                                   << 5U)));
+            }
+        }
+    } else if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+        if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__complete_w_without_aw_downstream) 
+             | (1U > (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_q))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[5U] 
+                = ((0xfffdffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[5U]) 
+                   | (0x20000U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+                                  << 5U)));
+        }
+        if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__aw_without_complete_w_downstream) 
+             | ((IData)((0x1000U == (0xc1000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU]))) 
+                & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__complete_w_without_aw_downstream))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+                = ((0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U]) 
+                   | (0x40U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+                               << 5U)));
+        }
+        if (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+              >> 0xcU) & (0U != (3U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+                                       >> 0x12U))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[5U] 
+                = (0xfffdffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[5U]);
+            if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__aw_without_complete_w_downstream)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+                    = (0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U]);
+            }
+        }
+    }
+    if ((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q))) {
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_pop 
+            = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+                     >> 5U));
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_pop = 0U;
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_busy_q) {
+        if ((1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U])) {
+            if ((0U == (0xffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_counter__DOT__i_counter__DOT__counter_q)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_busy_d = 0U;
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_busy_load = 1U;
+                ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_clear = 1U;
+                ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_pop = 1U;
+            }
+            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_en = 1U;
+        }
+    } else if ((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_busy_d = 1U;
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_busy_load = 1U;
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_push 
+        = ((1U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q)) 
+           & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U] 
+              >> 1U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____VdfgExtracted_h4eb7fded__0 
+        = (IData)((0x140U == (0x140U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U])));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_push 
+        = ((1U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q)) 
+           & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[5U] 
+              >> 0x11U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__r_resp_cmd_push_valid = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__id_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__id_q;
+    if ((1U & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__w_state_q) 
+                  >> 2U)))) {
+        if ((1U & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__w_state_q) 
+                      >> 1U)))) {
+            if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__w_state_q))) {
+                if (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x17U] 
+                      >> 7U) & (0U != (3U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x17U] 
+                                             >> 0xdU))))) {
+                    if ((0x4000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x17U])) {
+                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__r_resp_cmd_push_valid = 1U;
+                    }
+                    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__id_d 
+                        = (0x1fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x1aU] 
+                                    >> 0xcU));
+                }
+            }
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U] 
+        = ((0x3ffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U]) 
+           | (0xfffc0000U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x17U] 
+                             << 0xaU)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[6U] 
+        = (((0x3fc00U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x18U] 
+                         << 0xaU)) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x17U] 
+                                      >> 0x16U)) | 
+           (0xfffc0000U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x18U] 
+                           << 0xaU)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[7U] 
+        = (((0x3fc00U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x19U] 
+                         << 0xaU)) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x18U] 
+                                      >> 0x16U)) | 
+           (0xfffc0000U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x19U] 
+                           << 0xaU)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[8U] 
+        = (0x7ffffffU & (((0x3fc00U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x1aU] 
+                                       << 0xaU)) | 
+                          (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x19U] 
+                           >> 0x16U)) | (0x7fc0000U 
+                                         & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x1aU] 
+                                            << 0xaU))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U] 
+        = (0xfe07ffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U]);
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U] 
+        = ((1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U]) 
+           | ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x12U] 
+               << 0xaU) | (0x3feU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x11U] 
+                                     >> 0x16U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[1U] 
+        = ((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x12U] 
+                  >> 0x16U)) | ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x13U] 
+                                 << 0xaU) | (0x3feU 
+                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x12U] 
+                                                >> 0x16U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[2U] 
+        = ((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x13U] 
+                  >> 0x16U)) | ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x14U] 
+                                 << 0xaU) | (0x3feU 
+                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x13U] 
+                                                >> 0x16U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U] 
+        = ((0xffffffe0U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U]) 
+           | ((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x14U] 
+                     >> 0x16U)) | (0x1eU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x14U] 
+                                            >> 0x16U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U] 
+        = ((0x7fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U]) 
+           | ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x15U] 
+               << 0xaU) | (0x380U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x14U] 
+                                     >> 0x16U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U] 
+        = ((0x7fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x15U] 
+                     >> 0x16U)) | ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x16U] 
+                                    << 0xaU) | (0x380U 
+                                                & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x15U] 
+                                                   >> 0x16U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U] 
+        = ((0xfffe0000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U]) 
+           | ((0x7fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x16U] 
+                        >> 0x16U)) | (0x1ff80U & ((
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x17U] 
+                                                   << 0xaU) 
+                                                  | (0x380U 
+                                                     & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x16U] 
+                                                        >> 0x16U))))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U] 
+        = ((0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U]) 
+           | (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x11U] 
+                    >> 0x16U)));
+    if ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__r_state_q))) {
+        if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__r_state_q)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U] 
+                = (0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U]);
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U] 
+        = (0xfffdffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U]);
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U] 
+        = ((0xffffff9fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U]) 
+           | (0x20U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x14U] 
+                       >> 0x16U)));
+    if ((4U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__w_state_q))) {
+        if ((1U & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__w_state_q) 
+                      >> 1U)))) {
+            if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__w_state_q))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U] 
+                    = (0xffffffdfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U]);
+            }
+        }
+    } else if ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__w_state_q))) {
+        if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__w_state_q)))) {
+            if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__aw_without_complete_w_downstream) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U] 
+                    = ((0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U]) 
+                       | (0x40U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x14U] 
+                                   >> 0x16U)));
+            }
+        }
+    } else if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__w_state_q))) {
+        if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__complete_w_without_aw_downstream) 
+             | (1U > (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__w_cnt_q))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U] 
+                = ((0xfffdffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U]) 
+                   | (0x20000U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x17U] 
+                                  << 0xaU)));
+        }
+        if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__aw_without_complete_w_downstream) 
+             | ((IData)((0x80U == (0x6080U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x17U]))) 
+                & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__complete_w_without_aw_downstream))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U] 
+                = ((0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U]) 
+                   | (0x40U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x14U] 
+                               >> 0x16U)));
+        }
+        if (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x17U] 
+              >> 7U) & (0U != (3U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__periph_narrow_axi_req[0x17U] 
+                                     >> 0xdU))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U] 
+                = (0xfffdffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U]);
+            if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_atop_filter__DOT__aw_without_complete_w_downstream)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U] 
+                    = (0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U]);
+            }
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_counter__DOT__i_counter__DOT__counter_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_counter__DOT__i_counter__DOT__counter_q;
+    if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_clear) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_counter__DOT__i_counter__DOT__counter_d = 0U;
+    } else if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_load) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_counter__DOT__i_counter__DOT__counter_d 
+            = (0xffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__i_r_fifo__data_o));
+    } else if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_en) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_counter__DOT__i_counter__DOT__counter_d 
+            = (0x1ffU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_counter__DOT__i_counter__DOT__counter_q) 
+                         - (IData)(1U)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__read_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__read_pointer_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__read_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__read_pointer_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__gate_clock = 1U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__write_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__write_pointer_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q;
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_pop) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__read_pointer_n 
+            = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__read_pointer_n) 
+               & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__read_pointer_q)));
+    }
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_push) 
+         & (1U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__gate_clock = 0U;
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__write_pointer_n 
+            = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__write_pointer_q) 
+               & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__write_pointer_q)));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_n 
+            = (3U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q)));
+    }
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_pop) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_n 
+            = (3U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q) 
+                     - (IData)(1U)));
+    }
+    if (((((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_push) 
+           & (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_pop)) 
+          & (1U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q))) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_n 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__mem_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__mem_q;
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_push) 
+         & (1U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT____Vlvbound_h21fe8110__0 
+            = ((0x1f00U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+                           << 8U)) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U] 
+                                      >> 0x18U));
+        if ((0xcU >= (0xfU & ((IData)(0xdU) * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__write_pointer_q))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__mem_n 
+                = (((~ ((IData)(0x1fffU) << (0xfU & 
+                                             ((IData)(0xdU) 
+                                              * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__write_pointer_q))))) 
+                    & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__mem_n)) 
+                   | (0x1fffU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT____Vlvbound_h21fe8110__0) 
+                                 << (0xfU & ((IData)(0xdU) 
+                                             * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__write_pointer_q))))));
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__gate_clock = 1U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__mem_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__mem_q;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__i_w_fifo__data_o 
+        = ((4U >= (7U & ((IData)(5U) * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_q))))
+            ? (0x1fU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__mem_q) 
+                        >> (7U & ((IData)(5U) * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_q)))))
+            : 0U);
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_empty 
+        = ((~ (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_push)) 
+           & (0U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__lookup_ar_select 
+        = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__mst_select_q 
+                 >> (0x1fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U])));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__ar_select_occupied 
+        = (1U & ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__31__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                   << 0x1fU) | ((0x40000000U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__30__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                << 0x1eU)) 
+                                | ((0x20000000U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__29__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                   << 0x1dU)) 
+                                   | ((0x10000000U 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__28__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                          << 0x1cU)) 
+                                      | ((0x8000000U 
+                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__27__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                             << 0x1bU)) 
+                                         | ((0x4000000U 
+                                             & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__26__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                << 0x1aU)) 
+                                            | ((0x2000000U 
+                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__25__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                   << 0x19U)) 
+                                               | ((0x1000000U 
+                                                   & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__24__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                      << 0x18U)) 
+                                                  | ((0x800000U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__23__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                         << 0x17U)) 
+                                                     | ((0x400000U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__22__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                            << 0x16U)) 
+                                                        | ((0x200000U 
+                                                            & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__21__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                               << 0x15U)) 
+                                                           | ((0x100000U 
+                                                               & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__20__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                  << 0x14U)) 
+                                                              | ((0x80000U 
+                                                                  & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__19__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                     << 0x13U)) 
+                                                                 | ((0x40000U 
+                                                                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__18__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                        << 0x12U)) 
+                                                                    | ((0x20000U 
+                                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__17__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                           << 0x11U)) 
+                                                                       | ((0x10000U 
+                                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__16__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                              << 0x10U)) 
+                                                                          | ((0x8000U 
+                                                                              & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__15__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xfU)) 
+                                                                             | ((0x4000U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__14__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xeU)) 
+                                                                                | ((0x2000U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__13__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xdU)) 
+                                                                                | ((0x1000U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__12__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xcU)) 
+                                                                                | ((0x800U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__11__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xbU)) 
+                                                                                | ((0x400U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__10__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xaU)) 
+                                                                                | ((0x200U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__9__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 9U)) 
+                                                                                | ((0x100U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__8__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 8U)) 
+                                                                                | ((0x80U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__7__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 7U)) 
+                                                                                | ((0x40U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__6__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 6U)) 
+                                                                                | ((0x20U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__5__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 5U)) 
+                                                                                | ((0x10U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__4__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 4U)) 
+                                                                                | ((8U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__3__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 3U)) 
+                                                                                | ((4U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__2__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 2U)) 
+                                                                                | ((2U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__1__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 1U)) 
+                                                                                | (1U 
+                                                                                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__0__KET____DOT__i_in_flight_cnt__DOT__counter_q))))))))))))))))))))))))))))))))) 
+                 >> (0x1fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U])));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__lookup_aw_select 
+        = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__mst_select_q 
+                 >> (0x1fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[8U] 
+                              >> 0x16U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__aw_select_occupied 
+        = (1U & ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__31__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                   << 0x1fU) | ((0x40000000U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__30__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                << 0x1eU)) 
+                                | ((0x20000000U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__29__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                   << 0x1dU)) 
+                                   | ((0x10000000U 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__28__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                          << 0x1cU)) 
+                                      | ((0x8000000U 
+                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__27__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                             << 0x1bU)) 
+                                         | ((0x4000000U 
+                                             & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__26__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                << 0x1aU)) 
+                                            | ((0x2000000U 
+                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__25__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                   << 0x19U)) 
+                                               | ((0x1000000U 
+                                                   & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__24__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                      << 0x18U)) 
+                                                  | ((0x800000U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__23__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                         << 0x17U)) 
+                                                     | ((0x400000U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__22__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                            << 0x16U)) 
+                                                        | ((0x200000U 
+                                                            & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__21__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                               << 0x15U)) 
+                                                           | ((0x100000U 
+                                                               & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__20__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                  << 0x14U)) 
+                                                              | ((0x80000U 
+                                                                  & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__19__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                     << 0x13U)) 
+                                                                 | ((0x40000U 
+                                                                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__18__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                        << 0x12U)) 
+                                                                    | ((0x20000U 
+                                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__17__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                           << 0x11U)) 
+                                                                       | ((0x10000U 
+                                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__16__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                              << 0x10U)) 
+                                                                          | ((0x8000U 
+                                                                              & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__15__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xfU)) 
+                                                                             | ((0x4000U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__14__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xeU)) 
+                                                                                | ((0x2000U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__13__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xdU)) 
+                                                                                | ((0x1000U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__12__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xcU)) 
+                                                                                | ((0x800U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__11__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xbU)) 
+                                                                                | ((0x400U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__10__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xaU)) 
+                                                                                | ((0x200U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__9__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 9U)) 
+                                                                                | ((0x100U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__8__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 8U)) 
+                                                                                | ((0x80U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__7__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 7U)) 
+                                                                                | ((0x40U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__6__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 6U)) 
+                                                                                | ((0x20U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__5__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 5U)) 
+                                                                                | ((0x10U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__4__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 4U)) 
+                                                                                | ((8U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__3__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 3U)) 
+                                                                                | ((4U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__2__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 2U)) 
+                                                                                | ((2U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__1__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 1U)) 
+                                                                                | (1U 
+                                                                                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__0__KET____DOT__i_in_flight_cnt__DOT__counter_q))))))))))))))))))))))))))))))))) 
+                 >> (0x1fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[8U] 
+                              >> 0x16U))));
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__len_limit = 0U;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__len 
+        = (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U] 
+           >> 0x18U);
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__cache 
+        = (0xfU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U] 
+                   >> 0xeU));
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__burst 
+        = (3U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U] 
+                 >> 0x13U));
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__atop = 0U;
+    {
+        if (((IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__len) 
+             >= (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__len_limit))) {
+            vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__Vfuncout = 1U;
+            goto __Vlabel326;
+        } else {
+            if ((2U == (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__burst))) {
+                vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__Vfuncout = 0U;
+                goto __Vlabel326;
+            }
+            if (((0U != (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__atop)) 
+                 & (0U < (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__len)))) {
+                vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__Vfuncout = 0U;
+                goto __Vlabel326;
+            }
+            vlSelf->__Vfunc_modifiable__26__cache = __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__cache;
+            vlSelf->__Vfunc_modifiable__26__Vfuncout 
+                = (0U != (2U & (IData)(vlSelf->__Vfunc_modifiable__26__cache)));
+            if ((1U & (~ (IData)(vlSelf->__Vfunc_modifiable__26__Vfuncout)))) {
+                vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__Vfuncout 
+                    = ((1U == (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__burst)) 
+                       & (0x10U < (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__len)));
+                goto __Vlabel326;
+            }
+            vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__Vfuncout = 1U;
+            goto __Vlabel326;
+        }
+        __Vlabel326: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__sel_ar_unsupported 
+        = (1U & (~ (IData)(vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__25__Vfuncout)));
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__len_limit = 0U;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__len 
+        = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[6U] 
+                    >> 0xeU));
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__cache 
+        = (0xfU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[6U] 
+                   >> 4U));
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__burst 
+        = (3U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[6U] 
+                 >> 9U));
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__atop 
+        = (0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U] 
+                    >> 0x13U));
+    {
+        if (((IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__len) 
+             >= (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__len_limit))) {
+            vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__Vfuncout = 1U;
+            goto __Vlabel327;
+        } else {
+            if ((2U == (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__burst))) {
+                vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__Vfuncout = 0U;
+                goto __Vlabel327;
+            }
+            if (((0U != (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__atop)) 
+                 & (0U < (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__len)))) {
+                vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__Vfuncout = 0U;
+                goto __Vlabel327;
+            }
+            vlSelf->__Vfunc_modifiable__24__cache = __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__cache;
+            vlSelf->__Vfunc_modifiable__24__Vfuncout 
+                = (0U != (2U & (IData)(vlSelf->__Vfunc_modifiable__24__cache)));
+            if ((1U & (~ (IData)(vlSelf->__Vfunc_modifiable__24__Vfuncout)))) {
+                vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__Vfuncout 
+                    = ((1U == (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__burst)) 
+                       & (0x10U < (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__len)));
+                goto __Vlabel327;
+            }
+            vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__Vfuncout = 1U;
+            goto __Vlabel327;
+        }
+        __Vlabel327: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__sel_aw_unsupported 
+        = (1U & (~ (IData)(vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__23__Vfuncout)));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_pop = 0U;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_push = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp[2U] 
+        = (0x37ffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp[2U]);
+    if (((~ (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_empty)) 
+         & (2U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q)))) {
+        if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____VdfgExtracted_h4eb7fded__0) {
+            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_pop = 1U;
+            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_push = 1U;
+        }
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp[2U] 
+            = (0x80000U | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp[2U]);
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__ar_valid = 0U;
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__lock_ar_valid_q) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__ar_valid = 1U;
+    } else if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__ar_id_cnt_full)))) {
+        if ((1U & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U] 
+                    >> 1U) & ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__ar_select_occupied)) 
+                              | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__sel_ar_unsupported) 
+                                 == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__lookup_ar_select)))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__ar_valid = 1U;
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_select 
+        = ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__i_counter_open_w__DOT__i_counter__DOT__counter_q))
+            ? (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_select_q)
+            : (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__sel_aw_unsupported));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_q;
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_push) 
+         & (1U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__gate_clock = 0U;
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT____Vlvbound_h7882bb24__0 
+            = (0x1fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[8U] 
+                        >> 0x16U));
+        if ((4U >= (7U & ((IData)(5U) * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_q))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__mem_n 
+                = (((~ ((IData)(0x1fU) << (7U & ((IData)(5U) 
+                                                 * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_q))))) 
+                    & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__mem_n)) 
+                   | (0x1fU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT____Vlvbound_h7882bb24__0) 
+                               << (7U & ((IData)(5U) 
+                                         * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_q))))));
+        }
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_n 
+            = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_q) 
+               & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_q)));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_n 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q;
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_n 
+            = (3U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q)));
+    } else {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_n 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q;
+    }
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_pop) 
+         & (~ (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_empty)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_n 
+            = (3U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q) 
+                     - (IData)(1U)));
+    }
+    if (((((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_push) 
+           & (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_pop)) 
+          & (1U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q))) 
+         & (~ (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_empty)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_n 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_q;
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_pop) 
+         & (~ (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_empty)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_n 
+            = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_n) 
+               & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_q)));
+    }
+    if (((0U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q)) 
+         & (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_push))) {
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__i_w_fifo__data_o 
+            = (0x1fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[8U] 
+                        >> 0x16U));
+        if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_pop) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_n 
+                = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_q;
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_n 
+                = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q;
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_n 
+                = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_q;
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__gate_clock = 1U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__write_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__write_pointer_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q;
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_pop) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__read_pointer_n 
+            = (1U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__read_pointer_q)));
+    }
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_push) 
+         & (2U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__gate_clock = 0U;
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__write_pointer_n 
+            = (1U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__write_pointer_q)));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_n 
+            = (3U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q)));
+    }
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_pop) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_n 
+            = (3U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q) 
+                     - (IData)(1U)));
+    }
+    if (((((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_push) 
+           & (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_pop)) 
+          & (2U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q))) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_n 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__mem_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__mem_q;
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_push) 
+         & (2U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT____Vlvbound_h60430ebb__0 
+            = ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__i_w_fifo__data_o;
+        if ((9U >= (0xfU & ((IData)(5U) * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__write_pointer_q))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__mem_n 
+                = (((~ ((IData)(0x1fU) << (0xfU & ((IData)(5U) 
+                                                   * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__write_pointer_q))))) 
+                    & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__mem_n)) 
+                   | (0x3ffU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT____Vlvbound_h60430ebb__0) 
+                                << (0xfU & ((IData)(5U) 
+                                            * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__write_pointer_q))))));
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_q;
+    if (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[5U] 
+          >> 0x11U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp[2U] 
+                       >> 0x15U))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d 
+            = ((4U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d)) 
+               | (3U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d))));
+    }
+    if ((1U & (IData)(((0x140U == (0x140U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U])) 
+                       & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp[2U] 
+                          >> 0x13U))))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d 
+            = ((4U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d)) 
+               | (3U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d) 
+                        - (IData)(1U))));
+    }
+    if ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_q) 
+          >> 2U) & (0U == (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d))))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d 
+            = (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d));
+    } else if (((0U == (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_q))) 
+                & (3U == (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d))))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d 
+            = (4U | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+        = ((0x2fffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U]) 
+           | (0x100000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp[2U]));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[0U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp[0U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[1U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp[1U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+        = ((0x3ffc00U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U]) 
+           | (0x3ffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp[2U]));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_ready = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_beats_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_beats_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_q;
+    if ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_q))) {
+        if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_q))) {
+            if ((1U & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp[2U] 
+                        >> 9U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U] 
+                                  >> 0x1bU)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_d = 1U;
+            }
+        } else {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[0U] = 0U;
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[1U] = 0U;
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+                = (0x3ffe00U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U]);
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+                = ((0x3ffe0fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U]) 
+                   | (0x3fffffU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__id_q) 
+                                   << 4U)));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[0U] 
+                = ((0xfffffff1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[0U]) 
+                   | (0xfffffffeU & (8U | ((0U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_beats_q)) 
+                                           << 1U))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+                = (0x200U | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U]);
+            if ((0x8000000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U])) {
+                if ((2U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[0U])) {
+                    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_ready = 1U;
+                    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_d = 1U;
+                } else {
+                    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_beats_d 
+                        = (0xffU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_beats_d) 
+                                    - (IData)(1U)));
+                }
+            }
+        }
+    } else if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_q))) {
+        if ((1U & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp[2U] 
+                    >> 9U) & (~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U] 
+                                 >> 0x1bU))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_d = 3U;
+        } else if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_valid) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_beats_d 
+                = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT____Vcellout__r_resp_cmd__data_o;
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_d = 2U;
+        }
+    } else {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_d = 1U;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_cnt_up = 0U;
+    if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__lock_aw_valid_q)))) {
+        if ((1U & (((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__aw_id_cnt_full)) 
+                    & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__i_counter_open_w__DOT__i_counter__DOT__counter_q))) 
+                   & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__ar_id_cnt_full) 
+                         & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U] 
+                            >> 0x18U)))))) {
+            if ((1U & (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U] 
+                         >> 0x11U) & ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__i_counter_open_w__DOT__i_counter__DOT__counter_q)) 
+                                      | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_select) 
+                                         == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__sel_aw_unsupported)))) 
+                       & ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__aw_select_occupied)) 
+                          | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__sel_aw_unsupported) 
+                             == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__lookup_aw_select)))))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_cnt_up = 1U;
+            }
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__aw_valid = 0U;
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__lock_aw_valid_q) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__aw_valid = 1U;
+    } else if ((1U & (((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__aw_id_cnt_full)) 
+                       & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__i_counter_open_w__DOT__i_counter__DOT__counter_q))) 
+                      & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__ar_id_cnt_full) 
+                            & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U] 
+                               >> 0x18U)))))) {
+        if ((1U & (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U] 
+                     >> 0x11U) & ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__i_counter_open_w__DOT__i_counter__DOT__counter_q)) 
+                                  | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_select) 
+                                     == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__sel_aw_unsupported)))) 
+                   & ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__aw_select_occupied)) 
+                      | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__sel_aw_unsupported) 
+                         == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__lookup_aw_select)))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__aw_valid = 1U;
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_push_ready 
+        = (1U & ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_valid)) 
+                 | (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_ready)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+        = (0x1fffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U]);
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+        = ((0x3003ffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U]) 
+           | (0x7fc00U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp[2U]));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q;
+    if ((4U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+        if ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+            if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d = 0U;
+            } else if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_valid)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d = 1U;
+            }
+        } else if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+                = (0x3c03ffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U]);
+            if ((1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU])) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d 
+                    = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_valid) 
+                        & (~ (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_ready)))
+                        ? 6U : 1U);
+            }
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+                = ((0x3807ffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U]) 
+                   | (0x3ff800U & (0x41000U | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__id_q) 
+                                               << 0xdU))));
+        } else if ((1U & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+                           >> 0x12U) & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU]))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d = 5U;
+        }
+    } else if ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+        if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+                = (0x80000U | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U]);
+            if ((IData)((0xaU == (0xaU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU])))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d 
+                    = ((1U & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+                               >> 0x12U) & (~ vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU])))
+                        ? 4U : 5U);
+            }
+        } else if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__aw_without_complete_w_downstream) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+                = ((0x37ffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U]) 
+                   | (0x80000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp[2U]));
+        } else {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+                = (0x80000U | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U]);
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d 
+                = ((IData)((0xaU == (0xaU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU])))
+                    ? ((1U & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+                               >> 0x12U) & (~ vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU])))
+                        ? 4U : 5U) : 3U);
+        }
+    } else if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+        if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__complete_w_without_aw_downstream) 
+             | (1U > (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_q))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+                = ((0x1fffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U]) 
+                   | (0x200000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp[2U]));
+        }
+        if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__aw_without_complete_w_downstream) 
+             | ((IData)((0x1000U == (0xc1000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU]))) 
+                & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__complete_w_without_aw_downstream))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+                = ((0x37ffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U]) 
+                   | (0x80000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp[2U]));
+        }
+        if (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+              >> 0xcU) & (0U != (3U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+                                       >> 0x12U))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+                = (0x200000U | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U]);
+            if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__aw_without_complete_w_downstream) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d = 2U;
+            } else {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+                    = (0x80000U | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U]);
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d 
+                    = ((IData)((0xaU == (0xaU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU])))
+                        ? ((1U & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o[2U] 
+                                   >> 0x12U) & (~ vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU])))
+                            ? 4U : 5U) : 3U);
+            }
+        }
+    } else {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_ctrl_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d = 1U;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__push_en 
+        = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_cnt_up)
+            ? ((IData)(1U) << (0x1fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT____Vcellout__i_axi_atop_filter__mst_req_o[8U] 
+                                        >> 0x16U)))
+            : 0U);
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_select_valid 
+        = (1U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__i_counter_open_w__DOT__i_counter__DOT__counter_q) 
+                 | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_cnt_up)));
+}
+
+VL_ATTR_COLD void Vara_tb_verilator___024root___stl_comb__TOP__557(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___stl_comb__TOP__557\n"); );
+    // Init
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_empty;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_empty = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_push;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_push = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_pop;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_pop = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_push;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_push = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_pop;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_pop = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_push;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_push = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_pop;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_pop = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_clear;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_clear = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_en;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_en = 0;
+    CData/*4:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__i_w_fifo__data_o;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__i_w_fifo__data_o = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____VdfgExtracted_ha1ee5419__0;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____VdfgExtracted_ha1ee5419__0 = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_ready;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_ready = 0;
+    VlWide<4>/*104:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0;
+    VL_ZERO_W(105, ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0);
+    QData/*37:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h49abc4d5__0;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h49abc4d5__0 = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h1619980a__0;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h1619980a__0 = 0;
+    VlWide<4>/*98:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0;
+    VL_ZERO_W(99, ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0);
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_had1996bd__0;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_had1996bd__0 = 0;
+    CData/*5:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__atop;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__atop = 0;
+    CData/*1:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__burst;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__burst = 0;
+    CData/*3:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__cache;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__cache = 0;
+    CData/*7:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__len;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__len = 0;
+    CData/*7:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__len_limit;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__len_limit = 0;
+    CData/*5:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__atop;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__atop = 0;
+    CData/*1:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__burst;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__burst = 0;
+    CData/*3:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__cache;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__cache = 0;
+    CData/*7:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__len;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__len = 0;
+    CData/*7:0*/ __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__len_limit;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__len_limit = 0;
+    // Body
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[1U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[2U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[5U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[6U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[9U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xbU] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xdU] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xfU] = 0U;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[0U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[5U] 
+            << 0x12U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[4U] 
+                         >> 0xeU));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[1U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[6U] 
+            << 0x12U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[5U] 
+                         >> 0xeU));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[2U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[7U] 
+            << 0x12U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[6U] 
+                         >> 0xeU));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[3U] 
+        = (0x1ffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[7U] 
+                     >> 0xeU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U] 
+        = ((0x1fffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U]) 
+           | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[0U] 
+              << 0xeU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[5U] 
+        = ((0x1fffU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[0U] 
+                       >> 0x12U)) | ((0x2000U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[0U] 
+                                                 >> 0x12U)) 
+                                     | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[1U] 
+                                        << 0xeU)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[6U] 
+        = ((0x1fffU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[1U] 
+                       >> 0x12U)) | ((0x2000U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[1U] 
+                                                 >> 0x12U)) 
+                                     | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[2U] 
+                                        << 0xeU)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U] 
+        = ((0xff800000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U]) 
+           | ((0x1fffU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[2U] 
+                          >> 0x12U)) | ((0x2000U & 
+                                         (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[2U] 
+                                          >> 0x12U)) 
+                                        | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[3U] 
+                                           << 0xeU))));
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__aw_valid) 
+         & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_aw_select_spill_reg__DOT____Vcellout__spill_register_flushable_i__data_o)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U] 
+            = (0x2000U | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U]);
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h49abc4d5__0 
+        = (0x3fffffffffULL & (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[4U])) 
+                               << 0x19U) | ((QData)((IData)(
+                                                            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[3U])) 
+                                            >> 7U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U] 
+        = ((0x3fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U]) 
+           | ((IData)((ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h49abc4d5__0 
+                       << 1U)) << 6U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U] 
+        = ((0xffffe000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U]) 
+           | (((IData)((ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h49abc4d5__0 
+                        << 1U)) >> 0x1aU) | ((IData)(
+                                                     ((ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h49abc4d5__0 
+                                                       << 1U) 
+                                                      >> 0x20U)) 
+                                             << 6U)));
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__w_select_valid) 
+         & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__w_select)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h1626b0d4__1 
+            = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[3U] 
+                     >> 6U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U] 
+            = ((0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h1626b0d4__1) 
+                  << 6U));
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h1619980a__0 
+        = (1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__mst_b_readies));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U] 
+        = ((0xffffffdfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U]) 
+           | ((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h1619980a__0) 
+              << 5U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[0U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[1U] 
+            << 0x1eU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[0U] 
+                         >> 2U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[1U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[2U] 
+            << 0x1eU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[1U] 
+                         >> 2U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[2U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[3U] 
+            << 0x1eU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[2U] 
+                         >> 2U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[3U] 
+        = (7U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[3U] 
+                 >> 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U] 
+        = ((1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U]) 
+           | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[0U] 
+              << 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[1U] 
+        = ((1U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[0U] 
+                  >> 0x1eU)) | ((2U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[0U] 
+                                       >> 0x1eU)) | 
+                                (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[1U] 
+                                 << 2U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[2U] 
+        = ((1U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[1U] 
+                  >> 0x1eU)) | ((2U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[1U] 
+                                       >> 0x1eU)) | 
+                                (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[2U] 
+                                 << 2U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U] 
+        = ((0xffffffe0U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U]) 
+           | ((1U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[2U] 
+                     >> 0x1eU)) | ((2U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[2U] 
+                                          >> 0x1eU)) 
+                                   | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[3U] 
+                                      << 2U))));
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__ar_valid) 
+         & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_ar_sel_spill_reg__DOT____Vcellout__spill_register_flushable_i__data_o)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U] 
+            = (2U | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U]);
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_had1996bd__0 
+        = (1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__mst_r_readies));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U] 
+        = ((0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U]) 
+           | (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_had1996bd__0));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[0U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[5U] 
+            << 0x12U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[4U] 
+                         >> 0xeU));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[1U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[6U] 
+            << 0x12U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[5U] 
+                         >> 0xeU));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[2U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[7U] 
+            << 0x12U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[6U] 
+                         >> 0xeU));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[3U] 
+        = (0x1ffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[7U] 
+                     >> 0xeU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+        = ((0xfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU]) 
+           | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[0U] 
+              << 5U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xdU] 
+        = ((0xfU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[0U] 
+                    >> 0x1bU)) | ((0x10U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[0U] 
+                                            >> 0x1bU)) 
+                                  | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[1U] 
+                                     << 5U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+        = ((0xfU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[1U] 
+                    >> 0x1bU)) | ((0x10U & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[1U] 
+                                            >> 0x1bU)) 
+                                  | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[2U] 
+                                     << 5U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xfU] 
+        = (0x3fffU & ((0xfU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[2U] 
+                               >> 0x1bU)) | ((0x10U 
+                                              & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[2U] 
+                                                 >> 0x1bU)) 
+                                             | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_hdeaf3be9__0[3U] 
+                                                << 5U))));
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__aw_valid) 
+         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_aw_select_spill_reg__DOT____Vcellout__spill_register_flushable_i__data_o))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+            = (0x10U | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU]);
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h49abc4d5__0 
+        = (0x3fffffffffULL & (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[4U])) 
+                               << 0x19U) | ((QData)((IData)(
+                                                            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[3U])) 
+                                            >> 7U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+        = ((0x1fffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU]) 
+           | ((IData)((ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h49abc4d5__0 
+                       << 1U)) << 0x1dU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xbU] 
+        = (((IData)((ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h49abc4d5__0 
+                     << 1U)) >> 3U) | ((IData)(((ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h49abc4d5__0 
+                                                 << 1U) 
+                                                >> 0x20U)) 
+                                       << 0x1dU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+        = ((0xfffffff0U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU]) 
+           | ((IData)(((ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h49abc4d5__0 
+                        << 1U) >> 0x20U)) >> 3U));
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__w_select_valid) 
+         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__w_select))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h1626b0d4__1 
+            = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[3U] 
+                     >> 6U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+            = ((0xdfffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h1626b0d4__1) 
+                  << 0x1dU));
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h1619980a__0 
+        = (1U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__mst_b_readies) 
+                 >> 1U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+        = ((0xefffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU]) 
+           | ((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h1619980a__0) 
+              << 0x1cU));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[0U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[1U] 
+            << 0x1eU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[0U] 
+                         >> 2U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[1U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[2U] 
+            << 0x1eU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[1U] 
+                         >> 2U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[2U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[3U] 
+            << 0x1eU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[2U] 
+                         >> 2U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[3U] 
+        = (7U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellinp__i_demux_simple__slv_req_i[3U] 
+                 >> 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U] 
+        = ((0xffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U]) 
+           | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[0U] 
+              << 0x19U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U] 
+        = ((0xffffffU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[0U] 
+                         >> 7U)) | ((0x1000000U & (
+                                                   ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[0U] 
+                                                   >> 7U)) 
+                                    | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[1U] 
+                                       << 0x19U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[9U] 
+        = ((0xffffffU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[1U] 
+                         >> 7U)) | ((0x1000000U & (
+                                                   ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[1U] 
+                                                   >> 7U)) 
+                                    | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[2U] 
+                                       << 0x19U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+        = ((0xf0000000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU]) 
+           | ((0xffffffU & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[2U] 
+                            >> 7U)) | ((0x1000000U 
+                                        & (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[2U] 
+                                           >> 7U)) 
+                                       | (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_h79afe9eb__0[3U] 
+                                          << 0x19U))));
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__ar_valid) 
+         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_ar_sel_spill_reg__DOT____Vcellout__spill_register_flushable_i__data_o))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U] 
+            = (0x1000000U | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U]);
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_had1996bd__0 
+        = (1U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT__genblk1__DOT__mst_r_readies) 
+                 >> 1U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U] 
+        = ((0xff7fffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U]) 
+           | ((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT__i_demux_simple__DOT____Vlvbound_had1996bd__0) 
+              << 0x17U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__r_resp_cmd_push_valid = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_push_valid = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__id_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__id_q;
+    if ((1U & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__w_state_q) 
+                  >> 2U)))) {
+        if ((1U & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__w_state_q) 
+                      >> 1U)))) {
+            if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__w_state_q))) {
+                if (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U] 
+                      >> 0xdU) & (0U != (3U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U] 
+                                               >> 0x13U))))) {
+                    if ((0x100000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U])) {
+                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__r_resp_cmd_push_valid = 1U;
+                    }
+                    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__id_d 
+                        = (0x1fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U] 
+                                    >> 0x12U));
+                }
+            }
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__id_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__id_q;
+    if ((1U & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q) 
+                  >> 2U)))) {
+        if ((1U & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q) 
+                      >> 1U)))) {
+            if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+                if (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+                      >> 4U) & (0U != (3U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+                                             >> 0xaU))))) {
+                    if ((0x800U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU])) {
+                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_push_valid = 1U;
+                    }
+                    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__id_d 
+                        = (0x1fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xfU] 
+                                    >> 9U));
+                }
+            }
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[4U] 
+        = ((0x3fffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[4U]) 
+           | (0xffffc000U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+                             << 9U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[5U] 
+        = (((0x3e00U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xdU] 
+                        << 9U)) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+                                   >> 0x17U)) | (0xffffc000U 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xdU] 
+                                                    << 9U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[6U] 
+        = (((0x3e00U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+                        << 9U)) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xdU] 
+                                   >> 0x17U)) | (0xffffc000U 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+                                                    << 9U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[7U] 
+        = (0x7fffffU & (((0x3e00U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xfU] 
+                                     << 9U)) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xeU] 
+                                                >> 0x17U)) 
+                        | (0x7fc000U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xfU] 
+                                        << 9U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[4U] 
+        = (0xffe07fffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[4U]);
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U] 
+        = ((1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U]) 
+           | ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U] 
+               << 9U) | (0x1feU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U] 
+                                   >> 0x17U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[1U] 
+        = ((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U] 
+                  >> 0x17U)) | ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[9U] 
+                                 << 9U) | (0x1feU & 
+                                           (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[8U] 
+                                            >> 0x17U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[2U] 
+        = ((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[9U] 
+                  >> 0x17U)) | ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+                                 << 9U) | (0x1feU & 
+                                           (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[9U] 
+                                            >> 0x17U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+        = ((0xffffffe0U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U]) 
+           | ((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+                     >> 0x17U)) | (0x1eU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+                                            >> 0x17U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+        = ((0x7fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U]) 
+           | ((IData)((0x3fffffffffULL & (((QData)((IData)(
+                                                           vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU])) 
+                                           << 0x22U) 
+                                          | (((QData)((IData)(
+                                                              vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xbU])) 
+                                              << 2U) 
+                                             | ((QData)((IData)(
+                                                                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU])) 
+                                                >> 0x1eU))))) 
+              << 7U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[4U] 
+        = ((0xffffe000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[4U]) 
+           | (((IData)((0x3fffffffffULL & (((QData)((IData)(
+                                                            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU])) 
+                                            << 0x22U) 
+                                           | (((QData)((IData)(
+                                                               vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xbU])) 
+                                               << 2U) 
+                                              | ((QData)((IData)(
+                                                                 vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU])) 
+                                                 >> 0x1eU))))) 
+               >> 0x19U) | ((IData)(((0x3fffffffffULL 
+                                      & (((QData)((IData)(
+                                                          vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU])) 
+                                          << 0x22U) 
+                                         | (((QData)((IData)(
+                                                             vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xbU])) 
+                                             << 2U) 
+                                            | ((QData)((IData)(
+                                                               vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU])) 
+                                               >> 0x1eU)))) 
+                                     >> 0x20U)) << 7U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U] 
+        = ((0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U]) 
+           | (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U] 
+                    >> 0x17U)));
+    if ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_q))) {
+        if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_q)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U] 
+                = (0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U]);
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[4U] 
+        = (0xffffdfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[4U]);
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+        = ((0xffffff9fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U]) 
+           | (0x20U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+                       >> 0x17U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U] 
+        = ((0x3fffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U]) 
+           | (0xffffc000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U]));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U] 
+        = ((0x3fffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[5U]) 
+           | (0xffffc000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[5U]));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[6U] 
+        = ((0x3fffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[6U]) 
+           | (0xffffc000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[6U]));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[7U] 
+        = (0x7fffffU & ((0x3fffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U]) 
+                        | (0x7fc000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U])));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U] 
+        = (0xffe07fffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U]);
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U] 
+        = ((1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U]) 
+           | (0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U]));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[1U] 
+        = ((1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[1U]) 
+           | (0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[1U]));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[2U] 
+        = ((1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[2U]) 
+           | (0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[2U]));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U] 
+        = ((0xffffffe0U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U]) 
+           | ((1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U]) 
+              | (0x1eU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U])));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U] 
+        = ((0x7fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U]) 
+           | ((IData)((0x3fffffffffULL & (((QData)((IData)(
+                                                           vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U])) 
+                                           << 0x19U) 
+                                          | ((QData)((IData)(
+                                                             vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U])) 
+                                             >> 7U)))) 
+              << 7U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U] 
+        = ((0xffffe000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U]) 
+           | (((IData)((0x3fffffffffULL & (((QData)((IData)(
+                                                            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U])) 
+                                            << 0x19U) 
+                                           | ((QData)((IData)(
+                                                              vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U])) 
+                                              >> 7U)))) 
+               >> 0x19U) | ((IData)(((0x3fffffffffULL 
+                                      & (((QData)((IData)(
+                                                          vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U])) 
+                                          << 0x19U) 
+                                         | ((QData)((IData)(
+                                                            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U])) 
+                                            >> 7U))) 
+                                     >> 0x20U)) << 7U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U] 
+        = ((0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U]) 
+           | (1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0U]));
+    if ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__r_state_q))) {
+        if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__r_state_q)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U] 
+                = (0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U]);
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U] 
+        = (0xffffdfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U]);
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U] 
+        = ((0xffffff9fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U]) 
+           | (0x20U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U]));
+    if ((4U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__w_state_q))) {
+        if ((1U & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__w_state_q) 
+                      >> 1U)))) {
+            if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__w_state_q))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U] 
+                    = (0xffffffdfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U]);
+            }
+        }
+    } else if ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__w_state_q))) {
+        if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__w_state_q)))) {
+            if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__aw_without_complete_w_downstream) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U] 
+                    = ((0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U]) 
+                       | (0x40U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U]));
+            }
+        }
+    } else if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__w_state_q))) {
+        if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__complete_w_without_aw_downstream) 
+             | (1U > (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__w_cnt_q))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U] 
+                = ((0xffffdfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U]) 
+                   | (0x2000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U]));
+        }
+        if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__aw_without_complete_w_downstream) 
+             | ((IData)((0x2000U == (0x182000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U]))) 
+                & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__complete_w_without_aw_downstream))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U] 
+                = ((0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U]) 
+                   | (0x40U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[3U]));
+        }
+        if (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U] 
+              >> 0xdU) & (0U != (3U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[4U] 
+                                       >> 0x13U))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U] 
+                = (0xffffdfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U]);
+            if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_atop_filter__DOT__aw_without_complete_w_downstream)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U] 
+                    = (0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U]);
+            }
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_busy_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_busy_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_busy_load = 0U;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_en = 0U;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_clear = 0U;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_pop = 0U;
+    if ((4U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+        if ((1U & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q) 
+                      >> 1U)))) {
+            if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+                    = (0xffffffdfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U]);
+            }
+        }
+    } else if ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+        if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q)))) {
+            if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__aw_without_complete_w_downstream) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+                    = ((0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U]) 
+                       | (0x40U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+                                   >> 0x17U)));
+            }
+        }
+    } else if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+        if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__complete_w_without_aw_downstream) 
+             | (1U > (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_q))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[4U] 
+                = ((0xffffdfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[4U]) 
+                   | (0x2000U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+                                 << 9U)));
+        }
+        if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__aw_without_complete_w_downstream) 
+             | ((IData)((0x10U == (0xc10U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU]))) 
+                & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__complete_w_without_aw_downstream))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+                = ((0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U]) 
+                   | (0x40U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+                               >> 0x17U)));
+        }
+        if (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+              >> 4U) & (0U != (3U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+                                     >> 0xaU))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[4U] 
+                = (0xffffdfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[4U]);
+            if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__aw_without_complete_w_downstream)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+                    = (0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U]);
+            }
+        }
+    }
+    if ((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q))) {
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_pop 
+            = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+                     >> 5U));
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_pop = 0U;
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_busy_q) {
+        if ((1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U])) {
+            if ((0U == (0xffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_counter__DOT__i_counter__DOT__counter_q)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_busy_d = 0U;
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_busy_load = 1U;
+                ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_clear = 1U;
+                ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_pop = 1U;
+            }
+            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_en = 1U;
+        }
+    } else if ((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_busy_d = 1U;
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_busy_load = 1U;
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_push 
+        = ((1U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q)) 
+           & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U] 
+              >> 1U));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____VdfgExtracted_ha1ee5419__0 
+        = (IData)((0x140U == (0x140U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U])));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_push 
+        = ((1U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q)) 
+           & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[4U] 
+              >> 0xdU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__lookup_ar_select 
+        = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__mst_select_q 
+                 >> (0x1fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U])));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__ar_select_occupied 
+        = (1U & ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__31__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                   << 0x1fU) | ((0x40000000U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__30__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                << 0x1eU)) 
+                                | ((0x20000000U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__29__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                   << 0x1dU)) 
+                                   | ((0x10000000U 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__28__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                          << 0x1cU)) 
+                                      | ((0x8000000U 
+                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__27__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                             << 0x1bU)) 
+                                         | ((0x4000000U 
+                                             & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__26__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                << 0x1aU)) 
+                                            | ((0x2000000U 
+                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__25__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                   << 0x19U)) 
+                                               | ((0x1000000U 
+                                                   & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__24__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                      << 0x18U)) 
+                                                  | ((0x800000U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__23__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                         << 0x17U)) 
+                                                     | ((0x400000U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__22__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                            << 0x16U)) 
+                                                        | ((0x200000U 
+                                                            & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__21__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                               << 0x15U)) 
+                                                           | ((0x100000U 
+                                                               & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__20__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                  << 0x14U)) 
+                                                              | ((0x80000U 
+                                                                  & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__19__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                     << 0x13U)) 
+                                                                 | ((0x40000U 
+                                                                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__18__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                        << 0x12U)) 
+                                                                    | ((0x20000U 
+                                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__17__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                           << 0x11U)) 
+                                                                       | ((0x10000U 
+                                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__16__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                              << 0x10U)) 
+                                                                          | ((0x8000U 
+                                                                              & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__15__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xfU)) 
+                                                                             | ((0x4000U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__14__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xeU)) 
+                                                                                | ((0x2000U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__13__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xdU)) 
+                                                                                | ((0x1000U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__12__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xcU)) 
+                                                                                | ((0x800U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__11__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xbU)) 
+                                                                                | ((0x400U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__10__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xaU)) 
+                                                                                | ((0x200U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__9__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 9U)) 
+                                                                                | ((0x100U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__8__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 8U)) 
+                                                                                | ((0x80U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__7__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 7U)) 
+                                                                                | ((0x40U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__6__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 6U)) 
+                                                                                | ((0x20U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__5__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 5U)) 
+                                                                                | ((0x10U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__4__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 4U)) 
+                                                                                | ((8U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__3__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 3U)) 
+                                                                                | ((4U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__2__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 2U)) 
+                                                                                | ((2U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__1__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 1U)) 
+                                                                                | (1U 
+                                                                                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_ar_id_counter__DOT__i_ar_id_counter__DOT__gen_counters__BRA__0__KET____DOT__i_in_flight_cnt__DOT__counter_q))))))))))))))))))))))))))))))))) 
+                 >> (0x1fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[3U])));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__lookup_aw_select 
+        = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__mst_select_q 
+                 >> (0x1fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[7U] 
+                              >> 0x12U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__aw_select_occupied 
+        = (1U & ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__31__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                   << 0x1fU) | ((0x40000000U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__30__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                << 0x1eU)) 
+                                | ((0x20000000U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__29__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                   << 0x1dU)) 
+                                   | ((0x10000000U 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__28__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                          << 0x1cU)) 
+                                      | ((0x8000000U 
+                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__27__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                             << 0x1bU)) 
+                                         | ((0x4000000U 
+                                             & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__26__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                << 0x1aU)) 
+                                            | ((0x2000000U 
+                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__25__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                   << 0x19U)) 
+                                               | ((0x1000000U 
+                                                   & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__24__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                      << 0x18U)) 
+                                                  | ((0x800000U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__23__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                         << 0x17U)) 
+                                                     | ((0x400000U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__22__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                            << 0x16U)) 
+                                                        | ((0x200000U 
+                                                            & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__21__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                               << 0x15U)) 
+                                                           | ((0x100000U 
+                                                               & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__20__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                  << 0x14U)) 
+                                                              | ((0x80000U 
+                                                                  & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__19__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                     << 0x13U)) 
+                                                                 | ((0x40000U 
+                                                                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__18__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                        << 0x12U)) 
+                                                                    | ((0x20000U 
+                                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__17__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                           << 0x11U)) 
+                                                                       | ((0x10000U 
+                                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__16__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                              << 0x10U)) 
+                                                                          | ((0x8000U 
+                                                                              & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__15__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xfU)) 
+                                                                             | ((0x4000U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__14__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xeU)) 
+                                                                                | ((0x2000U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__13__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xdU)) 
+                                                                                | ((0x1000U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__12__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xcU)) 
+                                                                                | ((0x800U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__11__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xbU)) 
+                                                                                | ((0x400U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__10__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 0xaU)) 
+                                                                                | ((0x200U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__9__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 9U)) 
+                                                                                | ((0x100U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__8__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 8U)) 
+                                                                                | ((0x80U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__7__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 7U)) 
+                                                                                | ((0x40U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__6__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 6U)) 
+                                                                                | ((0x20U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__5__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 5U)) 
+                                                                                | ((0x10U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__4__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 4U)) 
+                                                                                | ((8U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__3__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 3U)) 
+                                                                                | ((4U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__2__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 2U)) 
+                                                                                | ((2U 
+                                                                                & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__1__KET____DOT__i_in_flight_cnt__DOT__counter_q) 
+                                                                                << 1U)) 
+                                                                                | (1U 
+                                                                                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__gen_counters__BRA__0__KET____DOT__i_in_flight_cnt__DOT__counter_q))))))))))))))))))))))))))))))))) 
+                 >> (0x1fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[7U] 
+                              >> 0x12U))));
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__len_limit = 0U;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__len 
+        = (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U] 
+           >> 0x18U);
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__cache 
+        = (0xfU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U] 
+                   >> 0xeU));
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__burst 
+        = (3U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U] 
+                 >> 0x13U));
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__atop = 0U;
+    {
+        if (((IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__len) 
+             >= (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__len_limit))) {
+            vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__Vfuncout = 1U;
+            goto __Vlabel328;
+        } else {
+            if ((2U == (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__burst))) {
+                vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__Vfuncout = 0U;
+                goto __Vlabel328;
+            }
+            if (((0U != (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__atop)) 
+                 & (0U < (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__len)))) {
+                vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__Vfuncout = 0U;
+                goto __Vlabel328;
+            }
+            vlSelf->__Vfunc_modifiable__10__cache = __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__cache;
+            vlSelf->__Vfunc_modifiable__10__Vfuncout 
+                = (0U != (2U & (IData)(vlSelf->__Vfunc_modifiable__10__cache)));
+            if ((1U & (~ (IData)(vlSelf->__Vfunc_modifiable__10__Vfuncout)))) {
+                vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__Vfuncout 
+                    = ((1U == (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__burst)) 
+                       & (0x10U < (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__len)));
+                goto __Vlabel328;
+            }
+            vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__Vfuncout = 1U;
+            goto __Vlabel328;
+        }
+        __Vlabel328: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__sel_ar_unsupported 
+        = (1U & (~ (IData)(vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__9__Vfuncout)));
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__len_limit = 0U;
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__len 
+        = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U] 
+                    >> 0xaU));
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__cache 
+        = (0xfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U]);
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__burst 
+        = (3U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[5U] 
+                 >> 5U));
+    __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__atop 
+        = (0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U] 
+                    >> 0xfU));
+    {
+        if (((IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__len) 
+             >= (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__len_limit))) {
+            vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__Vfuncout = 1U;
+            goto __Vlabel329;
+        } else {
+            if ((2U == (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__burst))) {
+                vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__Vfuncout = 0U;
+                goto __Vlabel329;
+            }
+            if (((0U != (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__atop)) 
+                 & (0U < (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__len)))) {
+                vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__Vfuncout = 0U;
+                goto __Vlabel329;
+            }
+            vlSelf->__Vfunc_modifiable__8__cache = __Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__cache;
+            vlSelf->__Vfunc_modifiable__8__Vfuncout 
+                = (0U != (2U & (IData)(vlSelf->__Vfunc_modifiable__8__cache)));
+            if ((1U & (~ (IData)(vlSelf->__Vfunc_modifiable__8__Vfuncout)))) {
+                vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__Vfuncout 
+                    = ((1U == (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__burst)) 
+                       & (0x10U < (IData)(__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__len)));
+                goto __Vlabel329;
+            }
+            vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__Vfuncout = 1U;
+            goto __Vlabel329;
+        }
+        __Vlabel329: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__sel_aw_unsupported 
+        = (1U & (~ (IData)(vlSelf->__Vfunc_ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__txn_supported__7__Vfuncout)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_counter__DOT__i_counter__DOT__counter_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_counter__DOT__i_counter__DOT__counter_q;
+    if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_clear) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_counter__DOT__i_counter__DOT__counter_d = 0U;
+    } else if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_load) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_counter__DOT__i_counter__DOT__counter_d 
+            = (0xffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__i_r_fifo__data_o));
+    } else if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_cnt_en) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_counter__DOT__i_counter__DOT__counter_d 
+            = (0x1ffU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_counter__DOT__i_counter__DOT__counter_q) 
+                         - (IData)(1U)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__read_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__read_pointer_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__read_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__read_pointer_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__gate_clock = 1U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__write_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__write_pointer_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q;
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_pop) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__read_pointer_n 
+            = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__read_pointer_n) 
+               & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__read_pointer_q)));
+    }
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_push) 
+         & (1U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__gate_clock = 0U;
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__write_pointer_n 
+            = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__write_pointer_q) 
+               & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__write_pointer_q)));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_n 
+            = (3U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q)));
+    }
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_pop) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_n 
+            = (3U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q) 
+                     - (IData)(1U)));
+    }
+    if (((((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_push) 
+           & (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_pop)) 
+          & (1U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q))) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_n 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__mem_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__mem_q;
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__r_fifo_push) 
+         & (1U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT____Vlvbound_h21fe8110__0 
+            = ((0x1f00U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U] 
+                           << 8U)) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[0U] 
+                                      >> 0x18U));
+        if ((0xcU >= (0xfU & ((IData)(0xdU) * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__write_pointer_q))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__mem_n 
+                = (((~ ((IData)(0x1fffU) << (0xfU & 
+                                             ((IData)(0xdU) 
+                                              * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__write_pointer_q))))) 
+                    & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__mem_n)) 
+                   | (0x1fffU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT____Vlvbound_h21fe8110__0) 
+                                 << (0xfU & ((IData)(0xdU) 
+                                             * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_r_fifo__DOT__write_pointer_q))))));
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__gate_clock = 1U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__mem_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__mem_q;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__i_w_fifo__data_o 
+        = ((4U >= (7U & ((IData)(5U) * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_q))))
+            ? (0x1fU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__mem_q) 
+                        >> (7U & ((IData)(5U) * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_q)))))
+            : 0U);
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_empty 
+        = ((~ (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_push)) 
+           & (0U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__ar_valid = 0U;
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__lock_ar_valid_q) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__ar_valid = 1U;
+    } else if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__ar_id_cnt_full)))) {
+        if ((1U & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[0U] 
+                    >> 1U) & ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__ar_select_occupied)) 
+                              | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__sel_ar_unsupported) 
+                                 == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__lookup_ar_select)))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__ar_valid = 1U;
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_select 
+        = ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__i_counter_open_w__DOT__i_counter__DOT__counter_q))
+            ? (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_select_q)
+            : (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__sel_aw_unsupported));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_pop = 0U;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_push = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp 
+        = (0x37ffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp);
+    if (((~ (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_empty)) 
+         & (2U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q)))) {
+        if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____VdfgExtracted_ha1ee5419__0) {
+            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_pop = 1U;
+            ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_push = 1U;
+        }
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp 
+            = (0x8000000000000ULL | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp);
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_cnt_up = 0U;
+    if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__lock_aw_valid_q)))) {
+        if ((1U & (((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__aw_id_cnt_full)) 
+                    & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__i_counter_open_w__DOT__i_counter__DOT__counter_q))) 
+                   & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__ar_id_cnt_full) 
+                         & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U] 
+                            >> 0x14U)))))) {
+            if ((1U & (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U] 
+                         >> 0xdU) & ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__i_counter_open_w__DOT__i_counter__DOT__counter_q)) 
+                                     | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_select) 
+                                        == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__sel_aw_unsupported)))) 
+                       & ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__aw_select_occupied)) 
+                          | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__sel_aw_unsupported) 
+                             == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__lookup_aw_select)))))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_cnt_up = 1U;
+            }
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__aw_valid = 0U;
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__lock_aw_valid_q) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__aw_valid = 1U;
+    } else if ((1U & (((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__aw_id_cnt_full)) 
+                       & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__i_counter_open_w__DOT__i_counter__DOT__counter_q))) 
+                      & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__ar_id_cnt_full) 
+                            & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U] 
+                               >> 0x14U)))))) {
+        if ((1U & (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[4U] 
+                     >> 0xdU) & ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__i_counter_open_w__DOT__i_counter__DOT__counter_q)) 
+                                 | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_select) 
+                                    == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__sel_aw_unsupported)))) 
+                   & ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__aw_select_occupied)) 
+                      | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__sel_aw_unsupported) 
+                         == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__lookup_aw_select)))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__aw_valid = 1U;
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_q;
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_push) 
+         & (1U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__gate_clock = 0U;
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT____Vlvbound_h7882bb24__0 
+            = (0x1fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[7U] 
+                        >> 0x12U));
+        if ((4U >= (7U & ((IData)(5U) * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_q))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__mem_n 
+                = (((~ ((IData)(0x1fU) << (7U & ((IData)(5U) 
+                                                 * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_q))))) 
+                    & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__mem_n)) 
+                   | (0x1fU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT____Vlvbound_h7882bb24__0) 
+                               << (7U & ((IData)(5U) 
+                                         * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_q))))));
+        }
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_n 
+            = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_q) 
+               & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_q)));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_n 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q;
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_n 
+            = (3U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q)));
+    } else {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_n 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q;
+    }
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_pop) 
+         & (~ (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_empty)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_n 
+            = (3U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q) 
+                     - (IData)(1U)));
+    }
+    if (((((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_push) 
+           & (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_pop)) 
+          & (1U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q))) 
+         & (~ (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_empty)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_n 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_q;
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_pop) 
+         & (~ (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_empty)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_n 
+            = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_n) 
+               & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_q)));
+    }
+    if (((0U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q)) 
+         & (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_push))) {
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__i_w_fifo__data_o 
+            = (0x1fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[7U] 
+                        >> 0x12U));
+        if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__w_fifo_pop) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_n 
+                = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__write_pointer_q;
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_n 
+                = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__status_cnt_q;
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_n 
+                = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_w_fifo__DOT__read_pointer_q;
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__gate_clock = 1U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__write_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__write_pointer_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q;
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_pop) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__read_pointer_n 
+            = (1U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__read_pointer_q)));
+    }
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_push) 
+         & (2U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__gate_clock = 0U;
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__write_pointer_n 
+            = (1U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__write_pointer_q)));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_n 
+            = (3U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q)));
+    }
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_pop) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_n 
+            = (3U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q) 
+                     - (IData)(1U)));
+    }
+    if (((((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_push) 
+           & (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_pop)) 
+          & (2U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q))) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_n 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__mem_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__mem_q;
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__b_fifo_push) 
+         & (2U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT____Vlvbound_h60430ebb__0 
+            = ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__i_w_fifo__data_o;
+        if ((9U >= (0xfU & ((IData)(5U) * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__write_pointer_q))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__mem_n 
+                = (((~ ((IData)(0x1fU) << (0xfU & ((IData)(5U) 
+                                                   * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__write_pointer_q))))) 
+                    & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__mem_n)) 
+                   | (0x3ffU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT____Vlvbound_h60430ebb__0) 
+                                << (0xfU & ((IData)(5U) 
+                                            * (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__i_b_fifo__DOT__write_pointer_q))))));
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_q;
+    if (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[4U] 
+          >> 0xdU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp 
+                      >> 0x35U))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d 
+            = ((4U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d)) 
+               | (3U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d))));
+    }
+    if ((1U & (IData)(((0x140U == (0x140U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__mst_req_o[3U])) 
+                       & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp 
+                          >> 0x33U))))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d 
+            = ((4U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d)) 
+               | (3U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d) 
+                        - (IData)(1U))));
+    }
+    if ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_q) 
+          >> 2U) & (0U == (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d))))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d 
+            = (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d));
+    } else if (((0U == (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_q))) 
+                & (3U == (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d))))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d 
+            = (4U | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_d));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+        = ((0x2fffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o) 
+           | ((QData)((IData)((1U & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp 
+                                             >> 0x34U))))) 
+              << 0x34U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+        = ((0x3ffc0000000000ULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o) 
+           | (0x3ffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp));
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_ready = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_beats_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_beats_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_q;
+    if ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_q))) {
+        if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_q))) {
+            if ((1U & ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp 
+                                >> 0x29U)) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U] 
+                                              >> 0x17U)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_d = 1U;
+            }
+        } else {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                = (0x3ffe0000000000ULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o);
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                = ((0x3ffe0fffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o) 
+                   | ((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__id_q)) 
+                      << 0x24U));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                = ((0x3ffffffffffff1ULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o) 
+                   | ((QData)((IData)((4U | (0U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_beats_q))))) 
+                      << 1U));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                = (0x20000000000ULL | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o);
+            if ((0x800000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U])) {
+                if ((1U & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                                   >> 1U)))) {
+                    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_ready = 1U;
+                    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_d = 1U;
+                } else {
+                    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_beats_d 
+                        = (0xffU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_beats_d) 
+                                    - (IData)(1U)));
+                }
+            }
+        }
+    } else if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_q))) {
+        if ((1U & ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp 
+                            >> 0x29U)) & (~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[7U] 
+                                             >> 0x17U))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_d = 3U;
+        } else if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_valid) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_beats_d 
+                = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT____Vcellout__r_resp_cmd__data_o;
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_d = 2U;
+        }
+    } else {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_state_d = 1U;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__gen_aw_id_counter__DOT__i_aw_id_counter__DOT__push_en 
+        = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_cnt_up)
+            ? ((IData)(1U) << (0x1fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT____Vcellout__i_axi_atop_filter__mst_req_o[7U] 
+                                        >> 0x12U)))
+            : 0U);
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_select_valid 
+        = (1U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__i_counter_open_w__DOT__i_counter__DOT__counter_q) 
+                 | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_to_axi_lite_uart__DOT__i_axi_burst_splitter__DOT__i_axi_burst_splitter_gran__DOT__i_demux_supported_vs_unsupported__DOT__genblk1__DOT__w_cnt_up)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_push_ready 
+        = (1U & ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_valid)) 
+                 | (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_ready)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+        = (0x1fffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o);
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+        = ((0x3003ffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o) 
+           | ((QData)((IData)((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp 
+                                                 >> 0x2aU))))) 
+              << 0x2aU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q;
+    if ((4U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+        if ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+            if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d = 0U;
+            } else if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_valid)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d = 1U;
+            }
+        } else if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                = (0x3c03ffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o);
+            if ((0x10000000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU])) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d 
+                    = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_valid) 
+                        & (~ (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__r_resp_cmd_pop_ready)))
+                        ? 6U : 1U);
+            }
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                = ((0x3807ffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o) 
+                   | ((QData)((IData)((0x82U | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__id_q) 
+                                                << 2U)))) 
+                      << 0x2bU));
+        } else if ((1U & ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                                   >> 0x32U)) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+                                                 >> 0x1cU)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d = 5U;
+        }
+    } else if ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+        if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                = (0x8000000000000ULL | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o);
+            if ((IData)((0xa0000000U == (0xa0000000U 
+                                         & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU])))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d 
+                    = ((1U & ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                                       >> 0x32U)) & 
+                              (~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+                                  >> 0x1cU)))) ? 4U
+                        : 5U);
+            }
+        } else if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__aw_without_complete_w_downstream) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                = ((0x37ffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o) 
+                   | ((QData)((IData)((1U & (IData)(
+                                                    (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp 
+                                                     >> 0x33U))))) 
+                      << 0x33U));
+        } else {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                = (0x8000000000000ULL | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o);
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d 
+                = ((IData)((0xa0000000U == (0xa0000000U 
+                                            & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU])))
+                    ? ((1U & ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                                       >> 0x32U)) & 
+                              (~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+                                  >> 0x1cU)))) ? 4U
+                        : 5U) : 3U);
+        }
+    } else if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_q))) {
+        if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__complete_w_without_aw_downstream) 
+             | (1U > (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_cnt_q))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                = ((0x1fffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o) 
+                   | ((QData)((IData)((1U & (IData)(
+                                                    (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp 
+                                                     >> 0x35U))))) 
+                      << 0x35U));
+        }
+        if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__aw_without_complete_w_downstream) 
+             | ((IData)((0x10U == (0xc10U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU]))) 
+                & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__complete_w_without_aw_downstream))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                = ((0x37ffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o) 
+                   | ((QData)((IData)((1U & (IData)(
+                                                    (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__err_resp 
+                                                     >> 0x33U))))) 
+                      << 0x33U));
+        }
+        if (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+              >> 4U) & (0U != (3U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xcU] 
+                                     >> 0xaU))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                = (0x20000000000000ULL | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o);
+            if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__aw_without_complete_w_downstream) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d = 2U;
+            } else {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                    = (0x8000000000000ULL | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o);
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d 
+                    = ((IData)((0xa0000000U == (0xa0000000U 
+                                                & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU])))
+                        ? ((1U & ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT____Vcellout__genblk1__DOT__i_atop_filter__slv_resp_o 
+                                           >> 0x32U)) 
+                                  & (~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_demux__DOT____Vcellout__i_demux_simple__mst_reqs_o[0xaU] 
+                                        >> 0x1cU))))
+                            ? 4U : 5U) : 3U);
+            }
+        }
+    } else {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_axi_slave_uart_dwc__DOT__gen_dw_downsize__DOT__i_axi_dw_downsizer__DOT__i_axi_err_slv__DOT__genblk1__DOT__i_atop_filter__DOT__w_state_d = 1U;
+    }
+}
+
+VL_ATTR_COLD void Vara_tb_verilator___024root___stl_comb__TOP__563(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___stl_comb__TOP__563\n"); );
+    // Init
+    CData/*7:0*/ __Vfunc_is_imm_fpr__75__op;
+    __Vfunc_is_imm_fpr__75__op = 0;
+    CData/*7:0*/ __Vfunc_is_imm_fpr__78__op;
+    __Vfunc_is_imm_fpr__78__op = 0;
+    CData/*7:0*/ __Vfunc_is_imm_fpr__81__op;
+    __Vfunc_is_imm_fpr__81__op = 0;
+    CData/*7:0*/ __Vfunc_is_imm_fpr__84__op;
+    __Vfunc_is_imm_fpr__84__op = 0;
+    CData/*7:0*/ __Vfunc_is_imm_fpr__87__op;
+    __Vfunc_is_imm_fpr__87__op = 0;
+    CData/*7:0*/ __Vfunc_is_imm_fpr__90__op;
+    __Vfunc_is_imm_fpr__90__op = 0;
+    CData/*7:0*/ __Vfunc_is_imm_fpr__93__op;
+    __Vfunc_is_imm_fpr__93__op = 0;
+    CData/*7:0*/ __Vfunc_is_imm_fpr__96__op;
+    __Vfunc_is_imm_fpr__96__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs1_fpr__99__op;
+    __Vfunc_is_rs1_fpr__99__op = 0;
+    CData/*7:0*/ __Vfunc_is_rs2_fpr__101__op;
+    __Vfunc_is_rs2_fpr__101__op = 0;
+    CData/*7:0*/ __Vfunc_is_imm_fpr__103__op;
+    __Vfunc_is_imm_fpr__103__op = 0;
+    // Body
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__stall 
+        = (1U & ((0xaU == (0xfU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                   >> 0x14U))) ? (2U 
+                                                  <= 
+                                                  (3U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__i_acc_insn_queue__DOT__status_cnt_q)))
+                  : ((1U == (0xfU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                     >> 0x14U))) ? 
+                     ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__acc_cons_q) 
+                      & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__acc_no_st_pending)))
+                      : (IData)((((0x200000U == (0xf00000U 
+                                                 & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U])) 
+                                  & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__acc_cons_q) 
+                                 & ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__acc_no_st_pending)) 
+                                    | (~ ((0U == (7U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__i_acc_spec_loads__DOT__i_counter__DOT__counter_q))) 
+                                          & (0U == 
+                                             (7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__i_acc_disp_loads__DOT__i_counter__DOT__counter_q)))))))))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__forward_rs1 = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__forward_rs2 = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__forward_rs3 = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_iro_sb 
+        = (0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                    >> 6U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_iro_sb 
+        = (0x3fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U]);
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs3_iro_sb 
+        = (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0xeU] 
+           >> 0x1aU);
+    __Vfunc_is_rs1_fpr__99__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((((0x5bU <= (IData)(__Vfunc_is_rs1_fpr__99__op)) 
+                     & (0x62U >= (IData)(__Vfunc_is_rs1_fpr__99__op))) 
+                    | (0x63U == (IData)(__Vfunc_is_rs1_fpr__99__op))) 
+                   | (0x65U == (IData)(__Vfunc_is_rs1_fpr__99__op))) 
+                  | (0x66U == (IData)(__Vfunc_is_rs1_fpr__99__op))) 
+                 | (0x67U == (IData)(__Vfunc_is_rs1_fpr__99__op))) 
+                | (0x69U == (IData)(__Vfunc_is_rs1_fpr__99__op))) 
+               | (0x6aU == (IData)(__Vfunc_is_rs1_fpr__99__op))) 
+              | ((0x6bU <= (IData)(__Vfunc_is_rs1_fpr__99__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rs1_fpr__99__op)))) 
+             | (0xa7U == (IData)(__Vfunc_is_rs1_fpr__99__op)))) {
+            vlSelf->__Vfunc_is_rs1_fpr__99__Vfuncout = 1U;
+            goto __Vlabel330;
+        } else {
+            vlSelf->__Vfunc_is_rs1_fpr__99__Vfuncout = 0U;
+            goto __Vlabel330;
+        }
+        __Vlabel330: ;
+    }
+    if (((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0xeU] 
+             >> 0x17U)) & ((IData)(vlSelf->__Vfunc_is_rs1_fpr__99__Vfuncout)
+                            ? (0U != (0xfU & (((0U 
+                                                == 
+                                                (0x1cU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                    >> 4U)))
+                                                ? 0U
+                                                : (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_fpr_i[
+                                                   (((IData)(3U) 
+                                                     + 
+                                                     (0xfcU 
+                                                      & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                         >> 4U))) 
+                                                    >> 5U)] 
+                                                   << 
+                                                   ((IData)(0x20U) 
+                                                    - 
+                                                    (0x1cU 
+                                                     & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                        >> 4U))))) 
+                                              | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_fpr_i[
+                                                 (7U 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                     >> 9U))] 
+                                                 >> 
+                                                 (0x1cU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                     >> 4U))))))
+                            : (0U != (0xfU & (((0U 
+                                                == 
+                                                (0x1cU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                    >> 4U)))
+                                                ? 0U
+                                                : (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_gpr_i[
+                                                   (((IData)(3U) 
+                                                     + 
+                                                     (0xfcU 
+                                                      & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                         >> 4U))) 
+                                                    >> 5U)] 
+                                                   << 
+                                                   ((IData)(0x20U) 
+                                                    - 
+                                                    (0x1cU 
+                                                     & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                        >> 4U))))) 
+                                              | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_gpr_i[
+                                                 (7U 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                     >> 9U))] 
+                                                 >> 
+                                                 (0x1cU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                     >> 4U))))))))) {
+        vlSelf->__Vfunc_is_rs1_fpr__100__op = (0xffU 
+                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                  >> 0xcU));
+        {
+            if (((((((((((0x5bU <= (IData)(vlSelf->__Vfunc_is_rs1_fpr__100__op)) 
+                         & (0x62U >= (IData)(vlSelf->__Vfunc_is_rs1_fpr__100__op))) 
+                        | (0x63U == (IData)(vlSelf->__Vfunc_is_rs1_fpr__100__op))) 
+                       | (0x65U == (IData)(vlSelf->__Vfunc_is_rs1_fpr__100__op))) 
+                      | (0x66U == (IData)(vlSelf->__Vfunc_is_rs1_fpr__100__op))) 
+                     | (0x67U == (IData)(vlSelf->__Vfunc_is_rs1_fpr__100__op))) 
+                    | (0x69U == (IData)(vlSelf->__Vfunc_is_rs1_fpr__100__op))) 
+                   | (0x6aU == (IData)(vlSelf->__Vfunc_is_rs1_fpr__100__op))) 
+                  | ((0x6bU <= (IData)(vlSelf->__Vfunc_is_rs1_fpr__100__op)) 
+                     & (0x79U >= (IData)(vlSelf->__Vfunc_is_rs1_fpr__100__op)))) 
+                 | (0xa7U == (IData)(vlSelf->__Vfunc_is_rs1_fpr__100__op)))) {
+                vlSelf->__Vfunc_is_rs1_fpr__100__Vfuncout = 1U;
+                goto __Vlabel331;
+            } else {
+                vlSelf->__Vfunc_is_rs1_fpr__100__Vfuncout = 0U;
+                goto __Vlabel331;
+            }
+            __Vlabel331: ;
+        }
+        if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs1_valid_sb_iro) 
+             & ((IData)(vlSelf->__Vfunc_is_rs1_fpr__100__Vfuncout) 
+                | ((6U != (0xfU & (((0U == (0x1cU & 
+                                            (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                             >> 4U)))
+                                     ? 0U : (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_gpr_i[
+                                             (((IData)(3U) 
+                                               + (0xfcU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                     >> 4U))) 
+                                              >> 5U)] 
+                                             << ((IData)(0x20U) 
+                                                 - 
+                                                 (0x1cU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                     >> 4U))))) 
+                                   | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_gpr_i[
+                                      (7U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                             >> 9U))] 
+                                      >> (0x1cU & (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                   >> 4U)))))) 
+                   | (0x1eU == (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                         >> 0xcU))))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__forward_rs1 = 1U;
+        } else {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__stall = 1U;
+        }
+    }
+    __Vfunc_is_rs2_fpr__101__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                            >> 0xcU));
+    {
+        if (((((((((0x55U <= (IData)(__Vfunc_is_rs2_fpr__101__op)) 
+                   & (0x58U >= (IData)(__Vfunc_is_rs2_fpr__101__op))) 
+                  | ((0x59U <= (IData)(__Vfunc_is_rs2_fpr__101__op)) 
+                     & (0x5dU >= (IData)(__Vfunc_is_rs2_fpr__101__op)))) 
+                 | ((0x5fU <= (IData)(__Vfunc_is_rs2_fpr__101__op)) 
+                    & (0x62U >= (IData)(__Vfunc_is_rs2_fpr__101__op)))) 
+                | (0x65U == (IData)(__Vfunc_is_rs2_fpr__101__op))) 
+               | ((0x66U <= (IData)(__Vfunc_is_rs2_fpr__101__op)) 
+                  & (0x67U >= (IData)(__Vfunc_is_rs2_fpr__101__op)))) 
+              | (0x69U == (IData)(__Vfunc_is_rs2_fpr__101__op))) 
+             | ((0x6bU <= (IData)(__Vfunc_is_rs2_fpr__101__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_rs2_fpr__101__op))))) {
+            vlSelf->__Vfunc_is_rs2_fpr__101__Vfuncout = 1U;
+            goto __Vlabel332;
+        } else {
+            vlSelf->__Vfunc_is_rs2_fpr__101__Vfuncout = 0U;
+            goto __Vlabel332;
+        }
+        __Vlabel332: ;
+    }
+    if (((IData)(vlSelf->__Vfunc_is_rs2_fpr__101__Vfuncout)
+          ? (0U != (0xfU & (((0U == (0x1cU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                              << 2U)))
+                              ? 0U : (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_fpr_i[
+                                      (((IData)(3U) 
+                                        + (0xfcU & 
+                                           (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                            << 2U))) 
+                                       >> 5U)] << ((IData)(0x20U) 
+                                                   - 
+                                                   (0x1cU 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                       << 2U))))) 
+                            | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_fpr_i[
+                               (7U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                      >> 3U))] >> (0x1cU 
+                                                   & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                      << 2U))))))
+          : (0U != (0xfU & (((0U == (0x1cU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                              << 2U)))
+                              ? 0U : (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_gpr_i[
+                                      (((IData)(3U) 
+                                        + (0xfcU & 
+                                           (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                            << 2U))) 
+                                       >> 5U)] << ((IData)(0x20U) 
+                                                   - 
+                                                   (0x1cU 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                       << 2U))))) 
+                            | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_gpr_i[
+                               (7U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                      >> 3U))] >> (0x1cU 
+                                                   & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                      << 2U)))))))) {
+        vlSelf->__Vfunc_is_rs2_fpr__102__op = (0xffU 
+                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                  >> 0xcU));
+        {
+            if (((((((((0x55U <= (IData)(vlSelf->__Vfunc_is_rs2_fpr__102__op)) 
+                       & (0x58U >= (IData)(vlSelf->__Vfunc_is_rs2_fpr__102__op))) 
+                      | ((0x59U <= (IData)(vlSelf->__Vfunc_is_rs2_fpr__102__op)) 
+                         & (0x5dU >= (IData)(vlSelf->__Vfunc_is_rs2_fpr__102__op)))) 
+                     | ((0x5fU <= (IData)(vlSelf->__Vfunc_is_rs2_fpr__102__op)) 
+                        & (0x62U >= (IData)(vlSelf->__Vfunc_is_rs2_fpr__102__op)))) 
+                    | (0x65U == (IData)(vlSelf->__Vfunc_is_rs2_fpr__102__op))) 
+                   | ((0x66U <= (IData)(vlSelf->__Vfunc_is_rs2_fpr__102__op)) 
+                      & (0x67U >= (IData)(vlSelf->__Vfunc_is_rs2_fpr__102__op)))) 
+                  | (0x69U == (IData)(vlSelf->__Vfunc_is_rs2_fpr__102__op))) 
+                 | ((0x6bU <= (IData)(vlSelf->__Vfunc_is_rs2_fpr__102__op)) 
+                    & (0x79U >= (IData)(vlSelf->__Vfunc_is_rs2_fpr__102__op))))) {
+                vlSelf->__Vfunc_is_rs2_fpr__102__Vfuncout = 1U;
+                goto __Vlabel333;
+            } else {
+                vlSelf->__Vfunc_is_rs2_fpr__102__Vfuncout = 0U;
+                goto __Vlabel333;
+            }
+            __Vlabel333: ;
+        }
+        if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs2_valid_iro_sb) 
+             & ((IData)(vlSelf->__Vfunc_is_rs2_fpr__102__Vfuncout) 
+                | ((6U != (0xfU & (((0U == (0x1cU & 
+                                            (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                             << 2U)))
+                                     ? 0U : (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_gpr_i[
+                                             (((IData)(3U) 
+                                               + (0xfcU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                     << 2U))) 
+                                              >> 5U)] 
+                                             << ((IData)(0x20U) 
+                                                 - 
+                                                 (0x1cU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                     << 2U))))) 
+                                   | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_gpr_i[
+                                      (7U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                             >> 3U))] 
+                                      >> (0x1cU & (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                   << 2U)))))) 
+                   | (0x1eU == (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                         >> 0xcU))))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__forward_rs2 = 1U;
+        } else {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__stall = 1U;
+        }
+    }
+    __Vfunc_is_imm_fpr__103__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                            >> 0xcU));
+    {
+        if (((((0x59U <= (IData)(__Vfunc_is_imm_fpr__103__op)) 
+               & (0x5aU >= (IData)(__Vfunc_is_imm_fpr__103__op))) 
+              | ((0x5fU <= (IData)(__Vfunc_is_imm_fpr__103__op)) 
+                 & (0x62U >= (IData)(__Vfunc_is_imm_fpr__103__op)))) 
+             | ((0x76U <= (IData)(__Vfunc_is_imm_fpr__103__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_imm_fpr__103__op))))) {
+            vlSelf->__Vfunc_is_imm_fpr__103__Vfuncout = 1U;
+            goto __Vlabel334;
+        } else {
+            vlSelf->__Vfunc_is_imm_fpr__103__Vfuncout = 0U;
+            goto __Vlabel334;
+        }
+        __Vlabel334: ;
+    }
+    if (((IData)(vlSelf->__Vfunc_is_imm_fpr__103__Vfuncout)
+          ? (0U != (0xfU & (((0U == (0x1cU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0xeU] 
+                                              >> 0x18U)))
+                              ? 0U : (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_fpr_i[
+                                      (((IData)(3U) 
+                                        + (0xfcU & 
+                                           (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0xeU] 
+                                            >> 0x18U))) 
+                                       >> 5U)] << ((IData)(0x20U) 
+                                                   - 
+                                                   (0x1cU 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0xeU] 
+                                                       >> 0x18U))))) 
+                            | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_fpr_i[
+                               (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0xeU] 
+                                >> 0x1dU)] >> (0x1cU 
+                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0xeU] 
+                                                  >> 0x18U))))))
+          : 0U)) {
+        if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__i_sel_rs3__DOT__gen_arbiter__DOT__req_nodes))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__forward_rs3 = 1U;
+        } else {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__stall = 1U;
+        }
+    }
+    __Vfunc_is_imm_fpr__75__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((0x59U <= (IData)(__Vfunc_is_imm_fpr__75__op)) 
+               & (0x5aU >= (IData)(__Vfunc_is_imm_fpr__75__op))) 
+              | ((0x5fU <= (IData)(__Vfunc_is_imm_fpr__75__op)) 
+                 & (0x62U >= (IData)(__Vfunc_is_imm_fpr__75__op)))) 
+             | ((0x76U <= (IData)(__Vfunc_is_imm_fpr__75__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_imm_fpr__75__op))))) {
+            vlSelf->__Vfunc_is_imm_fpr__75__Vfuncout = 1U;
+            goto __Vlabel335;
+        } else {
+            vlSelf->__Vfunc_is_imm_fpr__75__Vfuncout = 0U;
+            goto __Vlabel335;
+        }
+        __Vlabel335: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req 
+        = ((0x1fdfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)) 
+           | (0x1e0U & ((((((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x10U] 
+                             >> 0x1aU) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs3_iro_sb)) 
+                           << 5U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x13U] 
+                                     >> 0x17U)) & (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0xeU] 
+                                                   >> 0x14U)) 
+                        & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x13U] 
+                                   >> 0x1bU)) == (IData)(vlSelf->__Vfunc_is_imm_fpr__75__Vfuncout)) 
+                           << 5U))));
+    __Vfunc_is_imm_fpr__78__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((0x59U <= (IData)(__Vfunc_is_imm_fpr__78__op)) 
+               & (0x5aU >= (IData)(__Vfunc_is_imm_fpr__78__op))) 
+              | ((0x5fU <= (IData)(__Vfunc_is_imm_fpr__78__op)) 
+                 & (0x62U >= (IData)(__Vfunc_is_imm_fpr__78__op)))) 
+             | ((0x76U <= (IData)(__Vfunc_is_imm_fpr__78__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_imm_fpr__78__op))))) {
+            vlSelf->__Vfunc_is_imm_fpr__78__Vfuncout = 1U;
+            goto __Vlabel336;
+        } else {
+            vlSelf->__Vfunc_is_imm_fpr__78__Vfuncout = 0U;
+            goto __Vlabel336;
+        }
+        __Vlabel336: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req 
+        = ((0x1fbfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)) 
+           | (0x1fc0U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x24U] 
+                                       >> 0x17U)) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs3_iro_sb)) 
+                            << 6U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x27U] 
+                                      >> 0x13U)) & 
+                          (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x22U] 
+                           >> 0x10U)) & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x27U] 
+                                                 >> 0x18U)) 
+                                          == (IData)(vlSelf->__Vfunc_is_imm_fpr__78__Vfuncout)) 
+                                         << 6U))));
+    __Vfunc_is_imm_fpr__81__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((0x59U <= (IData)(__Vfunc_is_imm_fpr__81__op)) 
+               & (0x5aU >= (IData)(__Vfunc_is_imm_fpr__81__op))) 
+              | ((0x5fU <= (IData)(__Vfunc_is_imm_fpr__81__op)) 
+                 & (0x62U >= (IData)(__Vfunc_is_imm_fpr__81__op)))) 
+             | ((0x76U <= (IData)(__Vfunc_is_imm_fpr__81__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_imm_fpr__81__op))))) {
+            vlSelf->__Vfunc_is_imm_fpr__81__Vfuncout = 1U;
+            goto __Vlabel337;
+        } else {
+            vlSelf->__Vfunc_is_imm_fpr__81__Vfuncout = 0U;
+            goto __Vlabel337;
+        }
+        __Vlabel337: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req 
+        = ((0x1f7fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)) 
+           | (0x1ff80U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x38U] 
+                                        >> 0x14U)) 
+                              == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs3_iro_sb)) 
+                             << 7U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x3bU] 
+                                       >> 0xfU)) & 
+                           (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x36U] 
+                            >> 0xcU)) & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x3bU] 
+                                                 >> 0x15U)) 
+                                          == (IData)(vlSelf->__Vfunc_is_imm_fpr__81__Vfuncout)) 
+                                         << 7U))));
+    __Vfunc_is_imm_fpr__84__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((0x59U <= (IData)(__Vfunc_is_imm_fpr__84__op)) 
+               & (0x5aU >= (IData)(__Vfunc_is_imm_fpr__84__op))) 
+              | ((0x5fU <= (IData)(__Vfunc_is_imm_fpr__84__op)) 
+                 & (0x62U >= (IData)(__Vfunc_is_imm_fpr__84__op)))) 
+             | ((0x76U <= (IData)(__Vfunc_is_imm_fpr__84__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_imm_fpr__84__op))))) {
+            vlSelf->__Vfunc_is_imm_fpr__84__Vfuncout = 1U;
+            goto __Vlabel338;
+        } else {
+            vlSelf->__Vfunc_is_imm_fpr__84__Vfuncout = 0U;
+            goto __Vlabel338;
+        }
+        __Vlabel338: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req 
+        = ((0x1effU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)) 
+           | (0x1fff00U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x4cU] 
+                                         >> 0x11U)) 
+                               == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs3_iro_sb)) 
+                              << 8U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x4fU] 
+                                        >> 0xbU)) & 
+                            (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x4aU] 
+                             >> 8U)) & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x4fU] 
+                                                >> 0x12U)) 
+                                         == (IData)(vlSelf->__Vfunc_is_imm_fpr__84__Vfuncout)) 
+                                        << 8U))));
+    __Vfunc_is_imm_fpr__87__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((0x59U <= (IData)(__Vfunc_is_imm_fpr__87__op)) 
+               & (0x5aU >= (IData)(__Vfunc_is_imm_fpr__87__op))) 
+              | ((0x5fU <= (IData)(__Vfunc_is_imm_fpr__87__op)) 
+                 & (0x62U >= (IData)(__Vfunc_is_imm_fpr__87__op)))) 
+             | ((0x76U <= (IData)(__Vfunc_is_imm_fpr__87__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_imm_fpr__87__op))))) {
+            vlSelf->__Vfunc_is_imm_fpr__87__Vfuncout = 1U;
+            goto __Vlabel339;
+        } else {
+            vlSelf->__Vfunc_is_imm_fpr__87__Vfuncout = 0U;
+            goto __Vlabel339;
+        }
+        __Vlabel339: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req 
+        = ((0x1dffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)) 
+           | (0x1fffe00U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x60U] 
+                                          >> 0xeU)) 
+                                == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs3_iro_sb)) 
+                               << 9U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x63U] 
+                                         >> 7U)) & 
+                             (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x5eU] 
+                              >> 4U)) & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x63U] 
+                                                 >> 0xfU)) 
+                                          == (IData)(vlSelf->__Vfunc_is_imm_fpr__87__Vfuncout)) 
+                                         << 9U))));
+    __Vfunc_is_imm_fpr__90__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((0x59U <= (IData)(__Vfunc_is_imm_fpr__90__op)) 
+               & (0x5aU >= (IData)(__Vfunc_is_imm_fpr__90__op))) 
+              | ((0x5fU <= (IData)(__Vfunc_is_imm_fpr__90__op)) 
+                 & (0x62U >= (IData)(__Vfunc_is_imm_fpr__90__op)))) 
+             | ((0x76U <= (IData)(__Vfunc_is_imm_fpr__90__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_imm_fpr__90__op))))) {
+            vlSelf->__Vfunc_is_imm_fpr__90__Vfuncout = 1U;
+            goto __Vlabel340;
+        } else {
+            vlSelf->__Vfunc_is_imm_fpr__90__Vfuncout = 0U;
+            goto __Vlabel340;
+        }
+        __Vlabel340: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req 
+        = ((0x1bffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)) 
+           | (0x1ffffc00U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x74U] 
+                                           >> 0xbU)) 
+                                 == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs3_iro_sb)) 
+                                << 0xaU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x77U] 
+                                            >> 3U)) 
+                              & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x72U]) 
+                             & (((1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x77U] 
+                                        >> 0xcU)) == (IData)(vlSelf->__Vfunc_is_imm_fpr__90__Vfuncout)) 
+                                << 0xaU))));
+    __Vfunc_is_imm_fpr__93__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((0x59U <= (IData)(__Vfunc_is_imm_fpr__93__op)) 
+               & (0x5aU >= (IData)(__Vfunc_is_imm_fpr__93__op))) 
+              | ((0x5fU <= (IData)(__Vfunc_is_imm_fpr__93__op)) 
+                 & (0x62U >= (IData)(__Vfunc_is_imm_fpr__93__op)))) 
+             | ((0x76U <= (IData)(__Vfunc_is_imm_fpr__93__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_imm_fpr__93__op))))) {
+            vlSelf->__Vfunc_is_imm_fpr__93__Vfuncout = 1U;
+            goto __Vlabel341;
+        } else {
+            vlSelf->__Vfunc_is_imm_fpr__93__Vfuncout = 0U;
+            goto __Vlabel341;
+        }
+        __Vlabel341: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req 
+        = ((0x17ffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)) 
+           | (0xfffff800U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x88U] 
+                                           >> 8U)) 
+                                 == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs3_iro_sb)) 
+                                << 0xbU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x8bU] 
+                                            << 1U)) 
+                              & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x86U] 
+                                 << 4U)) & (((1U & 
+                                              (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x8bU] 
+                                               >> 9U)) 
+                                             == (IData)(vlSelf->__Vfunc_is_imm_fpr__93__Vfuncout)) 
+                                            << 0xbU))));
+    __Vfunc_is_imm_fpr__96__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((0x59U <= (IData)(__Vfunc_is_imm_fpr__96__op)) 
+               & (0x5aU >= (IData)(__Vfunc_is_imm_fpr__96__op))) 
+              | ((0x5fU <= (IData)(__Vfunc_is_imm_fpr__96__op)) 
+                 & (0x62U >= (IData)(__Vfunc_is_imm_fpr__96__op)))) 
+             | ((0x76U <= (IData)(__Vfunc_is_imm_fpr__96__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_imm_fpr__96__op))))) {
+            vlSelf->__Vfunc_is_imm_fpr__96__Vfuncout = 1U;
+            goto __Vlabel342;
+        } else {
+            vlSelf->__Vfunc_is_imm_fpr__96__Vfuncout = 0U;
+            goto __Vlabel342;
+        }
+        __Vlabel342: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req 
+        = ((0xfffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)) 
+           | (0xfffff000U & ((((((0x3fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x9cU] 
+                                           >> 5U)) 
+                                 == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs3_iro_sb)) 
+                                << 0xcU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x9fU] 
+                                            << 5U)) 
+                              & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x9aU] 
+                                 << 8U)) & (((1U & 
+                                              (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[0x9fU] 
+                                               >> 6U)) 
+                                             == (IData)(vlSelf->__Vfunc_is_imm_fpr__96__Vfuncout)) 
+                                            << 0xcU))));
+}
+
+VL_ATTR_COLD void Vara_tb_verilator___024root___stl_comb__TOP__603(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___stl_comb__TOP__603\n"); );
+    // Init
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__fetch_ready_id_if;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__fetch_ready_id_if = 0;
+    CData/*1:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_instr;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_instr = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_address;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_address = 0;
+    // Body
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_ack_iro_sb = 0U;
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_valid_sb_iro) {
+        if ((1U & ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__stall)) 
+                   & (~ ((0x800000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U])
+                          ? (IData)(((0U == (0x600000U 
+                                             & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U])) 
+                                     & ((0x100000U 
+                                         & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U])
+                                         ? (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__x_issue_ready_ex_id))
+                                         : (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__fpu_ready_ex_id)))))
+                          : ((0x400000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U])
+                              ? ((0x200000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U])
+                                  ? ((0x100000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U])
+                                      ? (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__fpu_ready_ex_id))
+                                      : (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flu_ready_ex_id)))
+                                  : (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flu_ready_ex_id)))
+                              : ((0x200000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U])
+                                  ? ((0x100000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U])
+                                      ? (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flu_ready_ex_id))
+                                      : (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__lsu_bypass_i__DOT__status_cnt_q)))
+                                  : ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                      >> 0x14U) & (0U 
+                                                   != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__lsu_bypass_i__DOT__status_cnt_q)))))))))) {
+            vlSelf->__Vfunc_is_rd_fpr__106__op = (0xffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                     >> 0xcU));
+            {
+                if (((((((((((0x51U <= (IData)(vlSelf->__Vfunc_is_rd_fpr__106__op)) 
+                             & (0x54U >= (IData)(vlSelf->__Vfunc_is_rd_fpr__106__op))) 
+                            | ((0x59U <= (IData)(vlSelf->__Vfunc_is_rd_fpr__106__op)) 
+                               & (0x62U >= (IData)(vlSelf->__Vfunc_is_rd_fpr__106__op)))) 
+                           | (0x64U == (IData)(vlSelf->__Vfunc_is_rd_fpr__106__op))) 
+                          | (0x65U == (IData)(vlSelf->__Vfunc_is_rd_fpr__106__op))) 
+                         | (0x66U == (IData)(vlSelf->__Vfunc_is_rd_fpr__106__op))) 
+                        | (0x68U == (IData)(vlSelf->__Vfunc_is_rd_fpr__106__op))) 
+                       | ((0x6bU <= (IData)(vlSelf->__Vfunc_is_rd_fpr__106__op)) 
+                          & (0x6fU >= (IData)(vlSelf->__Vfunc_is_rd_fpr__106__op)))) 
+                      | ((0x76U <= (IData)(vlSelf->__Vfunc_is_rd_fpr__106__op)) 
+                         & (0x79U >= (IData)(vlSelf->__Vfunc_is_rd_fpr__106__op)))) 
+                     | (0xa8U == (IData)(vlSelf->__Vfunc_is_rd_fpr__106__op)))) {
+                    vlSelf->__Vfunc_is_rd_fpr__106__Vfuncout = 1U;
+                    goto __Vlabel343;
+                } else {
+                    vlSelf->__Vfunc_is_rd_fpr__106__Vfuncout = 0U;
+                    goto __Vlabel343;
+                }
+                __Vlabel343: ;
+            }
+            if (((IData)(vlSelf->__Vfunc_is_rd_fpr__106__Vfuncout)
+                  ? (0U == (0xfU & (((0U == (0x1cU 
+                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x10U] 
+                                                >> 0x18U)))
+                                      ? 0U : (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_fpr_i[
+                                              (((IData)(3U) 
+                                                + (0xfcU 
+                                                   & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x10U] 
+                                                      >> 0x18U))) 
+                                               >> 5U)] 
+                                              << ((IData)(0x20U) 
+                                                  - 
+                                                  (0x1cU 
+                                                   & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x10U] 
+                                                      >> 0x18U))))) 
+                                    | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_fpr_i[
+                                       (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x10U] 
+                                        >> 0x1dU)] 
+                                       >> (0x1cU & 
+                                           (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x10U] 
+                                            >> 0x18U))))))
+                  : (0U == (0xfU & (((0U == (0x1cU 
+                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x10U] 
+                                                >> 0x18U)))
+                                      ? 0U : (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_gpr_i[
+                                              (((IData)(3U) 
+                                                + (0xfcU 
+                                                   & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x10U] 
+                                                      >> 0x18U))) 
+                                               >> 5U)] 
+                                              << ((IData)(0x20U) 
+                                                  - 
+                                                  (0x1cU 
+                                                   & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x10U] 
+                                                      >> 0x18U))))) 
+                                    | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__rd_clobber_gpr_i[
+                                       (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x10U] 
+                                        >> 0x1dU)] 
+                                       >> (0x1cU & 
+                                           (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x10U] 
+                                            >> 0x18U)))))))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_ack_iro_sb = 1U;
+            }
+            vlSelf->__Vfunc_is_rd_fpr__107__op = (0xffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                     >> 0xcU));
+            {
+                if (((((((((((0x51U <= (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op)) 
+                             & (0x54U >= (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op))) 
+                            | ((0x59U <= (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op)) 
+                               & (0x62U >= (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op)))) 
+                           | (0x64U == (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op))) 
+                          | (0x65U == (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op))) 
+                         | (0x66U == (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op))) 
+                        | (0x68U == (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op))) 
+                       | ((0x6bU <= (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op)) 
+                          & (0x6fU >= (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op)))) 
+                      | ((0x76U <= (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op)) 
+                         & (0x79U >= (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op)))) 
+                     | (0xa8U == (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op)))) {
+                    vlSelf->__Vfunc_is_rd_fpr__107__Vfuncout = 1U;
+                    goto __Vlabel344;
+                } else {
+                    vlSelf->__Vfunc_is_rd_fpr__107__Vfuncout = 0U;
+                    goto __Vlabel344;
+                }
+                __Vlabel344: ;
+            }
+            if (((IData)(vlSelf->__Vfunc_is_rd_fpr__107__Vfuncout)
+                  ? ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                     & ((0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i)) 
+                        == (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x10U] 
+                            >> 0x1aU))) : ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                           & ((0x1fU 
+                                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i)) 
+                                              == (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x10U] 
+                                                  >> 0x1aU))))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_ack_iro_sb = 1U;
+            }
+            vlSelf->__Vfunc_is_rd_fpr__107__op = (0xffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                     >> 0xcU));
+            {
+                if (((((((((((0x51U <= (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op)) 
+                             & (0x54U >= (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op))) 
+                            | ((0x59U <= (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op)) 
+                               & (0x62U >= (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op)))) 
+                           | (0x64U == (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op))) 
+                          | (0x65U == (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op))) 
+                         | (0x66U == (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op))) 
+                        | (0x68U == (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op))) 
+                       | ((0x6bU <= (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op)) 
+                          & (0x6fU >= (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op)))) 
+                      | ((0x76U <= (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op)) 
+                         & (0x79U >= (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op)))) 
+                     | (0xa8U == (IData)(vlSelf->__Vfunc_is_rd_fpr__107__op)))) {
+                    vlSelf->__Vfunc_is_rd_fpr__107__Vfuncout = 1U;
+                    goto __Vlabel345;
+                } else {
+                    vlSelf->__Vfunc_is_rd_fpr__107__Vfuncout = 0U;
+                    goto __Vlabel345;
+                }
+                __Vlabel345: ;
+            }
+            if (((IData)(vlSelf->__Vfunc_is_rd_fpr__107__Vfuncout)
+                  ? (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                      >> 1U) & ((0x1fU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i) 
+                                          >> 5U)) == 
+                                (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x10U] 
+                                 >> 0x1aU))) : (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                                 >> 1U) 
+                                                & ((0x1fU 
+                                                    & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i) 
+                                                       >> 5U)) 
+                                                   == 
+                                                   (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x10U] 
+                                                    >> 0x1aU))))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_ack_iro_sb = 1U;
+            }
+        }
+        if ((0x200000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0xaU])) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_ack_iro_sb = 1U;
+        }
+        if ((0U == (0xfU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                            >> 0x14U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_ack_iro_sb = 1U;
+        }
+    }
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__mult_valid_q) 
+         & (((3U == (0xfU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                             >> 0x14U))) | (4U == (0xfU 
+                                                   & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                                      >> 0x14U)))) 
+            | (6U == (0xfU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                              >> 0x14U)))))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_ack_iro_sb = 0U;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__acc_valid_d 
+        = ((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0xaU] 
+               >> 0x15U)) & (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_ack_iro_sb) 
+                              & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_valid_sb_iro)) 
+                             & ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_unissued_instr_ctrl_id)) 
+                                & (0xa00000U == (0xf00000U 
+                                                 & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U])))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_ack_sb_rename 
+        = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_ack_iro_sb) 
+           & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__issue_cnt_q) 
+                 >> 3U)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__i_acc_spec_loads__DOT__i_counter__DOT__counter_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__i_acc_spec_loads__DOT__i_counter__DOT__counter_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__i_acc_spec_stores__DOT__i_counter__DOT__counter_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__i_acc_spec_stores__DOT__i_counter__DOT__counter_q;
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_ctrl_ex) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__i_acc_spec_loads__DOT__i_counter__DOT__counter_d = 0U;
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__i_acc_spec_stores__DOT__i_counter__DOT__counter_d = 0U;
+    } else {
+        if ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__acc_valid_d) 
+              & (0xa9000U == (0xff000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U]))) 
+             ^ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__acc_ld_disp))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__i_acc_spec_loads__DOT__i_counter__DOT__counter_d 
+                = (0xfU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__acc_ld_disp)
+                            ? ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__i_acc_spec_loads__DOT__i_counter__DOT__counter_q) 
+                               - (IData)(1U)) : ((IData)(1U) 
+                                                 + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__i_acc_spec_loads__DOT__i_counter__DOT__counter_q))));
+        }
+        if ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__acc_valid_d) 
+              & (0xaa000U == (0xff000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U]))) 
+             ^ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__acc_st_disp))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__i_acc_spec_stores__DOT__i_counter__DOT__counter_d 
+                = (0xfU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__acc_st_disp)
+                            ? ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__i_acc_spec_stores__DOT__i_counter__DOT__counter_q) 
+                               - (IData)(1U)) : ((IData)(1U) 
+                                                 + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__gen_accelerator__DOT__i_acc_dispatcher__DOT__i_acc_spec_stores__DOT__i_counter__DOT__counter_q))));
+        }
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__fetch_ready_id_if = 0U;
+    if ((1U & (((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__id_stage_i__DOT__issue_q[0x13U] 
+                    >> 0x1cU)) | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_ack_sb_rename)) 
+               & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__gen_perf_counter__DOT__perf_counters_i__if_empty_i))))) {
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__fetch_ready_id_if = 1U;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__idx_ds_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__idx_ds_q;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_instr = 0U;
+    if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__idx_ds_q))) {
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_instr 
+            = ((2U & (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_instr)) 
+               | ((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__gen_perf_counter__DOT__perf_counters_i__if_empty_i)) 
+                  & (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__fetch_ready_id_if)));
+    }
+    if ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__idx_ds_q))) {
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_instr 
+            = ((1U & (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_instr)) 
+               | (((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__gen_perf_counter__DOT__perf_counters_i__if_empty_i)) 
+                   & (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__fetch_ready_id_if)) 
+                  << 1U));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__DOT__read_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__DOT__read_pointer_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__DOT__status_cnt_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__DOT__status_cnt_q;
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT____Vcellinp__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__push_i) 
+         & (4U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__DOT__status_cnt_n 
+            = (7U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__DOT__status_cnt_q)));
+    }
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_instr) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__DOT__read_pointer_n 
+            = (3U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__DOT__read_pointer_q)));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__DOT__status_cnt_n 
+            = (7U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__DOT__status_cnt_q) 
+                     - (IData)(1U)));
+    }
+    if (((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT____Vcellinp__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__push_i) 
+           & (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_instr)) 
+          & (4U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__DOT__status_cnt_q))) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__DOT__status_cnt_n 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__0__KET____DOT__i_fifo_instr_data__DOT__status_cnt_q;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__DOT__read_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__DOT__read_pointer_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__DOT__status_cnt_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__DOT__status_cnt_q;
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT____Vcellinp__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__push_i) 
+         & (4U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__DOT__status_cnt_n 
+            = (7U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__DOT__status_cnt_q)));
+    }
+    if ((((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_instr) 
+          >> 1U) & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__DOT__read_pointer_n 
+            = (3U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__DOT__read_pointer_q)));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__DOT__status_cnt_n 
+            = (7U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__DOT__status_cnt_q) 
+                     - (IData)(1U)));
+    }
+    if (((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT____Vcellinp__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__push_i) 
+           & ((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_instr) 
+              >> 1U)) & (4U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__DOT__status_cnt_q))) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__DOT__status_cnt_n 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__gen_instr_fifo__BRA__1__KET____DOT__i_fifo_instr_data__DOT__status_cnt_q;
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_address 
+        = ((0U != (7U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__fetch_entry_if_id[6U] 
+                         >> 1U))) & (0U != (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_instr)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__i_fifo_address__DOT__read_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__i_fifo_address__DOT__read_pointer_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__i_fifo_address__DOT__status_cnt_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__i_fifo_address__DOT__status_cnt_q;
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT____Vcellinp__i_fifo_address__push_i) 
+         & (4U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__i_fifo_address__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__i_fifo_address__DOT__status_cnt_n 
+            = (7U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__i_fifo_address__DOT__status_cnt_q)));
+    }
+    if (((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_address) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__i_fifo_address__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__i_fifo_address__DOT__read_pointer_n 
+            = (3U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__i_fifo_address__DOT__read_pointer_q)));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__i_fifo_address__DOT__status_cnt_n 
+            = (7U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__i_fifo_address__DOT__status_cnt_q) 
+                     - (IData)(1U)));
+    }
+    if (((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT____Vcellinp__i_fifo_address__push_i) 
+           & (IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_address)) 
+          & (4U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__i_fifo_address__DOT__status_cnt_q))) 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__i_fifo_address__DOT__status_cnt_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__i_fifo_address__DOT__status_cnt_n 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__i_fifo_address__DOT__status_cnt_q;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pc_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pc_q;
+    if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__fetch_ready_id_if) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__idx_ds_d 
+            = ((2U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__idx_ds_q) 
+                      << 1U)) | (1U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__idx_ds_q) 
+                                       >> 1U)));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pc_d 
+            = (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pc_q 
+               + ((3U != (3U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__fetch_entry_if_id[6U] 
+                                >> 4U))) ? 2ULL : 4ULL));
+    }
+    if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pop_address) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pc_d 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT____Vcellout__i_fifo_address__data_o;
+    }
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__instruction_valid) 
+         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__reset_address_q))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT__i_instr_queue__DOT__pc_d 
+            = (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT____Vcellout__i_instr_realign__addr_o[1U])) 
+                << 0x20U) | (QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__i_frontend__DOT____Vcellout__i_instr_realign__addr_o[0U])));
+    }
+}
+
+VL_ATTR_COLD void Vara_tb_verilator___024root___stl_comb__TOP__605(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___stl_comb__TOP__605\n"); );
+    // Init
+    CData/*7:0*/ __Vfunc_is_imm_fpr__60__op;
+    __Vfunc_is_imm_fpr__60__op = 0;
+    CData/*7:0*/ __Vfunc_is_imm_fpr__63__op;
+    __Vfunc_is_imm_fpr__63__op = 0;
+    CData/*7:0*/ __Vfunc_is_imm_fpr__66__op;
+    __Vfunc_is_imm_fpr__66__op = 0;
+    CData/*7:0*/ __Vfunc_is_imm_fpr__69__op;
+    __Vfunc_is_imm_fpr__69__op = 0;
+    CData/*7:0*/ __Vfunc_is_imm_fpr__72__op;
+    __Vfunc_is_imm_fpr__72__op = 0;
+    SData/*31:0*/ __Vtemp_hc4e040a5__0;
+    // Body
+    __Vfunc_is_imm_fpr__60__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((0x59U <= (IData)(__Vfunc_is_imm_fpr__60__op)) 
+               & (0x5aU >= (IData)(__Vfunc_is_imm_fpr__60__op))) 
+              | ((0x5fU <= (IData)(__Vfunc_is_imm_fpr__60__op)) 
+                 & (0x62U >= (IData)(__Vfunc_is_imm_fpr__60__op)))) 
+             | ((0x76U <= (IData)(__Vfunc_is_imm_fpr__60__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_imm_fpr__60__op))))) {
+            vlSelf->__Vfunc_is_imm_fpr__60__Vfuncout = 1U;
+            goto __Vlabel346;
+        } else {
+            vlSelf->__Vfunc_is_imm_fpr__60__Vfuncout = 0U;
+            goto __Vlabel346;
+        }
+        __Vlabel346: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req 
+        = ((0x1ffeU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)) 
+           | ((((((0x13e7U >= ((IData)(0x21aU) + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i))))))
+                   ? (0x3fU & (((0U == (0x1fU & ((IData)(0x21aU) 
+                                                 + 
+                                                 (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i)))))))
+                                 ? 0U : (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                         (((IData)(0x21fU) 
+                                           + (0x1fffU 
+                                              & ((IData)(0x27dU) 
+                                                 * 
+                                                 (7U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i))))) 
+                                          >> 5U)] << 
+                                         ((IData)(0x20U) 
+                                          - (0x1fU 
+                                             & ((IData)(0x21aU) 
+                                                + (0x1fffU 
+                                                   & ((IData)(0x27dU) 
+                                                      * 
+                                                      (7U 
+                                                       & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i))))))))) 
+                               | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                  (((IData)(0x21aU) 
+                                    + (0x1fffU & ((IData)(0x27dU) 
+                                                  * 
+                                                  (7U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i))))) 
+                                   >> 5U)] >> (0x1fU 
+                                               & ((IData)(0x21aU) 
+                                                  + 
+                                                  (0x1fffU 
+                                                   & ((IData)(0x27dU) 
+                                                      * 
+                                                      (7U 
+                                                       & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i)))))))))
+                   : 0U) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs3_iro_sb)) 
+                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__wt_valid_ex_id)) 
+               & (~ vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__ex_ex_i[0U])) 
+              & (((0x13e7U >= ((IData)(0x27bU) + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i)))))) 
+                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                     (((IData)(0x27bU) + (0x1fffU & 
+                                          ((IData)(0x27dU) 
+                                           * (7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i))))) 
+                      >> 5U)] >> (0x1fU & ((IData)(0x27bU) 
+                                           + (0x1fffU 
+                                              & ((IData)(0x27dU) 
+                                                 * 
+                                                 (7U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i)))))))) 
+                 == (IData)(vlSelf->__Vfunc_is_imm_fpr__60__Vfuncout))));
+    __Vfunc_is_imm_fpr__63__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((0x59U <= (IData)(__Vfunc_is_imm_fpr__63__op)) 
+               & (0x5aU >= (IData)(__Vfunc_is_imm_fpr__63__op))) 
+              | ((0x5fU <= (IData)(__Vfunc_is_imm_fpr__63__op)) 
+                 & (0x62U >= (IData)(__Vfunc_is_imm_fpr__63__op)))) 
+             | ((0x76U <= (IData)(__Vfunc_is_imm_fpr__63__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_imm_fpr__63__op))))) {
+            vlSelf->__Vfunc_is_imm_fpr__63__Vfuncout = 1U;
+            goto __Vlabel347;
+        } else {
+            vlSelf->__Vfunc_is_imm_fpr__63__Vfuncout = 0U;
+            goto __Vlabel347;
+        }
+        __Vlabel347: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req 
+        = ((0x1ffdU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)) 
+           | (0xfffffffeU & (((((((0x13e7U >= ((IData)(0x21aU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 3U))))))
+                                   ? (0x3fU & (((0U 
+                                                 == 
+                                                 (0x1fU 
+                                                  & ((IData)(0x21aU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 3U)))))))
+                                                 ? 0U
+                                                 : 
+                                                (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                 (((IData)(0x21fU) 
+                                                   + 
+                                                   (0x1fffU 
+                                                    & ((IData)(0x27dU) 
+                                                       * 
+                                                       (7U 
+                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                           >> 3U))))) 
+                                                  >> 5U)] 
+                                                 << 
+                                                 ((IData)(0x20U) 
+                                                  - 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 3U))))))))) 
+                                               | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                  (((IData)(0x21aU) 
+                                                    + 
+                                                    (0x1fffU 
+                                                     & ((IData)(0x27dU) 
+                                                        * 
+                                                        (7U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                            >> 3U))))) 
+                                                   >> 5U)] 
+                                                  >> 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 3U)))))))))
+                                   : 0U) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs3_iro_sb)) 
+                                << 1U) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__wt_valid_ex_id)) 
+                              & ((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__ex_ex_i[4U] 
+                                     >> 1U)) << 1U)) 
+                             & ((((0x13e7U >= ((IData)(0x27bU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 3U)))))) 
+                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                     (((IData)(0x27bU) 
+                                       + (0x1fffU & 
+                                          ((IData)(0x27dU) 
+                                           * (7U & 
+                                              ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                               >> 3U))))) 
+                                      >> 5U)] >> (0x1fU 
+                                                  & ((IData)(0x27bU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 3U)))))))) 
+                                 == (IData)(vlSelf->__Vfunc_is_imm_fpr__63__Vfuncout)) 
+                                << 1U))));
+    __Vfunc_is_imm_fpr__66__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((0x59U <= (IData)(__Vfunc_is_imm_fpr__66__op)) 
+               & (0x5aU >= (IData)(__Vfunc_is_imm_fpr__66__op))) 
+              | ((0x5fU <= (IData)(__Vfunc_is_imm_fpr__66__op)) 
+                 & (0x62U >= (IData)(__Vfunc_is_imm_fpr__66__op)))) 
+             | ((0x76U <= (IData)(__Vfunc_is_imm_fpr__66__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_imm_fpr__66__op))))) {
+            vlSelf->__Vfunc_is_imm_fpr__66__Vfuncout = 1U;
+            goto __Vlabel348;
+        } else {
+            vlSelf->__Vfunc_is_imm_fpr__66__Vfuncout = 0U;
+            goto __Vlabel348;
+        }
+        __Vlabel348: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req 
+        = ((0x1ffbU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)) 
+           | (0xfffffffcU & (((((((0x13e7U >= ((IData)(0x21aU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 6U))))))
+                                   ? (0x3fU & (((0U 
+                                                 == 
+                                                 (0x1fU 
+                                                  & ((IData)(0x21aU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 6U)))))))
+                                                 ? 0U
+                                                 : 
+                                                (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                 (((IData)(0x21fU) 
+                                                   + 
+                                                   (0x1fffU 
+                                                    & ((IData)(0x27dU) 
+                                                       * 
+                                                       (7U 
+                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                           >> 6U))))) 
+                                                  >> 5U)] 
+                                                 << 
+                                                 ((IData)(0x20U) 
+                                                  - 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 6U))))))))) 
+                                               | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                  (((IData)(0x21aU) 
+                                                    + 
+                                                    (0x1fffU 
+                                                     & ((IData)(0x27dU) 
+                                                        * 
+                                                        (7U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                            >> 6U))))) 
+                                                   >> 5U)] 
+                                                  >> 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 6U)))))))))
+                                   : 0U) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs3_iro_sb)) 
+                                << 2U) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__wt_valid_ex_id)) 
+                              & ((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__ex_ex_i[8U] 
+                                     >> 2U)) << 2U)) 
+                             & ((((0x13e7U >= ((IData)(0x27bU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 6U)))))) 
+                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                     (((IData)(0x27bU) 
+                                       + (0x1fffU & 
+                                          ((IData)(0x27dU) 
+                                           * (7U & 
+                                              ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                               >> 6U))))) 
+                                      >> 5U)] >> (0x1fU 
+                                                  & ((IData)(0x27bU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 6U)))))))) 
+                                 == (IData)(vlSelf->__Vfunc_is_imm_fpr__66__Vfuncout)) 
+                                << 2U))));
+    __Vfunc_is_imm_fpr__69__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((0x59U <= (IData)(__Vfunc_is_imm_fpr__69__op)) 
+               & (0x5aU >= (IData)(__Vfunc_is_imm_fpr__69__op))) 
+              | ((0x5fU <= (IData)(__Vfunc_is_imm_fpr__69__op)) 
+                 & (0x62U >= (IData)(__Vfunc_is_imm_fpr__69__op)))) 
+             | ((0x76U <= (IData)(__Vfunc_is_imm_fpr__69__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_imm_fpr__69__op))))) {
+            vlSelf->__Vfunc_is_imm_fpr__69__Vfuncout = 1U;
+            goto __Vlabel349;
+        } else {
+            vlSelf->__Vfunc_is_imm_fpr__69__Vfuncout = 0U;
+            goto __Vlabel349;
+        }
+        __Vlabel349: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req 
+        = ((0x1ff7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)) 
+           | (0xfffffff8U & (((((((0x13e7U >= ((IData)(0x21aU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 9U))))))
+                                   ? (0x3fU & (((0U 
+                                                 == 
+                                                 (0x1fU 
+                                                  & ((IData)(0x21aU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 9U)))))))
+                                                 ? 0U
+                                                 : 
+                                                (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                 (((IData)(0x21fU) 
+                                                   + 
+                                                   (0x1fffU 
+                                                    & ((IData)(0x27dU) 
+                                                       * 
+                                                       (7U 
+                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                           >> 9U))))) 
+                                                  >> 5U)] 
+                                                 << 
+                                                 ((IData)(0x20U) 
+                                                  - 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 9U))))))))) 
+                                               | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                  (((IData)(0x21aU) 
+                                                    + 
+                                                    (0x1fffU 
+                                                     & ((IData)(0x27dU) 
+                                                        * 
+                                                        (7U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                            >> 9U))))) 
+                                                   >> 5U)] 
+                                                  >> 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 9U)))))))))
+                                   : 0U) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs3_iro_sb)) 
+                                << 3U) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__wt_valid_ex_id)) 
+                              & ((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__ex_ex_i[0xcU] 
+                                     >> 3U)) << 3U)) 
+                             & ((((0x13e7U >= ((IData)(0x27bU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 9U)))))) 
+                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                     (((IData)(0x27bU) 
+                                       + (0x1fffU & 
+                                          ((IData)(0x27dU) 
+                                           * (7U & 
+                                              ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                               >> 9U))))) 
+                                      >> 5U)] >> (0x1fU 
+                                                  & ((IData)(0x27bU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 9U)))))))) 
+                                 == (IData)(vlSelf->__Vfunc_is_imm_fpr__69__Vfuncout)) 
+                                << 3U))));
+    __Vfunc_is_imm_fpr__72__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__issue_instr_sb_iro[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((0x59U <= (IData)(__Vfunc_is_imm_fpr__72__op)) 
+               & (0x5aU >= (IData)(__Vfunc_is_imm_fpr__72__op))) 
+              | ((0x5fU <= (IData)(__Vfunc_is_imm_fpr__72__op)) 
+                 & (0x62U >= (IData)(__Vfunc_is_imm_fpr__72__op)))) 
+             | ((0x76U <= (IData)(__Vfunc_is_imm_fpr__72__op)) 
+                & (0x79U >= (IData)(__Vfunc_is_imm_fpr__72__op))))) {
+            vlSelf->__Vfunc_is_imm_fpr__72__Vfuncout = 1U;
+            goto __Vlabel350;
+        } else {
+            vlSelf->__Vfunc_is_imm_fpr__72__Vfuncout = 0U;
+            goto __Vlabel350;
+        }
+        __Vlabel350: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req 
+        = ((0x1fefU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)) 
+           | (0xfffffff0U & (((((((0x13e7U >= ((IData)(0x21aU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 0xcU))))))
+                                   ? (0x3fU & (((0U 
+                                                 == 
+                                                 (0x1fU 
+                                                  & ((IData)(0x21aU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 0xcU)))))))
+                                                 ? 0U
+                                                 : 
+                                                (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                 (((IData)(0x21fU) 
+                                                   + 
+                                                   (0x1fffU 
+                                                    & ((IData)(0x27dU) 
+                                                       * 
+                                                       (7U 
+                                                        & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                           >> 0xcU))))) 
+                                                  >> 5U)] 
+                                                 << 
+                                                 ((IData)(0x20U) 
+                                                  - 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 0xcU))))))))) 
+                                               | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                                  (((IData)(0x21aU) 
+                                                    + 
+                                                    (0x1fffU 
+                                                     & ((IData)(0x27dU) 
+                                                        * 
+                                                        (7U 
+                                                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                            >> 0xcU))))) 
+                                                   >> 5U)] 
+                                                  >> 
+                                                  (0x1fU 
+                                                   & ((IData)(0x21aU) 
+                                                      + 
+                                                      (0x1fffU 
+                                                       & ((IData)(0x27dU) 
+                                                          * 
+                                                          (7U 
+                                                           & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                              >> 0xcU)))))))))
+                                   : 0U) == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__rs3_iro_sb)) 
+                                << 4U) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__wt_valid_ex_id)) 
+                              & ((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__ex_ex_i[0x10U] 
+                                     >> 4U)) << 4U)) 
+                             & ((((0x13e7U >= ((IData)(0x27bU) 
+                                               + (0x1fffU 
+                                                  & ((IData)(0x27dU) 
+                                                     * 
+                                                     (7U 
+                                                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                         >> 0xcU)))))) 
+                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__mem_q[
+                                     (((IData)(0x27bU) 
+                                       + (0x1fffU & 
+                                          ((IData)(0x27dU) 
+                                           * (7U & 
+                                              ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                               >> 0xcU))))) 
+                                      >> 5U)] >> (0x1fU 
+                                                  & ((IData)(0x27bU) 
+                                                     + 
+                                                     (0x1fffU 
+                                                      & ((IData)(0x27dU) 
+                                                         * 
+                                                         (7U 
+                                                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellinp__issue_stage_i__trans_id_i) 
+                                                             >> 0xcU)))))))) 
+                                 == (IData)(vlSelf->__Vfunc_is_imm_fpr__72__Vfuncout)) 
+                                << 4U))));
+    __Vtemp_hc4e040a5__0 = ((0x2000U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req) 
+                                        << 1U)) | (
+                                                   ((IData)(
+                                                            (0U 
+                                                             != 
+                                                             (0xc00U 
+                                                              & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)))) 
+                                                    << 0xcU) 
+                                                   | (((IData)(
+                                                               (0U 
+                                                                != 
+                                                                (0x300U 
+                                                                 & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)))) 
+                                                       << 0xbU) 
+                                                      | (((IData)(
+                                                                  (0U 
+                                                                   != 
+                                                                   (0xc0U 
+                                                                    & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)))) 
+                                                          << 0xaU) 
+                                                         | (((IData)(
+                                                                     (0U 
+                                                                      != 
+                                                                      (0x30U 
+                                                                       & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)))) 
+                                                             << 9U) 
+                                                            | (((IData)(
+                                                                        (0U 
+                                                                         != 
+                                                                         (0xcU 
+                                                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)))) 
+                                                                << 8U) 
+                                                               | (((IData)(
+                                                                           (0U 
+                                                                            != 
+                                                                            (3U 
+                                                                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__rs3_fwd_req)))) 
+                                                                   << 7U) 
+                                                                  | (((IData)(
+                                                                              (0U 
+                                                                               != 
+                                                                               (0x6000U 
+                                                                                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__i_sel_rs3__DOT__gen_arbiter__DOT__req_nodes)))) 
+                                                                      << 6U) 
+                                                                     | (((IData)(
+                                                                                (0U 
+                                                                                != 
+                                                                                (0x1800U 
+                                                                                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__i_sel_rs3__DOT__gen_arbiter__DOT__req_nodes)))) 
+                                                                         << 5U) 
+                                                                        | (((IData)(
+                                                                                (0U 
+                                                                                != 
+                                                                                (0x600U 
+                                                                                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__i_sel_rs3__DOT__gen_arbiter__DOT__req_nodes)))) 
+                                                                            << 4U) 
+                                                                           | (((IData)(
+                                                                                (0U 
+                                                                                != 
+                                                                                (0x180U 
+                                                                                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__i_sel_rs3__DOT__gen_arbiter__DOT__req_nodes)))) 
+                                                                               << 3U) 
+                                                                              | (((IData)(
+                                                                                (0U 
+                                                                                != 
+                                                                                (0x60U 
+                                                                                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__i_sel_rs3__DOT__gen_arbiter__DOT__req_nodes)))) 
+                                                                                << 2U) 
+                                                                                | (((IData)(
+                                                                                (0U 
+                                                                                != 
+                                                                                (0x18U 
+                                                                                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__i_sel_rs3__DOT__gen_arbiter__DOT__req_nodes)))) 
+                                                                                << 1U) 
+                                                                                | (IData)(
+                                                                                (0U 
+                                                                                != 
+                                                                                (6U 
+                                                                                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__i_sel_rs3__DOT__gen_arbiter__DOT__req_nodes)))))))))))))))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__i_sel_rs3__DOT__gen_arbiter__DOT__req_nodes 
+        = __Vtemp_hc4e040a5__0;
+}
