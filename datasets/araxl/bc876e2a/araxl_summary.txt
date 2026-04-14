@@ -1,0 +1,21 @@
+araxl SCORE snapshot (pulp-platform/AraXL)
+Generated (UTC): 2026-04-14 10:38:22
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/araxl
+Git commit (short): bc876e2a
+Git commit (full): bc876e2aa890f3b75541cf9a7b9370033996f2a0
+bender (hardware/bender): bender 0.29.1
+bender (PATH): bender 0.31.0
+verilator: Verilator 5.022 2024-02-24 rev fedora-5.022
+
+Verification:
+  Deps vs Bender.lock: PASS
+  bender flist-plus (Verilator view): PASS
+  Verilator lint: PASS
+  Logs: /home/yongfu/proj/score/datasets/araxl/bc876e2a/verification/
+  Upstream make verilate: OK
+
+See https://github.com/pulp-platform/AraXL and tools/araxl/README.md
+Bundle path: /home/yongfu/proj/score/datasets/araxl/bc876e2a/source_snapshot
+Generation log: /home/yongfu/proj/score/logs/araxl_generation/generation_20260414_181926.log

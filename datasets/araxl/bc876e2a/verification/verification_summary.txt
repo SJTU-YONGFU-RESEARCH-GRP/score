@@ -1,0 +1,14 @@
+AraXL RTL verification summary
+Generated (UTC): 2026-04-14 10:25:33
+ARA_CONFIGURATION / ARAXL_CONFIGURATION: default
+nr_lanes / vlen / nr_clusters: 4 / 4096 / 2
+
+Static RTL checks:
+  1) Bender.lock packages under hardware/deps: PASS
+  2) bender flist-plus (Verilator-tagged file closure): PASS
+  3) Verilator --lint-only (top ara_tb_verilator): PASS
+
+Compiled RTL (make verilate) is appended below after the generation step.
+
+Compiled RTL (upstream hardware/Makefile verilate): OK
+veril_path used: /home/yongfu/proj/score/tools/araxl/install/verilator/bin/

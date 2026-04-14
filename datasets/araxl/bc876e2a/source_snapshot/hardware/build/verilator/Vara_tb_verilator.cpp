@@ -1,0 +1,102 @@
+// Verilated -*- C++ -*-
+// DESCRIPTION: Verilator output: Model implementation (design independent parts)
+
+#include "Vara_tb_verilator.h"
+#include "Vara_tb_verilator__Syms.h"
+#include "verilated_dpi.h"
+
+//============================================================
+// Constructors
+
+Vara_tb_verilator::Vara_tb_verilator(VerilatedContext* _vcontextp__, const char* _vcname__)
+    : VerilatedModel{*_vcontextp__}
+    , vlSymsp{new Vara_tb_verilator__Syms(contextp(), _vcname__, this)}
+    , clk_i{vlSymsp->TOP.clk_i}
+    , rst_ni{vlSymsp->TOP.rst_ni}
+    , exit_o{vlSymsp->TOP.exit_o}
+    , __PVT____024unit{vlSymsp->TOP.__PVT____024unit}
+    , __PVT__ara_pkg{vlSymsp->TOP.__PVT__ara_pkg}
+    , rootp{&(vlSymsp->TOP)}
+{
+    // Register model with the context
+    contextp()->addModel(this);
+}
+
+Vara_tb_verilator::Vara_tb_verilator(const char* _vcname__)
+    : Vara_tb_verilator(Verilated::threadContextp(), _vcname__)
+{
+}
+
+//============================================================
+// Destructor
+
+Vara_tb_verilator::~Vara_tb_verilator() {
+    delete vlSymsp;
+}
+
+//============================================================
+// Evaluation function
+
+#ifdef VL_DEBUG
+void Vara_tb_verilator___024root___eval_debug_assertions(Vara_tb_verilator___024root* vlSelf);
+#endif  // VL_DEBUG
+void Vara_tb_verilator___024root___eval_static(Vara_tb_verilator___024root* vlSelf);
+void Vara_tb_verilator___024root___eval_initial(Vara_tb_verilator___024root* vlSelf);
+void Vara_tb_verilator___024root___eval_settle(Vara_tb_verilator___024root* vlSelf);
+void Vara_tb_verilator___024root___eval(Vara_tb_verilator___024root* vlSelf);
+
+void Vara_tb_verilator::eval_step() {
+    VL_DEBUG_IF(VL_DBG_MSGF("+++++TOP Evaluate Vara_tb_verilator::eval_step\n"); );
+#ifdef VL_DEBUG
+    // Debug assertions
+    Vara_tb_verilator___024root___eval_debug_assertions(&(vlSymsp->TOP));
+#endif  // VL_DEBUG
+    vlSymsp->__Vm_deleter.deleteAll();
+    if (VL_UNLIKELY(!vlSymsp->__Vm_didInit)) {
+        vlSymsp->__Vm_didInit = true;
+        VL_DEBUG_IF(VL_DBG_MSGF("+ Initial\n"););
+        Vara_tb_verilator___024root___eval_static(&(vlSymsp->TOP));
+        Vara_tb_verilator___024root___eval_initial(&(vlSymsp->TOP));
+        Vara_tb_verilator___024root___eval_settle(&(vlSymsp->TOP));
+    }
+    // MTask 0 start
+    VL_DEBUG_IF(VL_DBG_MSGF("MTask0 starting\n"););
+    Verilated::mtaskId(0);
+    VL_DEBUG_IF(VL_DBG_MSGF("+ Eval\n"););
+    Vara_tb_verilator___024root___eval(&(vlSymsp->TOP));
+    // Evaluate cleanup
+    Verilated::endOfThreadMTask(vlSymsp->__Vm_evalMsgQp);
+    Verilated::endOfEval(vlSymsp->__Vm_evalMsgQp);
+}
+
+//============================================================
+// Events and timing
+bool Vara_tb_verilator::eventsPending() { return false; }
+
+uint64_t Vara_tb_verilator::nextTimeSlot() {
+    VL_FATAL_MT(__FILE__, __LINE__, "", "%Error: No delays in the design");
+    return 0;
+}
+
+//============================================================
+// Utilities
+
+const char* Vara_tb_verilator::name() const {
+    return vlSymsp->name();
+}
+
+//============================================================
+// Invoke final blocks
+
+void Vara_tb_verilator___024root___eval_final(Vara_tb_verilator___024root* vlSelf);
+
+VL_ATTR_COLD void Vara_tb_verilator::final() {
+    Vara_tb_verilator___024root___eval_final(&(vlSymsp->TOP));
+}
+
+//============================================================
+// Implementations of abstract methods from VerilatedModel
+
+const char* Vara_tb_verilator::hierName() const { return vlSymsp->name(); }
+const char* Vara_tb_verilator::modelName() const { return "Vara_tb_verilator"; }
+unsigned Vara_tb_verilator::threads() const { return 1; }

@@ -1,0 +1,5993 @@
+// Verilated -*- C++ -*-
+// DESCRIPTION: Verilator output: Design implementation internals
+// See Vara_tb_verilator.h for the primary calling header
+
+#include "verilated.h"
+#include "verilated_dpi.h"
+
+#include "Vara_tb_verilator__Syms.h"
+#include "Vara_tb_verilator___024root.h"
+
+VL_INLINE_OPT void Vara_tb_verilator___024root___act_comb__TOP__34(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___act_comb__TOP__34\n"); );
+    // Init
+    VlWide<5>/*128:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit;
+    VL_ZERO_W(129, ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit);
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__sc_fail;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__sc_fail = 0;
+    CData/*0:0*/ ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__sc_pass;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__sc_pass = 0;
+    CData/*7:0*/ __Vfunc_is_rd_fpr__147__op;
+    __Vfunc_is_rd_fpr__147__op = 0;
+    // Body
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[0U] = 0U;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[1U] = 0U;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[2U] = 0U;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[3U] = 0U;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[4U] = 0U;
+    if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__update_access_exception) 
+         | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__read_access_exception))) {
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[2U] 
+            = (4U | (1U & ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[2U]));
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[3U] = 0U;
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[4U] = 0U;
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[0U] 
+            = (1U | ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[0U]);
+    }
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__privilege_violation) {
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[2U] 
+            = (4U | (1U & ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[2U]));
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[3U] = 0U;
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[4U] = 0U;
+        ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[0U] 
+            = (1U | ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[0U]);
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[0U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[1U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[2U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[3U] = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[4U] = 0U;
+    if ((0x2000000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xeU])) {
+        if ((1U & ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[0U])) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[0U] 
+                = ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[0U];
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[1U] 
+                = ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[1U];
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[2U] 
+                = ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[2U];
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[3U] 
+                = ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[3U];
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[4U] 
+                = ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[4U];
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[0U] 
+                = ((1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[0U]) 
+                   | ((IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xcU])) 
+                                << 0x2aU) | (((QData)((IData)(
+                                                              vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xbU])) 
+                                              << 0xaU) 
+                                             | ((QData)((IData)(
+                                                                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xaU])) 
+                                                >> 0x16U)))) 
+                      << 1U));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[1U] 
+                = (((IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xcU])) 
+                              << 0x2aU) | (((QData)((IData)(
+                                                            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xbU])) 
+                                            << 0xaU) 
+                                           | ((QData)((IData)(
+                                                              vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xaU])) 
+                                              >> 0x16U)))) 
+                    >> 0x1fU) | ((IData)(((((QData)((IData)(
+                                                            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xcU])) 
+                                            << 0x2aU) 
+                                           | (((QData)((IData)(
+                                                               vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xbU])) 
+                                               << 0xaU) 
+                                              | ((QData)((IData)(
+                                                                 vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xaU])) 
+                                                 >> 0x16U))) 
+                                          >> 0x20U)) 
+                                 << 1U));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[2U] 
+                = ((0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[2U]) 
+                   | ((IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xcU])) 
+                                 << 0x2aU) | (((QData)((IData)(
+                                                               vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xbU])) 
+                                               << 0xaU) 
+                                              | ((QData)((IData)(
+                                                                 vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xaU])) 
+                                                 >> 0x16U))) 
+                               >> 0x20U)) >> 0x1fU));
+        }
+        if ((0x200000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xaU])) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[0U] 
+                = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xbU] 
+                    << 0xbU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xaU] 
+                                >> 0x15U));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[1U] 
+                = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xcU] 
+                    << 0xbU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xbU] 
+                                >> 0x15U));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[2U] 
+                = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xdU] 
+                    << 0xbU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xcU] 
+                                >> 0x15U));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[3U] 
+                = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xeU] 
+                    << 0xbU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xdU] 
+                                >> 0x15U));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[4U] 
+                = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xeU] 
+                         >> 0x15U));
+        }
+    }
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__halt_ctrl) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[0U] 
+            = (0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[0U]);
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack 
+        = (2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_valid_commit = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id 
+        = (2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__lsu_commit_commit_ex = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_commit_commit_ex = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellout__commit_stage_i__wdata_o[0U] 
+        = (IData)(((1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_resp[2U])
+                    ? (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_resp[1U])) 
+                        << 0x20U) | (QData)((IData)(
+                                                    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_resp[0U])))
+                    : (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x10U])) 
+                        << 0x26U) | (((QData)((IData)(
+                                                      vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xfU])) 
+                                      << 6U) | ((QData)((IData)(
+                                                                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xeU])) 
+                                                >> 0x1aU)))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellout__commit_stage_i__wdata_o[1U] 
+        = (IData)((((1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_resp[2U])
+                     ? (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_resp[1U])) 
+                         << 0x20U) | (QData)((IData)(
+                                                     vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_resp[0U])))
+                     : (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x10U])) 
+                         << 0x26U) | (((QData)((IData)(
+                                                       vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xfU])) 
+                                       << 6U) | ((QData)((IData)(
+                                                                 vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xeU])) 
+                                                 >> 0x1aU)))) 
+                   >> 0x20U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_wdata_commit_csr = 0ULL;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__fence_i_commit_controller = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__fence_commit_controller = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__sfence_vma_commit_controller = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_write_fflags_commit_cs = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_commit = 0U;
+    if ((1U & (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xeU] 
+                 >> 0x19U) & (~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xaU] 
+                                 >> 0x15U))) & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__halt_ctrl))))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack 
+            = (1U | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack));
+        vlSelf->__Vfunc_is_rd_fpr__149__op = (0xffU 
+                                              & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x11U] 
+                                                 >> 0xcU));
+        {
+            if (((((((((((0x51U <= (IData)(vlSelf->__Vfunc_is_rd_fpr__149__op)) 
+                         & (0x54U >= (IData)(vlSelf->__Vfunc_is_rd_fpr__149__op))) 
+                        | ((0x59U <= (IData)(vlSelf->__Vfunc_is_rd_fpr__149__op)) 
+                           & (0x62U >= (IData)(vlSelf->__Vfunc_is_rd_fpr__149__op)))) 
+                       | (0x64U == (IData)(vlSelf->__Vfunc_is_rd_fpr__149__op))) 
+                      | (0x65U == (IData)(vlSelf->__Vfunc_is_rd_fpr__149__op))) 
+                     | (0x66U == (IData)(vlSelf->__Vfunc_is_rd_fpr__149__op))) 
+                    | (0x68U == (IData)(vlSelf->__Vfunc_is_rd_fpr__149__op))) 
+                   | ((0x6bU <= (IData)(vlSelf->__Vfunc_is_rd_fpr__149__op)) 
+                      & (0x6fU >= (IData)(vlSelf->__Vfunc_is_rd_fpr__149__op)))) 
+                  | ((0x76U <= (IData)(vlSelf->__Vfunc_is_rd_fpr__149__op)) 
+                     & (0x79U >= (IData)(vlSelf->__Vfunc_is_rd_fpr__149__op)))) 
+                 | (0xa8U == (IData)(vlSelf->__Vfunc_is_rd_fpr__149__op)))) {
+                vlSelf->__Vfunc_is_rd_fpr__149__Vfuncout = 1U;
+                goto __Vlabel596;
+            } else {
+                vlSelf->__Vfunc_is_rd_fpr__149__Vfuncout = 0U;
+                goto __Vlabel596;
+            }
+            __Vlabel596: ;
+        }
+        if (vlSelf->__Vfunc_is_rd_fpr__149__Vfuncout) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id 
+                = (1U | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id));
+        } else {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id 
+                = (1U | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id));
+        }
+        if ((IData)(((0x200000U == (0xf00000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x11U])) 
+                     & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_stage_i__DOT__instr_0_is_amo))))) {
+            if ((4U > (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__store_buffer_i__DOT__commit_status_cnt_q))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack 
+                    = (1U | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack));
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__lsu_commit_commit_ex = 1U;
+            } else {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack 
+                    = (2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack));
+            }
+        }
+        if (((7U == (0xfU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x11U] 
+                             >> 0x14U))) | (8U == (0xfU 
+                                                   & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x11U] 
+                                                      >> 0x14U))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_wdata_commit_csr 
+                = (QData)((IData)((0x1fU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xcU] 
+                                            >> 0x16U))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_write_fflags_commit_cs = 1U;
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack 
+                = (1U | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack));
+        }
+        if ((6U == (0xfU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x11U] 
+                            >> 0x14U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr 
+                = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x11U] 
+                            >> 0xcU));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_wdata_commit_csr 
+                = (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x10U])) 
+                    << 0x26U) | (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xfU])) 
+                                  << 6U) | ((QData)((IData)(
+                                                            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xeU])) 
+                                            >> 0x1aU)));
+            if ((1U & ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_exception_csr_commit[0U])) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack 
+                    = (2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack));
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id 
+                    = (2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id));
+            } else {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_commit_commit_ex = 1U;
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellout__commit_stage_i__wdata_o[0U] 
+                    = (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellout__csr_regfile_i__csr_rdata_o);
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellout__commit_stage_i__wdata_o[1U] 
+                    = (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellout__csr_regfile_i__csr_rdata_o 
+                               >> 0x20U));
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack 
+                    = (1U | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack));
+            }
+        }
+        if ((0x1eU == (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x11U] 
+                                >> 0xcU)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__sfence_vma_commit_controller 
+                = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__no_st_pending_commit;
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack 
+                = ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack)) 
+                   | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__no_st_pending_commit));
+        }
+        if (((0x1dU == (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x11U] 
+                                 >> 0xcU))) | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__dcache_flush_ctrl_cache) 
+                                               & (2U 
+                                                  != 
+                                                  (0xfU 
+                                                   & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x11U] 
+                                                      >> 0x14U)))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack 
+                = ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack)) 
+                   | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__no_st_pending_commit));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__fence_i_commit_controller 
+                = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__no_st_pending_commit;
+        }
+        if ((0x1cU == (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x11U] 
+                                >> 0xcU)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack 
+                = ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack)) 
+                   | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__no_st_pending_commit));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__fence_commit_controller 
+                = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__no_st_pending_commit;
+        }
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_stage_i__DOT__instr_0_is_amo) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack 
+                = ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack)) 
+                   | (1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_resp[2U]));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_commit 
+                = (1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_resp[2U]);
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_valid_commit = 1U;
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id 
+                = ((2U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)) 
+                   | (1U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_resp[2U]));
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack 
+        = (1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id 
+        = (1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellout__commit_stage_i__wdata_o[2U] 
+        = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x24U])) 
+                    << 0x2bU) | (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x23U])) 
+                                  << 0xbU) | ((QData)((IData)(
+                                                              vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x22U])) 
+                                              >> 0x15U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT____Vcellout__commit_stage_i__wdata_o[3U] 
+        = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x24U])) 
+                     << 0x2bU) | (((QData)((IData)(
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x23U])) 
+                                   << 0xbU) | ((QData)((IData)(
+                                                               vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x22U])) 
+                                               >> 0x15U))) 
+                   >> 0x20U));
+    if ((((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack) 
+              & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x22U] 
+                 >> 0x14U)) & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__halt_ctrl))) 
+            & (6U != (0xfU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x11U] 
+                              >> 0x14U)))) & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__dcache_flush_ctrl_cache))) 
+          & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_stage_i__DOT__instr_0_is_amo))) 
+         & (~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__dcsr_q 
+               >> 2U)))) {
+        if ((((~ vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[0U]) 
+              & (~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x1eU] 
+                    >> 0x10U))) & ((((((3U == (0xfU 
+                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x25U] 
+                                                  >> 0xfU))) 
+                                       | (1U == (0xfU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x25U] 
+                                                    >> 0xfU)))) 
+                                      | (4U == (0xfU 
+                                                & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x25U] 
+                                                   >> 0xfU)))) 
+                                     | (5U == (0xfU 
+                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x25U] 
+                                                  >> 0xfU)))) 
+                                    | (7U == (0xfU 
+                                              & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x25U] 
+                                                 >> 0xfU)))) 
+                                   | (8U == (0xfU & 
+                                             (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x25U] 
+                                              >> 0xfU)))))) {
+            vlSelf->__Vfunc_is_rd_fpr__150__op = (0xffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x25U] 
+                                                     >> 7U));
+            {
+                if (((((((((((0x51U <= (IData)(vlSelf->__Vfunc_is_rd_fpr__150__op)) 
+                             & (0x54U >= (IData)(vlSelf->__Vfunc_is_rd_fpr__150__op))) 
+                            | ((0x59U <= (IData)(vlSelf->__Vfunc_is_rd_fpr__150__op)) 
+                               & (0x62U >= (IData)(vlSelf->__Vfunc_is_rd_fpr__150__op)))) 
+                           | (0x64U == (IData)(vlSelf->__Vfunc_is_rd_fpr__150__op))) 
+                          | (0x65U == (IData)(vlSelf->__Vfunc_is_rd_fpr__150__op))) 
+                         | (0x66U == (IData)(vlSelf->__Vfunc_is_rd_fpr__150__op))) 
+                        | (0x68U == (IData)(vlSelf->__Vfunc_is_rd_fpr__150__op))) 
+                       | ((0x6bU <= (IData)(vlSelf->__Vfunc_is_rd_fpr__150__op)) 
+                          & (0x6fU >= (IData)(vlSelf->__Vfunc_is_rd_fpr__150__op)))) 
+                      | ((0x76U <= (IData)(vlSelf->__Vfunc_is_rd_fpr__150__op)) 
+                         & (0x79U >= (IData)(vlSelf->__Vfunc_is_rd_fpr__150__op)))) 
+                     | (0xa8U == (IData)(vlSelf->__Vfunc_is_rd_fpr__150__op)))) {
+                    vlSelf->__Vfunc_is_rd_fpr__150__Vfuncout = 1U;
+                    goto __Vlabel597;
+                } else {
+                    vlSelf->__Vfunc_is_rd_fpr__150__Vfuncout = 0U;
+                    goto __Vlabel597;
+                }
+                __Vlabel597: ;
+            }
+            if (vlSelf->__Vfunc_is_rd_fpr__150__Vfuncout) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id 
+                    = (2U | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id));
+            } else {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id 
+                    = (2U | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id));
+            }
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack 
+                = (2U | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack));
+            if (((7U == (0xfU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x25U] 
+                                 >> 0xfU))) | (8U == 
+                                               (0xfU 
+                                                & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x25U] 
+                                                   >> 0xfU))))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_wdata_commit_csr 
+                    = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_write_fflags_commit_cs)
+                        ? (QData)((IData)((0x1fU & 
+                                           (((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xcU] 
+                                              << 0xaU) 
+                                             | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0xcU] 
+                                                >> 0x16U)) 
+                                            | ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x20U] 
+                                                << 0xfU) 
+                                               | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x20U] 
+                                                  >> 0x11U))))))
+                        : (QData)((IData)((0x1fU & 
+                                           (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x20U] 
+                                            >> 0x11U)))));
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_write_fflags_commit_cs = 1U;
+            }
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__store_buffer_i__DOT__speculative_read_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__store_buffer_i__DOT__speculative_read_pointer_q;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__store_buffer_i__DOT__commit_write_pointer_n 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__store_buffer_i__DOT__commit_write_pointer_q;
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__lsu_commit_commit_ex) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__store_buffer_i__DOT__speculative_read_pointer_n 
+            = (3U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__store_buffer_i__DOT__speculative_read_pointer_q)));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__store_buffer_i__DOT__commit_write_pointer_n 
+            = (3U & ((IData)(1U) + (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__store_buffer_i__DOT__commit_write_pointer_n)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__st_ready 
+        = ((0U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__i_amo_buffer__DOT__i_amo_fifo__DOT__status_cnt_q)) 
+           & ((3U > (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__store_buffer_i__DOT__speculative_status_cnt_q)) 
+              | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__lsu_commit_commit_ex)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffffffffffeULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | (IData)((IData)(((0U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                              & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffffffffffdULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((1U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 1U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffffffffffbULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((2U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffffffffff7ULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((3U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 3U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffffffffffefULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((4U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 4U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffffffffffdfULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((5U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 5U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffffffffffbfULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((6U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 6U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffffffffff7fULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((7U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 7U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffffffffeffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((8U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 8U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffffffffdffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((9U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 9U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffffffffbffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0xaU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0xaU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffffffff7ffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0xbU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0xbU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffffffffefffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0xcU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0xcU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffffffffdfffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0xdU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0xdU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffffffffbfffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0xeU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0xeU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffffffff7fffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0xfU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0xfU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffffffeffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x10U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0x10U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffffffdffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x11U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0x11U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffffffbffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x12U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0x12U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffffff7ffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x13U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0x13U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffffffefffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x14U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0x14U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffffffdfffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x15U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0x15U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffffffbfffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x16U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0x16U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffffff7fffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x17U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0x17U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffffeffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x18U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0x18U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffffdffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x19U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0x19U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffffbffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x1aU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0x1aU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffff7ffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x1bU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0x1bU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffffefffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x1cU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0x1cU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffffdfffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x1dU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0x1dU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffffbfffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x1eU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0x1eU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffff7fffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x1fU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id)))) 
+              << 0x1fU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffeffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0U == (0x3e0U 
+                                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x20U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffdffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x20U == (0x3e0U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x21U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffffbffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x40U == (0x3e0U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x22U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffff7ffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x60U == (0x3e0U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x23U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffefffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x80U == (0x3e0U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x24U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffdfffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0xa0U == (0x3e0U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x25U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffffbfffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0xc0U == (0x3e0U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x26U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffff7fffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0xe0U == (0x3e0U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x27U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffeffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x100U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x28U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffdffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x120U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x29U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffffbffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x140U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x2aU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffff7ffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x160U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x2bU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffefffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x180U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x2cU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffdfffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x1a0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x2dU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffffbfffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x1c0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x2eU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffff7fffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x1e0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x2fU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffeffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x200U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x30U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffdffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x220U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x31U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfffbffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x240U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x32U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfff7ffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x260U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x33U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffefffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x280U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x34U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffdfffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x2a0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x35U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xffbfffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x2c0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x36U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xff7fffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x2e0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x37U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfeffffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x300U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x38U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfdffffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x320U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x39U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xfbffffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x340U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x3aU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xf7ffffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x360U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x3bU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xefffffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x380U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x3cU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xdfffffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x3a0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x3dU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0xbfffffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x3c0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x3eU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec 
+        = ((0x7fffffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__gen_asic_regfile__DOT__i_ariane_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x3e0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_gpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x3fU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffffffffffeULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | (IData)((IData)(((0U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                              & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffffffffffdULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((1U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 1U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffffffffffbULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((2U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffffffffff7ULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((3U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 3U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffffffffffefULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((4U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 4U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffffffffffdfULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((5U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 5U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffffffffffbfULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((6U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 6U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffffffffff7fULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((7U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 7U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffffffffeffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((8U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 8U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffffffffdffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((9U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 9U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffffffffbffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0xaU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0xaU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffffffff7ffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0xbU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0xbU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffffffffefffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0xcU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0xcU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffffffffdfffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0xdU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0xdU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffffffffbfffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0xeU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0xeU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffffffff7fffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0xfU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0xfU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffffffeffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x10U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0x10U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffffffdffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x11U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0x11U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffffffbffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x12U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0x12U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffffff7ffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x13U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0x13U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffffffefffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x14U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0x14U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffffffdfffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x15U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0x15U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffffffbfffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x16U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0x16U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffffff7fffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x17U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0x17U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffffeffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x18U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0x18U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffffdffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x19U == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0x19U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffffbffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x1aU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0x1aU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffff7ffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x1bU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0x1bU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffffefffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x1cU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0x1cU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffffdfffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x1dU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0x1dU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffffbfffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x1eU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0x1eU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffff7fffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)(((0x1fU == (0x1fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id)))) 
+              << 0x1fU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffeffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0U == (0x3e0U 
+                                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x20U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffdffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x20U == (0x3e0U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x21U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffffbffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x40U == (0x3e0U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x22U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffff7ffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x60U == (0x3e0U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x23U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffefffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x80U == (0x3e0U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x24U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffdfffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0xa0U == (0x3e0U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x25U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffffbfffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0xc0U == (0x3e0U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x26U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffff7fffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0xe0U == (0x3e0U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x27U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffeffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x100U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x28U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffdffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x120U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x29U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffffbffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x140U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x2aU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffff7ffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x160U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x2bU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffefffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x180U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x2cU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffdfffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x1a0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x2dU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffffbfffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x1c0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x2eU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffff7fffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x1e0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x2fU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffeffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x200U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x30U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffdffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x220U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x31U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfffbffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x240U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x32U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfff7ffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x260U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x33U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffefffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x280U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x34U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffdfffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x2a0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x35U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xffbfffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x2c0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x36U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xff7fffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x2e0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x37U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfeffffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x300U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x38U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfdffffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x320U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x39U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xfbffffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x340U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x3aU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xf7ffffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x360U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x3bU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xefffffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x380U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x3cU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xdfffffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x3a0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x3dU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0xbfffffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x3c0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x3eU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec 
+        = ((0x7fffffffffffffffULL & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__float_regfile_gen__DOT__gen_asic_fp_regfile__DOT__i_ariane_fp_regfile__DOT__we_dec) 
+           | ((QData)((IData)((IData)(((0x3e0U == (0x3e0U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellinp__i_issue_read_operands__waddr_i))) 
+                                       & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__we_fpr_commit_id) 
+                                          >> 1U))))) 
+              << 0x3fU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__csr_ready = 1U;
+    if ((1U & (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__csr_buffer_i__DOT__csr_reg_q) 
+                | (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_issue_read_operands__DOT__csr_valid_q)) 
+               & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_commit_commit_ex))))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__csr_ready = 0U;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__amo_req_d 
+        = ((0U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__store_buffer_i__DOT__commit_status_cnt_q)) 
+           & ((1U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__i_amo_buffer__DOT__i_amo_fifo__DOT__status_cnt_q)) 
+              & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_valid_commit)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex = 0U;
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__sfence_vma_commit_controller) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex = 1U;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__icache_flush_ctrl_cache = 0U;
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__fence_i_commit_controller) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__icache_flush_ctrl_cache = 1U;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT__i_scoreboard__DOT__num_commit 
+        = (3U & (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack) 
+                  >> 1U) + (1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__set_debug_pc = 0U;
+    if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__debug_mode_q)))) {
+        if ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[0U] 
+             & (3ULL == (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[4U])) 
+                          << 0x3fU) | (((QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[3U])) 
+                                        << 0x1fU) | 
+                                       ((QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[2U])) 
+                                        >> 1U)))))) {
+            if ((3U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__priv_lvl))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__set_debug_pc 
+                    = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__dcsr_q 
+                             >> 0xfU));
+            } else if ((1U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__priv_lvl))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__set_debug_pc 
+                    = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__dcsr_q 
+                             >> 0xdU));
+            } else if ((0U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__priv_lvl))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__set_debug_pc 
+                    = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__dcsr_q 
+                             >> 0xcU));
+            }
+        }
+        if ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[0U] 
+             & (0x18ULL == (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[4U])) 
+                             << 0x3fU) | (((QData)((IData)(
+                                                           vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[3U])) 
+                                           << 0x1fU) 
+                                          | ((QData)((IData)(
+                                                             vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[2U])) 
+                                             >> 1U)))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__set_debug_pc = 1U;
+        }
+        if ((1U & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__dcsr_q 
+                    >> 2U) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__set_debug_pc = 1U;
+        }
+    }
+    if ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__debug_mode_q) 
+          & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[0U]) 
+         & (3ULL == (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[4U])) 
+                      << 0x3fU) | (((QData)((IData)(
+                                                    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[3U])) 
+                                    << 0x1fU) | ((QData)((IData)(
+                                                                 vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[2U])) 
+                                                 >> 1U)))))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__set_debug_pc = 1U;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__dirty_v_state 
+        = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack) 
+           & (0xa00000U == (0xf00000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x11U])));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__dirty_v_state 
+        = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__dirty_v_state) 
+           | (IData)((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack) 
+                       >> 1U) & (0x50000U == (0x78000U 
+                                              & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x25U])))));
+    __Vfunc_is_rd_fpr__147__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x11U] 
+                                           >> 0xcU));
+    {
+        if (((((((((((0x51U <= (IData)(__Vfunc_is_rd_fpr__147__op)) 
+                     & (0x54U >= (IData)(__Vfunc_is_rd_fpr__147__op))) 
+                    | ((0x59U <= (IData)(__Vfunc_is_rd_fpr__147__op)) 
+                       & (0x62U >= (IData)(__Vfunc_is_rd_fpr__147__op)))) 
+                   | (0x64U == (IData)(__Vfunc_is_rd_fpr__147__op))) 
+                  | (0x65U == (IData)(__Vfunc_is_rd_fpr__147__op))) 
+                 | (0x66U == (IData)(__Vfunc_is_rd_fpr__147__op))) 
+                | (0x68U == (IData)(__Vfunc_is_rd_fpr__147__op))) 
+               | ((0x6bU <= (IData)(__Vfunc_is_rd_fpr__147__op)) 
+                  & (0x6fU >= (IData)(__Vfunc_is_rd_fpr__147__op)))) 
+              | ((0x76U <= (IData)(__Vfunc_is_rd_fpr__147__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rd_fpr__147__op)))) 
+             | (0xa8U == (IData)(__Vfunc_is_rd_fpr__147__op)))) {
+            vlSelf->__Vfunc_is_rd_fpr__147__Vfuncout = 1U;
+            goto __Vlabel598;
+        } else {
+            vlSelf->__Vfunc_is_rd_fpr__147__Vfuncout = 0U;
+            goto __Vlabel598;
+        }
+        __Vlabel598: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__dirty_fp_state 
+        = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack) 
+           & (((7U == (0xfU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x11U] 
+                               >> 0x14U))) | (8U == 
+                                              (0xfU 
+                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x11U] 
+                                                  >> 0x14U)))) 
+              | (IData)(vlSelf->__Vfunc_is_rd_fpr__147__Vfuncout)));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__dirty_fp_state 
+        = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__dirty_fp_state) 
+           | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0U] 
+              & (0xa00000U == (0xf00000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x11U]))));
+    __Vfunc_is_rd_fpr__147__op = (0xffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x25U] 
+                                           >> 7U));
+    {
+        if (((((((((((0x51U <= (IData)(__Vfunc_is_rd_fpr__147__op)) 
+                     & (0x54U >= (IData)(__Vfunc_is_rd_fpr__147__op))) 
+                    | ((0x59U <= (IData)(__Vfunc_is_rd_fpr__147__op)) 
+                       & (0x62U >= (IData)(__Vfunc_is_rd_fpr__147__op)))) 
+                   | (0x64U == (IData)(__Vfunc_is_rd_fpr__147__op))) 
+                  | (0x65U == (IData)(__Vfunc_is_rd_fpr__147__op))) 
+                 | (0x66U == (IData)(__Vfunc_is_rd_fpr__147__op))) 
+                | (0x68U == (IData)(__Vfunc_is_rd_fpr__147__op))) 
+               | ((0x6bU <= (IData)(__Vfunc_is_rd_fpr__147__op)) 
+                  & (0x6fU >= (IData)(__Vfunc_is_rd_fpr__147__op)))) 
+              | ((0x76U <= (IData)(__Vfunc_is_rd_fpr__147__op)) 
+                 & (0x79U >= (IData)(__Vfunc_is_rd_fpr__147__op)))) 
+             | (0xa8U == (IData)(__Vfunc_is_rd_fpr__147__op)))) {
+            vlSelf->__Vfunc_is_rd_fpr__147__Vfuncout = 1U;
+            goto __Vlabel599;
+        } else {
+            vlSelf->__Vfunc_is_rd_fpr__147__Vfuncout = 0U;
+            goto __Vlabel599;
+        }
+        __Vlabel599: ;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__dirty_fp_state 
+        = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__dirty_fp_state) 
+           | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack) 
+               >> 1U) & (((7U == (0xfU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x25U] 
+                                          >> 0xfU))) 
+                          | (8U == (0xfU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x25U] 
+                                            >> 0xfU)))) 
+                         | (IData)(vlSelf->__Vfunc_is_rd_fpr__147__Vfuncout))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__dirty_fp_state 
+        = ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__dirty_fp_state) 
+           | ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x13U] 
+               >> 0x1bU) & (0x50000U == (0x78000U & 
+                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__issue_stage_i__DOT____Vcellout__i_scoreboard__commit_instr_o[0x25U]))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__privilege_violation = 0U;
+    if (((((0x1fU == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr)) 
+           | (0x21U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr))) 
+          | (0x22U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr))) 
+         | (0x20U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr)))) {
+        if ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__priv_lvl) 
+              & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__csr_buffer_i__DOT__csr_reg_q) 
+                 >> 9U)) != (3U & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__csr_buffer_i__DOT__csr_reg_q) 
+                                   >> 9U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__privilege_violation = 1U;
+        }
+        if ((IData)(((0xf60U == (0x1fe0U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__csr_buffer_i__DOT__csr_reg_q))) 
+                     & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__debug_mode_q))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__privilege_violation = 1U;
+        }
+        if (((0xc00U <= (0xfffU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__csr_buffer_i__DOT__csr_reg_q) 
+                                   >> 1U))) & (0xc1fU 
+                                               >= (0xfffU 
+                                                   & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__csr_buffer_i__DOT__csr_reg_q) 
+                                                      >> 1U))))) {
+            if ((3U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__priv_lvl))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__privilege_violation = 0U;
+            } else if ((1U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__priv_lvl))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__privilege_violation 
+                    = (1U & (~ (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__mcounteren_q 
+                                        >> (0x1fU & 
+                                            ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__csr_buffer_i__DOT__csr_reg_q) 
+                                             >> 1U))))));
+            } else if ((0U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__priv_lvl))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__privilege_violation 
+                    = (1U & ((~ (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__mcounteren_q 
+                                         >> (0x1fU 
+                                             & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__csr_buffer_i__DOT__csr_reg_q) 
+                                                >> 1U))))) 
+                             & (~ (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__scounteren_q 
+                                           >> (0x1fU 
+                                               & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__csr_buffer_i__DOT__csr_reg_q) 
+                                                  >> 1U)))))));
+            }
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__wfi_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__wfi_q;
+    if ((0U != (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__mip_q 
+                & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__mie_q))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__wfi_d = 0U;
+    } else if ((((~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__debug_mode_q)) 
+                 & (0x1bU == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr))) 
+                & (~ vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[0U]))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__wfi_d = 1U;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__mret = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__csr_wdata 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_wdata_commit_csr;
+    if ((0x1fU == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__csr_wdata 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_wdata_commit_csr;
+    } else if ((0x21U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__csr_wdata 
+            = (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_wdata_commit_csr 
+               | vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__csr_rdata);
+    } else if ((0x22U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__csr_wdata 
+            = ((~ vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_wdata_commit_csr) 
+               & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__csr_rdata);
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__sret = 0U;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__dret = 0U;
+    if ((0x1fU != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr))) {
+        if ((0x21U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr))) {
+            if ((0x22U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr))) {
+                if ((0x20U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr))) {
+                    if ((0x18U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr))) {
+                        if ((0x17U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr))) {
+                            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__mret = 1U;
+                        }
+                        if ((0x17U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr))) {
+                            if ((0x19U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr))) {
+                                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__dret = 1U;
+                            }
+                        }
+                    }
+                    if ((0x18U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_op_commit_csr))) {
+                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__sret = 1U;
+                    }
+                }
+            }
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__pop_st = 0U;
+    if ((1U & (~ ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__state_q) 
+                  >> 1U)))) {
+        if ((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__state_q))) {
+            if (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__st_valid_i) 
+                 & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__instr_is_amo)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__pop_st = 1U;
+                if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__dtlb_hit)))) {
+                    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__pop_st = 0U;
+                }
+                if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__st_ready)))) {
+                    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__pop_st = 0U;
+                }
+            }
+        } else if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__st_valid_i) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__pop_st = 1U;
+            if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__dtlb_hit)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__pop_st = 0U;
+            }
+            if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__st_ready)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__pop_st = 0U;
+            }
+        }
+    }
+    if ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__mmu_exception[0U] 
+         & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__state_q)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__pop_st = 1U;
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_req[0U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__i_amo_buffer__DOT____Vcellout__i_amo_fifo__data_o[1U] 
+            << 0x1eU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__i_amo_buffer__DOT____Vcellout__i_amo_fifo__data_o[0U] 
+                         >> 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_req[1U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__i_amo_buffer__DOT____Vcellout__i_amo_fifo__data_o[2U] 
+            << 0x1eU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__i_amo_buffer__DOT____Vcellout__i_amo_fifo__data_o[1U] 
+                         >> 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_req[2U] 
+        = ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__i_amo_buffer__DOT____Vcellout__i_amo_fifo__data_o[3U] 
+            << 0x1eU) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__i_amo_buffer__DOT____Vcellout__i_amo_fifo__data_o[2U] 
+                         >> 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_req[3U] 
+        = (0xffffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__i_amo_buffer__DOT____Vcellout__i_amo_fifo__data_o[3U] 
+                        >> 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_req[4U] 
+        = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__amo_req_d) 
+            << 6U) | ((0x3cU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__i_amo_buffer__DOT____Vcellout__i_amo_fifo__data_o[3U] 
+                                >> 0x18U)) | (3U & 
+                                              vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__i_store_unit__DOT__i_amo_buffer__DOT____Vcellout__i_amo_fifo__data_o[0U])));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[1U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[1U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[2U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[2U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[3U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[3U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[4U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[4U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[5U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[5U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[6U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[6U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[7U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[7U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[8U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[8U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[9U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[9U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0xaU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0xaU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0xbU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0xbU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0xcU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0xcU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0xdU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0xdU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0xeU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0xeU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0xfU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0xfU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x10U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x10U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x11U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x11U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x12U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x12U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x13U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x13U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x14U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x14U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x15U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x15U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x16U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x16U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x17U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x17U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x18U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x18U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x19U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x19U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x1aU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x1aU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x1bU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x1bU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x1cU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x1cU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x1dU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x1dU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x1eU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x1eU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x1fU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x1fU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[1U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[1U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[2U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[2U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[3U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[3U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[4U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[4U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[5U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[5U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[6U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[6U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[7U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[7U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[8U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[8U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[9U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[9U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xaU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xaU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xbU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xbU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xcU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xcU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xdU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xdU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xeU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xeU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xfU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xfU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x10U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x10U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x11U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x11U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x12U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x12U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x13U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x13U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x14U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x14U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x15U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x15U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x16U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x16U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match 
+        = ((0xfffeU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match)) 
+           | ((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                 >> 0xcU))) == (0x1ffU 
+                                                & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0U] 
+                                                   >> 3U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match 
+        = ((0xfffeU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+           | ((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                 >> 0x15U))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0U] 
+                                                    >> 0xcU))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match 
+        = ((0xfffeU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+           | ((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                 >> 0x1eU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0U] 
+                                                    >> 0x15U))));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0U] 
+                = (0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & (((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                         | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                            & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0U] 
+                               >> 1U))) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                           & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0U] 
+                                              >> 2U)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0U] 
+                = (0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0U] 
+                           >> 5U)) & (((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                                        & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                       | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0U] 
+                                             >> 1U))) 
+                                      | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                         & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0U] 
+                                            >> 2U)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[1U] 
+                                         << 2U) | (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0U] 
+                                                   >> 0x1eU))))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0U] 
+                = (0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[1U] 
+                                        << 2U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0U] 
+                                                  >> 0x1eU))))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0U] 
+                = (0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                         >> 0xdU) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0U] 
+            = (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0);
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[1U] 
+            = ((0xffffc000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[1U]) 
+               | (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                          >> 0x20U)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match 
+        = ((0xfffdU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[1U] 
+                                                    >> 0x11U))) 
+              << 1U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match 
+        = ((0xfffdU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[2U] 
+                                                      << 6U) 
+                                                     | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[1U] 
+                                                        >> 0x1aU)))) 
+              << 1U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match 
+        = ((0xfffdU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[2U] 
+                                                     >> 3U))) 
+              << 1U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[1U] 
+                = (0xffffbfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[1U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                          >> 1U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                     >> 1U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[1U] 
+                                               >> 0xfU))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                            >> 1U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[1U] 
+                                      >> 0x10U)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[1U] 
+                = (0xffffbfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[1U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[2U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                        >> 1U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                                   >> 1U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[1U] 
+                                                     >> 0xfU))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                          >> 1U) & 
+                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[1U] 
+                                          >> 0x10U)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[2U] 
+                                        >> 0xcU)))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[1U] 
+                = (0xffffbfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[1U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[2U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[2U] 
+                                       >> 0xcU)))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[1U] 
+                = (0xffffbfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[1U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                     >> 1U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[1U] 
+            = ((0x3fffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[1U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0xeU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[2U] 
+            = ((0xf0000000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[2U]) 
+               | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                   >> 0x12U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 0xeU)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match 
+        = ((0xfffbU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[3U] 
+                                                     << 1U) 
+                                                    | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[2U] 
+                                                       >> 0x1fU)))) 
+              << 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match 
+        = ((0xfffbU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[3U] 
+                                                     >> 8U))) 
+              << 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match 
+        = ((0xfffbU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[3U] 
+                                                     >> 0x11U))) 
+              << 2U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[2U] 
+                = (0xefffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[2U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                          >> 2U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                     >> 2U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[2U] 
+                                               >> 0x1dU))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                            >> 2U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[2U] 
+                                      >> 0x1eU)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[2U] 
+                = (0xefffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[2U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[4U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                        >> 2U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                                   >> 2U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[2U] 
+                                                     >> 0x1dU))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                          >> 2U) & 
+                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[2U] 
+                                          >> 0x1eU)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[4U] 
+                                         << 6U) | (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[3U] 
+                                                   >> 0x1aU))))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[2U] 
+                = (0xefffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[2U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[4U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[4U] 
+                                        << 6U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[3U] 
+                                                  >> 0x1aU))))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[2U] 
+                = (0xefffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[2U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                     >> 2U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[2U] 
+            = ((0xfffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[2U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0x1cU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[3U] 
+            = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                >> 4U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                                   >> 0x20U)) << 0x1cU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[4U] 
+            = ((0xfffffc00U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[4U]) 
+               | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                           >> 0x20U)) >> 4U));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match 
+        = ((0xfff7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[4U] 
+                                                    >> 0xdU))) 
+              << 3U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match 
+        = ((0xfff7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[4U] 
+                                                     >> 0x16U))) 
+              << 3U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match 
+        = ((0xfff7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[5U] 
+                                                      << 1U) 
+                                                     | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[4U] 
+                                                        >> 0x1fU)))) 
+              << 3U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[4U] 
+                = (0xfffffbffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[4U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                          >> 3U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                     >> 3U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[4U] 
+                                               >> 0xbU))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                            >> 3U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[4U] 
+                                      >> 0xcU)))) & 
+                    (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[4U] 
+                = (0xfffffbffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[4U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[6U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                        >> 3U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                                   >> 3U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[4U] 
+                                                     >> 0xbU))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                          >> 3U) & 
+                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[4U] 
+                                          >> 0xcU)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[5U] 
+                                        >> 8U)))) & 
+                     (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[4U] 
+                = (0xfffffbffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[4U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[6U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[5U] 
+                                       >> 8U)))) & 
+                    (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[4U] 
+                = (0xfffffbffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[4U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                     >> 3U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[4U] 
+            = ((0x3ffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[4U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0xaU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[5U] 
+            = ((0xff000000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[5U]) 
+               | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                   >> 0x16U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 0xaU)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match 
+        = ((0xffefU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[6U] 
+                                                     << 5U) 
+                                                    | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[5U] 
+                                                       >> 0x1bU)))) 
+              << 4U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match 
+        = ((0xffefU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[6U] 
+                                                     >> 4U))) 
+              << 4U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match 
+        = ((0xffefU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[6U] 
+                                                     >> 0xdU))) 
+              << 4U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[5U] 
+                = (0xfeffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[5U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                          >> 4U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                     >> 4U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[5U] 
+                                               >> 0x19U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                            >> 4U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[5U] 
+                                      >> 0x1aU)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[5U] 
+                = (0xfeffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[5U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[8U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                        >> 4U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                                   >> 4U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[5U] 
+                                                     >> 0x19U))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                          >> 4U) & 
+                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[5U] 
+                                          >> 0x1aU)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[7U] 
+                                         << 0xaU) | 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[6U] 
+                                         >> 0x16U))))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[5U] 
+                = (0xfeffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[5U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[8U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[7U] 
+                                        << 0xaU) | 
+                                       (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[6U] 
+                                        >> 0x16U))))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[5U] 
+                = (0xfeffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[5U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                     >> 4U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[5U] 
+            = ((0xffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[5U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0x18U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[6U] 
+            = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                >> 8U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                                   >> 0x20U)) << 0x18U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[7U] 
+            = ((0xffffffc0U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[7U]) 
+               | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                           >> 0x20U)) >> 8U));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match 
+        = ((0xffdfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[7U] 
+                                                    >> 9U))) 
+              << 5U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match 
+        = ((0xffdfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[7U] 
+                                                     >> 0x12U))) 
+              << 5U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match 
+        = ((0xffdfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[8U] 
+                                                      << 5U) 
+                                                     | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[7U] 
+                                                        >> 0x1bU)))) 
+              << 5U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[7U] 
+                = (0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[7U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                          >> 5U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                     >> 5U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[7U] 
+                                               >> 7U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                            >> 5U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[7U] 
+                                      >> 8U)))) & (0U 
+                                                   != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[7U] 
+                = (0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[7U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0xaU] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                        >> 5U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                                   >> 5U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[7U] 
+                                                     >> 7U))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                          >> 5U) & 
+                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[7U] 
+                                          >> 8U)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[8U] 
+                                        >> 4U)))) & 
+                     (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[7U] 
+                = (0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[7U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0xaU] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[8U] 
+                                       >> 4U)))) & 
+                    (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[7U] 
+                = (0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[7U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                     >> 5U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[7U] 
+            = ((0x3fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[7U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 6U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[8U] 
+            = ((0xfff00000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[8U]) 
+               | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                   >> 0x1aU) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 6U)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match 
+        = ((0xffbfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[8U] 
+                                                 >> 0x17U)) 
+              << 6U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match 
+        = ((0xffbfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[9U])) 
+              << 6U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match 
+        = ((0xffbfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[9U] 
+                                                     >> 9U))) 
+              << 6U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[8U] 
+                = (0xffefffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[8U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                          >> 6U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                     >> 6U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[8U] 
+                                               >> 0x15U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                            >> 6U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[8U] 
+                                      >> 0x16U)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[8U] 
+                = (0xffefffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[8U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0xcU] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                        >> 6U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                                   >> 6U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[8U] 
+                                                     >> 0x15U))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                          >> 6U) & 
+                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[8U] 
+                                          >> 0x16U)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xaU] 
+                                         << 0xeU) | 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[9U] 
+                                         >> 0x12U))))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[8U] 
+                = (0xffefffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[8U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0xcU] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xaU] 
+                                        << 0xeU) | 
+                                       (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[9U] 
+                                        >> 0x12U))))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[8U] 
+                = (0xffefffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[8U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                     >> 6U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[8U] 
+            = ((0xfffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[8U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0x14U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[9U] 
+            = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                >> 0xcU) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                                     >> 0x20U)) << 0x14U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xaU] 
+            = ((0xfffffffcU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xaU]) 
+               | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                           >> 0x20U)) >> 0xcU));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match 
+        = ((0xff7fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xaU] 
+                                                    >> 5U))) 
+              << 7U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match 
+        = ((0xff7fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xaU] 
+                                                     >> 0xeU))) 
+              << 7U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match 
+        = ((0xff7fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xaU] 
+                                                  >> 0x17U)) 
+              << 7U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xaU] 
+                = (0xfffffffbU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xaU]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                          >> 7U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                     >> 7U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xaU] 
+                                               >> 3U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                            >> 7U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xaU] 
+                                      >> 4U)))) & (0U 
+                                                   != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xaU] 
+                = (0xfffffffbU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xaU]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0xeU] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                        >> 7U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                                   >> 7U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xaU] 
+                                                     >> 3U))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                          >> 7U) & 
+                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xaU] 
+                                          >> 4U)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xbU]))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xaU] 
+                = (0xfffffffbU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xaU]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0xeU] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xbU]))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xaU] 
+                = (0xfffffffbU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xaU]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                     >> 7U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xaU] 
+            = ((3U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xaU]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 2U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xbU] 
+            = ((0xffff0000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xbU]) 
+               | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                   >> 0x1eU) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 2U)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match 
+        = ((0xfeffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xbU] 
+                                                    >> 0x13U))) 
+              << 8U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match 
+        = ((0xfeffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xcU] 
+                                                      << 4U) 
+                                                     | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xbU] 
+                                                        >> 0x1cU)))) 
+              << 8U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match 
+        = ((0xfeffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xcU] 
+                                                     >> 5U))) 
+              << 8U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xbU] 
+                = (0xfffeffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xbU]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                          >> 8U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                     >> 8U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xbU] 
+                                               >> 0x11U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                            >> 8U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xbU] 
+                                      >> 0x12U)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xbU] 
+                = (0xfffeffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xbU]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x10U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                        >> 8U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                                   >> 8U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xbU] 
+                                                     >> 0x11U))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                          >> 8U) & 
+                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xbU] 
+                                          >> 0x12U)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xcU] 
+                                        >> 0xeU)))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xbU] 
+                = (0xfffeffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xbU]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x10U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xcU] 
+                                       >> 0xeU)))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xbU] 
+                = (0xfffeffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xbU]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                     >> 8U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xbU] 
+            = ((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xbU]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0x10U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xcU] 
+            = ((0xc0000000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xcU]) 
+               | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                   >> 0x10U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 0x10U)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match 
+        = ((0xfdffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xdU] 
+                                                    >> 1U))) 
+              << 9U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match 
+        = ((0xfdffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xdU] 
+                                                     >> 0xaU))) 
+              << 9U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match 
+        = ((0xfdffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xdU] 
+                                                     >> 0x13U))) 
+              << 9U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xcU] 
+                = (0xbfffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xcU]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                          >> 9U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                     >> 9U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xcU] 
+                                               >> 0x1fU))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                            >> 9U) & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xdU]))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xcU] 
+                = (0xbfffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xcU]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x12U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                        >> 9U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                                   >> 9U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xcU] 
+                                                     >> 0x1fU))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                          >> 9U) & 
+                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xdU]))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xeU] 
+                                         << 4U) | (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xdU] 
+                                                   >> 0x1cU))))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xcU] 
+                = (0xbfffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xcU]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x12U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xeU] 
+                                        << 4U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xdU] 
+                                                  >> 0x1cU))))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xcU] 
+                = (0xbfffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xcU]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                     >> 9U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xcU] 
+            = ((0x3fffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xcU]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0x1eU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xdU] 
+            = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                >> 2U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                                   >> 0x20U)) << 0x1eU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xeU] 
+            = ((0xfffff000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xeU]) 
+               | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                           >> 0x20U)) >> 2U));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match 
+        = ((0xfbffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xeU] 
+                                                    >> 0xfU))) 
+              << 0xaU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match 
+        = ((0xfbffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xfU] 
+                                                      << 8U) 
+                                                     | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xeU] 
+                                                        >> 0x18U)))) 
+              << 0xaU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match 
+        = ((0xfbffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xfU] 
+                                                     >> 1U))) 
+              << 0xaU));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xeU] 
+                = (0xffffefffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xeU]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                          >> 0xaU) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                       >> 0xaU) & (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xeU] 
+                                                   >> 0xdU))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                            >> 0xaU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xeU] 
+                                        >> 0xeU)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xeU] 
+                = (0xffffefffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xeU]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x14U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                        >> 0xaU) | 
+                                       (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                         >> 0xaU) & 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xeU] 
+                                         >> 0xdU))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                          >> 0xaU) 
+                                         & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xeU] 
+                                            >> 0xeU)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xfU] 
+                                        >> 0xaU)))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xeU] 
+                = (0xffffefffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xeU]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x14U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xfU] 
+                                       >> 0xaU)))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xeU] 
+                = (0xffffefffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xeU]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                     >> 0xaU)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xeU] 
+            = ((0xfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xeU]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0xcU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xfU] 
+            = ((0xfc000000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xfU]) 
+               | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                   >> 0x14U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 0xcU)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match 
+        = ((0xf7ffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x10U] 
+                                                     << 3U) 
+                                                    | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xfU] 
+                                                       >> 0x1dU)))) 
+              << 0xbU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match 
+        = ((0xf7ffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x10U] 
+                                                     >> 6U))) 
+              << 0xbU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match 
+        = ((0xf7ffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x10U] 
+                                                     >> 0xfU))) 
+              << 0xbU));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xfU] 
+                = (0xfbffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xfU]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                          >> 0xbU) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                       >> 0xbU) & (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xfU] 
+                                                   >> 0x1bU))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                            >> 0xbU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xfU] 
+                                        >> 0x1cU)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xfU] 
+                = (0xfbffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xfU]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x16U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                        >> 0xbU) | 
+                                       (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                         >> 0xbU) & 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xfU] 
+                                         >> 0x1bU))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                          >> 0xbU) 
+                                         & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0xfU] 
+                                            >> 0x1cU)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x11U] 
+                                         << 8U) | (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x10U] 
+                                                   >> 0x18U))))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xfU] 
+                = (0xfbffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xfU]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x16U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x11U] 
+                                        << 8U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x10U] 
+                                                  >> 0x18U))))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xfU] 
+                = (0xfbffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xfU]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                     >> 0xbU)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xfU] 
+            = ((0x3ffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0xfU]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0x1aU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x10U] 
+            = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                >> 6U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                                   >> 0x20U)) << 0x1aU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x11U] 
+            = ((0xffffff00U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x11U]) 
+               | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                           >> 0x20U)) >> 6U));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match 
+        = ((0xefffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x11U] 
+                                                    >> 0xbU))) 
+              << 0xcU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match 
+        = ((0xefffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x11U] 
+                                                     >> 0x14U))) 
+              << 0xcU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match 
+        = ((0xefffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x12U] 
+                                                      << 3U) 
+                                                     | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x11U] 
+                                                        >> 0x1dU)))) 
+              << 0xcU));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x11U] 
+                = (0xfffffeffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x11U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                          >> 0xcU) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                       >> 0xcU) & (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x11U] 
+                                                   >> 9U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                            >> 0xcU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x11U] 
+                                        >> 0xaU)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x11U] 
+                = (0xfffffeffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x11U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x18U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                        >> 0xcU) | 
+                                       (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                         >> 0xcU) & 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x11U] 
+                                         >> 9U))) | 
+                                      ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                        >> 0xcU) & 
+                                       (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x11U] 
+                                        >> 0xaU)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x12U] 
+                                        >> 6U)))) & 
+                     (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x11U] 
+                = (0xfffffeffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x11U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x18U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x12U] 
+                                       >> 6U)))) & 
+                    (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x11U] 
+                = (0xfffffeffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x11U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                     >> 0xcU)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x11U] 
+            = ((0xffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x11U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 8U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x12U] 
+            = ((0xffc00000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x12U]) 
+               | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                   >> 0x18U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 8U)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match 
+        = ((0xdfffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x13U] 
+                                                     << 7U) 
+                                                    | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x12U] 
+                                                       >> 0x19U)))) 
+              << 0xdU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match 
+        = ((0xdfffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x13U] 
+                                                     >> 2U))) 
+              << 0xdU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match 
+        = ((0xdfffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x13U] 
+                                                     >> 0xbU))) 
+              << 0xdU));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x12U] 
+                = (0xffbfffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x12U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                          >> 0xdU) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                       >> 0xdU) & (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x12U] 
+                                                   >> 0x17U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                            >> 0xdU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x12U] 
+                                        >> 0x18U)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x12U] 
+                = (0xffbfffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x12U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x1aU] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                        >> 0xdU) | 
+                                       (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                         >> 0xdU) & 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x12U] 
+                                         >> 0x17U))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                          >> 0xdU) 
+                                         & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x12U] 
+                                            >> 0x18U)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x14U] 
+                                         << 0xcU) | 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x13U] 
+                                         >> 0x14U))))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x12U] 
+                = (0xffbfffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x12U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x1aU] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x14U] 
+                                        << 0xcU) | 
+                                       (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x13U] 
+                                        >> 0x14U))))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x12U] 
+                = (0xffbfffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x12U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                     >> 0xdU)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x12U] 
+            = ((0x3fffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x12U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0x16U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x13U] 
+            = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                >> 0xaU) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                                     >> 0x20U)) << 0x16U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x14U] 
+            = ((0xfffffff0U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x14U]) 
+               | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                           >> 0x20U)) >> 0xaU));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match 
+        = ((0xbfffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x14U] 
+                                                    >> 7U))) 
+              << 0xeU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match 
+        = ((0xbfffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x14U] 
+                                                     >> 0x10U))) 
+              << 0xeU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match 
+        = ((0xbfffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x15U] 
+                                                      << 7U) 
+                                                     | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x14U] 
+                                                        >> 0x19U)))) 
+              << 0xeU));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x14U] 
+                = (0xffffffefU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x14U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                          >> 0xeU) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                       >> 0xeU) & (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x14U] 
+                                                   >> 5U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                            >> 0xeU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x14U] 
+                                        >> 6U)))) & 
+                    (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x14U] 
+                = (0xffffffefU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x14U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x1cU] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                        >> 0xeU) | 
+                                       (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                         >> 0xeU) & 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x14U] 
+                                         >> 5U))) | 
+                                      ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                        >> 0xeU) & 
+                                       (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x14U] 
+                                        >> 6U)))) & 
+                      ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                       == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x15U] 
+                                      >> 2U)))) & (0U 
+                                                   != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x14U] 
+                = (0xffffffefU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x14U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x1cU] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x15U] 
+                                       >> 2U)))) & 
+                    (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x14U] 
+                = (0xffffffefU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x14U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                     >> 0xeU)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x14U] 
+            = ((0xfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x14U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 4U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x15U] 
+            = ((0xfffc0000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x15U]) 
+               | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                   >> 0x1cU) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 4U)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match 
+        = ((0x7fffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x15U] 
+                                                    >> 0x15U))) 
+              << 0xfU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match 
+        = ((0x7fffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x16U] 
+                                                      << 2U) 
+                                                     | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x15U] 
+                                                        >> 0x1eU)))) 
+              << 0xfU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match 
+        = ((0x7fffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x16U] 
+                                                     >> 7U))) 
+              << 0xfU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[1U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[1U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[2U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[2U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[3U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[3U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[4U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[4U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[5U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[5U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[6U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[6U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[7U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[7U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[8U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[8U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[9U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[9U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0xaU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0xaU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0xbU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0xbU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0xcU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0xcU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0xdU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0xdU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0xeU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0xeU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0xfU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0xfU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x10U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x10U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x11U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x11U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x12U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x12U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x13U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x13U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x14U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x14U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x15U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x15U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x16U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x16U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x17U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x17U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x18U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x18U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x19U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x19U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x1aU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x1aU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x1bU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x1bU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x1cU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x1cU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x1dU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x1dU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x1eU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x1eU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x1fU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x1fU];
+    if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex)))) {
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[1U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                  >> 1U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[2U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[3U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                  >> 2U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[4U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[5U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                  >> 3U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[6U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[7U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                  >> 4U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[8U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[9U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                  >> 5U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0xaU] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0xbU] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                  >> 6U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0xcU] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0xdU] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                  >> 7U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0xeU] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0xfU] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                  >> 8U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x10U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x11U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                  >> 9U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x12U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x13U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                  >> 0xaU)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x14U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x15U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                  >> 0xbU)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x16U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x17U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                  >> 0xcU)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x18U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x19U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                  >> 0xdU)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x1aU] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x1bU] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                  >> 0xeU)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x1cU] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x1dU] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                  >> 0xfU)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x1eU] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_n[0x1fU] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[1U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                  >> 1U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[2U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[3U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                  >> 2U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[4U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[5U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                  >> 3U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[6U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[7U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                  >> 4U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[8U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[9U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                  >> 5U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0xaU] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0xbU] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                  >> 6U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0xcU] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0xdU] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                  >> 7U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0xeU] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0xfU] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                  >> 8U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x10U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x11U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                  >> 9U)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x12U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x13U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                  >> 0xaU)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x14U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x15U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                  >> 0xbU)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x16U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x17U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                  >> 0xcU)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x18U] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x19U] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                  >> 0xdU)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x1aU] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x1bU] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                  >> 0xeU)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x1cU] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x1dU] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))) 
+                           >> 0x20U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                  >> 0xfU)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x1eU] 
+                = (IData)((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                            << 0x20U) | (QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_n[0x1fU] 
+                = (IData)(((((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[1U])) 
+                             << 0x20U) | (QData)((IData)(
+                                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[0U]))) 
+                           >> 0x20U));
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[1U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[1U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[2U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[2U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[3U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[3U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[4U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[4U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[5U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[5U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[6U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[6U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[7U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[7U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[8U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[8U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[9U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[9U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xaU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xaU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xbU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xbU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xcU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xcU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xdU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xdU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xeU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xeU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xfU] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xfU];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x10U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x10U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x11U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x11U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x12U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x12U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x13U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x13U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x14U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x14U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x15U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x15U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x16U] 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x16U];
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match 
+        = ((0xfffeU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match)) 
+           | ((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                 >> 0xcU))) == (0x1ffU 
+                                                & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0U] 
+                                                   >> 3U))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match 
+        = ((0xfffeU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+           | ((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                 >> 0x15U))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0U] 
+                                                    >> 0xcU))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match 
+        = ((0xfffeU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+           | ((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                 >> 0x1eU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0U] 
+                                                    >> 0x15U))));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x15U] 
+                = (0xfffbffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x15U]);
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0U] 
+                = (0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0U]);
+        } else {
+            if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                  & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                        & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                       >> 0xfU) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                    >> 0xfU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x15U] 
+                                                >> 0x13U))) 
+                     | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                         >> 0xfU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x15U] 
+                                     >> 0x14U)))) & 
+                 (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x15U] 
+                    = (0xfffbffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x15U]);
+            } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x1eU] 
+                               >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn0_match) 
+                                              & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match)) 
+                                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                            >> 0xfU) 
+                                           | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match) 
+                                               >> 0xfU) 
+                                              & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x15U] 
+                                                 >> 0x13U))) 
+                                          | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn1_match) 
+                                               & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__vaddr_vpn2_match)) 
+                                              >> 0xfU) 
+                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x15U] 
+                                                >> 0x14U)))) 
+                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                             == (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x16U] 
+                                 >> 0x10U))) & (0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                        & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x15U] 
+                    = (0xfffbffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x15U]);
+            } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__content_q[0x1eU] 
+                              >> 5U)) & (~ (IData)(
+                                                   (0U 
+                                                    != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                            == (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_q[0x16U] 
+                                >> 0x10U))) & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x15U] 
+                    = (0xfffbffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x15U]);
+            }
+            if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                  & (((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                        & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                       & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                      | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                         & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0U] 
+                            >> 1U))) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0U] 
+                                           >> 2U)))) 
+                 & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0U] 
+                    = (0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0U]);
+            } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0U] 
+                               >> 5U)) & (((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                           | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                              & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0U] 
+                                                 >> 1U))) 
+                                          | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                              & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0U] 
+                                                >> 2U)))) 
+                          & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                             == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[1U] 
+                                             << 2U) 
+                                            | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0U] 
+                                               >> 0x1eU))))) 
+                         & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                        & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0U] 
+                    = (0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0U]);
+            } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0U] 
+                              >> 5U)) & (~ (IData)(
+                                                   (0U 
+                                                    != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                         & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                            == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[1U] 
+                                            << 2U) 
+                                           | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0U] 
+                                              >> 0x1eU))))) 
+                        & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0U] 
+                    = (0xfffffffeU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0U]);
+            }
+        }
+    } else {
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                      >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__replace_en) 
+                                  >> 0xfU)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U]))) 
+                    << 0x1eU) | (QData)((IData)((1U 
+                                                 | ((0x3fe00000U 
+                                                     & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                        << 0x13U)) 
+                                                    | ((0x1ff000U 
+                                                        & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                            << 0x13U) 
+                                                           | (0x7f000U 
+                                                              & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                                 >> 0xdU)))) 
+                                                       | ((0xff8U 
+                                                           & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[2U] 
+                                                              >> 0xdU)) 
+                                                          | ((4U 
+                                                              & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                 >> 0xaU)) 
+                                                             | (2U 
+                                                                & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_itlb[3U] 
+                                                                   >> 0xaU))))))))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x15U] 
+                = ((0x3ffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x15U]) 
+                   | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                      << 0x12U));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT__tags_n[0x16U] 
+                = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0) 
+                    >> 0xeU) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_itlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 0x12U));
+        }
+        if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                      >> 0xdU) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U]))) 
+                    << 0x1eU) | (QData)((IData)((1U 
+                                                 | ((0x3fe00000U 
+                                                     & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                        << 0x13U)) 
+                                                    | ((0x1ff000U 
+                                                        & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                            << 0x13U) 
+                                                           | (0x7f000U 
+                                                              & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                                 >> 0xdU)))) 
+                                                       | ((0xff8U 
+                                                           & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                              >> 0xdU)) 
+                                                          | ((4U 
+                                                              & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                 >> 0xaU)) 
+                                                             | (2U 
+                                                                & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                   >> 0xaU))))))))));
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0U] 
+                = (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0);
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[1U] 
+                = ((0xffffc000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[1U]) 
+                   | (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                              >> 0x20U)));
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match 
+        = ((0xfffdU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[1U] 
+                                                    >> 0x11U))) 
+              << 1U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match 
+        = ((0xfffdU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[2U] 
+                                                      << 6U) 
+                                                     | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[1U] 
+                                                        >> 0x1aU)))) 
+              << 1U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match 
+        = ((0xfffdU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[2U] 
+                                                     >> 3U))) 
+              << 1U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[1U] 
+                = (0xffffbfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[1U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                          >> 1U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                     >> 1U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[1U] 
+                                               >> 0xfU))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                            >> 1U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[1U] 
+                                      >> 0x10U)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[1U] 
+                = (0xffffbfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[1U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[2U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 1U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                                   >> 1U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[1U] 
+                                                     >> 0xfU))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                          >> 1U) & 
+                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[1U] 
+                                          >> 0x10U)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[2U] 
+                                        >> 0xcU)))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[1U] 
+                = (0xffffbfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[1U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[2U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[2U] 
+                                       >> 0xcU)))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[1U] 
+                = (0xffffbfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[1U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                     >> 1U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[1U] 
+            = ((0x3fffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[1U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0xeU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[2U] 
+            = ((0xf0000000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[2U]) 
+               | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                   >> 0x12U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 0xeU)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match 
+        = ((0xfffbU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[3U] 
+                                                     << 1U) 
+                                                    | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[2U] 
+                                                       >> 0x1fU)))) 
+              << 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match 
+        = ((0xfffbU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[3U] 
+                                                     >> 8U))) 
+              << 2U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match 
+        = ((0xfffbU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[3U] 
+                                                     >> 0x11U))) 
+              << 2U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[2U] 
+                = (0xefffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[2U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                          >> 2U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                     >> 2U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[2U] 
+                                               >> 0x1dU))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                            >> 2U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[2U] 
+                                      >> 0x1eU)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[2U] 
+                = (0xefffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[2U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[4U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 2U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                                   >> 2U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[2U] 
+                                                     >> 0x1dU))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                          >> 2U) & 
+                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[2U] 
+                                          >> 0x1eU)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[4U] 
+                                         << 6U) | (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[3U] 
+                                                   >> 0x1aU))))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[2U] 
+                = (0xefffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[2U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[4U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[4U] 
+                                        << 6U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[3U] 
+                                                  >> 0x1aU))))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[2U] 
+                = (0xefffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[2U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                     >> 2U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[2U] 
+            = ((0xfffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[2U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0x1cU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[3U] 
+            = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                >> 4U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                                   >> 0x20U)) << 0x1cU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[4U] 
+            = ((0xfffffc00U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[4U]) 
+               | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                           >> 0x20U)) >> 4U));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match 
+        = ((0xfff7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[4U] 
+                                                    >> 0xdU))) 
+              << 3U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match 
+        = ((0xfff7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[4U] 
+                                                     >> 0x16U))) 
+              << 3U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match 
+        = ((0xfff7U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[5U] 
+                                                      << 1U) 
+                                                     | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[4U] 
+                                                        >> 0x1fU)))) 
+              << 3U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[4U] 
+                = (0xfffffbffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[4U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                          >> 3U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                     >> 3U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[4U] 
+                                               >> 0xbU))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                            >> 3U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[4U] 
+                                      >> 0xcU)))) & 
+                    (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[4U] 
+                = (0xfffffbffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[4U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[6U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 3U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                                   >> 3U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[4U] 
+                                                     >> 0xbU))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                          >> 3U) & 
+                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[4U] 
+                                          >> 0xcU)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[5U] 
+                                        >> 8U)))) & 
+                     (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[4U] 
+                = (0xfffffbffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[4U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[6U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[5U] 
+                                       >> 8U)))) & 
+                    (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[4U] 
+                = (0xfffffbffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[4U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                     >> 3U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[4U] 
+            = ((0x3ffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[4U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0xaU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[5U] 
+            = ((0xff000000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[5U]) 
+               | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                   >> 0x16U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 0xaU)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match 
+        = ((0xffefU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[6U] 
+                                                     << 5U) 
+                                                    | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[5U] 
+                                                       >> 0x1bU)))) 
+              << 4U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match 
+        = ((0xffefU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[6U] 
+                                                     >> 4U))) 
+              << 4U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match 
+        = ((0xffefU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[6U] 
+                                                     >> 0xdU))) 
+              << 4U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[5U] 
+                = (0xfeffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[5U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                          >> 4U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                     >> 4U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[5U] 
+                                               >> 0x19U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                            >> 4U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[5U] 
+                                      >> 0x1aU)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[5U] 
+                = (0xfeffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[5U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[8U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 4U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                                   >> 4U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[5U] 
+                                                     >> 0x19U))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                          >> 4U) & 
+                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[5U] 
+                                          >> 0x1aU)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[7U] 
+                                         << 0xaU) | 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[6U] 
+                                         >> 0x16U))))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[5U] 
+                = (0xfeffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[5U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[8U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[7U] 
+                                        << 0xaU) | 
+                                       (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[6U] 
+                                        >> 0x16U))))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[5U] 
+                = (0xfeffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[5U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                     >> 4U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[5U] 
+            = ((0xffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[5U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0x18U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[6U] 
+            = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                >> 8U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                                   >> 0x20U)) << 0x18U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[7U] 
+            = ((0xffffffc0U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[7U]) 
+               | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                           >> 0x20U)) >> 8U));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match 
+        = ((0xffdfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[7U] 
+                                                    >> 9U))) 
+              << 5U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match 
+        = ((0xffdfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[7U] 
+                                                     >> 0x12U))) 
+              << 5U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match 
+        = ((0xffdfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[8U] 
+                                                      << 5U) 
+                                                     | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[7U] 
+                                                        >> 0x1bU)))) 
+              << 5U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[7U] 
+                = (0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[7U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                          >> 5U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                     >> 5U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[7U] 
+                                               >> 7U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                            >> 5U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[7U] 
+                                      >> 8U)))) & (0U 
+                                                   != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[7U] 
+                = (0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[7U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0xaU] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 5U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                                   >> 5U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[7U] 
+                                                     >> 7U))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                          >> 5U) & 
+                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[7U] 
+                                          >> 8U)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[8U] 
+                                        >> 4U)))) & 
+                     (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[7U] 
+                = (0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[7U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0xaU] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[8U] 
+                                       >> 4U)))) & 
+                    (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[7U] 
+                = (0xffffffbfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[7U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                     >> 5U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[7U] 
+            = ((0x3fU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[7U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 6U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[8U] 
+            = ((0xfff00000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[8U]) 
+               | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                   >> 0x1aU) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 6U)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match 
+        = ((0xffbfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[8U] 
+                                                 >> 0x17U)) 
+              << 6U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match 
+        = ((0xffbfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[9U])) 
+              << 6U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match 
+        = ((0xffbfU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[9U] 
+                                                     >> 9U))) 
+              << 6U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[8U] 
+                = (0xffefffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[8U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                          >> 6U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                     >> 6U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[8U] 
+                                               >> 0x15U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                            >> 6U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[8U] 
+                                      >> 0x16U)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[8U] 
+                = (0xffefffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[8U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0xcU] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 6U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                                   >> 6U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[8U] 
+                                                     >> 0x15U))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                          >> 6U) & 
+                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[8U] 
+                                          >> 0x16U)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xaU] 
+                                         << 0xeU) | 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[9U] 
+                                         >> 0x12U))))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[8U] 
+                = (0xffefffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[8U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0xcU] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xaU] 
+                                        << 0xeU) | 
+                                       (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[9U] 
+                                        >> 0x12U))))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[8U] 
+                = (0xffefffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[8U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                     >> 6U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[8U] 
+            = ((0xfffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[8U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0x14U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[9U] 
+            = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                >> 0xcU) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                                     >> 0x20U)) << 0x14U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xaU] 
+            = ((0xfffffffcU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xaU]) 
+               | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                           >> 0x20U)) >> 0xcU));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match 
+        = ((0xff7fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xaU] 
+                                                    >> 5U))) 
+              << 7U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match 
+        = ((0xff7fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xaU] 
+                                                     >> 0xeU))) 
+              << 7U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match 
+        = ((0xff7fU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xaU] 
+                                                  >> 0x17U)) 
+              << 7U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xaU] 
+                = (0xfffffffbU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xaU]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                          >> 7U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                     >> 7U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xaU] 
+                                               >> 3U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                            >> 7U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xaU] 
+                                      >> 4U)))) & (0U 
+                                                   != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xaU] 
+                = (0xfffffffbU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xaU]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0xeU] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 7U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                                   >> 7U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xaU] 
+                                                     >> 3U))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                          >> 7U) & 
+                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xaU] 
+                                          >> 4U)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xbU]))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xaU] 
+                = (0xfffffffbU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xaU]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0xeU] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xbU]))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xaU] 
+                = (0xfffffffbU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xaU]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                     >> 7U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xaU] 
+            = ((3U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xaU]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 2U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xbU] 
+            = ((0xffff0000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xbU]) 
+               | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                   >> 0x1eU) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 2U)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match 
+        = ((0xfeffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xbU] 
+                                                    >> 0x13U))) 
+              << 8U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match 
+        = ((0xfeffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xcU] 
+                                                      << 4U) 
+                                                     | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xbU] 
+                                                        >> 0x1cU)))) 
+              << 8U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match 
+        = ((0xfeffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xcU] 
+                                                     >> 5U))) 
+              << 8U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xbU] 
+                = (0xfffeffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xbU]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                          >> 8U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                     >> 8U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xbU] 
+                                               >> 0x11U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                            >> 8U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xbU] 
+                                      >> 0x12U)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xbU] 
+                = (0xfffeffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xbU]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x10U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 8U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                                   >> 8U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xbU] 
+                                                     >> 0x11U))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                          >> 8U) & 
+                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xbU] 
+                                          >> 0x12U)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xcU] 
+                                        >> 0xeU)))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xbU] 
+                = (0xfffeffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xbU]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x10U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xcU] 
+                                       >> 0xeU)))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xbU] 
+                = (0xfffeffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xbU]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                     >> 8U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xbU] 
+            = ((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xbU]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0x10U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xcU] 
+            = ((0xc0000000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xcU]) 
+               | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                   >> 0x10U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 0x10U)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match 
+        = ((0xfdffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xdU] 
+                                                    >> 1U))) 
+              << 9U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match 
+        = ((0xfdffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xdU] 
+                                                     >> 0xaU))) 
+              << 9U));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match 
+        = ((0xfdffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xdU] 
+                                                     >> 0x13U))) 
+              << 9U));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xcU] 
+                = (0xbfffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xcU]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                          >> 9U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                     >> 9U) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xcU] 
+                                               >> 0x1fU))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                            >> 9U) & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xdU]))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xcU] 
+                = (0xbfffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xcU]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x12U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 9U) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                                   >> 9U) 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xcU] 
+                                                     >> 0x1fU))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                          >> 9U) & 
+                                         vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xdU]))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xeU] 
+                                         << 4U) | (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xdU] 
+                                                   >> 0x1cU))))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xcU] 
+                = (0xbfffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xcU]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x12U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xeU] 
+                                        << 4U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xdU] 
+                                                  >> 0x1cU))))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xcU] 
+                = (0xbfffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xcU]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                     >> 9U)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xcU] 
+            = ((0x3fffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xcU]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0x1eU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xdU] 
+            = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                >> 2U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                                   >> 0x20U)) << 0x1eU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xeU] 
+            = ((0xfffff000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xeU]) 
+               | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                           >> 0x20U)) >> 2U));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match 
+        = ((0xfbffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xeU] 
+                                                    >> 0xfU))) 
+              << 0xaU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match 
+        = ((0xfbffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xfU] 
+                                                      << 8U) 
+                                                     | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xeU] 
+                                                        >> 0x18U)))) 
+              << 0xaU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match 
+        = ((0xfbffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xfU] 
+                                                     >> 1U))) 
+              << 0xaU));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xeU] 
+                = (0xffffefffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xeU]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                          >> 0xaU) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                       >> 0xaU) & (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xeU] 
+                                                   >> 0xdU))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                            >> 0xaU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xeU] 
+                                        >> 0xeU)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xeU] 
+                = (0xffffefffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xeU]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x14U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 0xaU) | 
+                                       (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                         >> 0xaU) & 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xeU] 
+                                         >> 0xdU))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                          >> 0xaU) 
+                                         & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xeU] 
+                                            >> 0xeU)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xfU] 
+                                        >> 0xaU)))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xeU] 
+                = (0xffffefffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xeU]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x14U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xfU] 
+                                       >> 0xaU)))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xeU] 
+                = (0xffffefffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xeU]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                     >> 0xaU)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xeU] 
+            = ((0xfffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xeU]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0xcU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xfU] 
+            = ((0xfc000000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xfU]) 
+               | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                   >> 0x14U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 0xcU)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match 
+        = ((0xf7ffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x10U] 
+                                                     << 3U) 
+                                                    | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xfU] 
+                                                       >> 0x1dU)))) 
+              << 0xbU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match 
+        = ((0xf7ffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x10U] 
+                                                     >> 6U))) 
+              << 0xbU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match 
+        = ((0xf7ffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x10U] 
+                                                     >> 0xfU))) 
+              << 0xbU));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xfU] 
+                = (0xfbffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xfU]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                          >> 0xbU) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                       >> 0xbU) & (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xfU] 
+                                                   >> 0x1bU))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                            >> 0xbU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xfU] 
+                                        >> 0x1cU)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xfU] 
+                = (0xfbffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xfU]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x16U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 0xbU) | 
+                                       (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                         >> 0xbU) & 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xfU] 
+                                         >> 0x1bU))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                          >> 0xbU) 
+                                         & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0xfU] 
+                                            >> 0x1cU)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x11U] 
+                                         << 8U) | (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x10U] 
+                                                   >> 0x18U))))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xfU] 
+                = (0xfbffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xfU]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x16U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x11U] 
+                                        << 8U) | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x10U] 
+                                                  >> 0x18U))))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xfU] 
+                = (0xfbffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xfU]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                     >> 0xbU)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xfU] 
+            = ((0x3ffffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0xfU]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0x1aU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x10U] 
+            = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                >> 6U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                                   >> 0x20U)) << 0x1aU));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x11U] 
+            = ((0xffffff00U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x11U]) 
+               | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                           >> 0x20U)) >> 6U));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match 
+        = ((0xefffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x11U] 
+                                                    >> 0xbU))) 
+              << 0xcU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match 
+        = ((0xefffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x11U] 
+                                                     >> 0x14U))) 
+              << 0xcU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match 
+        = ((0xefffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x12U] 
+                                                      << 3U) 
+                                                     | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x11U] 
+                                                        >> 0x1dU)))) 
+              << 0xcU));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x11U] 
+                = (0xfffffeffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x11U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                          >> 0xcU) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                       >> 0xcU) & (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x11U] 
+                                                   >> 9U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                            >> 0xcU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x11U] 
+                                        >> 0xaU)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x11U] 
+                = (0xfffffeffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x11U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x18U] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 0xcU) | 
+                                       (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                         >> 0xcU) & 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x11U] 
+                                         >> 9U))) | 
+                                      ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 0xcU) & 
+                                       (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x11U] 
+                                        >> 0xaU)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x12U] 
+                                        >> 6U)))) & 
+                     (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x11U] 
+                = (0xfffffeffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x11U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x18U] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x12U] 
+                                       >> 6U)))) & 
+                    (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x11U] 
+                = (0xfffffeffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x11U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                     >> 0xcU)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x11U] 
+            = ((0xffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x11U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 8U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x12U] 
+            = ((0xffc00000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x12U]) 
+               | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                   >> 0x18U) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 8U)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match 
+        = ((0xdfffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x13U] 
+                                                     << 7U) 
+                                                    | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x12U] 
+                                                       >> 0x19U)))) 
+              << 0xdU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match 
+        = ((0xdfffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x13U] 
+                                                     >> 2U))) 
+              << 0xdU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match 
+        = ((0xdfffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x13U] 
+                                                     >> 0xbU))) 
+              << 0xdU));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x12U] 
+                = (0xffbfffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x12U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                          >> 0xdU) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                       >> 0xdU) & (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x12U] 
+                                                   >> 0x17U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                            >> 0xdU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x12U] 
+                                        >> 0x18U)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x12U] 
+                = (0xffbfffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x12U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x1aU] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 0xdU) | 
+                                       (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                         >> 0xdU) & 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x12U] 
+                                         >> 0x17U))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                          >> 0xdU) 
+                                         & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x12U] 
+                                            >> 0x18U)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x14U] 
+                                         << 0xcU) | 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x13U] 
+                                         >> 0x14U))))) 
+                     & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x12U] 
+                = (0xffbfffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x12U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x1aU] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x14U] 
+                                        << 0xcU) | 
+                                       (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x13U] 
+                                        >> 0x14U))))) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x12U] 
+                = (0xffbfffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x12U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                     >> 0xdU)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x12U] 
+            = ((0x3fffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x12U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0x16U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x13U] 
+            = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                >> 0xaU) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                                     >> 0x20U)) << 0x16U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x14U] 
+            = ((0xfffffff0U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x14U]) 
+               | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                           >> 0x20U)) >> 0xaU));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match 
+        = ((0xbfffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x14U] 
+                                                    >> 7U))) 
+              << 0xeU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match 
+        = ((0xbfffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x14U] 
+                                                     >> 0x10U))) 
+              << 0xeU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match 
+        = ((0xbfffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x15U] 
+                                                      << 7U) 
+                                                     | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x14U] 
+                                                        >> 0x19U)))) 
+              << 0xeU));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x14U] 
+                = (0xffffffefU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x14U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                          >> 0xeU) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                       >> 0xeU) & (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x14U] 
+                                                   >> 5U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                            >> 0xeU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x14U] 
+                                        >> 6U)))) & 
+                    (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x14U] 
+                = (0xffffffefU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x14U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x1cU] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 0xeU) | 
+                                       (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                         >> 0xeU) & 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x14U] 
+                                         >> 5U))) | 
+                                      ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 0xeU) & 
+                                       (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x14U] 
+                                        >> 6U)))) & 
+                      ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                       == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x15U] 
+                                      >> 2U)))) & (0U 
+                                                   != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x14U] 
+                = (0xffffffefU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x14U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x1cU] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (0xffffU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x15U] 
+                                       >> 2U)))) & 
+                    (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x14U] 
+                = (0xffffffefU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x14U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                     >> 0xeU)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x14U] 
+            = ((0xfU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x14U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 4U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x15U] 
+            = ((0xfffc0000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x15U]) 
+               | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                   >> 0x1cU) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                                         >> 0x20U)) 
+                                << 4U)));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match 
+        = ((0x7fffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0xcU))) == (0x1ffU 
+                                                 & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x15U] 
+                                                    >> 0x15U))) 
+              << 0xfU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match 
+        = ((0x7fffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x15U))) == (0x1ffU 
+                                                  & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x16U] 
+                                                      << 2U) 
+                                                     | (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x15U] 
+                                                        >> 0x1eU)))) 
+              << 0xfU));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match 
+        = ((0x7fffU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+           | (((0x1ffU & (IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed 
+                                  >> 0x1eU))) == (0x1ffU 
+                                                  & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x16U] 
+                                                     >> 7U))) 
+              << 0xfU));
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__flush_tlb_ctrl_ex) {
+        if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____VdfgExtracted_he36d0304__0) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x15U] 
+                = (0xfffbffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x15U]);
+        } else if ((((~ (IData)((0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) 
+                     & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                            & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                          >> 0xfU) | (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                       >> 0xfU) & (
+                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x15U] 
+                                                   >> 0x13U))) 
+                        | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                            >> 0xfU) & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x15U] 
+                                        >> 0x14U)))) 
+                    & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x15U] 
+                = (0xfffbffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x15U]);
+        } else if ((((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x1eU] 
+                           >> 5U)) & ((((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn0_match) 
+                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match)) 
+                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                        >> 0xfU) | 
+                                       (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match) 
+                                         >> 0xfU) & 
+                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x15U] 
+                                         >> 0x13U))) 
+                                      | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn1_match) 
+                                           & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__vaddr_vpn2_match)) 
+                                          >> 0xfU) 
+                                         & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x15U] 
+                                            >> 0x14U)))) 
+                      & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                         == (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x16U] 
+                             >> 0x10U))) & (0U != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)) 
+                    & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x15U] 
+                = (0xfffbffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x15U]);
+        } else if (((((~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__content_q[0x1eU] 
+                          >> 5U)) & (~ (IData)((0U 
+                                                != vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__vaddr_to_be_flushed)))) 
+                     & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed) 
+                        == (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_q[0x16U] 
+                            >> 0x10U))) & (0U != (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__asid_to_be_flushed)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x15U] 
+                = (0xfffbffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x15U]);
+        }
+    } else if ((IData)(((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                         >> 0xdU) & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__replace_en) 
+                                     >> 0xfU)))) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+            = (((QData)((IData)((0xffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U]))) 
+                << 0x1eU) | (QData)((IData)((1U | (
+                                                   (0x3fe00000U 
+                                                    & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                       << 0x13U)) 
+                                                   | ((0x1ff000U 
+                                                       & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                           << 0x13U) 
+                                                          | (0x7f000U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                                >> 0xdU)))) 
+                                                      | ((0xff8U 
+                                                          & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[2U] 
+                                                             >> 0xdU)) 
+                                                         | ((4U 
+                                                             & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                >> 0xaU)) 
+                                                            | (2U 
+                                                               & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__update_ptw_dtlb[3U] 
+                                                                  >> 0xaU))))))))));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x15U] 
+            = ((0x3ffffU & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x15U]) 
+               | ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                  << 0x12U));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT__tags_n[0x16U] 
+            = (((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0) 
+                >> 0xeU) | ((IData)((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_stage_i__DOT__lsu_i__DOT__gen_mmu_sv39__DOT__i_cva6_mmu__DOT__i_dtlb__DOT____Vlvbound_hb0a5bb13__0 
+                                     >> 0x20U)) << 0x12U));
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__debug_mode_d 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__debug_mode_q;
+    if ((1U & (~ (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__debug_mode_q)))) {
+        if ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[0U] 
+             & (3ULL == (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[4U])) 
+                          << 0x3fU) | (((QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[3U])) 
+                                        << 0x1fU) | 
+                                       ((QData)((IData)(
+                                                        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[2U])) 
+                                        >> 1U)))))) {
+            if ((3U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__priv_lvl))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__debug_mode_d 
+                    = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__dcsr_q 
+                             >> 0xfU));
+            } else if ((1U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__priv_lvl))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__debug_mode_d 
+                    = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__dcsr_q 
+                             >> 0xdU));
+            } else if ((0U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__priv_lvl))) {
+                vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__debug_mode_d 
+                    = (1U & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__dcsr_q 
+                             >> 0xcU));
+            }
+        }
+        if ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[0U] 
+             & (0x18ULL == (((QData)((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[4U])) 
+                             << 0x3fU) | (((QData)((IData)(
+                                                           vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[3U])) 
+                                           << 0x1fU) 
+                                          | ((QData)((IData)(
+                                                             vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__ex_commit[2U])) 
+                                             >> 1U)))))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__debug_mode_d = 1U;
+        }
+        if ((1U & ((vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__dcsr_q 
+                    >> 2U) & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__commit_ack)))) {
+            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__debug_mode_d = 1U;
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__epc_commit_pcgen 
+        = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__mepc_q;
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__sret) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__epc_commit_pcgen 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__sepc_q;
+    }
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__dret) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__debug_mode_d = 0U;
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__epc_commit_pcgen 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__csr_regfile_i__DOT__dpc_q;
+    }
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__sc_pass = 0U;
+    ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__sc_fail = 0U;
+    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_adapter__DOT__dcache_rtrn_vld_q) {
+        if ((1U & (~ (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__adapter_dcache[0x10U] 
+                      >> 0x13U)))) {
+            if ((0x40000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__adapter_dcache[0x10U])) {
+                if ((0x20000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__adapter_dcache[0x10U])) {
+                    if (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__amo_req_q) {
+                        if ((2U == (0xfU & (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_req[4U] 
+                                            >> 2U)))) {
+                            if ((0ULL >= (((QData)((IData)(
+                                                           vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_resp[1U])) 
+                                           << 0x20U) 
+                                          | (QData)((IData)(
+                                                            vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_resp[0U]))))) {
+                                ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__sc_pass = 1U;
+                            }
+                            if ((0ULL < (((QData)((IData)(
+                                                          vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_resp[1U])) 
+                                          << 0x20U) 
+                                         | (QData)((IData)(
+                                                           vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__amo_resp[0U]))))) {
+                                ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__sc_fail = 1U;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_exp_backoff__DOT__lfsr_d 
+        = ((IData)(ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__sc_fail)
+            ? ((0x8000U & (VL_REDXOR_8((0x2dU & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_exp_backoff__DOT__lfsr_q))) 
+                           << 0xfU)) | (0x7fffU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_exp_backoff__DOT__lfsr_q) 
+                                                   >> 1U)))
+            : (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_exp_backoff__DOT__lfsr_q));
+    if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__sc_pass) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_exp_backoff__DOT__mask_d = 0U;
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_exp_backoff__DOT__cnt_d = 0U;
+    } else if (ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__sc_fail) {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_exp_backoff__DOT__mask_d 
+            = (1U | (0xfffeU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_exp_backoff__DOT__mask_q) 
+                                << 1U)));
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_exp_backoff__DOT__cnt_d 
+            = (0xffffU & ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_exp_backoff__DOT__lfsr_q) 
+                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_exp_backoff__DOT__mask_q)));
+    } else {
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_exp_backoff__DOT__mask_d 
+            = vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_exp_backoff__DOT__mask_q;
+        vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_exp_backoff__DOT__cnt_d 
+            = (0xffffU & ((0U == (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_exp_backoff__DOT__cnt_q))
+                           ? 0U : ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_exp_backoff__DOT__cnt_q) 
+                                   - (IData)(1U))));
+    }
+}
+
+VL_INLINE_OPT void Vara_tb_verilator___024root___act_comb__TOP__35(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___act_comb__TOP__35\n"); );
+    // Init
+    CData/*31:0*/ __Vtemp_hd0133f9e__0;
+    // Body
+    __Vtemp_hd0133f9e__0 = (((IData)((0U != (0xc0U 
+                                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT____Vcellinp__i_vld_bdirty__in_i)))) 
+                             << 6U) | (((IData)((0U 
+                                                 != 
+                                                 (0x30U 
+                                                  & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT____Vcellinp__i_vld_bdirty__in_i)))) 
+                                        << 5U) | (((IData)(
+                                                           (0U 
+                                                            != 
+                                                            (0xcU 
+                                                             & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT____Vcellinp__i_vld_bdirty__in_i)))) 
+                                                   << 4U) 
+                                                  | (((IData)(
+                                                              (0U 
+                                                               != 
+                                                               (3U 
+                                                                & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT____Vcellinp__i_vld_bdirty__in_i)))) 
+                                                      << 3U) 
+                                                     | (((IData)(
+                                                                 (0U 
+                                                                  != 
+                                                                  (0x60U 
+                                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__sel_nodes)))) 
+                                                         << 2U) 
+                                                        | (((IData)(
+                                                                    (0U 
+                                                                     != 
+                                                                     (0x18U 
+                                                                      & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__sel_nodes)))) 
+                                                            << 1U) 
+                                                           | (IData)(
+                                                                     (0U 
+                                                                      != 
+                                                                      (6U 
+                                                                       & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__sel_nodes))))))))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__sel_nodes 
+        = ((0x80U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__sel_nodes)) 
+           | __Vtemp_hd0133f9e__0);
+}
+
+VL_INLINE_OPT void Vara_tb_verilator___024root___act_comb__TOP__36(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___act_comb__TOP__36\n"); );
+    // Init
+    CData/*7:0*/ __Vfunc_to_byte_enable8__167__Vfuncout;
+    __Vfunc_to_byte_enable8__167__Vfuncout = 0;
+    CData/*2:0*/ __Vfunc_to_byte_enable8__167__offset;
+    __Vfunc_to_byte_enable8__167__offset = 0;
+    CData/*1:0*/ __Vfunc_to_byte_enable8__167__size;
+    __Vfunc_to_byte_enable8__167__size = 0;
+    CData/*7:0*/ __Vfunc_to_byte_enable8__167__be;
+    __Vfunc_to_byte_enable8__167__be = 0;
+    IData/*31:0*/ __Vtemp_h25535719__0;
+    // Body
+    __Vtemp_h25535719__0 = ((((0x40U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT____Vcellinp__i_vld_bdirty__in_i))
+                               ? 6U : 7U) << 0x12U) 
+                            | ((((0x10U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT____Vcellinp__i_vld_bdirty__in_i))
+                                  ? 4U : 5U) << 0xfU) 
+                               | ((((4U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT____Vcellinp__i_vld_bdirty__in_i))
+                                     ? 2U : 3U) << 0xcU) 
+                                  | ((((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT____Vcellinp__i_vld_bdirty__in_i))
+                                        ? 0U : 1U) 
+                                      << 9U) | ((0x1c0U 
+                                                 & (((0x20U 
+                                                      & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__sel_nodes))
+                                                      ? 
+                                                     (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__index_nodes 
+                                                      >> 0xfU)
+                                                      : 
+                                                     (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__index_nodes 
+                                                      >> 0x12U)) 
+                                                    << 6U)) 
+                                                | ((0x38U 
+                                                    & (((8U 
+                                                         & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__sel_nodes))
+                                                         ? 
+                                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__index_nodes 
+                                                         >> 9U)
+                                                         : 
+                                                        (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__index_nodes 
+                                                         >> 0xcU)) 
+                                                       << 3U)) 
+                                                   | (7U 
+                                                      & ((2U 
+                                                          & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__sel_nodes))
+                                                          ? 
+                                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__index_nodes 
+                                                          >> 3U)
+                                                          : 
+                                                         (vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__index_nodes 
+                                                          >> 6U)))))))));
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__index_nodes 
+        = ((0xe00000U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__index_nodes) 
+           | __Vtemp_h25535719__0);
+    __Vfunc_to_byte_enable8__167__size = (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT____Vcellout__i_wt_dcache_wbuffer__miss_size_o));
+    __Vfunc_to_byte_enable8__167__offset = (7U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__index_nodes);
+    __Vfunc_to_byte_enable8__167__be = 0U;
+    __Vfunc_to_byte_enable8__167__be = ((0U == (IData)(__Vfunc_to_byte_enable8__167__size))
+                                         ? ((IData)(__Vfunc_to_byte_enable8__167__be) 
+                                            | (0xffU 
+                                               & ((IData)(1U) 
+                                                  << (IData)(__Vfunc_to_byte_enable8__167__offset))))
+                                         : ((1U == (IData)(__Vfunc_to_byte_enable8__167__size))
+                                             ? ((IData)(__Vfunc_to_byte_enable8__167__be) 
+                                                | (0xffU 
+                                                   & ((IData)(3U) 
+                                                      << (IData)(__Vfunc_to_byte_enable8__167__offset))))
+                                             : ((2U 
+                                                 == (IData)(__Vfunc_to_byte_enable8__167__size))
+                                                 ? 
+                                                ((IData)(__Vfunc_to_byte_enable8__167__be) 
+                                                 | (0xffU 
+                                                    & ((IData)(0xfU) 
+                                                       << (IData)(__Vfunc_to_byte_enable8__167__offset))))
+                                                 : 0xffU)));
+    __Vfunc_to_byte_enable8__167__Vfuncout = __Vfunc_to_byte_enable8__167__be;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__tx_be 
+        = __Vfunc_to_byte_enable8__167__Vfuncout;
+}
+
+VL_INLINE_OPT void Vara_tb_verilator___024root___act_comb__TOP__37(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___act_comb__TOP__37\n"); );
+    // Init
+    QData/*63:0*/ __Vfunc_repData64__166__Vfuncout;
+    __Vfunc_repData64__166__Vfuncout = 0;
+    QData/*63:0*/ __Vfunc_repData64__166__data;
+    __Vfunc_repData64__166__data = 0;
+    CData/*2:0*/ __Vfunc_repData64__166__offset;
+    __Vfunc_repData64__166__offset = 0;
+    CData/*1:0*/ __Vfunc_repData64__166__size;
+    __Vfunc_repData64__166__size = 0;
+    // Body
+    __Vfunc_repData64__166__size = (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT____Vcellout__i_wt_dcache_wbuffer__miss_size_o));
+    __Vfunc_repData64__166__offset = (7U & vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_vld_bdirty__DOT__gen_lzc__DOT__index_nodes);
+    __Vfunc_repData64__166__data = (((QData)((IData)(
+                                                     vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_dirty_rr__DOT__gen_arbiter__DOT__data_nodes[4U])) 
+                                     << 0x23U) | (((QData)((IData)(
+                                                                   vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_dirty_rr__DOT__gen_arbiter__DOT__data_nodes[3U])) 
+                                                   << 3U) 
+                                                  | ((QData)((IData)(
+                                                                     vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_wbuffer__DOT__i_dirty_rr__DOT__gen_arbiter__DOT__data_nodes[2U])) 
+                                                     >> 0x1dU)));
+    if ((0U == (IData)(__Vfunc_repData64__166__size))) {
+        vlSelf->__Vfunc_repData64__166__out = ((0xffffffffffffff00ULL 
+                                                & vlSelf->__Vfunc_repData64__166__out) 
+                                               | (IData)((IData)(
+                                                                 (0xffU 
+                                                                  & (IData)(
+                                                                            (__Vfunc_repData64__166__data 
+                                                                             >> 
+                                                                             (0x3fU 
+                                                                              & ((IData)(__Vfunc_repData64__166__offset) 
+                                                                                << 3U))))))));
+        vlSelf->__Vfunc_repData64__166__out = ((0xffffffffffff00ffULL 
+                                                & vlSelf->__Vfunc_repData64__166__out) 
+                                               | ((QData)((IData)(
+                                                                  (0xffU 
+                                                                   & (IData)(
+                                                                             (__Vfunc_repData64__166__data 
+                                                                              >> 
+                                                                              (0x3fU 
+                                                                               & ((IData)(__Vfunc_repData64__166__offset) 
+                                                                                << 3U))))))) 
+                                                  << 8U));
+        vlSelf->__Vfunc_repData64__166__out = ((0xffffffffff00ffffULL 
+                                                & vlSelf->__Vfunc_repData64__166__out) 
+                                               | ((QData)((IData)(
+                                                                  (0xffU 
+                                                                   & (IData)(
+                                                                             (__Vfunc_repData64__166__data 
+                                                                              >> 
+                                                                              (0x3fU 
+                                                                               & ((IData)(__Vfunc_repData64__166__offset) 
+                                                                                << 3U))))))) 
+                                                  << 0x10U));
+        vlSelf->__Vfunc_repData64__166__out = ((0xffffffff00ffffffULL 
+                                                & vlSelf->__Vfunc_repData64__166__out) 
+                                               | ((QData)((IData)(
+                                                                  (0xffU 
+                                                                   & (IData)(
+                                                                             (__Vfunc_repData64__166__data 
+                                                                              >> 
+                                                                              (0x3fU 
+                                                                               & ((IData)(__Vfunc_repData64__166__offset) 
+                                                                                << 3U))))))) 
+                                                  << 0x18U));
+        vlSelf->__Vfunc_repData64__166__out = ((0xffffff00ffffffffULL 
+                                                & vlSelf->__Vfunc_repData64__166__out) 
+                                               | ((QData)((IData)(
+                                                                  (0xffU 
+                                                                   & (IData)(
+                                                                             (__Vfunc_repData64__166__data 
+                                                                              >> 
+                                                                              (0x3fU 
+                                                                               & ((IData)(__Vfunc_repData64__166__offset) 
+                                                                                << 3U))))))) 
+                                                  << 0x20U));
+        vlSelf->__Vfunc_repData64__166__out = ((0xffff00ffffffffffULL 
+                                                & vlSelf->__Vfunc_repData64__166__out) 
+                                               | ((QData)((IData)(
+                                                                  (0xffU 
+                                                                   & (IData)(
+                                                                             (__Vfunc_repData64__166__data 
+                                                                              >> 
+                                                                              (0x3fU 
+                                                                               & ((IData)(__Vfunc_repData64__166__offset) 
+                                                                                << 3U))))))) 
+                                                  << 0x28U));
+        vlSelf->__Vfunc_repData64__166__out = ((0xff00ffffffffffffULL 
+                                                & vlSelf->__Vfunc_repData64__166__out) 
+                                               | ((QData)((IData)(
+                                                                  (0xffU 
+                                                                   & (IData)(
+                                                                             (__Vfunc_repData64__166__data 
+                                                                              >> 
+                                                                              (0x3fU 
+                                                                               & ((IData)(__Vfunc_repData64__166__offset) 
+                                                                                << 3U))))))) 
+                                                  << 0x30U));
+        vlSelf->__Vfunc_repData64__166__out = ((0xffffffffffffffULL 
+                                                & vlSelf->__Vfunc_repData64__166__out) 
+                                               | ((QData)((IData)(
+                                                                  (0xffU 
+                                                                   & (IData)(
+                                                                             (__Vfunc_repData64__166__data 
+                                                                              >> 
+                                                                              (0x3fU 
+                                                                               & ((IData)(__Vfunc_repData64__166__offset) 
+                                                                                << 3U))))))) 
+                                                  << 0x38U));
+    } else if ((1U == (IData)(__Vfunc_repData64__166__size))) {
+        vlSelf->__Vfunc_repData64__166__out = ((0xffffffffffff0000ULL 
+                                                & vlSelf->__Vfunc_repData64__166__out) 
+                                               | (IData)((IData)(
+                                                                 (0xffffU 
+                                                                  & (IData)(
+                                                                            (__Vfunc_repData64__166__data 
+                                                                             >> 
+                                                                             (0x3fU 
+                                                                              & ((IData)(__Vfunc_repData64__166__offset) 
+                                                                                << 3U))))))));
+        vlSelf->__Vfunc_repData64__166__out = ((0xffffffff0000ffffULL 
+                                                & vlSelf->__Vfunc_repData64__166__out) 
+                                               | ((QData)((IData)(
+                                                                  (0xffffU 
+                                                                   & (IData)(
+                                                                             (__Vfunc_repData64__166__data 
+                                                                              >> 
+                                                                              (0x3fU 
+                                                                               & ((IData)(__Vfunc_repData64__166__offset) 
+                                                                                << 3U))))))) 
+                                                  << 0x10U));
+        vlSelf->__Vfunc_repData64__166__out = ((0xffff0000ffffffffULL 
+                                                & vlSelf->__Vfunc_repData64__166__out) 
+                                               | ((QData)((IData)(
+                                                                  (0xffffU 
+                                                                   & (IData)(
+                                                                             (__Vfunc_repData64__166__data 
+                                                                              >> 
+                                                                              (0x3fU 
+                                                                               & ((IData)(__Vfunc_repData64__166__offset) 
+                                                                                << 3U))))))) 
+                                                  << 0x20U));
+        vlSelf->__Vfunc_repData64__166__out = ((0xffffffffffffULL 
+                                                & vlSelf->__Vfunc_repData64__166__out) 
+                                               | ((QData)((IData)(
+                                                                  (0xffffU 
+                                                                   & (IData)(
+                                                                             (__Vfunc_repData64__166__data 
+                                                                              >> 
+                                                                              (0x3fU 
+                                                                               & ((IData)(__Vfunc_repData64__166__offset) 
+                                                                                << 3U))))))) 
+                                                  << 0x30U));
+    } else if ((2U == (IData)(__Vfunc_repData64__166__size))) {
+        vlSelf->__Vfunc_repData64__166__out = ((0xffffffff00000000ULL 
+                                                & vlSelf->__Vfunc_repData64__166__out) 
+                                               | (IData)((IData)(
+                                                                 (__Vfunc_repData64__166__data 
+                                                                  >> 
+                                                                  (0x3fU 
+                                                                   & ((IData)(__Vfunc_repData64__166__offset) 
+                                                                      << 3U))))));
+        vlSelf->__Vfunc_repData64__166__out = ((0xffffffffULL 
+                                                & vlSelf->__Vfunc_repData64__166__out) 
+                                               | ((QData)((IData)((IData)(
+                                                                          (__Vfunc_repData64__166__data 
+                                                                           >> 
+                                                                           (0x3fU 
+                                                                            & ((IData)(__Vfunc_repData64__166__offset) 
+                                                                               << 3U)))))) 
+                                                  << 0x20U));
+    } else {
+        vlSelf->__Vfunc_repData64__166__out = __Vfunc_repData64__166__data;
+    }
+    __Vfunc_repData64__166__Vfuncout = vlSelf->__Vfunc_repData64__166__out;
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT____Vcellout__i_wt_dcache_wbuffer__miss_wdata_o 
+        = __Vfunc_repData64__166__Vfuncout;
+}
+
+VL_INLINE_OPT void Vara_tb_verilator___024root___act_comb__TOP__38(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___act_comb__TOP__38\n"); );
+    // Body
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT____VdfgTmp_hbb3f78aa__0 
+        = ((8U >= (0xfU & ((IData)(3U) * (3U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_lzc_reqs__DOT__gen_lzc__DOT__index_nodes)))))
+            ? (7U & ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT____Vcellout__i_wt_dcache_wbuffer__miss_size_o) 
+                       << 6U) | ((((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT____Vcellout__gen_rd_ports__BRA__1__KET____DOT__i_wt_dcache_ctrl__miss_nc_o)
+                                    ? (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__gen_rd_ports__BRA__1__KET____DOT__i_wt_dcache_ctrl__DOT__data_size_q)
+                                    : 7U) << 3U) | 
+                                 ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT____Vcellout__gen_rd_ports__BRA__0__KET____DOT__i_wt_dcache_ctrl__miss_nc_o)
+                                   ? (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__gen_rd_ports__BRA__0__KET____DOT__i_wt_dcache_ctrl__DOT__data_size_q)
+                                   : 7U))) >> (0xfU 
+                                               & ((IData)(3U) 
+                                                  * 
+                                                  (3U 
+                                                   & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_wt_dcache__DOT__i_wt_dcache_missunit__DOT__i_lzc_reqs__DOT__gen_lzc__DOT__index_nodes))))))
+            : 0U);
+}
+
+VL_INLINE_OPT void Vara_tb_verilator___024root___act_comb__TOP__39(Vara_tb_verilator___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vara_tb_verilator__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vara_tb_verilator___024root___act_comb__TOP__39\n"); );
+    // Body
+    vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_cva6_icache__DOT__i_lzc_hit__DOT__gen_lzc__DOT__index_nodes 
+        = ((0xc0U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_cva6_icache__DOT__i_lzc_hit__DOT__gen_lzc__DOT__index_nodes)) 
+           | ((((4U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_cva6_icache__DOT__cl_hit))
+                 ? 2U : 3U) << 4U) | ((((1U & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_cva6_icache__DOT__cl_hit))
+                                         ? 0U : 1U) 
+                                       << 2U) | (3U 
+                                                 & ((2U 
+                                                     & (IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_cva6_icache__DOT__i_lzc_hit__DOT__gen_lzc__DOT__sel_nodes))
+                                                     ? 
+                                                    ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_cva6_icache__DOT__i_lzc_hit__DOT__gen_lzc__DOT__index_nodes) 
+                                                     >> 2U)
+                                                     : 
+                                                    ((IData)(vlSelf->ara_tb_verilator__DOT__dut__DOT__i_ara_soc__DOT__i_system__DOT__i_ariane__DOT__genblk4__DOT__i_cache_subsystem__DOT__i_cva6_icache__DOT__i_lzc_hit__DOT__gen_lzc__DOT__index_nodes) 
+                                                     >> 4U))))));
+}
