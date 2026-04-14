@@ -3,6 +3,11 @@
 
 set -e  # Exit on error
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging update-submodules
+
 echo "🔄 Updating all submodules to latest..."
 git submodule update --remote --recursive
 

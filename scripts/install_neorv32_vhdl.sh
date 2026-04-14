@@ -9,15 +9,6 @@
 
 set -e  # Exit on any error
 
-# Color codes for output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-NC='\033[0m' # No Color
-
 # Global variables
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
@@ -27,13 +18,14 @@ LOG_DIR="$PROJECT_ROOT/logs"
 NEORV32_INSTALL_PROFILE="${NEORV32_INSTALL_PROFILE:-vhdl}"
 case "$NEORV32_INSTALL_PROFILE" in
     verilog)
+        NEORV32_INSTALL_LOG_STEM="install_neorv32_verilog"
         INSTALL_LOG="$LOG_DIR/install_neorv32_verilog.log"
         ;;
     *)
+        NEORV32_INSTALL_LOG_STEM="install_neorv32_vhdl"
         INSTALL_LOG="$LOG_DIR/install_neorv32_vhdl.log"
         ;;
 esac
-TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 # Normalized distro family for package installs (almalinux, rocky, etc. → rhel). Set by detect_os.
 OS_FAMILY="unknown"
 # SCORE submodule path (see .gitmodules); init/update is done here, not in run_neorv32_*.sh.
@@ -57,35 +49,30 @@ ONLY_NEORV32_SUBMODULE=false
 mkdir -p "$LOG_DIR"
 mkdir -p "$TOOLS_DIR"
 
-# Logging functions
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging "$NEORV32_INSTALL_LOG_STEM"
+SCRIPT_LOG_FILE="$INSTALL_LOG"
+: >>"$SCRIPT_LOG_FILE"
+
 log() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${BLUE}[$timestamp]${NC} $message" | tee -a "$INSTALL_LOG"
+    log_info "$@"
 }
 
 error() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${RED}[ERROR $timestamp]${NC} $message" | tee -a "$INSTALL_LOG" >&2
+    log_error "$@"
 }
 
 success() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${GREEN}[SUCCESS $timestamp]${NC} $message" | tee -a "$INSTALL_LOG"
+    log_success "$@"
 }
 
 warning() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${YELLOW}[WARNING $timestamp]${NC} $message" | tee -a "$INSTALL_LOG"
+    log_warning "$@"
 }
 
 info() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${CYAN}[INFO $timestamp]${NC} $message" | tee -a "$INSTALL_LOG"
+    log_info "$@"
 }
 
 # Detect OS for logging (NAME/VERSION) and OS_FAMILY for package installs.

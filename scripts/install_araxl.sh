@@ -28,8 +28,6 @@ TOOL_DIR="$PROJECT_ROOT/$RELATIVE_SUBMODULE_PATH"
 ARAXL_DIR="$TOOL_DIR"
 
 LOG_DIR="$PROJECT_ROOT/logs/araxl_install"
-TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
-INSTALL_LOG="$LOG_DIR/install_${TIMESTAMP}.log"
 
 INSTALL_SYSTEM_DEPS=true
 SKIP_BENDER=false
@@ -39,34 +37,15 @@ FORCE_REINSTALL=false
 WITH_VERILATOR=true
 WITH_VERILATOR_BUILD_DEPS=true
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-CYAN='\033[0;36m'
-NC='\033[0m'
-
 mkdir -p "$LOG_DIR"
-touch "$INSTALL_LOG"
+
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging install_araxl araxl_install
+INSTALL_LOG="$SCRIPT_LOG_FILE"
 
 log() {
-    echo -e "${BLUE}[install_araxl]${NC} $*" | tee -a "$INSTALL_LOG"
-}
-
-log_info() {
-    echo -e "${CYAN}[install_araxl][INFO]${NC} $*" | tee -a "$INSTALL_LOG"
-}
-
-log_success() {
-    echo -e "${GREEN}[install_araxl][OK]${NC} $*" | tee -a "$INSTALL_LOG"
-}
-
-log_warning() {
-    echo -e "${YELLOW}[install_araxl][WARN]${NC} $*" | tee -a "$INSTALL_LOG"
-}
-
-log_error() {
-    echo -e "${RED}[install_araxl][ERR]${NC} $*" | tee -a "$INSTALL_LOG" >&2
+    log_info "$@"
 }
 
 command_exists() { command -v "$1" >/dev/null 2>&1; }

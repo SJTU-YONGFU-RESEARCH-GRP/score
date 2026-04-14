@@ -1,6 +1,11 @@
 #!/bin/bash
 # IOb-SoC environment: source this file before working in tools/iob-soc (like scripts/rocket_chip_env.sh).
 
+_SCRIPT_LOG_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
+# shellcheck source=scripts/common_logging.sh
+source "$_SCRIPT_LOG_DIR/common_logging.sh"
+init_script_logging iob_soc_env
+
 IOB_SOC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../tools/iob-soc" && pwd)"
 
 echo "Loading IOb-SoC environment..."

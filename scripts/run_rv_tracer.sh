@@ -22,17 +22,14 @@ SKIP_GENERATE=false
 NO_SYSTEM_DEPS=false
 GENERATE_EXTRA=()
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m'
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging run_rv_tracer
 
-info() { echo -e "${BLUE}[run_rv_tracer]${NC} $*"; }
-ok() { echo -e "${GREEN}[run_rv_tracer]${NC} $*"; }
-warn() { echo -e "${YELLOW}[run_rv_tracer]${NC} $*"; }
-err() { echo -e "${RED}[run_rv_tracer]${NC} $*" >&2; }
-
+info() { log_info "$@"; }
+ok() { log_success "$@"; }
+warn() { log_warning "$@"; }
+err() { log_error "$@"; }
 show_help() {
     cat << EOF
 Usage: $0 [OPTIONS] [-- EXTRA_GENERATE_ARGS...]

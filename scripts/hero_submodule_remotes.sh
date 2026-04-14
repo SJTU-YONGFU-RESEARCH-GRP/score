@@ -38,6 +38,10 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 HERO_DIR="${HERO_DIR:-$PROJECT_ROOT/tools/hero}"
+
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging hero_submodule_remotes
 GITMODULES="$HERO_DIR/.gitmodules"
 
 if [[ ! -f "$GITMODULES" ]]; then

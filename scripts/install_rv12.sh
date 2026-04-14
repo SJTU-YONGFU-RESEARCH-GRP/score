@@ -20,40 +20,21 @@ PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 RELATIVE_SUBMODULE_PATH="tools/rv12"
 TOOL_DIR="$PROJECT_ROOT/$RELATIVE_SUBMODULE_PATH"
 LOG_DIR="$PROJECT_ROOT/logs/rv12_install"
-TIMESTAMP="$(date +"%Y%m%d_%H%M%S")"
-INSTALL_LOG="$LOG_DIR/install_${TIMESTAMP}.log"
 
 INSTALL_SYSTEM_DEPS=true
 CHECK_ONLY=false
 INSTALL_VERILATOR=true
 DEBUG_MODE=false
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m'
-
 mkdir -p "$LOG_DIR"
 
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging install_rv12 rv12_install
+INSTALL_LOG="$SCRIPT_LOG_FILE"
+
 log() {
-    local line="${BLUE}[INFO]${NC} $*"
-    echo -e "$line" | tee -a "$INSTALL_LOG"
-}
-
-log_success() {
-    local line="${GREEN}[SUCCESS]${NC} $*"
-    echo -e "$line" | tee -a "$INSTALL_LOG"
-}
-
-log_warning() {
-    local line="${YELLOW}[WARNING]${NC} $*"
-    echo -e "$line" | tee -a "$INSTALL_LOG"
-}
-
-log_error() {
-    local line="${RED}[ERROR]${NC} $*"
-    echo -e "$line" | tee -a "$INSTALL_LOG" >&2
+    log_info "$@"
 }
 
 command_exists() {

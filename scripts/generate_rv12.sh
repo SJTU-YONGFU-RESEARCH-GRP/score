@@ -29,13 +29,6 @@ PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 TOOL_DIR="$PROJECT_ROOT/tools/rv12"
 NAME="rv12"
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-CYAN='\033[0;36m'
-NC='\033[0m'
-
 VERIFY_ONLY=false
 SKIP_COPY=false
 # Verilator lint profile: default | full (full adds --timing to --lint-only)
@@ -96,39 +89,28 @@ SESSION_LOG="$LOG_DIR/session_${TIMESTAMP}.log"
 
 mkdir -p "$LOG_DIR" "$VER_DIR" "$DATASET_DIR/rtl_snapshot"
 
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging_files generate_rv12 "$MAIN_LOG" "$SESSION_LOG"
+
 log() {
-    local message="$1"
-    local ts
-    ts="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${BLUE}[$ts]${NC} $message" | tee -a "$MAIN_LOG" "$SESSION_LOG"
+    log_info "$@"
 }
 
 error() {
-    local message="$1"
-    local ts
-    ts="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${RED}[ERROR $ts]${NC} $message" | tee -a "$MAIN_LOG" "$SESSION_LOG" >&2
+    log_error "$@"
 }
 
 success() {
-    local message="$1"
-    local ts
-    ts="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${GREEN}[SUCCESS $ts]${NC} $message" | tee -a "$MAIN_LOG" "$SESSION_LOG"
+    log_success "$@"
 }
 
 warning() {
-    local message="$1"
-    local ts
-    ts="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${YELLOW}[WARNING $ts]${NC} $message" | tee -a "$MAIN_LOG" "$SESSION_LOG"
+    log_warning "$@"
 }
 
 info() {
-    local message="$1"
-    local ts
-    ts="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${CYAN}[INFO $ts]${NC} $message" | tee -a "$MAIN_LOG" "$SESSION_LOG"
+    log_info "$@"
 }
 
 json_escape() {

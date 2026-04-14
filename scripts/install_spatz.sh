@@ -19,17 +19,14 @@ SPATZ_DIR="$PROJECT_ROOT/tools/spatz"
 INSTALL_SYSTEM_DEPS=true
 SKIP_BENDER=false
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m'
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging install_spatz
 
-info() { echo -e "${BLUE}[install_spatz]${NC} $*"; }
-ok() { echo -e "${GREEN}[install_spatz]${NC} $*"; }
-warn() { echo -e "${YELLOW}[install_spatz]${NC} $*"; }
-err() { echo -e "${RED}[install_spatz]${NC} $*" >&2; }
-
+info() { log_info "$@"; }
+ok() { log_success "$@"; }
+warn() { log_warning "$@"; }
+err() { log_error "$@"; }
 command_exists() { command -v "$1" >/dev/null 2>&1; }
 
 show_help() {

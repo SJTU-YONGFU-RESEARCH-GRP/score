@@ -26,7 +26,8 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
-CHESHIRE_DIR="$PROJECT_ROOT/tools/cheshire"
+SOURCE_CHESHIRE_DIR="$PROJECT_ROOT/tools/cheshire"
+CHESHIRE_DIR=""
 
 SKIP_CHECKOUT=false
 BENDER_UPDATE=false
@@ -38,17 +39,14 @@ DEFAULT_VERILATOR_JOBS=4
 CHESHIRE_VERILATOR_JOBS="${CHESHIRE_VERILATOR_JOBS:-$DEFAULT_VERILATOR_JOBS}"
 CHESHIRE_TB_SV="$SCRIPT_DIR/assets/chimera/tb_stream_fifo.sv"
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m'
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging generate_cheshire
 
-info() { echo -e "${BLUE}[generate_cheshire]${NC} $*"; }
-ok() { echo -e "${GREEN}[generate_cheshire]${NC} $*"; }
-warn() { echo -e "${YELLOW}[generate_cheshire]${NC} $*"; }
-err() { echo -e "${RED}[generate_cheshire]${NC} $*" >&2; }
-
+info() { log_info "$@"; }
+ok() { log_success "$@"; }
+warn() { log_warning "$@"; }
+err() { log_error "$@"; }
 command_exists() { command -v "$1" >/dev/null 2>&1; }
 
 cheshire_cpp_compiler_ok() {
@@ -148,8 +146,8 @@ fi
 
 cd "$PROJECT_ROOT"
 
-if [[ ! -d "$CHESHIRE_DIR" ]]; then
-    err "Missing $CHESHIRE_DIR — run: git submodule update --init --recursive tools/cheshire"
+if [[ ! -d "$SOURCE_CHESHIRE_DIR" ]]; then
+    err "Missing $SOURCE_CHESHIRE_DIR — run: git submodule update --init --recursive tools/cheshire"
     exit 1
 fi
 
@@ -158,14 +156,14 @@ if ! command_exists bender; then
     exit 1
 fi
 
-if [[ "$VERIFY_ONLY" != true ]] && ! command_exists rsync; then
-    err "rsync not found (required to snapshot sources)"
+if ! command_exists rsync; then
+    err "rsync not found (required to stage sources into datasets)"
     exit 1
 fi
 
 get_commit_id() {
-    if git -C "$CHESHIRE_DIR" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-        git -C "$CHESHIRE_DIR" rev-parse --short=8 HEAD 2>/dev/null || echo "unknown"
+    if git -C "$SOURCE_CHESHIRE_DIR" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+        git -C "$SOURCE_CHESHIRE_DIR" rev-parse --short=8 HEAD 2>/dev/null || echo "unknown"
     else
         echo "unknown"
     fi
@@ -416,11 +414,24 @@ SESSION_LOG="$LOG_DIR/generate_${TIMESTAMP}.log"
 
 mkdir -p "$LOG_DIR"
 
+CHESHIRE_DIR="$BUNDLE_DIR"
+
+prepare_dataset_workdir() {
+    info "Staging Cheshire sources into dataset workdir: $CHESHIRE_DIR"
+    mkdir -p "$CHESHIRE_DIR"
+    rsync -a --delete \
+        --exclude '.git/' \
+        "$SOURCE_CHESHIRE_DIR/" "$CHESHIRE_DIR/"
+}
+
 exec > >(tee -a "$SESSION_LOG") 2>&1
 
-info "CHESHIRE_DIR: $CHESHIRE_DIR"
+info "SOURCE_CHESHIRE_DIR: $SOURCE_CHESHIRE_DIR"
+info "WORK_DIR: $CHESHIRE_DIR"
 info "Commit: $CHESHIRE_COMMIT_ID"
 info "Dataset: $DATASET_DIR"
+
+prepare_dataset_workdir
 
 if [[ "$VERIFY_ONLY" == true ]]; then
     mkdir -p "$DATASET_DIR"
@@ -477,22 +488,16 @@ else
     warn "Verification skipped (--no-verify)"
 fi
 
-info "Copying sources to $BUNDLE_DIR"
-mkdir -p "$BUNDLE_DIR"
-
-rsync -a \
-    --exclude '.git/' \
-    "$CHESHIRE_DIR/" "$BUNDLE_DIR/"
-
 SUMMARY="$DATASET_DIR/cheshire_summary.txt"
 {
     echo "cheshire SCORE snapshot (pulp-platform/cheshire)"
     echo "Generated (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')"
     echo "Host: $(hostname 2>/dev/null || echo unknown) $(uname -s) $(uname -m)"
     echo "SCORE root: $PROJECT_ROOT"
-    echo "Source repo: $CHESHIRE_DIR"
+    echo "Source repo: $SOURCE_CHESHIRE_DIR"
+    echo "Dataset workdir: $CHESHIRE_DIR"
     echo "Git commit (short): $CHESHIRE_COMMIT_ID"
-    echo "Git commit (full): $(git -C "$CHESHIRE_DIR" rev-parse HEAD 2>/dev/null || echo unknown)"
+    echo "Git commit (full): $(git -C "$SOURCE_CHESHIRE_DIR" rev-parse HEAD 2>/dev/null || echo unknown)"
     echo "bender: $(bender --version 2>/dev/null || echo unknown)"
     echo "verilator: $(command_exists verilator && verilator --version 2>/dev/null | head -1 || echo not_on_path)"
     echo ""

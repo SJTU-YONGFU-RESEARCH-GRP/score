@@ -25,17 +25,14 @@ NO_SYSTEM_DEPS=false
 INTERACTIVE_INSTALL=false
 GENERATE_EXTRA=()
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m'
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging run_gemmini
 
-info() { echo -e "${BLUE}[run_gemmini]${NC} $*"; }
-ok() { echo -e "${GREEN}[run_gemmini]${NC} $*"; }
-warn() { echo -e "${YELLOW}[run_gemmini]${NC} $*"; }
-err() { echo -e "${RED}[run_gemmini]${NC} $*" >&2; }
-
+info() { log_info "$@"; }
+ok() { log_success "$@"; }
+warn() { log_warning "$@"; }
+err() { log_error "$@"; }
 show_help() {
     cat << EOF
 Usage: $0 [OPTIONS] [-- EXTRA_GENERATE_ARGS...]

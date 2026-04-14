@@ -6,15 +6,6 @@
 
 set -e  # Exit on any error
 
-# Color codes for output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-NC='\033[0m' # No Color
-
 # Global variables
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
@@ -45,74 +36,6 @@ if [[ -f "$PROJECT_ROOT/scripts/setup_local_env.sh" ]]; then
 fi
 
 # Create dataset directory structure (done after DATASET_DIR is defined)
-
-# Logging functions
-log() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    local line="${BLUE}[$timestamp]${NC} $message"
-    if [[ -n "$MAIN_LOG" && -n "$SESSION_LOG" ]]; then
-        echo -e "$line" | tee -a "$MAIN_LOG" "$SESSION_LOG"
-    else
-        echo -e "$line"
-    fi
-}
-
-error() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    local line="${RED}[ERROR $timestamp]${NC} $message"
-    if [[ -n "$MAIN_LOG" && -n "$SESSION_LOG" ]]; then
-        echo -e "$line" | tee -a "$MAIN_LOG" "$SESSION_LOG" >&2
-    else
-        echo -e "$line" >&2
-    fi
-}
-
-success() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    local line="${GREEN}[SUCCESS $timestamp]${NC} $message"
-    if [[ -n "$MAIN_LOG" && -n "$SESSION_LOG" ]]; then
-        echo -e "$line" | tee -a "$MAIN_LOG" "$SESSION_LOG"
-    else
-        echo -e "$line"
-    fi
-}
-
-warning() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    local line="${YELLOW}[WARNING $timestamp]${NC} $message"
-    if [[ -n "$MAIN_LOG" && -n "$SESSION_LOG" ]]; then
-        echo -e "$line" | tee -a "$MAIN_LOG" "$SESSION_LOG"
-    else
-        echo -e "$line"
-    fi
-}
-
-info() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    local line="${CYAN}[INFO $timestamp]${NC} $message"
-    if [[ -n "$MAIN_LOG" && -n "$SESSION_LOG" ]]; then
-        echo -e "$line" | tee -a "$MAIN_LOG" "$SESSION_LOG"
-    else
-        echo -e "$line"
-    fi
-}
-
-debug() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    local line="${PURPLE}[DEBUG $timestamp]${NC} $message"
-    if [[ -n "$MAIN_LOG" && -n "$SESSION_LOG" ]]; then
-        echo -e "$line" | tee -a "$MAIN_LOG" "$SESSION_LOG"
-    else
-        echo -e "$line"
-    fi
-}
-
 
 # Function to check if command exists
 command_exists() {
@@ -187,6 +110,35 @@ SESSION_LOG="$LOG_DIR/session_${TIMESTAMP}.log"
 mkdir -p "$LOG_DIR" "$BUILD_ARTIFACTS_DIR" "$DATASET_DIR/rtl_designs" \
     "$DATASET_DIR/simulation_models" "$DATASET_DIR/configurations" \
     "$DATASET_DIR/regression_logs"
+
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging_files generate_ibex "$MAIN_LOG" "$SESSION_LOG"
+
+log() {
+    log_info "$@"
+}
+
+error() {
+    log_error "$@"
+}
+
+success() {
+    log_success "$@"
+}
+
+warning() {
+    log_warning "$@"
+}
+
+info() {
+    log_info "$@"
+}
+
+debug() {
+    local message="$1"
+    echo -e "${PURPLE}[${SCRIPT_LOG_NAME}][DEBUG]${NC} $message" | tee -a "$MAIN_LOG" "$SESSION_LOG"
+}
 
 # Short description for a Makefile build target (logging only).
 ibex_build_type_desc() {

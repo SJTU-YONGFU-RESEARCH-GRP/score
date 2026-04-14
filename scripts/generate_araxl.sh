@@ -39,6 +39,7 @@ WITH_VERILATOR_LINT=true
 VERIFY_ONLY=false
 WITH_VERILATE_BUILD=true
 BUILD_UPSTREAM_VERILATOR=true
+CLEAN_TOOL_ARTIFACTS=true
 DEFAULT_PARALLEL_JOBS=4
 PARALLEL_JOBS="$DEFAULT_PARALLEL_JOBS"
 MAX_PARALLEL_JOBS=16
@@ -48,16 +49,14 @@ MAX_PARALLEL_JOBS=16
 # Example: ARAXL_HW_MAKE_OVERRIDES="questa_cmd=true veril_path=/usr/bin/"
 ARAXL_HW_MAKE_OVERRIDES="${ARAXL_HW_MAKE_OVERRIDES:-questa_cmd=true}"
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m'
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging generate_araxl
 
-info() { echo -e "${BLUE}[generate_araxl]${NC} $*"; }
-ok() { echo -e "${GREEN}[generate_araxl]${NC} $*"; }
-warn() { echo -e "${YELLOW}[generate_araxl]${NC} $*"; }
-err() { echo -e "${RED}[generate_araxl]${NC} $*" >&2; }
+info() { log_info "$@"; }
+ok() { log_success "$@"; }
+warn() { log_warning "$@"; }
+err() { log_error "$@"; }
 
 command_exists() { command -v "$1" >/dev/null 2>&1; }
 
@@ -94,6 +93,7 @@ Options:
   --verilate                 Same as default (kept for explicit scripts); does not change behavior
   --build-verilator          Default behavior (kept for explicit scripts); build Verilator if layout incomplete
   --no-build-verilator       Do not build upstream Verilator; skip make verilate if only incomplete distro verilator
+  --keep-tool-artifacts      Keep generated artifacts in tools/araxl (default cleans known untracked outputs)
   --jobs N                   Parallel make jobs for make bender (capped at ${MAX_PARALLEL_JOBS})
 
 Environment:
@@ -154,6 +154,10 @@ while [[ $# -gt 0 ]]; do
             ;;
         --no-build-verilator)
             BUILD_UPSTREAM_VERILATOR=false
+            shift
+            ;;
+        --keep-tool-artifacts)
+            CLEAN_TOOL_ARTIFACTS=false
             shift
             ;;
         --jobs)
@@ -363,6 +367,31 @@ run_araxl_verilate_build() {
     araxl_hw_make "veril_path=${vdir}" verilate 2>&1 | filter_bender_w03
     st=${PIPESTATUS[0]}
     return "$st"
+}
+
+is_tracked_path_in_araxl() {
+    local rel="$1"
+    git -C "$ARAXL_DIR" ls-files --error-unmatch "$rel" >/dev/null 2>&1
+}
+
+cleanup_araxl_generated_artifacts() {
+    local rel path
+    local -a generated_paths=(
+        ".bender"
+        "hardware/build"
+        "hardware/deps"
+        "install"
+    )
+    for rel in "${generated_paths[@]}"; do
+        path="$ARAXL_DIR/$rel"
+        [[ -e "$path" ]] || continue
+        if is_tracked_path_in_araxl "$rel"; then
+            warn "Skip cleanup for tracked path: $path"
+            continue
+        fi
+        info "Cleaning generated path from tools/araxl: $path"
+        rm -rf "$path"
+    done
 }
 
 apply_tech_cells_patch() {
@@ -691,4 +720,9 @@ SUMMARY="$DATASET_DIR/araxl_summary.txt"
 } > "$SUMMARY"
 
 ok "Wrote $SUMMARY"
+if [[ "$CLEAN_TOOL_ARTIFACTS" == true ]]; then
+    cleanup_araxl_generated_artifacts
+else
+    info "Keeping generated tools/araxl artifacts (--keep-tool-artifacts)"
+fi
 ok "generate_araxl.sh completed."

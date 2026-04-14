@@ -13,6 +13,11 @@ if [[ "${-}" == *u* ]]; then
     set +u
 fi
 
+_SCRIPT_LOG_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
+# shellcheck source=scripts/common_logging.sh
+source "$_SCRIPT_LOG_DIR/common_logging.sh"
+init_script_logging cheshire_ihp130_o_env
+
 export PATH="${HOME}/.local/bin:${PATH}"
 
 export CHESHIRE_IHP130_O_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")/../tools/cheshire-ihp130-o" && pwd)"

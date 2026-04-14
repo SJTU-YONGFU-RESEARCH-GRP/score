@@ -27,7 +27,8 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
-MEMPOOL_DIR="$PROJECT_ROOT/tools/mempool"
+SOURCE_MEMPOOL_DIR="$PROJECT_ROOT/tools/mempool"
+MEMPOOL_DIR=""
 
 SKIP_CHECKOUT=false
 VERBOSE=false
@@ -45,64 +46,12 @@ fi
 
 BENDER_VERIFY_CONFIGS=(minpool mempool terapool)
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-NC='\033[0m'
-
-# Set after LOG_DIR is known; logging functions append here (Rocket Chip style).
-GENERATION_LOG=""
-
-# After `exec > >(tee -a "$GENERATION_LOG") 2>&1`, all output below is captured once (Rocket-style session log).
-log() {
-    local message="$1"
-    local timestamp
-    timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${BLUE}[$timestamp]${NC} $message"
-}
-
-error() {
-    local message="$1"
-    local timestamp
-    timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${RED}[ERROR $timestamp]${NC} $message"
-}
-
-success() {
-    local message="$1"
-    local timestamp
-    timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${GREEN}[SUCCESS $timestamp]${NC} $message"
-}
-
-warning() {
-    local message="$1"
-    local timestamp
-    timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${YELLOW}[WARNING $timestamp]${NC} $message"
-}
-
-info() {
-    local message="$1"
-    local timestamp
-    timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${CYAN}[INFO $timestamp]${NC} $message"
-}
-
-debug() {
-    if [[ "$VERBOSE" == "true" ]]; then
-        local message="$1"
-        local timestamp
-        timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-        echo -e "${PURPLE}[DEBUG $timestamp]${NC} $message"
-    fi
-}
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging generate_mempool
 
 err() {
-    error "$@"
+    log_error "$@"
 }
 
 command_exists() { command -v "$1" >/dev/null 2>&1; }
@@ -184,13 +133,13 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-if [[ ! -f "$MEMPOOL_DIR/Makefile" ]] || [[ ! -f "$MEMPOOL_DIR/Bender.yml" ]]; then
-    echo -e "${RED}[generate_mempool]${NC} Missing MemPool tree at $MEMPOOL_DIR — run: git submodule update --init --recursive tools/mempool" >&2
+if [[ ! -f "$SOURCE_MEMPOOL_DIR/Makefile" ]] || [[ ! -f "$SOURCE_MEMPOOL_DIR/Bender.yml" ]]; then
+    log_error "Missing MemPool tree at $SOURCE_MEMPOOL_DIR — run: git submodule update --init --recursive tools/mempool"
     exit 1
 fi
 
-if [[ "$VERIFY_ONLY" != true ]] && ! command_exists rsync; then
-    echo -e "${RED}[generate_mempool]${NC} rsync not found (required to snapshot sources)" >&2
+if ! command_exists rsync; then
+    log_error "rsync not found (required to stage sources into datasets)"
     exit 1
 fi
 
@@ -206,8 +155,8 @@ fi
 cd "$PROJECT_ROOT"
 
 get_commit_id() {
-    if git -C "$MEMPOOL_DIR" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-        git -C "$MEMPOOL_DIR" rev-parse --short=8 HEAD 2>/dev/null || echo "unknown"
+    if git -C "$SOURCE_MEMPOOL_DIR" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+        git -C "$SOURCE_MEMPOOL_DIR" rev-parse --short=8 HEAD 2>/dev/null || echo "unknown"
     else
         echo "unknown"
     fi
@@ -223,6 +172,44 @@ GENERATION_LOG="$LOG_DIR/generation_${TIMESTAMP}.log"
 
 mkdir -p "$LOG_DIR" "$DATASET_LOG_DIR"
 touch "$GENERATION_LOG"
+
+init_script_logging_files generate_mempool "$GENERATION_LOG"
+
+log() {
+    log_info "$@"
+}
+
+error() {
+    log_error "$@"
+}
+
+success() {
+    log_success "$@"
+}
+
+warning() {
+    log_warning "$@"
+}
+
+info() {
+    log_info "$@"
+}
+
+debug() {
+    if [[ "$VERBOSE" == "true" ]]; then
+        echo -e "${PURPLE}[${SCRIPT_LOG_NAME}][DEBUG]${NC} $*" | tee -a "$SCRIPT_LOG_FILE"
+    fi
+}
+
+MEMPOOL_DIR="$BUNDLE_DIR"
+
+prepare_dataset_workdir() {
+    info "Staging MemPool sources into dataset workdir: $MEMPOOL_DIR"
+    mkdir -p "$MEMPOOL_DIR"
+    rsync -a --delete \
+        --exclude '.git/' \
+        "$SOURCE_MEMPOOL_DIR/" "$MEMPOOL_DIR/"
+}
 
 resolve_verilator() {
     local v="$MEMPOOL_DIR/install/verilator/bin/verilator"
@@ -337,11 +324,14 @@ exec > >(tee -a "$GENERATION_LOG") 2>&1
 log "====================================================================="
 log "MemPool RTL generation / snapshot"
 log "GENERATION_LOG: $GENERATION_LOG"
-log "MEMPOOL_DIR: $MEMPOOL_DIR"
+log "SOURCE_MEMPOOL_DIR: $SOURCE_MEMPOOL_DIR"
+log "WORK_DIR: $MEMPOOL_DIR"
 log "Commit: $MEMPOOL_COMMIT_ID"
 log "Dataset: $DATASET_DIR"
 log "Verification enabled: $VERIFY_SYNTAX"
 log "====================================================================="
+
+prepare_dataset_workdir
 
 if [[ "$VERIFY_ONLY" == true ]]; then
     mkdir -p "$DATASET_DIR"
@@ -363,11 +353,6 @@ else
     warning "Skipped make bender / make update-deps (--skip-checkout)"
 fi
 
-info "Copying sources to $BUNDLE_DIR"
-mkdir -p "$BUNDLE_DIR"
-
-rsync -a --exclude '.git' "$MEMPOOL_DIR/" "$BUNDLE_DIR/"
-
 if [[ "$VERIFY_SYNTAX" == true ]]; then
     verify_mempool_rtl || warning "Verification reported failures; see $DATASET_DIR/verification/"
 fi
@@ -383,9 +368,10 @@ SUMMARY="$DATASET_DIR/mempool_summary.txt"
     echo "Generated (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')"
     echo "Host: $(hostname 2>/dev/null || echo unknown) $(uname -s) $(uname -m)"
     echo "SCORE root: $PROJECT_ROOT"
-    echo "Source repo: $MEMPOOL_DIR"
+    echo "Source repo: $SOURCE_MEMPOOL_DIR"
+    echo "Dataset workdir: $MEMPOOL_DIR"
     echo "Git commit (short): $MEMPOOL_COMMIT_ID"
-    echo "Git commit (full): $(git -C "$MEMPOOL_DIR" rev-parse HEAD 2>/dev/null || echo unknown)"
+    echo "Git commit (full): $(git -C "$SOURCE_MEMPOOL_DIR" rev-parse HEAD 2>/dev/null || echo unknown)"
     echo "bender (PATH): $(command_exists bender && bender --version 2>/dev/null || echo not_on_path)"
     echo "bender (install/bender): ${VENDORED_BENDER:-not_present}"
     echo "RTL verification enabled: $VERIFY_SYNTAX"

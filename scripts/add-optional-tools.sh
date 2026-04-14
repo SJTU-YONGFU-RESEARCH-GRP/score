@@ -4,6 +4,11 @@
 
 set -e  # Exit on error
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging add-optional-tools
+
 # List of repositories to add as submodules
 # Format: "repo-name git-url local-path"
 

@@ -12,15 +12,6 @@
 # Path registered in SCORE .gitmodules (submodule init from repo root per PROMPTS.md).
 RELATIVE_SUBMODULE_PATH="tools/rocket-chip"
 
-# Color codes for output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-NC='\033[0m' # No Color
-
 # Global variables
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
@@ -38,7 +29,6 @@ get_rocket_chip_commit_short() {
 ROCKET_CHIP_DATASET_DIR="$PROJECT_ROOT/datasets/rocket-chip/$(get_rocket_chip_commit_short)"
 # Install logs default next to generate_rocket_chip.sh logs (override with ROCKET_CHIP_INSTALL_LOG_DIR).
 LOG_DIR="${ROCKET_CHIP_INSTALL_LOG_DIR:-$ROCKET_CHIP_DATASET_DIR/logs/rocket_chip_install}"
-INSTALL_LOG="$LOG_DIR/install_$(date +%Y%m%d_%H%M%S).log"
 
 # Run in a throwaway directory so sbt/mill --version do not create target/ or out/ in the caller cwd
 # (run_rocket_chip.sh keeps cwd at the SCORE repo root).
@@ -81,42 +71,35 @@ VERILATOR_VERSION="5.006"
 # Create log directory
 mkdir -p "$LOG_DIR"
 
-# Logging functions
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging install_rocket_chip "$LOG_DIR"
+INSTALL_LOG="$SCRIPT_LOG_FILE"
+
 log() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${BLUE}[$timestamp]${NC} $message" | tee -a "$INSTALL_LOG"
+    log_info "$@"
 }
 
 error() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${RED}[ERROR $timestamp]${NC} $message" | tee -a "$INSTALL_LOG" >&2
+    log_error "$@"
 }
 
 success() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${GREEN}[SUCCESS $timestamp]${NC} $message" | tee -a "$INSTALL_LOG"
+    log_success "$@"
 }
 
 warning() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${YELLOW}[WARNING $timestamp]${NC} $message" | tee -a "$INSTALL_LOG"
+    log_warning "$@"
 }
 
 info() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${CYAN}[INFO $timestamp]${NC} $message" | tee -a "$INSTALL_LOG"
+    log_info "$@"
 }
 
 debug() {
     if [[ "$DEBUG_MODE" == "true" ]]; then
         local message="$1"
-        local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-        echo -e "${PURPLE}[DEBUG $timestamp]${NC} $message" | tee -a "$INSTALL_LOG"
+        echo -e "${PURPLE}[${SCRIPT_LOG_NAME}][DEBUG]${NC} $message" | tee -a "$INSTALL_LOG"
     fi
 }
 

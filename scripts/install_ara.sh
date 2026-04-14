@@ -29,14 +29,6 @@ SKIP_SUBMODULE=false
 CHECK_ONLY=false
 DEBUG_MODE=false
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-NC='\033[0m'
-
 command_exists() { command -v "$1" >/dev/null 2>&1; }
 
 get_commit_id() {
@@ -51,50 +43,21 @@ get_commit_id() {
 # Install logs co-locate with dataset tree by default (override with ARA_INSTALL_LOG_DIR).
 ARA_DATASET_COMMIT="$(get_commit_id "$TOOL_DIR")"
 LOG_DIR="${ARA_INSTALL_LOG_DIR:-$PROJECT_ROOT/datasets/ara/$ARA_DATASET_COMMIT/logs/ara_install}"
-INSTALL_LOG="$LOG_DIR/install_$(date +%Y%m%d_%H%M%S).log"
 mkdir -p "$LOG_DIR"
 
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging install_ara "$LOG_DIR"
+INSTALL_LOG="$SCRIPT_LOG_FILE"
+
 log() {
-    local message="$1"
-    local timestamp
-    timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${BLUE}[$timestamp]${NC} [install_ara] $message" | tee -a "$INSTALL_LOG"
-}
-
-log_info() {
-    local message="$1"
-    local timestamp
-    timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${CYAN}[INFO $timestamp]${NC} [install_ara] $message" | tee -a "$INSTALL_LOG"
-}
-
-log_success() {
-    local message="$1"
-    local timestamp
-    timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${GREEN}[SUCCESS $timestamp]${NC} [install_ara] $message" | tee -a "$INSTALL_LOG"
-}
-
-log_warning() {
-    local message="$1"
-    local timestamp
-    timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${YELLOW}[WARNING $timestamp]${NC} [install_ara] $message" | tee -a "$INSTALL_LOG"
-}
-
-log_error() {
-    local message="$1"
-    local timestamp
-    timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${RED}[ERROR $timestamp]${NC} [install_ara] $message" | tee -a "$INSTALL_LOG" >&2
+    log_info "$@"
 }
 
 log_debug() {
     if [[ "$DEBUG_MODE" == true ]]; then
         local message="$1"
-        local timestamp
-        timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-        echo -e "${PURPLE}[DEBUG $timestamp]${NC} [install_ara] $message" | tee -a "$INSTALL_LOG"
+        echo -e "${PURPLE}[${SCRIPT_LOG_NAME}][DEBUG]${NC} $message" | tee -a "$INSTALL_LOG"
     fi
 }
 

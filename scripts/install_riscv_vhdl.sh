@@ -5,21 +5,11 @@
 
 # Note: Removed set -e to allow better error handling
 
-# Color codes for output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-NC='\033[0m' # No Color
-
 # Global variables
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 RISCV_VHDL_DIR="$PROJECT_ROOT/tools/riscv_vhdl"
 LOG_DIR="$PROJECT_ROOT/logs/riscv_vhdl_install"
-INSTALL_LOG="$LOG_DIR/install_$(date +%Y%m%d_%H%M%S).log"
 
 # Installation options
 INSTALL_GHDL=true
@@ -42,31 +32,13 @@ YOSYS_VERSION="0.35"
 # Create log directory
 mkdir -p "$LOG_DIR"
 
-# Logging functions
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging install_riscv_vhdl riscv_vhdl_install
+INSTALL_LOG="$SCRIPT_LOG_FILE"
+
 log() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${BLUE}[$timestamp]${NC} $message" | tee -a "$INSTALL_LOG"
-}
-
-log_info() {
-    local message="$1"
-    echo -e "${CYAN}[INFO]${NC} $message" | tee -a "$INSTALL_LOG"
-}
-
-log_success() {
-    local message="$1"
-    echo -e "${GREEN}[SUCCESS]${NC} $message" | tee -a "$INSTALL_LOG"
-}
-
-log_warning() {
-    local message="$1"
-    echo -e "${YELLOW}[WARNING]${NC} $message" | tee -a "$INSTALL_LOG"
-}
-
-log_error() {
-    local message="$1"
-    echo -e "${RED}[ERROR]${NC} $message" | tee -a "$INSTALL_LOG"
+    log_info "$@"
 }
 
 # Error handling function
