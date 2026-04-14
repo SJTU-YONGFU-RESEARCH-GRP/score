@@ -36,17 +36,14 @@ SKIP_CHECKOUT=false
 VERIFY_RTL_MODE=""
 NO_VERIFY_RTL=false
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m'
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging generate_spatz
 
-info() { echo -e "${BLUE}[generate_spatz]${NC} $*"; }
-ok() { echo -e "${GREEN}[generate_spatz]${NC} $*"; }
-warn() { echo -e "${YELLOW}[generate_spatz]${NC} $*"; }
-err() { echo -e "${RED}[generate_spatz]${NC} $*" >&2; }
-
+info() { log_info "$@"; }
+ok() { log_success "$@"; }
+warn() { log_warning "$@"; }
+err() { log_error "$@"; }
 command_exists() { command -v "$1" >/dev/null 2>&1; }
 
 cpu_count() {

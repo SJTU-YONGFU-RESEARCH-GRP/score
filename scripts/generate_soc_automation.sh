@@ -5,15 +5,6 @@
 
 # set -e  # Exit on any error (temporarily disabled for debugging)
 
-# Color codes for output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-PURPLE='\033[0;35m'
-CYAN='\033[0;36m'
-NC='\033[0m' # No Color
-
 # Global variables
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
@@ -60,41 +51,33 @@ mkdir -p "$BUILD_ARTIFACTS_DIR"
 mkdir -p "$DATASET_DIR/soc_configs"
 mkdir -p "$DATASET_DIR/simulation_models"
 
-# Logging functions
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging_files generate_soc_automation "$MAIN_LOG" "$SESSION_LOG"
+
 log() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${BLUE}[$timestamp]${NC} $message" | tee -a "$MAIN_LOG" "$SESSION_LOG"
+    log_info "$@"
 }
 
 error() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${RED}[ERROR $timestamp]${NC} $message" | tee -a "$MAIN_LOG" "$SESSION_LOG" >&2
+    log_error "$@"
 }
 
 success() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${GREEN}[SUCCESS $timestamp]${NC} $message" | tee -a "$MAIN_LOG" "$SESSION_LOG"
+    log_success "$@"
 }
 
 warning() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${YELLOW}[WARNING $timestamp]${NC} $message" | tee -a "$MAIN_LOG" "$SESSION_LOG"
+    log_warning "$@"
 }
 
 info() {
-    local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${CYAN}[INFO $timestamp]${NC} $message" | tee -a "$MAIN_LOG" "$SESSION_LOG"
+    log_info "$@"
 }
 
 debug() {
     local message="$1"
-    local timestamp="$(date +'%Y-%m-%d %H:%M:%S')"
-    echo -e "${PURPLE}[DEBUG $timestamp]${NC} $message" | tee -a "$MAIN_LOG" "$SESSION_LOG"
+    echo -e "${PURPLE}[${SCRIPT_LOG_NAME}][DEBUG]${NC} $message" | tee -a "$MAIN_LOG" "$SESSION_LOG"
 }
 
 # Prerequisite checking functions

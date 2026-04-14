@@ -21,17 +21,14 @@ SNITCH_CLUSTER_DIR="$PROJECT_ROOT/tools/snitch-cluster"
 SKIP_CHECKOUT=false
 BENDER_UPDATE=false
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m'
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging generate_snitch_cluster
 
-info() { echo -e "${BLUE}[generate_snitch_cluster]${NC} $*"; }
-ok() { echo -e "${GREEN}[generate_snitch_cluster]${NC} $*"; }
-warn() { echo -e "${YELLOW}[generate_snitch_cluster]${NC} $*"; }
-err() { echo -e "${RED}[generate_snitch_cluster]${NC} $*" >&2; }
-
+info() { log_info "$@"; }
+ok() { log_success "$@"; }
+warn() { log_warning "$@"; }
+err() { log_error "$@"; }
 command_exists() { command -v "$1" >/dev/null 2>&1; }
 
 show_help() {

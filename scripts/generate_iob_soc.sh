@@ -5,14 +5,6 @@
 
 set -e
 
-# Color codes
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-CYAN='\033[0;36m'
-NC='\033[0m'
-
 # Directories
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
@@ -39,13 +31,6 @@ INIT_MEM_LIST=(1 0)
 BOARDS=(iob_cyclonev_gt_dk iob_aes_ku040_db_g iob_zybo_z7)
 SIMULATORS=(icarus verilator)
 
-# Logging functions
-log() { echo -e "${BLUE}[$(date +'%F %T')]${NC} $1" | tee -a "$SESSION_LOG"; }
-success() { echo -e "${GREEN}[SUCCESS]${NC} $1" | tee -a "$SESSION_LOG"; }
-error() { echo -e "${RED}[ERROR]${NC} $1" | tee -a "$SESSION_LOG" >&2; }
-warning() { echo -e "${YELLOW}[WARNING]${NC} $1" | tee -a "$SESSION_LOG"; }
-info() { echo -e "${CYAN}[INFO]${NC} $1" | tee -a "$SESSION_LOG"; }
-
 # Setup local environment if available
 if [[ -f "$PROJECT_ROOT/scripts/setup_local_env.sh" ]]; then
     source "$PROJECT_ROOT/scripts/setup_local_env.sh"
@@ -53,6 +38,32 @@ fi
 
 # Setup directories
 mkdir -p "$LOG_DIR" "$BUILD_DIR"
+
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging generate_iob_soc
+SCRIPT_LOG_FILE="$SESSION_LOG"
+: >>"$SCRIPT_LOG_FILE"
+
+log() {
+    log_info "$@"
+}
+
+success() {
+    log_success "$@"
+}
+
+error() {
+    log_error "$@"
+}
+
+warning() {
+    log_warning "$@"
+}
+
+info() {
+    log_info "$@"
+}
 
 # Help function
 show_help() {

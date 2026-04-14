@@ -31,7 +31,8 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
-CHIMERA_DIR="$PROJECT_ROOT/tools/chimera"
+SOURCE_CHIMERA_DIR="$PROJECT_ROOT/tools/chimera"
+CHIMERA_DIR=""
 
 SKIP_CHECKOUT=false
 BENDER_UPDATE=false
@@ -45,17 +46,14 @@ CHIMERA_TB_SV="$SCRIPT_DIR/assets/chimera/tb_stream_fifo.sv"
 
 CHIMERA_GITCONFIG_TMP=""
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m'
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging generate_chimera
 
-info() { echo -e "${BLUE}[generate_chimera]${NC} $*"; }
-ok() { echo -e "${GREEN}[generate_chimera]${NC} $*"; }
-warn() { echo -e "${YELLOW}[generate_chimera]${NC} $*"; }
-err() { echo -e "${RED}[generate_chimera]${NC} $*" >&2; }
-
+info() { log_info "$@"; }
+ok() { log_success "$@"; }
+warn() { log_warning "$@"; }
+err() { log_error "$@"; }
 command_exists() { command -v "$1" >/dev/null 2>&1; }
 
 chimera_cpp_compiler_ok() {
@@ -177,8 +175,8 @@ fi
 
 cd "$PROJECT_ROOT"
 
-if [[ ! -d "$CHIMERA_DIR" ]]; then
-    err "Missing $CHIMERA_DIR — run: git submodule update --init --recursive tools/chimera"
+if [[ ! -d "$SOURCE_CHIMERA_DIR" ]]; then
+    err "Missing $SOURCE_CHIMERA_DIR — run: git submodule update --init --recursive tools/chimera"
     exit 1
 fi
 
@@ -187,14 +185,14 @@ if ! command_exists bender; then
     exit 1
 fi
 
-if [[ "$VERIFY_ONLY" != true ]] && ! command_exists rsync; then
-    err "rsync not found (required to snapshot sources)"
+if ! command_exists rsync; then
+    err "rsync not found (required to stage sources into datasets)"
     exit 1
 fi
 
 get_commit_id() {
-    if git -C "$CHIMERA_DIR" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-        git -C "$CHIMERA_DIR" rev-parse --short=8 HEAD 2>/dev/null || echo "unknown"
+    if git -C "$SOURCE_CHIMERA_DIR" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+        git -C "$SOURCE_CHIMERA_DIR" rev-parse --short=8 HEAD 2>/dev/null || echo "unknown"
     else
         echo "unknown"
     fi
@@ -446,11 +444,24 @@ SESSION_LOG="$LOG_DIR/generate_${TIMESTAMP}.log"
 
 mkdir -p "$LOG_DIR"
 
+CHIMERA_DIR="$BUNDLE_DIR"
+
+prepare_dataset_workdir() {
+    info "Staging Chimera sources into dataset workdir: $CHIMERA_DIR"
+    mkdir -p "$CHIMERA_DIR"
+    rsync -a --delete \
+        --exclude '.git/' \
+        "$SOURCE_CHIMERA_DIR/" "$CHIMERA_DIR/"
+}
+
 exec > >(tee -a "$SESSION_LOG") 2>&1
 
-info "CHIMERA_DIR: $CHIMERA_DIR"
+info "SOURCE_CHIMERA_DIR: $SOURCE_CHIMERA_DIR"
+info "WORK_DIR: $CHIMERA_DIR"
 info "Commit: $CHIMERA_COMMIT_ID"
 info "Dataset: $DATASET_DIR"
+
+prepare_dataset_workdir
 
 if [[ "$VERIFY_ONLY" == true ]]; then
     mkdir -p "$DATASET_DIR"
@@ -509,22 +520,16 @@ else
     warn "Verification skipped (--no-verify)"
 fi
 
-info "Copying sources to $BUNDLE_DIR"
-mkdir -p "$BUNDLE_DIR"
-
-rsync -a \
-    --exclude '.git/' \
-    "$CHIMERA_DIR/" "$BUNDLE_DIR/"
-
 SUMMARY="$DATASET_DIR/chimera_summary.txt"
 {
     echo "chimera SCORE snapshot (pulp-platform/chimera)"
     echo "Generated (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')"
     echo "Host: $(hostname 2>/dev/null || echo unknown) $(uname -s) $(uname -m)"
     echo "SCORE root: $PROJECT_ROOT"
-    echo "Source repo: $CHIMERA_DIR"
+    echo "Source repo: $SOURCE_CHIMERA_DIR"
+    echo "Dataset workdir: $CHIMERA_DIR"
     echo "Git commit (short): $CHIMERA_COMMIT_ID"
-    echo "Git commit (full): $(git -C "$CHIMERA_DIR" rev-parse HEAD 2>/dev/null || echo unknown)"
+    echo "Git commit (full): $(git -C "$SOURCE_CHIMERA_DIR" rev-parse HEAD 2>/dev/null || echo unknown)"
     echo "bender: $(bender --version 2>/dev/null || echo unknown)"
     echo "verilator: $(command_exists verilator && verilator --version 2>/dev/null | head -1 || echo not_on_path)"
     echo ""

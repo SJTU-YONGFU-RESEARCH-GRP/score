@@ -23,17 +23,14 @@ FORCE_NIX_BUILD=true
 INSTALL_EXTRA=()
 GENERATE_EXTRA=()
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m'
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging run_iob_soc
 
-info() { echo -e "${BLUE}[run_iob_soc]${NC} $*"; }
-ok() { echo -e "${GREEN}[run_iob_soc]${NC} $*"; }
-warn() { echo -e "${YELLOW}[run_iob_soc]${NC} $*"; }
-err() { echo -e "${RED}[run_iob_soc]${NC} $*" >&2; }
-
+info() { log_info "$@"; }
+ok() { log_success "$@"; }
+warn() { log_warning "$@"; }
+err() { log_error "$@"; }
 show_help() {
     cat << EOF
 Usage: $0 [OPTIONS] [-- EXTRA_GENERATE_ARGS...]

@@ -23,17 +23,14 @@ NO_SYSTEM_DEPS=false
 NO_VERILATOR=false
 GENERATE_EXTRA=()
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m'
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging run_astral
 
-info() { echo -e "${BLUE}[run_astral]${NC} $*"; }
-ok() { echo -e "${GREEN}[run_astral]${NC} $*"; }
-warn() { echo -e "${YELLOW}[run_astral]${NC} $*"; }
-err() { echo -e "${RED}[run_astral]${NC} $*" >&2; }
-
+info() { log_info "$@"; }
+ok() { log_success "$@"; }
+warn() { log_warning "$@"; }
+err() { log_error "$@"; }
 # Match docs/PROMPTS_SHELL.md and run_rocket_chip.sh: gitlink submodules use a .git file, not only a directory.
 get_commit_id() {
     local repo_path="$1"
@@ -95,6 +92,11 @@ validate_root() {
     fi
 }
 
+is_tracked_submodule_path() {
+    local submodule_path="$1"
+    git ls-files --error-unmatch -- "$submodule_path" >/dev/null 2>&1
+}
+
 while [[ $# -gt 0 ]]; do
     case "$1" in
         -h|--help)
@@ -154,8 +156,16 @@ else
 fi
 
 if [[ "$SKIP_SUBMODULE" != true ]]; then
-    info "Step 1/3: git submodule update --init --recursive $ASTRAL_SUBMODULE"
-    git submodule update --init --recursive "$ASTRAL_SUBMODULE"
+    if is_tracked_submodule_path "$ASTRAL_SUBMODULE"; then
+        info "Step 1/3: git submodule update --init --recursive $ASTRAL_SUBMODULE"
+        git submodule sync -- "$ASTRAL_SUBMODULE"
+        git submodule update --init --recursive "$ASTRAL_SUBMODULE"
+    else
+        warn "Submodule path '$ASTRAL_SUBMODULE' is not tracked in this checkout; syncing all submodules instead."
+        info "Step 1/3: git submodule sync --recursive && git submodule update --init --recursive"
+        git submodule sync --recursive
+        git submodule update --init --recursive
+    fi
     ok "Submodules ready."
 else
     warn "Skipped submodule step."

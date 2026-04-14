@@ -4,6 +4,11 @@
 
 set -e  # Exit on error
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging add-submodules
+
 # Function to show usage
 show_usage() {
     echo "📋 Usage: $0 <git-url> <local-path>"

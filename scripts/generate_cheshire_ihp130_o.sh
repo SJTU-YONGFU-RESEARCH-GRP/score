@@ -28,17 +28,14 @@ BENDER_UPDATE=false
 # Temp gitconfig path; cleaned up after bender or on exit.
 CHESHIRE_IHP130_O_GITCONFIG_TMP=""
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m'
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging generate_cheshire_ihp130_o
 
-info() { echo -e "${BLUE}[generate_cheshire_ihp130_o]${NC} $*"; }
-ok() { echo -e "${GREEN}[generate_cheshire_ihp130_o]${NC} $*"; }
-warn() { echo -e "${YELLOW}[generate_cheshire_ihp130_o]${NC} $*"; }
-err() { echo -e "${RED}[generate_cheshire_ihp130_o]${NC} $*" >&2; }
-
+info() { log_info "$@"; }
+ok() { log_success "$@"; }
+warn() { log_warning "$@"; }
+err() { log_error "$@"; }
 command_exists() { command -v "$1" >/dev/null 2>&1; }
 
 cleanup_cheshire_ihp130_o_git_global() {

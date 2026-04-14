@@ -11,6 +11,11 @@ if [[ "${-}" == *u* ]]; then
     set +u
 fi
 
+_SCRIPT_LOG_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
+# shellcheck source=scripts/common_logging.sh
+source "$_SCRIPT_LOG_DIR/common_logging.sh"
+init_script_logging rocket_chip_env
+
 _rc_java_major_from_exe() {
     local exe="$1" line v major
     [[ -z "$exe" || ! -x "$exe" ]] && echo 0 && return

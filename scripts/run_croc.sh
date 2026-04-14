@@ -26,17 +26,14 @@ NO_VERILATOR=false
 NO_FULL_SIM=false
 GENERATE_EXTRA=()
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m'
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging run_croc
 
-info() { echo -e "${BLUE}[run_croc]${NC} $*"; }
-ok() { echo -e "${GREEN}[run_croc]${NC} $*"; }
-warn() { echo -e "${YELLOW}[run_croc]${NC} $*"; }
-err() { echo -e "${RED}[run_croc]${NC} $*" >&2; }
-
+info() { log_info "$@"; }
+ok() { log_success "$@"; }
+warn() { log_warning "$@"; }
+err() { log_error "$@"; }
 get_commit_id() {
     local repo_path="$1"
     if git -C "$repo_path" rev-parse --is-inside-work-tree >/dev/null 2>&1; then

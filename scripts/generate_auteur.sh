@@ -28,7 +28,8 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
-AUTEUR_DIR="$PROJECT_ROOT/tools/auteur"
+SOURCE_AUTEUR_DIR="$PROJECT_ROOT/tools/auteur"
+AUTEUR_DIR=""
 
 SKIP_CHECKOUT=false
 BENDER_UPDATE=false
@@ -40,17 +41,14 @@ DEFAULT_VERILATOR_JOBS=4
 AUTEUR_VERILATOR_JOBS="${AUTEUR_VERILATOR_JOBS:-$DEFAULT_VERILATOR_JOBS}"
 AUTEUR_TB_SV="$SCRIPT_DIR/assets/auteur/tb_auteur_fifo.sv"
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m'
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging generate_auteur
 
-info() { echo -e "${BLUE}[generate_auteur]${NC} $*"; }
-ok() { echo -e "${GREEN}[generate_auteur]${NC} $*"; }
-warn() { echo -e "${YELLOW}[generate_auteur]${NC} $*"; }
-err() { echo -e "${RED}[generate_auteur]${NC} $*" >&2; }
-
+info() { log_info "$@"; }
+ok() { log_success "$@"; }
+warn() { log_warning "$@"; }
+err() { log_error "$@"; }
 command_exists() { command -v "$1" >/dev/null 2>&1; }
 
 auteur_cpp_compiler_ok() {
@@ -152,8 +150,8 @@ fi
 
 cd "$PROJECT_ROOT"
 
-if [[ ! -d "$AUTEUR_DIR" ]]; then
-    err "Missing $AUTEUR_DIR — run: git submodule update --init --recursive tools/auteur"
+if [[ ! -d "$SOURCE_AUTEUR_DIR" ]]; then
+    err "Missing $SOURCE_AUTEUR_DIR — run: git submodule update --init --recursive tools/auteur"
     exit 1
 fi
 
@@ -162,14 +160,14 @@ if ! command_exists bender; then
     exit 1
 fi
 
-if [[ "$VERIFY_ONLY" != true ]] && ! command_exists rsync; then
-    err "rsync not found (required to snapshot sources)"
+if ! command_exists rsync; then
+    err "rsync not found (required to stage sources into datasets)"
     exit 1
 fi
 
 get_commit_id() {
-    if git -C "$AUTEUR_DIR" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-        git -C "$AUTEUR_DIR" rev-parse --short=8 HEAD 2>/dev/null || echo "unknown"
+    if git -C "$SOURCE_AUTEUR_DIR" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+        git -C "$SOURCE_AUTEUR_DIR" rev-parse --short=8 HEAD 2>/dev/null || echo "unknown"
     else
         echo "unknown"
     fi
@@ -411,11 +409,24 @@ SESSION_LOG="$LOG_DIR/generate_${TIMESTAMP}.log"
 
 mkdir -p "$LOG_DIR"
 
+AUTEUR_DIR="$BUNDLE_DIR"
+
+prepare_dataset_workdir() {
+    info "Staging Auteur sources into dataset workdir: $AUTEUR_DIR"
+    mkdir -p "$AUTEUR_DIR"
+    rsync -a --delete \
+        --exclude '.git/' \
+        "$SOURCE_AUTEUR_DIR/" "$AUTEUR_DIR/"
+}
+
 exec > >(tee -a "$SESSION_LOG") 2>&1
 
-info "AUTEUR_DIR: $AUTEUR_DIR"
+info "SOURCE_AUTEUR_DIR: $SOURCE_AUTEUR_DIR"
+info "WORK_DIR: $AUTEUR_DIR"
 info "Commit: $AUTEUR_COMMIT_ID"
 info "Dataset: $DATASET_DIR"
+
+prepare_dataset_workdir
 
 if [[ "$VERIFY_ONLY" == true ]]; then
     mkdir -p "$DATASET_DIR"
@@ -472,22 +483,16 @@ else
     warn "Verification skipped (--no-verify)"
 fi
 
-info "Copying sources to $BUNDLE_DIR"
-mkdir -p "$BUNDLE_DIR"
-
-rsync -a \
-    --exclude '.git/' \
-    "$AUTEUR_DIR/" "$BUNDLE_DIR/"
-
 SUMMARY="$DATASET_DIR/auteur_summary.txt"
 {
     echo "auteur SCORE snapshot (pulp-platform/auteur)"
     echo "Generated (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')"
     echo "Host: $(hostname 2>/dev/null || echo unknown) $(uname -s) $(uname -m)"
     echo "SCORE root: $PROJECT_ROOT"
-    echo "Source repo: $AUTEUR_DIR"
+    echo "Source repo: $SOURCE_AUTEUR_DIR"
+    echo "Dataset workdir: $AUTEUR_DIR"
     echo "Git commit (short): $AUTEUR_COMMIT_ID"
-    echo "Git commit (full): $(git -C "$AUTEUR_DIR" rev-parse HEAD 2>/dev/null || echo unknown)"
+    echo "Git commit (full): $(git -C "$SOURCE_AUTEUR_DIR" rev-parse HEAD 2>/dev/null || echo unknown)"
     echo "bender: $(bender --version 2>/dev/null || echo unknown)"
     echo "verilator: $(command_exists verilator && verilator --version 2>/dev/null | head -1 || echo not_on_path)"
     echo ""

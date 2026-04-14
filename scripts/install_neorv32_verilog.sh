@@ -5,5 +5,8 @@
 #
 set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging install_neorv32_verilog
 export NEORV32_INSTALL_PROFILE=verilog
 exec bash "$SCRIPT_DIR/install_neorv32_vhdl.sh" "$@"

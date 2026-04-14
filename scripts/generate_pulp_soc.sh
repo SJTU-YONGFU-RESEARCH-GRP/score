@@ -29,17 +29,14 @@ SKIP_BENDER_LOCAL=false
 # gpio@master (8a9e71e…) depends on axi 0.39.x, compatible with pulp_soc; older gpio broke resolution.
 PULP_SOC_GPIO_OVERRIDE_REV="${PULP_SOC_GPIO_OVERRIDE_REV:-8a9e71e64b588c49f66794fa655e35d4ccb038cb}"
 
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m'
+# shellcheck source=scripts/common_logging.sh
+source "$SCRIPT_DIR/common_logging.sh"
+init_script_logging generate_pulp_soc
 
-info() { echo -e "${BLUE}[generate_pulp_soc]${NC} $*"; }
-ok() { echo -e "${GREEN}[generate_pulp_soc]${NC} $*"; }
-warn() { echo -e "${YELLOW}[generate_pulp_soc]${NC} $*"; }
-err() { echo -e "${RED}[generate_pulp_soc]${NC} $*" >&2; }
-
+info() { log_info "$@"; }
+ok() { log_success "$@"; }
+warn() { log_warning "$@"; }
+err() { log_error "$@"; }
 command_exists() { command -v "$1" >/dev/null 2>&1; }
 
 write_pulp_soc_bender_local() {

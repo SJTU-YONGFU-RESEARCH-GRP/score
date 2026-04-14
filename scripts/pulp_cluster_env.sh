@@ -13,6 +13,11 @@ if [[ "${-}" == *u* ]]; then
     set +u
 fi
 
+_SCRIPT_LOG_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
+# shellcheck source=scripts/common_logging.sh
+source "$_SCRIPT_LOG_DIR/common_logging.sh"
+init_script_logging pulp_cluster_env
+
 export PATH="${HOME}/.local/bin:${PATH}"
 
 export PULP_CLUSTER_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")/../tools/pulp-cluster" && pwd)"
