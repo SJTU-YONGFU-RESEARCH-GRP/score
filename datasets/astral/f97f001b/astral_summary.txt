@@ -1,0 +1,19 @@
+astral SCORE snapshot (pulp-platform/astral)
+Generated (UTC): 2026-04-14 15:43:12
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/astral
+Dataset workdir: /home/yongfu/proj/score/datasets/astral/f97f001b/source_snapshot
+Git commit (short): f97f001b
+Git commit (full): f97f001b6e3796850a7b0544f009b92be820060d
+bender: bender 0.31.0
+verilator: Verilator 5.022 2024-02-24 rev fedora-5.022
+
+Verification (see /home/yongfu/proj/score/datasets/astral/f97f001b/verification/verification_summary.txt):
+  Bender.lock path check: PASS
+  bender flist-plus (FPGA profile): PASS
+  Verilator lint (common_cells): PASS
+  Verilator binary (elaboration): PASS
+
+See https://github.com/pulp-platform/astral and tools/astral/README.md
+Bundle path: /home/yongfu/proj/score/datasets/astral/f97f001b/source_snapshot

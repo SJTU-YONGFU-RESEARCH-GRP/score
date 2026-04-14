@@ -97,6 +97,32 @@ is_tracked_submodule_path() {
     git ls-files --error-unmatch -- "$submodule_path" >/dev/null 2>&1
 }
 
+get_submodule_url_from_gitmodules() {
+    local submodule_path="$1"
+    local key
+    key="submodule.${submodule_path}.url"
+    git config --file "$PROJECT_ROOT/.gitmodules" --get "$key" 2>/dev/null || true
+}
+
+bootstrap_missing_astral_checkout() {
+    local astral_url
+    astral_url="$(get_submodule_url_from_gitmodules "$ASTRAL_SUBMODULE")"
+    if [[ -z "$astral_url" ]]; then
+        err "Could not resolve URL for $ASTRAL_SUBMODULE from .gitmodules"
+        return 1
+    fi
+    if [[ -d "$ASTRAL_SUBMODULE/.git" ]] || git -C "$ASTRAL_SUBMODULE" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+        info "Found existing git checkout at $ASTRAL_SUBMODULE"
+        return 0
+    fi
+    if [[ -e "$ASTRAL_SUBMODULE" ]]; then
+        err "$ASTRAL_SUBMODULE exists but is not a git checkout; remove or rename it, then rerun."
+        return 1
+    fi
+    info "Bootstrapping missing checkout: git clone $astral_url $ASTRAL_SUBMODULE"
+    git clone "$astral_url" "$ASTRAL_SUBMODULE"
+}
+
 while [[ $# -gt 0 ]]; do
     case "$1" in
         -h|--help)
@@ -165,6 +191,10 @@ if [[ "$SKIP_SUBMODULE" != true ]]; then
         info "Step 1/3: git submodule sync --recursive && git submodule update --init --recursive"
         git submodule sync --recursive
         git submodule update --init --recursive
+        if [[ ! -d "$ASTRAL_SUBMODULE" ]]; then
+            warn "$ASTRAL_SUBMODULE is still missing after submodule update; bootstrapping plain git checkout."
+            bootstrap_missing_astral_checkout
+        fi
     fi
     ok "Submodules ready."
 else

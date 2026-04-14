@@ -1,0 +1,14 @@
+Astral / Carfield RTL verification summary (SCORE)
+Generated (UTC): 2026-04-14 15:43:12
+ASTRAL_CARFIELD_CONFIG (bender flist profile): carfield_l2dual_periph
+
+Bender.lock → bender path: PASS
+bender script flist-plus (FPGA / minimal islands): PASS
+Verilator --lint-only (common_cells / stream_fifo): PASS
+Verilator --binary (RTL elaboration smoke): PASS
+
+Notes:
+  Full-chip Verilator lint is not used: OpenTitan concurrent assertions and mixed
+  VHDL (can_bus) are incompatible with a single Verilator pass; the flist step still
+  validates the Astral file closure for the FPGA-oriented profile above.
+Logs: /home/yongfu/proj/score/datasets/astral/f97f001b/verification/
