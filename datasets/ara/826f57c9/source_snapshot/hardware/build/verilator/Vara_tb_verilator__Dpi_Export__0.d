@@ -1,0 +1,2 @@
+Vara_tb_verilator__Dpi_Export__0.o: Vara_tb_verilator__Dpi_Export__0.cpp \
+ Vara_tb_verilator.h Vara_tb_verilator__Syms.h

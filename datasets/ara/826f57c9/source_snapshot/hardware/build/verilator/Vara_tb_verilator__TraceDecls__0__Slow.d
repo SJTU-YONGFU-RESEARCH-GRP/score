@@ -1,0 +1,2 @@
+Vara_tb_verilator__TraceDecls__0__Slow.o: \
+ Vara_tb_verilator__TraceDecls__0__Slow.cpp
