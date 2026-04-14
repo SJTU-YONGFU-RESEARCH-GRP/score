@@ -1,0 +1,3 @@
+Vara_tb_verilator___024root__DepSet_h59ae107a__14__Slow.o: \
+ Vara_tb_verilator___024root__DepSet_h59ae107a__14__Slow.cpp \
+ Vara_tb_verilator__pch.h Vara_tb_verilator___024root.h

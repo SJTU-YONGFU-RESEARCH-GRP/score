@@ -1,0 +1,2 @@
+Vara_tb_verilator__Trace__10__Slow.o: \
+ Vara_tb_verilator__Trace__10__Slow.cpp Vara_tb_verilator__Syms.h
