@@ -1,0 +1,1 @@
+pulpissimo_smoke|PASS|verilator_lint|/home/yongfu/proj/score/datasets/pulpissimo/bfc3d9a1/verification/pulpissimo_smoke_verilator_lint.log|/home/yongfu/proj/score/datasets/pulpissimo/bfc3d9a1/rtl_designs/pulpissimo_snapshot/pulpissimo_smoke_tb.sv

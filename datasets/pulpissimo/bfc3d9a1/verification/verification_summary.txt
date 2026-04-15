@@ -1,0 +1,16 @@
+pulpissimo verification summary
+Generated (UTC): 2026-04-15 18:10:22
+Dataset: /home/yongfu/proj/score/datasets/pulpissimo/bfc3d9a1
+
+Checks:
+  Verilog RTL presence: PASS
+  Testbench artifacts generated: PASS
+  Verilator lint PASS: 1
+  Verilator lint FAIL: 0
+  Verilator lint SKIP: 0
+
+Artifacts:
+  verification results: /home/yongfu/proj/score/datasets/pulpissimo/bfc3d9a1/verification/verification_results_20260416_021022.txt
+  verilator lint log: /home/yongfu/proj/score/datasets/pulpissimo/bfc3d9a1/verification/pulpissimo_smoke_verilator_lint.log
+  verification logs dir: /home/yongfu/proj/score/datasets/pulpissimo/bfc3d9a1/verification
+  session log: /home/yongfu/proj/score/datasets/pulpissimo/bfc3d9a1/logs/generate_20260416_021022.log
