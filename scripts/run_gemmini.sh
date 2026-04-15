@@ -33,6 +33,10 @@ info() { log_info "$@"; }
 ok() { log_success "$@"; }
 warn() { log_warning "$@"; }
 err() { log_error "$@"; }
+
+# shellcheck source=scripts/common_submodule_bootstrap.sh
+source "$SCRIPT_DIR/common_submodule_bootstrap.sh"
+
 show_help() {
     cat << EOF
 Usage: $0 [OPTIONS] [-- EXTRA_GENERATE_ARGS...]
@@ -144,8 +148,7 @@ else
 fi
 
 if [[ "$SKIP_SUBMODULE" != true ]]; then
-    info "Step 1/3: git submodule update --init --recursive $GEMMINI_SUBMODULE"
-    git submodule update --init --recursive "$GEMMINI_SUBMODULE"
+    score_prepare_tool_checkout "$PROJECT_ROOT" "$GEMMINI_SUBMODULE"
     ok "Submodules ready."
 else
     warn "Skipped submodule step."

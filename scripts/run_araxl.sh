@@ -35,41 +35,9 @@ info() { log_info "$@"; }
 ok() { log_success "$@"; }
 warn() { log_warning "$@"; }
 err() { log_error "$@"; }
-araxl_submodule_url_from_gitmodules() {
-    git config -f "$PROJECT_ROOT/.gitmodules" --get 'submodule.tools/araxl.url' 2>/dev/null || true
-}
 
-prefer_ssh_for_github_url() {
-    local url="$1"
-    if [[ "$url" =~ ^https://github\.com/(.+)/(.+)\.git$ ]]; then
-        echo "git@github.com:${BASH_REMATCH[1]}/${BASH_REMATCH[2]}.git"
-    else
-        echo "$url"
-    fi
-}
-
-sync_araxl_submodule() {
-    local url
-    url="$(araxl_submodule_url_from_gitmodules)"
-    if [[ -n "$url" ]]; then
-        url="$(prefer_ssh_for_github_url "$url")"
-        git config "submodule.tools/araxl.url" "$url"
-    fi
-
-    if git submodule update --init --recursive "$ARAXL_SUBMODULE"; then
-        return 0
-    fi
-
-    if [[ -n "$url" ]]; then
-        warn "Submodule path not registered in index yet; adding $ARAXL_SUBMODULE via $url"
-        git submodule add -f "$url" "$ARAXL_SUBMODULE"
-        git submodule update --init --recursive "$ARAXL_SUBMODULE"
-        return 0
-    fi
-
-    err "Failed to initialize $ARAXL_SUBMODULE and no URL found in .gitmodules"
-    return 1
-}
+# shellcheck source=scripts/common_submodule_bootstrap.sh
+source "$SCRIPT_DIR/common_submodule_bootstrap.sh"
 
 show_help() {
     cat << EOF
@@ -214,8 +182,7 @@ else
 fi
 
 if [[ "$SKIP_SUBMODULE" != true ]]; then
-    info "Step 1/3: git submodule update --init --recursive $ARAXL_SUBMODULE"
-    sync_araxl_submodule
+    score_prepare_tool_checkout "$PROJECT_ROOT" "$ARAXL_SUBMODULE"
     ok "Submodules ready."
 else
     warn "Skipped submodule step."
