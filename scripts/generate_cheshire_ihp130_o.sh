@@ -24,6 +24,9 @@ CHESHIRE_IHP130_O_DIR="$PROJECT_ROOT/tools/cheshire-ihp130-o"
 
 SKIP_CHECKOUT=false
 BENDER_UPDATE=false
+VERIFY_ENABLED=true
+VERIFY_ONLY=false
+WITH_VERILATOR_STEPS=true
 
 # Temp gitconfig path; cleaned up after bender or on exit.
 CHESHIRE_IHP130_O_GITCONFIG_TMP=""
@@ -75,6 +78,9 @@ Options:
   -h, --help              Show this help
   --skip-checkout         Do not run bender (reuse existing .bender)
   --bender-update         Run bender update instead of checkout (experimental)
+  --no-verify             Skip all verification steps
+  --verify-only           Run verification only (no source snapshot copy)
+  --skip-verilator        Skip Verilator checks (keep bender checks)
 
 Requires: git, bender on PATH, rsync. Submodule tools/cheshire-ihp130-o initialized.
 Checkout can be large (Cheshire / SDK trees). See https://github.com/pulp-platform/cheshire-ihp130-o
@@ -93,6 +99,18 @@ while [[ $# -gt 0 ]]; do
             ;;
         --bender-update)
             BENDER_UPDATE=true
+            shift
+            ;;
+        --no-verify)
+            VERIFY_ENABLED=false
+            shift
+            ;;
+        --verify-only)
+            VERIFY_ONLY=true
+            shift
+            ;;
+        --skip-verilator)
+            WITH_VERILATOR_STEPS=false
             shift
             ;;
         *)
@@ -137,10 +155,153 @@ get_commit_id() {
     fi
 }
 
+verify_cheshire_ihp130_o_bender_lock_paths() {
+    local lock="$CHESHIRE_IHP130_O_DIR/Bender.lock" line pkg out missing
+    missing=0
+    out="$VERIFICATION_DIR/bender_lock_path_check.txt"
+    if [[ ! -f "$lock" ]]; then
+        err "Bender.lock missing: $lock"
+        return 1
+    fi
+    {
+        echo "bender path <pkg> for each Bender.lock package (from $lock)"
+        echo "---"
+    } > "$out"
+    while IFS= read -r line || [[ -n "$line" ]]; do
+        [[ "$line" =~ ^[[:space:]]{2}([a-zA-Z0-9_]+):[[:space:]]*$ ]] || continue
+        pkg="${BASH_REMATCH[1]}"
+        if ( cd "$CHESHIRE_IHP130_O_DIR" && bender path "$pkg" >/dev/null 2>&1 ); then
+            echo "OK  $pkg" >> "$out"
+        else
+            echo "MISSING  $pkg" >> "$out"
+            missing=1
+        fi
+    done < "$lock"
+    if [[ "$missing" -ne 0 ]]; then
+        err "One or more Bender.lock packages not resolvable (see $out)"
+        return 1
+    fi
+    ok "Verification: all Bender.lock packages resolve with bender path"
+    return 0
+}
+
+verify_cheshire_ihp130_o_bender_flist() {
+    local stderr_log script_out st
+    stderr_log="$VERIFICATION_DIR/bender_flist_common_cells.stderr.log"
+    script_out="$VERIFICATION_DIR/bender_script_common_cells.f"
+    info "Verification: bender script flist-plus (package common_cells) …"
+    set +e
+    (
+        cd "$CHESHIRE_IHP130_O_DIR" || exit 1
+        bender script flist-plus -p common_cells -t rtl -t tech_cells_generic_exclude_deprecated \
+            > "$script_out" 2> "$stderr_log"
+    )
+    st=$?
+    set -e
+    if [[ "$st" -ne 0 ]]; then
+        err "bender script flist-plus failed (exit $st; stderr: $stderr_log)"
+        return 1
+    fi
+    if [[ ! -s "$script_out" ]]; then
+        err "bender flist output empty: $script_out"
+        return 1
+    fi
+    ok "Verification: bender flist-plus OK ($(wc -l < "$script_out") lines → $script_out)"
+    return 0
+}
+
+verify_cheshire_ihp130_o_verilator_lint() {
+    local script_out log st
+    script_out="$VERIFICATION_DIR/bender_script_common_cells.f"
+    log="$VERIFICATION_DIR/verilator_lint_common_cells.log"
+    if ! command_exists verilator; then
+        err "Verilator not on PATH (use --skip-verilator or install verilator)"
+        return 1
+    fi
+    if [[ ! -f "$script_out" ]]; then
+        err "Missing $script_out (bender flist step must run first)"
+        return 1
+    fi
+    info "Verification: Verilator --lint-only (common_cells slice, top stream_fifo) …"
+    set +e
+    verilator --lint-only -sv --no-timing -f "$script_out" --top-module stream_fifo -Wno-fatal \
+        > "$log" 2>&1
+    st=$?
+    set -e
+    if [[ "$st" -ne 0 ]]; then
+        err "Verilator lint failed (exit $st); see $log"
+        return 1
+    fi
+    ok "Verification: Verilator lint OK (see $log)"
+    return 0
+}
+
+write_cheshire_ihp130_o_verification_summary() {
+    local vf="$VERIFICATION_DIR/verification_summary.txt"
+    {
+        echo "cheshire_ihp130_o RTL verification summary (SCORE)"
+        echo "Generated (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')"
+        echo ""
+        echo "Bender.lock → bender path: ${VERIFY_LOCK_RESULT:-SKIPPED}"
+        echo "bender script flist-plus (common_cells RTL): ${VERIFY_FLIST_RESULT:-SKIPPED}"
+        echo "Testbench sources present (.bender): ${VERIFY_TB_RESULT:-SKIPPED}"
+        echo "Verilator --lint-only (common_cells / stream_fifo): ${VERIFY_VLINT_RESULT:-SKIPPED}"
+        echo "Verilator elaboration: N/A"
+        echo "Verilator simulation: N/A"
+        echo ""
+        echo "Notes:"
+        echo "  Verification is based on common_cells slice checks plus testbench presence in dependencies."
+        echo "  Full SoC Verilator simulation is not part of this SCORE cheshire_ihp130_o flow."
+        echo "Logs: $VERIFICATION_DIR/"
+    } > "$vf"
+    ok "Wrote $vf"
+}
+
+run_cheshire_ihp130_o_verification() {
+    VERIFY_LOCK_RESULT=SKIPPED
+    VERIFY_FLIST_RESULT=SKIPPED
+    VERIFY_TB_RESULT=SKIPPED
+    VERIFY_VLINT_RESULT=SKIPPED
+
+    mkdir -p "$VERIFICATION_DIR"
+    info "Running verification → $VERIFICATION_DIR"
+
+    verify_cheshire_ihp130_o_bender_lock_paths || return 1
+    VERIFY_LOCK_RESULT=PASS
+
+    verify_cheshire_ihp130_o_bender_flist || return 1
+    VERIFY_FLIST_RESULT=PASS
+
+    local tb_file=""
+    shopt -s globstar nullglob
+    for tb_file in "$CHESHIRE_IHP130_O_DIR"/.bender/**/*_tb.sv; do
+        break
+    done
+    shopt -u globstar nullglob
+    if [[ -n "$tb_file" ]]; then
+        VERIFY_TB_RESULT=PASS
+        info "Verification: testbench source detected (example: $tb_file)"
+    else
+        VERIFY_TB_RESULT=FAIL
+        err "No testbench sources detected under tools/cheshire-ihp130-o/.bender"
+        return 1
+    fi
+
+    if [[ "$WITH_VERILATOR_STEPS" == true ]]; then
+        verify_cheshire_ihp130_o_verilator_lint || return 1
+        VERIFY_VLINT_RESULT=PASS
+    else
+        info "Verification: skipping Verilator checks (--skip-verilator)"
+    fi
+
+    write_cheshire_ihp130_o_verification_summary
+}
+
 CHESHIRE_IHP130_O_COMMIT_ID=$(get_commit_id)
 DATASET_DIR="$PROJECT_ROOT/datasets/cheshire_ihp130_o/$CHESHIRE_IHP130_O_COMMIT_ID"
 LOG_DIR="$DATASET_DIR/logs"
 BUNDLE_DIR="$DATASET_DIR/source_snapshot"
+VERIFICATION_DIR="$DATASET_DIR/verification"
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 SESSION_LOG="$LOG_DIR/generate_${TIMESTAMP}.log"
 
@@ -174,6 +335,31 @@ fi
 
 popd >/dev/null
 
+if [[ "$VERIFY_ONLY" == true ]]; then
+    if [[ "$VERIFY_ENABLED" != true ]]; then
+        warn "--verify-only with --no-verify is a no-op."
+        ok "generate_cheshire_ihp130_o.sh completed (--verify-only)."
+        exit 0
+    fi
+    if [[ ! -d "$CHESHIRE_IHP130_O_DIR/.bender" ]]; then
+        err ".bender missing; run without --verify-only (or --skip-checkout) after checkout"
+        exit 1
+    fi
+    run_cheshire_ihp130_o_verification || exit 1
+    ok "generate_cheshire_ihp130_o.sh completed (--verify-only)."
+    exit 0
+fi
+
+VERIFY_LOCK_RESULT=SKIPPED
+VERIFY_FLIST_RESULT=SKIPPED
+VERIFY_TB_RESULT=SKIPPED
+VERIFY_VLINT_RESULT=SKIPPED
+if [[ "$VERIFY_ENABLED" == true ]]; then
+    run_cheshire_ihp130_o_verification || exit 1
+else
+    warn "Verification skipped (--no-verify)"
+fi
+
 info "Copying sources to $BUNDLE_DIR"
 mkdir -p "$BUNDLE_DIR"
 
@@ -193,12 +379,12 @@ SUMMARY="$DATASET_DIR/cheshire_ihp130_o_summary.txt"
     echo "bender (PATH): $(bender --version 2>/dev/null || echo unknown)"
     echo ""
     echo "Verification:"
-    echo "  Deps vs Bender.lock: $( [[ "${SKIP_CHECKOUT:-false}" == true || "${SKIP_BENDER_UPDATE:-false}" == true ]] && echo SKIPPED_BY_FLAG || echo PASS )"
-    echo "  bender flist-plus (Verilator view): N/A"
-    echo "  Verilator lint: N/A"
+    echo "  Deps vs Bender.lock: ${VERIFY_LOCK_RESULT:-SKIPPED}"
+    echo "  bender flist-plus (Verilator view): ${VERIFY_FLIST_RESULT:-SKIPPED}"
+    echo "  Verilator lint: ${VERIFY_VLINT_RESULT:-SKIPPED}"
     echo "  Verilator elaboration: N/A"
     echo "  Verilator simulation: N/A"
-    echo "  Logs: ${VERIFICATION_DIR:-$LOG_DIR}/"
+    echo "  Logs: $VERIFICATION_DIR/"
     echo ""
     echo "See https://github.com/pulp-platform/cheshire-ihp130-o and tools/cheshire-ihp130-o/README.md"
     echo "Bundle path: $BUNDLE_DIR"
