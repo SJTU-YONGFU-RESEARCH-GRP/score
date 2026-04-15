@@ -238,6 +238,39 @@ write_rv12_verification_summary() {
     } > "$f"
 }
 
+write_rv12_dataset_summary() {
+    local f="$DATASET_DIR/rv12_summary.txt"
+    {
+        echo "rv12 SCORE snapshot (RoaLogic/RV12)"
+        echo "Generated (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')"
+        echo "Host: $(hostname 2>/dev/null || echo unknown) $(uname -s) $(uname -m)"
+        echo "SCORE root: $PROJECT_ROOT"
+        echo "Source repo: $TOOL_DIR"
+        echo "Dataset workdir: $DATASET_DIR/rtl_snapshot/rv12"
+        echo "Git commit (short): $COMMIT_ID"
+        echo "Git commit (full): $(git -C "$TOOL_DIR" rev-parse HEAD 2>/dev/null || echo unknown)"
+        echo "bender (PATH): $(bender --version 2>/dev/null || echo unknown)"
+        echo "verilator: $(verilator --version 2>/dev/null | head -1 || echo missing)"
+        echo ""
+        echo "Verification (see $VER_DIR/verification_summary.txt):"
+        echo "  Deps vs Bender.lock: N/A"
+        echo "  bender flist-plus (Verilator view): N/A"
+        echo "  Verilator lint: $RV12_LINT_RESULT"
+        echo "  Verilator elaboration: N/A"
+        echo "  Verilator simulation: N/A"
+        echo "  Logs: $VER_DIR/"
+        echo "  Lint profile: $RV12_LINT_PROFILE"
+        echo "  Lint extra flags: ${RV12_LINT_EXTRA_FLAGS:-none}"
+        echo "  Simulation log: ${RV12_LINT_LOG:-n/a}"
+        echo ""
+        echo "Manifest: $DATASET_DIR/manifest.json"
+        echo "Verification summary: $VER_DIR/verification_summary.txt"
+        echo "Bundle path: $DATASET_DIR/rtl_snapshot/rv12"
+        echo "Generation log: $SESSION_LOG"
+    } > "$f"
+    success "Wrote $f"
+}
+
 show_help() {
     cat << EOF
 Usage: $0 [OPTIONS]
@@ -326,10 +359,12 @@ fi
 
 if ! run_verilator_lint; then
     write_rv12_verification_summary
+    write_rv12_dataset_summary
     exit 1
 fi
 
 write_rv12_verification_summary
+write_rv12_dataset_summary
 
 success "generate_rv12.sh finished."
 log "Summary: $VER_DIR/verification_summary.txt"

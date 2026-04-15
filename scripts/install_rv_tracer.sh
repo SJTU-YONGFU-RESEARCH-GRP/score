@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Install host tools for pulp-platform/rv_tracer under SCORE (Bender, git, Python 3).
+# Install host tools for pulp-platform/rv_tracer under SCORE (Bender, Verilator, git, Python 3).
 # The RTL lives in tools/rv-tracer; generation runs bender update and snapshots sources.
 #
 # Usage (from repository root):
@@ -32,11 +32,11 @@ show_help() {
     cat << EOF
 Usage: $0 [OPTIONS]
 
-Install dependencies for tools/rv-tracer (Bender IP tool + common OS packages).
+Install dependencies for tools/rv-tracer (Bender + Verilator + common OS packages).
 
 Options:
   -h, --help           Show this help
-  --no-system-deps     Do not install distro packages (you must have git, curl/wget, tar, python3)
+  --no-system-deps     Do not install distro packages (you must have git, curl/wget, tar, python3, verilator)
   --skip-bender        Do not download or verify Bender
 
 After installation:
@@ -124,25 +124,25 @@ install_system_packages() {
     case "$os" in
         ubuntu|debian)
             run_priv apt-get update
-            run_priv apt-get install -y git curl wget ca-certificates tar python3 python3-venv
+            run_priv apt-get install -y git curl wget ca-certificates tar python3 python3-venv verilator
             ;;
         fedora|rhel|amazon)
             local pm
             pm=$(rpm_pkg_manager)
-            run_priv "$pm" install -y git curl wget ca-certificates tar python3
+            run_priv "$pm" install -y git curl wget ca-certificates tar python3 verilator
             ;;
         arch)
-            run_priv pacman -Sy --needed --noconfirm git curl wget ca-certificates tar python
+            run_priv pacman -Sy --needed --noconfirm git curl wget ca-certificates tar python verilator
             ;;
         opensuse)
-            run_priv zypper install -y git curl wget ca-certificates tar python3
+            run_priv zypper install -y git curl wget ca-certificates tar python3 verilator
             ;;
         macos)
             if ! command_exists brew; then
                 err "Homebrew not found. Install from https://brew.sh"
                 return 1
             fi
-            brew install git curl wget python@3.12 || brew install git curl wget python3
+            brew install git curl wget python@3.12 verilator || brew install git curl wget python3 verilator
             ;;
         *)
             warn "Unknown OS; skipping package install. Ensure git, curl or wget, tar, and python3 are available."
@@ -231,6 +231,11 @@ for need in git tar python3; do
 done
 if ! command_exists curl && ! command_exists wget; then
     err "Need curl or wget"
+    exit 1
+fi
+if ! command_exists verilator; then
+    err "Required command not found: verilator (default verification backend for rv_tracer)."
+    err "Install it with --no-system-deps disabled, or install manually and rerun."
     exit 1
 fi
 
