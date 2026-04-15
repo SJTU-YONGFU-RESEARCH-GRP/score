@@ -1,0 +1,9 @@
+RV12 SCORE verification summary
+Commit: 526bd14d
+
+Verilator (commands in generate_rv12.sh only; no Makefile or ModelSim):
+  Profile: default
+  Extra flags: none
+  Log: /home/yongfu/proj/score/datasets/rv12/526bd14d/verification/verilator_lint_ahb3lite.log
+  Result: PASS
+  Note: Lint-only; Verilator cannot elaborate the shipped sim/TB (ahb3lite_pkg clocking/modports).
