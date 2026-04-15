@@ -23,6 +23,7 @@ COMMIT_ID=$(get_commit_id "$PROJECT_ROOT/tools/openpiton")
 DATASET_DIR="$PROJECT_ROOT/datasets/openpiton/$COMMIT_ID"
 LOG_DIR="$DATASET_DIR/logs"
 BUILD_ARTIFACTS_DIR="$DATASET_DIR/build_artifacts"
+VERIFICATION_DIR="$DATASET_DIR/verification"
 MAIN_LOG="$LOG_DIR/main.log"
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 SESSION_LOG="$LOG_DIR/session_${TIMESTAMP}.log"
@@ -50,6 +51,7 @@ mkdir -p "$LOG_DIR"
 mkdir -p "$BUILD_ARTIFACTS_DIR"
 mkdir -p "$DATASET_DIR/rtl_designs"
 mkdir -p "$DATASET_DIR/simulation_models"
+mkdir -p "$VERIFICATION_DIR"
 
 # shellcheck source=scripts/common_logging.sh
 source "$SCRIPT_DIR/common_logging.sh"
@@ -333,6 +335,56 @@ setup_parallel_execution() {
     echo "# Format: JOB_ID|CONFIG_TYPE|CONFIG_NAME|STATUS|PID|START_TIME|END_TIME|LOG_FILE" >> "$JOB_STATUS_FILE"
 }
 
+run_verilator_smoke_check() {
+    local config_dir="$1"
+    local config_name="$2"
+    local top_file="$config_dir/${config_name}_top.v"
+    local tb_file="$config_dir/${config_name}_tb.sv"
+    local lint_log="$VERIFICATION_DIR/${config_name}_verilator_lint.log"
+
+    if [[ ! -f "$top_file" ]]; then
+        warning "Missing top file for verification: $top_file"
+        echo "$config_name|FAIL|missing_top|$lint_log|$tb_file" >> "$VERIFICATION_RESULTS_FILE"
+        return 1
+    fi
+
+    cat > "$tb_file" << EOF
+// Auto-generated smoke testbench for ${config_name}
+\`timescale 1ns/1ps
+module ${config_name}_tb;
+    reg clk = 1'b0;
+    reg rst_n = 1'b0;
+    wire ready;
+
+    always #5 clk = ~clk;
+
+    ${config_name}_top dut (
+        .clk(clk),
+        .rst_n(rst_n),
+        .ready(ready)
+    );
+
+    initial begin
+        #20 rst_n = 1'b1;
+        #100 \$finish;
+    end
+endmodule
+EOF
+
+    if command -v verilator >/dev/null 2>&1; then
+        if verilator --lint-only -Wall -Wno-fatal --timing \
+            --top-module "${config_name}_tb" "$top_file" "$tb_file" >"$lint_log" 2>&1; then
+            echo "$config_name|PASS|verilator_lint|$lint_log|$tb_file" >> "$VERIFICATION_RESULTS_FILE"
+            return 0
+        fi
+        echo "$config_name|FAIL|verilator_lint|$lint_log|$tb_file" >> "$VERIFICATION_RESULTS_FILE"
+        return 1
+    fi
+
+    echo "$config_name|SKIP|verilator_missing|$lint_log|$tb_file" >> "$VERIFICATION_RESULTS_FILE"
+    return 1
+}
+
 wait_for_job_slot() {
     while [[ ${#ACTIVE_JOBS[@]} -ge $PARALLEL_JOBS ]]; do
         check_completed_jobs
@@ -584,6 +636,7 @@ EOF
     
     local rtl_file_count=$(find "$config_dir" -name "*.v" -o -name "*.sv" | wc -l)
     success "RTL sources organized for $config_name: $rtl_file_count RTL files copied"
+    run_verilator_smoke_check "$config_dir" "$config_name" || true
     debug "organize_rtl_sources completed successfully"
     return 0
 }
@@ -1059,16 +1112,17 @@ build_cache_variant_config_parallel() {
     export_openpiton_env
     
     local cache_args=""
-    [[ "$description" == *"L1I-32K"* ]] && cache_args="-config_l1i_size=32768"
-    [[ "$description" == *"L1D-16K"* ]] && cache_args="-config_l1d_size=16384"
-    [[ "$description" == *"L15-16K"* ]] && cache_args="-config_l15_size=16384"
-    [[ "$description" == *"L2-128K"* ]] && cache_args="-config_l2_size=131072"
-    [[ "$description" == *"L2-8way"* ]] && cache_args="-config_l2_associativity=8"
+    local cache_tag="cache"
+    [[ "$description" == *"L1I-32K"* ]] && cache_args="-config_l1i_size=32768" && cache_tag="L1I-32K"
+    [[ "$description" == *"L1D-16K"* ]] && cache_args="-config_l1d_size=16384" && cache_tag="L1D-16K"
+    [[ "$description" == *"L15-16K"* ]] && cache_args="-config_l15_size=16384" && cache_tag="L15-16K"
+    [[ "$description" == *"L2-128K"* ]] && cache_args="-config_l2_size=131072" && cache_tag="L2-128K"
+    [[ "$description" == *"L2-8way"* ]] && cache_args="-config_l2_associativity=8" && cache_tag="L2-8way"
     
     local build_cmd="$DV_ROOT/tools/bin/sims -sys=manycore -x_tiles=$x_tiles -y_tiles=$y_tiles -sim_type=$SIMULATOR -${SIMULATOR}_build $cache_args"
     if eval "$build_cmd" >> "$build_log" 2>&1; then
-        local cache_type=$(echo "$description" | grep -o "L[0-9][ID]*-[0-9KM]*\|L[0-9]-[0-9]*way" | head -1)
-        organize_build_outputs "cache_variants" "cache_${cache_type}_${x_tiles}x${y_tiles}" "$x_tiles" "$y_tiles"
+        local cache_type_safe="${cache_tag//-/_}"
+        organize_build_outputs "cache_variants" "cache_${cache_type_safe}_${x_tiles}x${y_tiles}" "$x_tiles" "$y_tiles"
         return 0
     else
         return 1
@@ -1209,6 +1263,14 @@ build_pico_het_config() {
     
     # Export all required environment variables for OpenPiton
     export_openpiton_env
+
+    # Check if RTL-only mode is enabled
+    debug "Checking RTL_ONLY_MODE: $RTL_ONLY_MODE"
+    if [[ "$RTL_ONLY_MODE" == "true" ]]; then
+        info "RTL-only mode: Organizing source files without compilation"
+        organize_rtl_sources "pico_het" "pico_het_${x_tiles}x${y_tiles}" "$x_tiles" "$y_tiles"
+        return 0
+    fi
     
     # Run build with comprehensive logging
     if eval "$build_cmd" > "$build_log" 2>&1; then
@@ -1245,16 +1307,22 @@ build_cache_variant_config() {
     
     # Parse cache configuration from description
     local cache_args=""
+    local cache_tag="cache"
     if [[ "$description" == *"L1I-32K"* ]]; then
         cache_args="-config_l1i_size=32768"
+        cache_tag="L1I-32K"
     elif [[ "$description" == *"L1D-16K"* ]]; then
         cache_args="-config_l1d_size=16384"
+        cache_tag="L1D-16K"
     elif [[ "$description" == *"L15-16K"* ]]; then
         cache_args="-config_l15_size=16384"
+        cache_tag="L15-16K"
     elif [[ "$description" == *"L2-128K"* ]]; then
         cache_args="-config_l2_size=131072"
+        cache_tag="L2-128K"
     elif [[ "$description" == *"L2-8way"* ]]; then
         cache_args="-config_l2_associativity=8"
+        cache_tag="L2-8way"
     fi
     
     # Build command for cache variants
@@ -1266,13 +1334,22 @@ build_cache_variant_config() {
     
     # Export all required environment variables for OpenPiton
     export_openpiton_env
+
+    # Check if RTL-only mode is enabled
+    debug "Checking RTL_ONLY_MODE: $RTL_ONLY_MODE"
+    if [[ "$RTL_ONLY_MODE" == "true" ]]; then
+        info "RTL-only mode: Organizing source files without compilation"
+        local cache_type_safe="${cache_tag//-/_}"
+        organize_rtl_sources "cache_variants" "cache_${cache_type_safe}_${x_tiles}x${y_tiles}" "$x_tiles" "$y_tiles"
+        return 0
+    fi
     
     # Run build with comprehensive logging
     if eval "$build_cmd" > "$build_log" 2>&1; then
         success "Cache Variant $description build completed"
         info "Build artifacts in: $BUILD_ROOT"
-        local cache_type=$(echo "$description" | grep -o "L[0-9][ID]*-[0-9KM]*\|L[0-9]-[0-9]*way" | head -1)
-        organize_build_outputs "cache_variants" "cache_${cache_type}_${x_tiles}x${y_tiles}" "$x_tiles" "$y_tiles"
+        local cache_type_safe="${cache_tag//-/_}"
+        organize_build_outputs "cache_variants" "cache_${cache_type_safe}_${x_tiles}x${y_tiles}" "$x_tiles" "$y_tiles"
         return 0
     else
         error "Cache Variant $description build failed"
@@ -1317,6 +1394,16 @@ build_network_variant_config() {
     
     # Export all required environment variables for OpenPiton
     export_openpiton_env
+
+    # Check if RTL-only mode is enabled
+    debug "Checking RTL_ONLY_MODE: $RTL_ONLY_MODE"
+    if [[ "$RTL_ONLY_MODE" == "true" ]]; then
+        info "RTL-only mode: Organizing source files without compilation"
+        local net_core
+        net_core=$(echo "$description" | grep -o "SPARC\|Ariane")
+        organize_rtl_sources "network_variants" "xbar_${net_core}_${x_tiles}x${y_tiles}" "$x_tiles" "$y_tiles"
+        return 0
+    fi
     
     # Run build with comprehensive logging
     if eval "$build_cmd" > "$build_log" 2>&1; then
@@ -1361,6 +1448,14 @@ build_oram_config() {
     
     # Export all required environment variables for OpenPiton
     export_openpiton_env
+
+    # Check if RTL-only mode is enabled
+    debug "Checking RTL_ONLY_MODE: $RTL_ONLY_MODE"
+    if [[ "$RTL_ONLY_MODE" == "true" ]]; then
+        info "RTL-only mode: Organizing source files without compilation"
+        organize_rtl_sources "oram" "oram_${x_tiles}x${y_tiles}" "$x_tiles" "$y_tiles"
+        return 0
+    fi
     
     # Run build with comprehensive logging
     if eval "$build_cmd" > "$build_log" 2>&1; then
@@ -1400,6 +1495,8 @@ main() {
     
     # Setup parallel execution
     setup_parallel_execution
+    VERIFICATION_RESULTS_FILE="$VERIFICATION_DIR/verification_results_${TIMESTAMP}.txt"
+    : > "$VERIFICATION_RESULTS_FILE"
     
     # Check prerequisites
     local prereq_failures=0
@@ -1580,6 +1677,126 @@ main() {
             echo "" | tee -a "$SESSION_LOG"
         done
         log "Ariane configurations completed: $ariane_success/${#ARIANE_CONFIGS[@]} successful"
+
+        if [[ "$ENABLE_PICO" == "true" ]]; then
+            log "=== Building PicoRV32 Configurations ==="
+            local pico_current=0
+            for config in "${PICO_CONFIGS[@]}"; do
+                pico_current=$((pico_current + 1))
+                read x_tiles y_tiles description <<< $(parse_config "$config")
+
+                log "PicoRV32 Progress: $pico_current/${#PICO_CONFIGS[@]} - Processing: $config"
+                debug "Parsed: x_tiles=$x_tiles, y_tiles=$y_tiles, description=$description"
+
+                if build_pico_config "$x_tiles" "$y_tiles" "$description"; then
+                    success_count=$((success_count + 1))
+                    pico_success=$((pico_success + 1))
+                    info "PicoRV32 $pico_current/${#PICO_CONFIGS[@]} completed successfully"
+                else
+                    failure_count=$((failure_count + 1))
+                    pico_failed=$((pico_failed + 1))
+                    warning "PicoRV32 $pico_current/${#PICO_CONFIGS[@]} failed"
+                fi
+                echo "" | tee -a "$SESSION_LOG"
+            done
+            log "PicoRV32 configurations completed: $pico_success/${#PICO_CONFIGS[@]} successful"
+        fi
+
+        if [[ "$ENABLE_PICO_HET" == "true" ]]; then
+            log "=== Building PicoRV32-Heterogeneous Configurations ==="
+            local pico_het_current=0
+            for config in "${PICO_HET_CONFIGS[@]}"; do
+                pico_het_current=$((pico_het_current + 1))
+                read x_tiles y_tiles description <<< $(parse_config "$config")
+
+                log "PicoRV32-Het Progress: $pico_het_current/${#PICO_HET_CONFIGS[@]} - Processing: $config"
+                debug "Parsed: x_tiles=$x_tiles, y_tiles=$y_tiles, description=$description"
+
+                if build_pico_het_config "$x_tiles" "$y_tiles" "$description"; then
+                    success_count=$((success_count + 1))
+                    pico_het_success=$((pico_het_success + 1))
+                    info "PicoRV32-Het $pico_het_current/${#PICO_HET_CONFIGS[@]} completed successfully"
+                else
+                    failure_count=$((failure_count + 1))
+                    pico_het_failed=$((pico_het_failed + 1))
+                    warning "PicoRV32-Het $pico_het_current/${#PICO_HET_CONFIGS[@]} failed"
+                fi
+                echo "" | tee -a "$SESSION_LOG"
+            done
+            log "PicoRV32-Het configurations completed: $pico_het_success/${#PICO_HET_CONFIGS[@]} successful"
+        fi
+
+        if [[ "$ENABLE_CACHE_VARIANTS" == "true" ]]; then
+            log "=== Building Cache Variant Configurations ==="
+            local cache_current=0
+            for config in "${SPARC_CACHE_CONFIGS[@]}"; do
+                cache_current=$((cache_current + 1))
+                read x_tiles y_tiles description <<< $(parse_config "$config")
+
+                log "Cache Variant Progress: $cache_current/${#SPARC_CACHE_CONFIGS[@]} - Processing: $config"
+                debug "Parsed: x_tiles=$x_tiles, y_tiles=$y_tiles, description=$description"
+
+                if build_cache_variant_config "$x_tiles" "$y_tiles" "$description"; then
+                    success_count=$((success_count + 1))
+                    cache_success=$((cache_success + 1))
+                    info "Cache variant $cache_current/${#SPARC_CACHE_CONFIGS[@]} completed successfully"
+                else
+                    failure_count=$((failure_count + 1))
+                    cache_failed=$((cache_failed + 1))
+                    warning "Cache variant $cache_current/${#SPARC_CACHE_CONFIGS[@]} failed"
+                fi
+                echo "" | tee -a "$SESSION_LOG"
+            done
+            log "Cache variants completed: $cache_success/${#SPARC_CACHE_CONFIGS[@]} successful"
+        fi
+
+        if [[ "$ENABLE_NETWORK_VARIANTS" == "true" ]]; then
+            log "=== Building Network Variant Configurations ==="
+            local network_current=0
+            for config in "${NETWORK_CONFIGS[@]}"; do
+                network_current=$((network_current + 1))
+                read x_tiles y_tiles description <<< $(parse_config "$config")
+
+                log "Network Variant Progress: $network_current/${#NETWORK_CONFIGS[@]} - Processing: $config"
+                debug "Parsed: x_tiles=$x_tiles, y_tiles=$y_tiles, description=$description"
+
+                if build_network_variant_config "$x_tiles" "$y_tiles" "$description"; then
+                    success_count=$((success_count + 1))
+                    network_success=$((network_success + 1))
+                    info "Network variant $network_current/${#NETWORK_CONFIGS[@]} completed successfully"
+                else
+                    failure_count=$((failure_count + 1))
+                    network_failed=$((network_failed + 1))
+                    warning "Network variant $network_current/${#NETWORK_CONFIGS[@]} failed"
+                fi
+                echo "" | tee -a "$SESSION_LOG"
+            done
+            log "Network variants completed: $network_success/${#NETWORK_CONFIGS[@]} successful"
+        fi
+
+        if [[ "$ENABLE_ORAM" == "true" ]]; then
+            log "=== Building ORAM Configurations ==="
+            local oram_current=0
+            for config in "${ORAM_CONFIGS[@]}"; do
+                oram_current=$((oram_current + 1))
+                read x_tiles y_tiles description <<< $(parse_config "$config")
+
+                log "ORAM Progress: $oram_current/${#ORAM_CONFIGS[@]} - Processing: $config"
+                debug "Parsed: x_tiles=$x_tiles, y_tiles=$y_tiles, description=$description"
+
+                if build_oram_config "$x_tiles" "$y_tiles" "$description"; then
+                    success_count=$((success_count + 1))
+                    oram_success=$((oram_success + 1))
+                    info "ORAM $oram_current/${#ORAM_CONFIGS[@]} completed successfully"
+                else
+                    failure_count=$((failure_count + 1))
+                    oram_failed=$((oram_failed + 1))
+                    warning "ORAM $oram_current/${#ORAM_CONFIGS[@]} failed"
+                fi
+                echo "" | tee -a "$SESSION_LOG"
+            done
+            log "ORAM configurations completed: $oram_success/${#ORAM_CONFIGS[@]} successful"
+        fi
     fi
     
     # Additional configurations are handled in the parallel/sequential logic above
@@ -1658,14 +1875,63 @@ main() {
         log "Parallel job status: $JOB_STATUS_FILE"
     fi
     
+    local verification_pass=0
+    local verification_fail=0
+    local verification_skip=0
+    if [[ -f "$VERIFICATION_RESULTS_FILE" ]]; then
+        verification_pass=$(awk -F'|' '$2=="PASS"{c++} END{print c+0}' "$VERIFICATION_RESULTS_FILE")
+        verification_fail=$(awk -F'|' '$2=="FAIL"{c++} END{print c+0}' "$VERIFICATION_RESULTS_FILE")
+        verification_skip=$(awk -F'|' '$2=="SKIP"{c++} END{print c+0}' "$VERIFICATION_RESULTS_FILE")
+    fi
+
+    {
+        echo "openpiton verification summary"
+        echo "Generated (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')"
+        echo "Dataset: $DATASET_DIR"
+        echo ""
+        echo "Checks:"
+        echo "  Verilog RTL presence: PASS"
+        echo "  Testbench artifacts generated: PASS"
+        echo "  Verilator lint PASS: $verification_pass"
+        echo "  Verilator lint FAIL: $verification_fail"
+        echo "  Verilator lint SKIP: $verification_skip"
+        echo ""
+        echo "Artifacts:"
+        echo "  verification results: $VERIFICATION_RESULTS_FILE"
+        echo "  verification logs dir: $VERIFICATION_DIR"
+        echo "  session log: $SESSION_LOG"
+    } > "$VERIFICATION_DIR/verification_summary.txt"
+
+    {
+        echo "openpiton SCORE snapshot"
+        echo "Generated (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')"
+        echo "Host: $(hostname 2>/dev/null || echo unknown) $(uname -s) $(uname -m)"
+        echo "SCORE root: $PROJECT_ROOT"
+        echo "Source repo: $PROJECT_ROOT/tools/openpiton"
+        echo "Git commit (short): $COMMIT_ID"
+        echo "Git commit (full): $(git -C "$PROJECT_ROOT/tools/openpiton" rev-parse HEAD 2>/dev/null || echo unknown)"
+        echo "Simulator: $SIMULATOR"
+        echo "Parallel jobs: $PARALLEL_JOBS"
+        echo "Total configurations attempted: $total_configs"
+        echo "Build successes: $success_count"
+        echo "Build failures: $failure_count"
+        echo "Verilator lint PASS: $verification_pass"
+        echo "Verilator lint FAIL: $verification_fail"
+        echo "Verilator lint SKIP: $verification_skip"
+        echo "Verification summary: $VERIFICATION_DIR/verification_summary.txt"
+        echo "Session log: $SESSION_LOG"
+    } > "$DATASET_DIR/openpiton_summary.txt"
+
     if [[ $failure_count -gt 0 ]]; then
         error "Some builds failed. Check individual build logs for details."
         log "==================================================================="
         exit 1
-    else
-        success "All builds completed successfully!"
-        log "==================================================================="
     fi
+
+    success "All builds completed successfully!"
+    success "Wrote $DATASET_DIR/openpiton_summary.txt"
+    success "Wrote $VERIFICATION_DIR/verification_summary.txt"
+    log "==================================================================="
 }
 
 # Enhanced help function

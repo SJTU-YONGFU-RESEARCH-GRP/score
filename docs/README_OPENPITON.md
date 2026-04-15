@@ -27,6 +27,15 @@ The `generate_openpiton.sh` script is a comprehensive tool for generating RTL (R
 - **ORAM Support**: Optional ORAM (Oblivious RAM) configurations
 - **Organized Output**: All files systematically organized in `datasets/openpiton/`
 
+### Validated Dataset Snapshot (2026-04-15)
+
+- **Dataset path**: `datasets/openpiton/1c6bfd2d/`
+- **RTL availability**: PASS (`rtl_designs/` contains Verilog/SystemVerilog outputs)
+- **Testbench artifacts**: PASS (for example `rtl_designs/sparc/sparc_1x1/sparc_1x1_tb.sv`)
+- **Verilator evidence**: PASS for execution evidence (`verification/*_verilator_lint.log` exists for all 41 generated designs)
+- **Verification status**: 41 lint PASS, 0 lint FAIL, 0 lint SKIP (see `verification/verification_summary.txt`)
+- **Session logs**: `logs/main.log` and `logs/session_20260415_212508.log`
+
 ## Script Usage
 
 ### Basic Usage
@@ -193,40 +202,31 @@ The script supports two operating modes:
 
 ## Output Organization
 
-All generated files are organized in the `datasets/openpiton/` directory:
+All generated files are organized under a commit-scoped dataset root:
 
 ```
-datasets/openpiton/
-├── logs/                           # Build logs and session information
-│   ├── main.log                   # Master log file
-│   ├── session_YYYYMMDD_HHMMSS.log # Session logs
-│   ├── job_status_YYYYMMDD_HHMMSS.txt # Job tracking with PIDs and timestamps
-│   └── [config]_[timestamp].log   # Individual build logs
-├── build_artifacts/               # Raw build outputs (job directories)
-│   └── job_[type]_[config]_[pid]_[timestamp]/
-├── rtl_configs/                   # Organized RTL configurations
-│   ├── sparc/                     # SPARC configurations (8 variants)
-│   │   ├── sparc_1x1/
-│   │   │   ├── *.v, *.sv          # RTL source files
-│   │   │   ├── config.yaml        # Configuration metadata (YAML format)
-│   │   │   ├── filelist.f         # Complete file list for simulation
-│   │   │   ├── sparc_1x1_top.v    # Top-level module
-│   │   │   ├── include/           # Header files and defines
-│   │   │   ├── common/            # Common RTL components
-│   │   │   ├── chipset/           # Chipset components
-│   │   │   └── chip/              # Chip-level components
-│   │   ├── sparc_2x1/
-│   │   └── [sparc_1x2, sparc_2x2, sparc_4x1, sparc_1x4, sparc_4x2, sparc_4x4]/
-│   ├── ariane/                    # Ariane RISC-V configurations (8 variants)
-│   │   ├── ariane_1x1/
-│   │   └── [similar structure as sparc]/
-│   └── pico/                      # PicoRV32 configurations (8 variants)
-│       ├── pico_1x1/
-│       └── [similar structure as sparc]/
-└── simulation_models/             # Compiled simulation executables
-    ├── sparc/                     # (Generated if --rtl-only not used)
-    ├── ariane/
-    └── pico/
+datasets/openpiton/1c6bfd2d/
+├── logs/
+│   ├── main.log
+│   └── session_20260415_212508.log
+├── openpiton_summary.txt
+├── rtl_designs/
+│   ├── ariane/
+│   │   └── ariane_1x1/
+│   │       ├── ariane_1x1_top.v
+│   │       ├── ariane_1x1_tb.sv
+│   │       ├── config.yaml
+│   │       └── filelist.f
+│   └── sparc/
+│       └── sparc_1x1/
+│           ├── sparc_1x1_top.v
+│           ├── sparc_1x1_tb.sv
+│           ├── config.yaml
+│           └── filelist.f
+└── verification/
+    ├── verification_summary.txt
+    ├── verification_results_20260415_212508.txt
+    └── *_verilator_lint.log
 ```
 
 **Note**: Some configuration types (pico_het, cache_variants, network_variants, oram) may not generate RTL if builds fail or are disabled. Check the job status logs for actual completion status.
@@ -235,7 +235,7 @@ datasets/openpiton/
 
 ### Configuration Directory Contents
 
-Each configuration directory (`rtl_configs/TYPE/CONFIG_NAME/`) contains:
+Each configuration directory (`rtl_designs/TYPE/CONFIG_NAME/`) contains:
 
 - **RTL Files**: `*.v`, `*.sv` - Verilog/SystemVerilog source code
 - **Configuration Metadata**: `config.yaml` - Build metadata in YAML format

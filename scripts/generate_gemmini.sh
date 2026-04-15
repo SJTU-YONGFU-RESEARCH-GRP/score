@@ -15,7 +15,7 @@ WORKSHOP_ROOT="$GEMMINI_WORKSHOP"
 # Function to get commit ID from git repository
 get_commit_id() {
     local repo_path="$1"
-    if [[ -d "$repo_path/.git" ]]; then
+    if git -C "$repo_path" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
         git -C "$repo_path" rev-parse HEAD 2>/dev/null | cut -c1-8 || echo "unknown"
     else
         echo "unknown"
@@ -54,6 +54,10 @@ MAX_PARALLEL_JOBS=12  # Safety limit
 if [[ -f "$PROJECT_ROOT/scripts/setup_local_env.sh" ]]; then
     source "$PROJECT_ROOT/scripts/setup_local_env.sh"
 fi
+
+# Preserve the caller Java toolchain so Chipyard conda activation
+# does not force an incompatible JVM for SBT assembly.
+SCORE_BASE_JAVA_HOME="${JAVA_HOME:-}"
 
 # Create dataset directory structure
 mkdir -p "$LOG_DIR"
@@ -94,6 +98,45 @@ info() {
 debug() {
     local message="$1"
     echo -e "${PURPLE}[${SCRIPT_LOG_NAME}][DEBUG]${NC} $message" | tee -a "$MAIN_LOG" "$SESSION_LOG"
+}
+
+ensure_conda_for_chipyard() {
+    local conda_root="$GEMMINI_WORKSHOP/miniconda3"
+    if command -v conda >/dev/null 2>&1; then
+        local conda_base
+        conda_base=$(conda info --base 2>/dev/null) || true
+        if [[ -n "$conda_base" && -f "$conda_base/etc/profile.d/conda.sh" ]]; then
+            # shellcheck source=/dev/null
+            source "$conda_base/etc/profile.d/conda.sh"
+        fi
+        return 0
+    fi
+    if [[ -x "$conda_root/bin/conda" && -f "$conda_root/etc/profile.d/conda.sh" ]]; then
+        export PATH="$conda_root/bin:$PATH"
+        # shellcheck source=/dev/null
+        source "$conda_root/etc/profile.d/conda.sh"
+        return 0
+    fi
+    return 1
+}
+
+ensure_riscv_for_gemmini_sw() {
+    if [[ -n "${RISCV:-}" ]]; then
+        return 0
+    fi
+    if [[ -n "${CONDA_PREFIX:-}" && -d "${CONDA_PREFIX}/riscv-tools/include" ]]; then
+        export RISCV="${CONDA_PREFIX}/riscv-tools"
+        info "RISCV set to ${RISCV} (from Chipyard conda environment)"
+        return 0
+    fi
+    return 1
+}
+
+prefer_score_java() {
+    if [[ -n "$SCORE_BASE_JAVA_HOME" && -x "$SCORE_BASE_JAVA_HOME/bin/java" ]]; then
+        export JAVA_HOME="$SCORE_BASE_JAVA_HOME"
+        export PATH="$JAVA_HOME/bin:$PATH"
+    fi
 }
 
 # Simulator-specific environment checking
@@ -244,7 +287,8 @@ setup_environment() {
         exit 1
     fi
     
-    # Activate Score virtual environment
+    # Activate Score virtual environment when available.
+    # Fallback to current shell environment if workshop venv is absent.
     if [[ -f "$VENV_ACTIVATE" ]]; then
         log "Activating Score virtual environment: $VENV_ACTIVATE"
         source "$VENV_ACTIVATE" 2>&1 | tee -a "$SESSION_LOG"
@@ -263,9 +307,8 @@ setup_environment() {
             warning "SBT not found in virtual environment"
         fi
     else
-        error "Score virtual environment not found at: $VENV_ACTIVATE"
-        error "Please ensure the Score virtual environment is set up in: $VENV_PATH"
-        exit 1
+        warning "Score virtual environment not found at: $VENV_ACTIVATE"
+        warning "Continuing with current shell environment; ensure java/sbt/toolchain are on PATH"
     fi
     
     # Set up Gemmini environment variables (same Chipyard tree as install_gemmini.sh when paths match)
@@ -284,19 +327,27 @@ setup_environment() {
     info "SIMULATOR: $SIMULATOR"
     info "RTL_ONLY_MODE: $RTL_ONLY_MODE"
     
-    # Copy Gemmini from submodule first (CHIPYARD.hash must exist before Chipyard checkout)
-    if [[ ! -d "$GEMMINI_HOME" ]] || [[ ! -f "$GEMMINI_HOME/build.sbt" ]]; then
-        log "Copying Gemmini from submodule to Gemmini workshop (gemmini_env)..."
-        if [[ -d "$PROJECT_ROOT/tools/gemmini" ]]; then
-            cp -r "$PROJECT_ROOT/tools/gemmini"/* "$GEMMINI_HOME/" 2>&1 | tee -a "$SESSION_LOG"
-            cp -r "$PROJECT_ROOT/tools/gemmini"/.* "$GEMMINI_HOME/" 2>/dev/null || true
-            success "Gemmini copied to: $GEMMINI_HOME"
+    # Refresh Gemmini from submodule each run to avoid stale files in workshop copy.
+    log "Syncing Gemmini from submodule to Gemmini workshop (gemmini_env)..."
+    if [[ -d "$PROJECT_ROOT/tools/gemmini" ]]; then
+        rm -rf "$GEMMINI_HOME"
+        mkdir -p "$GEMMINI_HOME"
+        if command -v rsync >/dev/null 2>&1; then
+            rsync -a \
+                --exclude '.git/' \
+                "$PROJECT_ROOT/tools/gemmini/" "$GEMMINI_HOME/" 2>&1 | tee -a "$SESSION_LOG"
+            if [[ ${PIPESTATUS[0]} -ne 0 ]]; then
+                error "Gemmini rsync failed"
+                exit 1
+            fi
         else
-            error "Gemmini submodule not found at: $PROJECT_ROOT/tools/gemmini"
-            exit 1
+            cp -r "$PROJECT_ROOT/tools/gemmini"/* "$GEMMINI_HOME/" 2>&1 | tee -a "$SESSION_LOG"
+            cp -r "$PROJECT_ROOT/tools/gemmini"/.[!.]* "$GEMMINI_HOME/" 2>/dev/null || true
         fi
+        success "Gemmini synced to: $GEMMINI_HOME"
     else
-        success "Gemmini copy found at: $GEMMINI_HOME"
+        error "Gemmini submodule not found at: $PROJECT_ROOT/tools/gemmini"
+        exit 1
     fi
     
     if [[ ! -d "$CHIPYARD_HOME" ]] || [[ ! -f "$CHIPYARD_HOME/env.sh" ]]; then
@@ -305,9 +356,19 @@ setup_environment() {
     else
         success "Chipyard environment found at: $CHIPYARD_HOME"
         if [[ -f "$CHIPYARD_HOME/env.sh" ]]; then
+            if ! ensure_conda_for_chipyard; then
+                warning "Conda is not available; Chipyard env activation may fail"
+            fi
             # shellcheck source=/dev/null
-            source "$CHIPYARD_HOME/env.sh" 2>&1 | tee -a "$SESSION_LOG"
-            success "Chipyard settings loaded"
+            if source "$CHIPYARD_HOME/env.sh" >>"$SESSION_LOG" 2>&1; then
+                success "Chipyard settings loaded"
+            else
+                warning "Sourcing Chipyard env.sh reported errors; see $SESSION_LOG"
+            fi
+            prefer_score_java
+            if ! ensure_riscv_for_gemmini_sw; then
+                warning "RISCV remains unset after sourcing Chipyard env.sh"
+            fi
         else
             error "Cannot find env.sh at $CHIPYARD_HOME/env.sh"
             exit 1
@@ -324,7 +385,8 @@ setup_environment() {
     # Build Gemmini software library
     log "Building Gemmini software library..."
     cd "$GEMMINI_HOME"
-    if make -C software/libgemmini install 2>&1 | tee -a "$SESSION_LOG"; then
+    make -C software/libgemmini install 2>&1 | tee -a "$SESSION_LOG"
+    if [[ ${PIPESTATUS[0]} -eq 0 ]]; then
         success "Gemmini software library built successfully"
     else
         warning "Gemmini software library build failed but continuing"
@@ -386,8 +448,12 @@ setup_chipyard_environment() {
     
     if [[ -f "env.sh" ]]; then
         # shellcheck source=/dev/null
-        source "env.sh" 2>&1 | tee -a "$SESSION_LOG"
-        success "Chipyard environment loaded"
+        if source "env.sh" >>"$SESSION_LOG" 2>&1; then
+            success "Chipyard environment loaded"
+        else
+            warning "Sourcing Chipyard env.sh reported errors; see $SESSION_LOG"
+        fi
+        prefer_score_java
     else
         error "Cannot find env.sh after build setup"
         exit 1
@@ -717,13 +783,13 @@ build_default_config() {
     local build_cmd=""
     case "$SIMULATOR" in
         vlt)
-            build_cmd="make CONFIG=$config_name"
+            build_cmd="make CHECK_SUBMODULES_COMMAND=true CONFIG=$config_name"
             ;;
         vcs)
-            build_cmd="make CONFIG=$config_name VCS=1"
+            build_cmd="make CHECK_SUBMODULES_COMMAND=true CONFIG=$config_name VCS=1"
             ;;
         msm)
-            build_cmd="make CONFIG=$config_name VLOG=1"
+            build_cmd="make CHECK_SUBMODULES_COMMAND=true CONFIG=$config_name VLOG=1"
             ;;
         *)
             error "Unsupported simulator: $SIMULATOR"
@@ -961,13 +1027,13 @@ build_fp32_config() {
     local build_cmd=""
     case "$SIMULATOR" in
         vlt)
-            build_cmd="make CONFIG=$config_name"
+            build_cmd="make CHECK_SUBMODULES_COMMAND=true CONFIG=$config_name"
             ;;
         vcs)
-            build_cmd="make CONFIG=$config_name VCS=1"
+            build_cmd="make CHECK_SUBMODULES_COMMAND=true CONFIG=$config_name VCS=1"
             ;;
         msm)
-            build_cmd="make CONFIG=$config_name VLOG=1"
+            build_cmd="make CHECK_SUBMODULES_COMMAND=true CONFIG=$config_name VLOG=1"
             ;;
         *)
             error "Unsupported simulator: $SIMULATOR"
@@ -1477,7 +1543,7 @@ main() {
     
     log "==================================================================="
     log "Gemmini RTL Generation Session Started"
-    log "Commit ID: $COMMIT_ID"
+    log "Commit ID: $GEMMINI_COMMIT_ID"
     log "Session ID: $TIMESTAMP"
     log "Simulator: $SIMULATOR"
     log "Parallel Jobs: $PARALLEL_JOBS"
@@ -1795,6 +1861,45 @@ main() {
     if [[ $PARALLEL_JOBS -gt 1 ]]; then
         log "Parallel job status: $JOB_STATUS_FILE"
     fi
+
+    mkdir -p "$DATASET_DIR/verification"
+    local verification_status="PASS"
+    if [[ $failure_count -gt 0 ]]; then
+        verification_status="FAIL"
+    fi
+
+    cat > "$DATASET_DIR/verification/verification_summary.txt" << EOF
+gemmini RTL verification summary (SCORE)
+Generated (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')
+
+Configuration builds (simulator=${SIMULATOR}): ${verification_status}
+Successful configurations: ${success_count}
+Failed configurations: ${failure_count}
+Verilator-backed make runs attempted: ${total_configs}
+
+Notes:
+  SCORE Gemmini flow currently relies on Chipyard simulator builds for verification.
+  Inspect per-config logs under ${LOG_DIR}/ for tool output and failure causes.
+Logs: ${LOG_DIR}/
+EOF
+
+    cat > "$DATASET_DIR/gemmini_summary.txt" << EOF
+gemmini SCORE snapshot (ucb-bar/gemmini via Chipyard)
+Generated (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')
+Host: $(hostname 2>/dev/null || echo unknown) $(uname -s) $(uname -m)
+SCORE root: $PROJECT_ROOT
+Source repo: $PROJECT_ROOT/tools/gemmini
+Git commit (short): $GEMMINI_COMMIT_ID
+Git commit (full): $(git -C "$PROJECT_ROOT/tools/gemmini" rev-parse HEAD 2>/dev/null || echo unknown)
+Dataset path: $DATASET_DIR
+Workshop path: $GEMMINI_WORKSHOP
+Simulator: $SIMULATOR
+Total configurations: $total_configs
+Successful configurations: $success_count
+Failed configurations: $failure_count
+Verification summary: $DATASET_DIR/verification/verification_summary.txt
+Session log: $SESSION_LOG
+EOF
     
     if [[ $failure_count -gt 0 ]]; then
         error "Some builds failed. Check individual build logs for details."
