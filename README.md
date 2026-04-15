@@ -8,6 +8,10 @@
 
 ## Table of contents
 
+- [Problem statement & motivation](#problem-statement--motivation)
+  - [Problem statement](#problem-statement)
+  - [Motivation](#motivation)
+  - [How SCORE addresses this](#how-score-addresses-this)
 - [Overview](#overview)
 - [Architectures supported via `scripts/`](#architectures-supported-via-scripts)
 - [Repository layout](#repository-layout)
@@ -16,6 +20,28 @@
 - [Citation](#citation)
 - [Licensing](#licensing)
 - [Acknowledgments](#acknowledgments)
+
+## Problem statement & motivation
+
+### Problem statement
+
+Many open-source SoC generators and RTL flows exist, but **EDA research benchmarking** often relies on ad hoc setups: different repository revisions, local patches, tool versions, and compile flags. That fragmentation makes it hard to:
+
+- **Compare results** fairly across papers and tools when the underlying RTL is not the same artifact.
+- **Reproduce studies** with identical inputs when build recipes are undocumented or environment-specific.
+- **Define baselines** for new synthesis, optimization, or verification methods against a stable reference corpus.
+- **Isolate improvements** in an algorithm from differences in how the RTL was produced.
+
+### Motivation
+
+SCORE exists to **lower that friction**: treat RTL generation as a **documented, script-driven pipeline** so a dataset snapshot is tied to a **known upstream commit**, a **repeatable install/generate path**, and **logs** captured next to the output. The goal is not to replace upstream projects, but to give the research community a **shared starting point** for experiments that depend on consistent, attributable SoC RTL.
+
+### How SCORE addresses this
+
+- **Consistency** — One documented path per architecture (`install_*.sh` → `generate_*.sh`), so “the RTL we used” is defined by scripts and captured outputs, not a one-off laptop build.
+- **Reproducibility** — Snapshots live under `datasets/<architecture>/<commit>/`, tying artifacts to a **pinned upstream revision** and preserving generation logs alongside results.
+- **Traceability** — Where `run_*.sh` exists, you can replay upstream-oriented checks after generation; licensing remains **per upstream project** (see [Licensing](#licensing)).
+- **Coverage** — Many open SoC generators and platforms are wired through the same automation pattern, so benchmarks can span diverse RTL styles without each team re-implementing the same glue scripts.
 
 ## Overview
 
