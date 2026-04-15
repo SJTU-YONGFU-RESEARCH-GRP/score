@@ -1,11 +1,26 @@
-occamy SCORE snapshot
-Generated (UTC): 2026-04-15 05:10:27
+occamy SCORE snapshot (pulp-platform/occamy)
+Generated (UTC): 2026-04-15 12:13:43
 Host: localhost.localdomain Linux x86_64
 SCORE root: /home/yongfu/proj/score
 Source repo: /home/yongfu/proj/score/tools/occamy
 Git commit (short): d5d0d832
 Git commit (full): d5d0d8320bb633c36319e5477006d4c17cf0e448
-bender: bender 0.31.0
+bender (PATH): bender 0.31.0
+
+Verification:
+  Deps vs Bender.lock: PASS
+  bender flist-plus (Verilator view): PASS
+  Verilator lint: FAIL
+  Verilator elaboration: FAIL
+  Verilator simulation: FAIL
+  Verilator reduced-scope lint (common_cells stream_fifo): PASS
+
+Policy:
+  FULL_FLOW=FAIL
+  REDUCED_SCOPE=PASS
+  OVERALL=PASS_WITH_LIMITATIONS
+  Logs: /home/yongfu/proj/score/datasets/occamy/d5d0d832/verification/
 
 See https://github.com/pulp-platform/occamy and tools/occamy/README.md
 Bundle path: /home/yongfu/proj/score/datasets/occamy/d5d0d832/source_snapshot
+Generation log: /home/yongfu/proj/score/datasets/occamy/d5d0d832/logs/generate_20260415_201340.log
