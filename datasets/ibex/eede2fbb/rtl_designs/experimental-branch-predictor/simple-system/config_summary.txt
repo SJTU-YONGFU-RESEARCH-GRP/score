@@ -1,0 +1,15 @@
+Configuration: experimental-branch-predictor
+Build Type: simple-system
+Generated: Wed Apr 15 05:58:27 PM +08 2026
+Build Location: /home/yongfu/proj/score/tools/ibex/build
+Output Directory: /home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/experimental-branch-predictor/simple-system
+
+Configuration Details:
+- IBEX_CONFIG: experimental-branch-predictor
+- Build Type: simple-system
+- Build Directory: /home/yongfu/proj/score/tools/ibex/build
+
+Files:
+- RTL Files: 168
+- Simulation Models: 3
+- Total Files: 173

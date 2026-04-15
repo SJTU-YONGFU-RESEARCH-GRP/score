@@ -160,3 +160,9 @@
 /home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/simple-system/rv32b_instr.sv
 /home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/simple-system/rv32c_instr.sv
 /home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/simple-system/rv32d_instr.sv
+/home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/simple-system/ibex_riscv_compliance.sv
+/home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/simple-system/riscv_testutil.sv
+/home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/simple-system/rst_dpi.sv
+/home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/simple-system/reg_dpi.sv
+/home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/simple-system/tb_cs_registers.sv
+/home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/simple-system/env_dpi.sv

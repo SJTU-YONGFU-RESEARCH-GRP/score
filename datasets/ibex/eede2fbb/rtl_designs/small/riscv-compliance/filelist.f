@@ -162,3 +162,7 @@
 /home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/riscv-compliance/rv32b_instr.sv
 /home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/riscv-compliance/rv32c_instr.sv
 /home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/riscv-compliance/rv32d_instr.sv
+/home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/riscv-compliance/rst_dpi.sv
+/home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/riscv-compliance/reg_dpi.sv
+/home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/riscv-compliance/tb_cs_registers.sv
+/home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/riscv-compliance/env_dpi.sv
