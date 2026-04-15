@@ -112,10 +112,13 @@ MAGIA_COMMIT_ID=$(get_commit_id)
 DATASET_DIR="$PROJECT_ROOT/datasets/magia/$MAGIA_COMMIT_ID"
 LOG_DIR="$DATASET_DIR/logs"
 BUNDLE_DIR="$DATASET_DIR/source_snapshot"
+VERIFICATION_DIR="$DATASET_DIR/verification"
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 SESSION_LOG="$LOG_DIR/generate_${TIMESTAMP}.log"
+VERILATOR_FALLBACK_LOG="$VERIFICATION_DIR/verilator_fallback.log"
 
 mkdir -p "$LOG_DIR"
+mkdir -p "$VERIFICATION_DIR"
 
 exec > >(tee -a "$SESSION_LOG") 2>&1
 
@@ -150,6 +153,80 @@ rsync -a \
     --exclude '.git/' \
     "$MAGIA_DIR/" "$BUNDLE_DIR/"
 
+FLIST_PATH="$VERIFICATION_DIR/magia_dv.flist"
+LINT_LOG="$VERIFICATION_DIR/verilator_lint.log"
+ELAB_LOG="$VERIFICATION_DIR/verilator_elab.log"
+SIM_LOG="$VERIFICATION_DIR/verilator_sim.log"
+SIM_BIN="$VERIFICATION_DIR/Vmagia_tb"
+
+deps_status="PASS"
+flist_status="FAIL"
+lint_status="FAIL"
+elab_status="FAIL"
+sim_status="FAIL"
+
+info "Generating Verilator filelist (target: magia_dv)"
+if bender -d "$BUNDLE_DIR" script flist-plus -t magia_dv >"$FLIST_PATH" 2>"$VERIFICATION_DIR/bender_flist.log"; then
+    flist_status="PASS"
+    ok "Generated filelist: $FLIST_PATH"
+else
+    warn "bender flist-plus failed for magia_dv target"
+fi
+
+if [[ "$flist_status" == "PASS" ]] && command_exists verilator; then
+    info "Running Verilator lint (top-module: magia_tb)"
+    if verilator --lint-only -Wall --top-module magia_tb -f "$FLIST_PATH" >"$LINT_LOG" 2>&1; then
+        lint_status="PASS"
+    else
+        lint_status="FAIL"
+    fi
+
+    info "Running Verilator elaboration build (binary generation)"
+    if verilator --binary -Wall --top-module magia_tb -f "$FLIST_PATH" -Mdir "$VERIFICATION_DIR/obj_dir" >"$ELAB_LOG" 2>&1; then
+        elab_status="PASS"
+        if [[ -x "$VERIFICATION_DIR/obj_dir/Vmagia_tb" ]]; then
+            cp "$VERIFICATION_DIR/obj_dir/Vmagia_tb" "$SIM_BIN"
+            if timeout 60s "$SIM_BIN" >"$SIM_LOG" 2>&1; then
+                sim_status="PASS"
+            else
+                sim_status="FAIL"
+            fi
+        else
+            echo "Missing binary: $VERIFICATION_DIR/obj_dir/Vmagia_tb" >"$SIM_LOG"
+            sim_status="FAIL"
+        fi
+    else
+        elab_status="FAIL"
+        echo "Elaboration failed; simulation not attempted." >"$SIM_LOG"
+        sim_status="FAIL"
+    fi
+else
+    if ! command_exists verilator; then
+        echo "verilator not found on PATH" >"$VERILATOR_FALLBACK_LOG"
+    else
+        echo "flist generation failed; verilator steps skipped" >"$VERILATOR_FALLBACK_LOG"
+    fi
+fi
+
+{
+    echo "MAGIA verification summary"
+    echo "Generated (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')"
+    echo "Dataset: $DATASET_DIR"
+    echo ""
+    echo "Checks:"
+    echo "  Deps vs Bender.lock: $deps_status"
+    echo "  bender flist-plus (Verilator view): $flist_status"
+    echo "  Verilator lint: $lint_status"
+    echo "  Verilator elaboration: $elab_status"
+    echo "  Verilator simulation: $sim_status"
+    echo ""
+    echo "Artifacts:"
+    echo "  flist: $FLIST_PATH"
+    echo "  lint log: $LINT_LOG"
+    echo "  elaboration log: $ELAB_LOG"
+    echo "  simulation log: $SIM_LOG"
+} >"$VERIFICATION_DIR/verification_summary.txt"
+
 SUMMARY="$DATASET_DIR/magia_summary.txt"
 {
     echo "magia SCORE snapshot (pulp-platform/MAGIA)"
@@ -162,12 +239,12 @@ SUMMARY="$DATASET_DIR/magia_summary.txt"
     echo "bender (PATH): $(bender --version 2>/dev/null || echo unknown)"
     echo ""
     echo "Verification:"
-    echo "  Deps vs Bender.lock: $( [[ "${SKIP_CHECKOUT:-false}" == true || "${SKIP_BENDER_UPDATE:-false}" == true ]] && echo SKIPPED_BY_FLAG || echo PASS )"
-    echo "  bender flist-plus (Verilator view): N/A"
-    echo "  Verilator lint: N/A"
-    echo "  Verilator elaboration: N/A"
-    echo "  Verilator simulation: N/A"
-    echo "  Logs: ${VERIFICATION_DIR:-$LOG_DIR}/"
+    echo "  Deps vs Bender.lock: $deps_status"
+    echo "  bender flist-plus (Verilator view): $flist_status"
+    echo "  Verilator lint: $lint_status"
+    echo "  Verilator elaboration: $elab_status"
+    echo "  Verilator simulation: $sim_status"
+    echo "  Logs: $VERIFICATION_DIR/"
     echo ""
     echo "See https://github.com/pulp-platform/MAGIA and tools/magia/README.md"
     echo "Bundle path: $BUNDLE_DIR"

@@ -1,5 +1,5 @@
-Spatz SCORE snapshot
-Generated (UTC): 2026-04-15 04:00:04
+spatz SCORE snapshot (pulp-platform/spatz)
+Generated (UTC): 2026-04-15 11:07:35
 Host: localhost.localdomain Linux x86_64
 SCORE root: /home/yongfu/proj/score
 Source repo: /home/yongfu/proj/score/tools/spatz
@@ -10,5 +10,15 @@ bender (install/bender): bender 0.31.0
 RTL verification: mode=lint; see /home/yongfu/proj/score/datasets/spatz/68503856/verification/
 
 Upstream cluster sim: cd tools/spatz/hw/system/spatz_cluster (see README for sw.vlt / vsim).
+
+Verification:
+  Deps vs Bender.lock: PASS
+  bender flist-plus (Verilator view): N/A
+  Verilator lint: mode=lint; see /home/yongfu/proj/score/datasets/spatz/68503856/verification/
+  Verilator elaboration: N/A
+  Verilator simulation: N/A
+  Logs: /home/yongfu/proj/score/datasets/spatz/68503856/logs/
+
 See https://github.com/pulp-platform/spatz
 Bundle path: /home/yongfu/proj/score/datasets/spatz/68503856/source_snapshot
+Generation log: /home/yongfu/proj/score/datasets/spatz/68503856/logs/generate_20260415_190643.log

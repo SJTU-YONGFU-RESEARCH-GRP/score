@@ -24,3 +24,6 @@ Thumbs.db
 *.swp
 *.swo
 *~ 
+
+# Local ibex host toolchain artifacts (very large binaries)
+tools/ibex-host-tools/
