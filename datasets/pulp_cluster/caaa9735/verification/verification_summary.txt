@@ -1,0 +1,16 @@
+pulp_cluster verification summary
+Generated (UTC): 2026-04-15 15:46:09
+Dataset: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735
+
+Checks:
+  Verilog RTL presence: PASS
+  Testbench artifacts generated: PASS
+  Verilator lint PASS: 1
+  Verilator lint FAIL: 0
+  Verilator lint SKIP: 0
+
+Artifacts:
+  verification results: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/verification/verification_results_20260415_234609.txt
+  verilator lint log: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/verification/pulp_cluster_smoke_verilator_lint.log
+  verification logs dir: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/verification
+  session log: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/logs/generate_20260415_234609.log

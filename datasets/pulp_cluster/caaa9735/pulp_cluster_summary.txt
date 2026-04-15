@@ -1,0 +1,21 @@
+pulp_cluster SCORE snapshot (pulp-platform/pulp_cluster)
+Generated (UTC): 2026-04-15 15:46:09
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/pulp-cluster
+Git commit (short): caaa9735
+Git commit (full): caaa9735346bee71b51d1fe6ba526743bc41e135
+bender (PATH): bender 0.31.0
+
+Verification:
+  Deps vs Bender.lock: PASS
+  Representative RTL files listed: 200
+  Testbench artifact: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/rtl_designs/pulp_cluster_snapshot/pulp_cluster_smoke_tb.sv
+  Verilator lint: PASS
+  Logs: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/verification/
+
+See https://github.com/pulp-platform/pulp_cluster and tools/pulp-cluster/README.md
+Bundle path: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/source_snapshot
+RTL path: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/rtl_designs/pulp_cluster_snapshot
+Verification summary: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/verification/verification_summary.txt
+Generation log: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/logs/generate_20260415_234609.log
