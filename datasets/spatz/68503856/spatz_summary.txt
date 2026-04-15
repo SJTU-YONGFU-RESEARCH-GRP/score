@@ -1,0 +1,14 @@
+Spatz SCORE snapshot
+Generated (UTC): 2026-04-15 04:00:04
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/spatz
+Git commit (short): 68503856
+Git commit (full): 68503856184e7f56728ccbc05971dc73dd41d701
+bender (PATH): bender 0.31.0
+bender (install/bender): bender 0.31.0
+RTL verification: mode=lint; see /home/yongfu/proj/score/datasets/spatz/68503856/verification/
+
+Upstream cluster sim: cd tools/spatz/hw/system/spatz_cluster (see README for sw.vlt / vsim).
+See https://github.com/pulp-platform/spatz
+Bundle path: /home/yongfu/proj/score/datasets/spatz/68503856/source_snapshot

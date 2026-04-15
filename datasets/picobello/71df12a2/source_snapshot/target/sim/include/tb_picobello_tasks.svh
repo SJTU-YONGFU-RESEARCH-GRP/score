@@ -1,0 +1,281 @@
+// Copyright 2025 ETH Zurich and University of Bologna.
+// Solderpad Hardware License, Version 0.51, see LICENSE for details.
+// SPDX-License-Identifier: SHL-0.51
+//
+// Author: Tim Fischer <fischeti@iis.ee.ethz.ch>
+
+import "DPI-C" function byte read_elf(input string filename);
+import "DPI-C" function byte get_entry(output longint entry);
+import "DPI-C" function byte get_section(output longint address, output longint len);
+import "DPI-C" context function byte read_section(input longint address, inout byte buffer[], input longint len);
+
+import picobello_pkg::*;
+
+`include "pb_addrmap.svh"
+`include "cheshire/typedef.svh"
+
+`CHESHIRE_TYPEDEF_ALL(, fix.vip.DutCfg)
+
+task automatic jtag_enable_tiles();
+  $display("Resetting tiles and enabling clock...");
+  fix.vip.jtag_init();
+  fix.vip.jtag_write_reg32(`CHESHIRE_INTERNAL_PB_SOC_REGS_CLUSTER_RSTS_BASE_ADDR, 32'h0000FFFF, 1'b1);
+  fix.vip.jtag_write_reg32(`CHESHIRE_INTERNAL_PB_SOC_REGS_MEM_TILE_RSTS_BASE_ADDR, 32'h000000FF, 1'b1);
+  fix.vip.jtag_write_reg32(`CHESHIRE_INTERNAL_PB_SOC_REGS_FHG_SPU_RSTS_BASE_ADDR, 32'h00000001, 1'b1);
+  fix.vip.jtag_write_reg32(`CHESHIRE_INTERNAL_PB_SOC_REGS_CLUSTER_RSTS_BASE_ADDR, 32'h00000000, 1'b1);
+  fix.vip.jtag_write_reg32(`CHESHIRE_INTERNAL_PB_SOC_REGS_MEM_TILE_RSTS_BASE_ADDR, 32'h00000000, 1'b1);
+  fix.vip.jtag_write_reg32(`CHESHIRE_INTERNAL_PB_SOC_REGS_FHG_SPU_RSTS_BASE_ADDR, 32'h00000000, 1'b1);
+  fix.vip.jtag_write_reg32(`CHESHIRE_INTERNAL_PB_SOC_REGS_CLUSTER_RSTS_BASE_ADDR, 32'h0000FFFF, 1'b1);
+  fix.vip.jtag_write_reg32(`CHESHIRE_INTERNAL_PB_SOC_REGS_MEM_TILE_RSTS_BASE_ADDR, 32'h000000FF, 1'b1);
+  fix.vip.jtag_write_reg32(`CHESHIRE_INTERNAL_PB_SOC_REGS_FHG_SPU_RSTS_BASE_ADDR, 32'h00000001, 1'b1);
+  fix.vip.jtag_write_reg32(`CHESHIRE_INTERNAL_PB_SOC_REGS_CLUSTER_CLK_ENABLES_BASE_ADDR, 32'h0000FFFF, 1'b1);
+  fix.vip.jtag_write_reg32(`CHESHIRE_INTERNAL_PB_SOC_REGS_MEM_TILE_CLK_ENABLES_BASE_ADDR, 32'h000000FF, 1'b1);
+  fix.vip.jtag_write_reg32(`CHESHIRE_INTERNAL_PB_SOC_REGS_FHG_SPU_CLK_ENABLES_BASE_ADDR, 32'h00000001, 1'b1);
+endtask
+
+task automatic slink_enable_tiles();
+  $display("[SLINK] Resetting tiles and enabling clock...");
+  fix.vip.slink_write_32(`CHESHIRE_INTERNAL_PB_SOC_REGS_CLUSTER_RSTS_BASE_ADDR, 32'h0000FFFF);
+  fix.vip.slink_write_32(`CHESHIRE_INTERNAL_PB_SOC_REGS_MEM_TILE_RSTS_BASE_ADDR, 32'h000000FF);
+  fix.vip.slink_write_32(`CHESHIRE_INTERNAL_PB_SOC_REGS_FHG_SPU_RSTS_BASE_ADDR, 32'h00000001);
+  fix.vip.slink_write_32(`CHESHIRE_INTERNAL_PB_SOC_REGS_CLUSTER_RSTS_BASE_ADDR, 32'h00000000);
+  fix.vip.slink_write_32(`CHESHIRE_INTERNAL_PB_SOC_REGS_MEM_TILE_RSTS_BASE_ADDR, 32'h00000000);
+  fix.vip.slink_write_32(`CHESHIRE_INTERNAL_PB_SOC_REGS_FHG_SPU_RSTS_BASE_ADDR, 32'h00000000);
+  fix.vip.slink_write_32(`CHESHIRE_INTERNAL_PB_SOC_REGS_CLUSTER_RSTS_BASE_ADDR, 32'h0000FFFF);
+  fix.vip.slink_write_32(`CHESHIRE_INTERNAL_PB_SOC_REGS_MEM_TILE_RSTS_BASE_ADDR, 32'h000000FF);
+  fix.vip.slink_write_32(`CHESHIRE_INTERNAL_PB_SOC_REGS_FHG_SPU_RSTS_BASE_ADDR, 32'h00000001);
+  fix.vip.slink_write_32(`CHESHIRE_INTERNAL_PB_SOC_REGS_CLUSTER_CLK_ENABLES_BASE_ADDR, 32'h0000FFFF);
+  fix.vip.slink_write_32(`CHESHIRE_INTERNAL_PB_SOC_REGS_MEM_TILE_CLK_ENABLES_BASE_ADDR, 32'h000000FF);
+  fix.vip.slink_write_32(`CHESHIRE_INTERNAL_PB_SOC_REGS_FHG_SPU_CLK_ENABLES_BASE_ADDR, 32'h00000001);
+endtask
+
+// FAST_PRELOAD mode trick with virtual class to write directly to L2 sram module inside various for generate
+virtual class virtual_class_fastmode_l2;
+  pure virtual task write_word(input int sram_addr, input int byte_offset, input logic [31:0] data);
+  pure virtual task read_word(input int sram_addr, input int byte_offset, output logic [31:0] data);
+endclass
+
+virtual_class_fastmode_l2 l2_sram_class_list[NumMemTiles][NumBanksPerWord][NumBankRows];
+
+`ifdef L2_SRAM_PATH
+for(genvar i = 0; i < NumMemTiles; i++) begin : gen_fastmode_class_per_l2_tile
+  for(genvar j = 0; j < NumBanksPerWord; j++) begin : gen_fastmode_class_per_l2_col
+    for(genvar k = 0; k < NumBankRows; k++) begin : gen_fastmode_class_per_l2_row
+      class class_fastmode_l2 extends virtual_class_fastmode_l2;
+        function new;
+          l2_sram_class_list[i][j][k] = this;
+        endfunction
+        task write_word(input int sram_addr, input int byte_offset, input logic [31:0] data);
+          `L2_SRAM_PATH[sram_addr][byte_offset*8 +: 32] = data;
+        endtask
+        task read_word(input int sram_addr, input int byte_offset, output logic [31:0] data);
+          data = `L2_SRAM_PATH[sram_addr][byte_offset*8 +: 32];
+        endtask
+      endclass
+      class_fastmode_l2 w = new;
+    end : gen_fastmode_class_per_l2_row
+  end : gen_fastmode_class_per_l2_col
+end : gen_fastmode_class_per_l2_tile
+`endif
+
+// Write a 32-bit word into an `tc_sram` at a given address
+task automatic fastmode_write_word(input longint addr, input logic [31:0] data);
+  import floo_picobello_noc_pkg::*;
+  if (addr >= Sam[L2Spm0SamIdx].start_addr && addr < Sam[L2Spm0SamIdx+NumMemTiles-1].end_addr) begin
+    // Selecting the correct mem_tile, sram bank, sram address and byte offset inside sram word
+    int byte_offset  = addr[0                   +: SramByteOffsetWidth ];
+    int sel_bank_col = addr[SramBankSelOffset   +: SramBankSelWidth    ];
+    int sram_addr    = addr[SramAddrWidthOffset +: SramAddrWidth       ];
+    int sel_bank_row = addr[SramMacroSelOffset  +: SramMacroSelWidth   ];
+    int sel_mem_tile = (addr - Sam[L2Spm0SamIdx].start_addr) / MemTileSize;
+    l2_sram_class_list[sel_mem_tile][sel_bank_col][sel_bank_row].write_word(sram_addr, byte_offset, data);
+  end else if (addr >= Sam[Cheshire+1].start_addr && addr < Sam[Cheshire+1].end_addr) begin
+    // TODO(fischeti): Implement Cheshire SPM fast preload
+    $fatal(1, "[FAST_PRELOAD] Cheshire memory region not supported yet");
+  end else begin
+    $fatal(1, "[FAST_PRELOAD] Address 0x%h not in any supported memory region", addr);
+  end
+
+endtask
+
+// Read a 32-bit word into an `tc_sram` at a given address
+task automatic fastmode_read_word(input longint addr, output logic [31:0] data);
+  import floo_picobello_noc_pkg::*;
+  if (addr >= Sam[L2Spm0SamIdx].start_addr && addr < Sam[L2Spm0SamIdx+NumMemTiles-1].end_addr) begin
+    // Selecting the correct mem_tile, sram bank, sram address and byte offset inside sram word
+    int byte_offset  = addr[0                   +: SramByteOffsetWidth ];
+    int sel_bank_col = addr[SramBankSelOffset   +: SramBankSelWidth    ];
+    int sram_addr    = addr[SramAddrWidthOffset +: SramAddrWidth       ];
+    int sel_bank_row = addr[SramMacroSelOffset  +: SramMacroSelWidth   ];
+    int sel_mem_tile = (addr - Sam[L2Spm0SamIdx].start_addr) / MemTileSize;
+    l2_sram_class_list[sel_mem_tile][sel_bank_col][sel_bank_row].read_word(sram_addr, byte_offset, data);
+  end else if (addr >= Sam[Cheshire+1].start_addr && addr < Sam[Cheshire+1].end_addr) begin
+    $fatal(1, "[FAST_READ] Cheshire memory region not supported yet");
+  end else begin
+    $fatal(1, "[FAST_READ] Address 0x%h not in any supported memory region", addr);
+  end
+
+endtask
+
+// Read full L2 memory
+task automatic fastmode_read();
+  import floo_picobello_noc_pkg::*;
+  logic [31:0] data;
+  int fp = $fopen("l2mem.bin", "wb");
+
+  if (!fp) begin
+    $error("[FAST_READ] File could not be open: l2mem.bin");
+    return;
+  end
+  for (longint w = Sam[L2Spm0SamIdx].start_addr; w < Sam[L2Spm0SamIdx+NumMemTiles-1].end_addr; w+=4) begin
+    fastmode_read_word(w, data);
+    $fwrite(fp, "%u", data);
+  end
+  $display("[FAST_READ] Read complete and output to l2mem.bin");
+  $fclose(fp);
+endtask
+
+// Instantly preload an ELF binary
+task automatic fastmode_elf_preload(input string binary, output cheshire_pkg::doub_bt entry);
+  longint sec_addr, sec_len, bus_offset, write_addr;
+  $display("[FAST_PRELOAD] Preloading ELF binary: %s", binary);
+  if (read_elf(binary))
+    $fatal(1, "[FAST_PRELOAD] Failed to load ELF!");
+  while (get_section(sec_addr, sec_len)) begin
+    byte bf[] = new [sec_len];
+    $display("[FAST_PRELOAD] Preloading section at 0x%h (%0d bytes)", sec_addr, sec_len);
+    if (read_section(sec_addr, bf, sec_len)) $fatal(1, "[FAST_PRELOAD] Failed to read ELF section!");
+    if (sec_addr % 4 != 0 || sec_len % 4 != 0) $fatal(1, "[FAST_PRELOAD] Section address or length not word-aligned");
+    for (int i = 0; i < sec_len; i += 4) begin
+      write_addr = sec_addr + i;
+      fastmode_write_word(write_addr, {bf[i+3], bf[i+2], bf[i+1], bf[i]});
+    end
+  end
+  void'(get_entry(entry));
+  $display("[FAST_PRELOAD] Preload complete");
+endtask
+
+// Suitable for loading ELFs with 32b-aligned sections
+task automatic jtag_32b_elf_preload(input string binary, output bit [63:0] entry);
+  longint sec_addr, sec_len;
+  dm::sbcs_t sbcs = dm::sbcs_t
+'{sbautoincrement: 1'b1, sbreadondata: 1'b1, sbaccess: 2, default: '0};
+  $display("[JTAG] Preloading ELF binary: %s", binary);
+  if (fix.vip.read_elf(binary)) $fatal(1, "[JTAG] Failed to load ELF!");
+  while (fix.vip.get_section(
+      sec_addr, sec_len
+  )) begin
+    byte bf[] = new[sec_len];
+    $display("[JTAG] Preloading section at 0x%h (%0d bytes)", sec_addr, sec_len);
+    if (fix.vip.read_section(sec_addr, bf, sec_len))
+      $fatal(1, "[JTAG] Failed to read ELF section!");
+    fix.vip.jtag_write(dm::SBCS, sbcs, 1, 1);
+    // Write address as 64-bit double
+    fix.vip.jtag_write(dm::SBAddress1, sec_addr[63:32]);
+    fix.vip.jtag_write(dm::SBAddress0, sec_addr[31:0]);
+    for (longint i = 0; i <= sec_len; i += 4) begin
+      bit checkpoint = (i != 0 && i % 512 == 0);
+      if (checkpoint)
+        $display(
+            "[JTAG] - %0d/%0d bytes (%0d%%)",
+            i,
+            sec_len,
+            i * 100 / (sec_len > 1 ? sec_len - 1 : 1)
+        );
+      fix.vip.jtag_write(dm::SBData0, {bf[i+3], bf[i+2], bf[i+1], bf[i]}, checkpoint, checkpoint);
+    end
+  end
+  void'(get_entry(entry));
+  $display("[JTAG] Preload complete");
+endtask
+
+// Handles misalignments, burst limits and 4KiB crossings
+task automatic slink_write_generic(input addr_t addr, input longint size, ref byte bytes[]);
+  // Using `slink_write_beats`, writes must be beat-aligned and beat-sized (strobing is not
+  // possible). If we have a misaligned transfer of arbitrary size we may have at most two
+  // incomplete beats (start and end) and one misaligned beat (start). In case of an incomplete
+  // beat we read-modify-write the full beat.
+
+  // Burst and beat geometry
+  const int  beat_bytes = fix.vip.AxiStrbWidth;
+  const int  beat_mask = beat_bytes - 1;
+  const int  SlinkBurstBeats = fix.vip.SlinkBurstBytes / beat_bytes;
+
+  // Iterate beat-by-beat over the address range [addr, addr+size)
+  addr_t     first_aligned = addr_t'(addr) & ~addr_t'(beat_mask);
+  addr_t     end_addr = addr_t'(addr + size);
+  addr_t     last_aligned = addr_t'((end_addr - 1) & ~addr_t'(beat_mask));
+
+  // Running index into bytes[]: "how many bytes have we already consumed?"
+  longint    base_idx = 0;
+
+  // Group beats in a burst
+  addr_t     batch_addr = first_aligned;
+  axi_data_t burst                                                        [$];
+  burst = {};
+
+  for (addr_t beat_addr = first_aligned; beat_addr <= last_aligned; beat_addr += beat_bytes) begin
+    addr_t next_addr;
+    bit crosses_4k_next, exceeds_burst_length, last_beat_in_section;
+
+    // Window of the current beat that has to be written
+    int start_off = (beat_addr == first_aligned) ? int'(addr & beat_mask) : 0;
+    int end_off_excl = (beat_addr == last_aligned) ? int'(end_addr - last_aligned) : beat_bytes;
+    int win_len = end_off_excl - start_off;
+
+    // Compose beat
+    axi_data_t beat = '0;
+    if (win_len == beat_bytes && start_off == 0) begin
+      // FULL BEAT: write directly, no RMW
+      for (int e = 0; e < beat_bytes; e++) begin
+        beat[8*e+:8] = bytes[base_idx+e];
+      end
+    end else begin
+      // PARTIAL BEAT: RMW
+      axi_data_t rd[$];
+      fix.vip.slink_read_beats(beat_addr, fix.vip.AxiStrbBits, 0, rd);
+      beat = rd[0];
+      for (int i = 0; i < win_len; i++) begin
+        beat[8*(start_off+i)+:8] = bytes[base_idx+i];
+      end
+    end
+
+    // Accumulate and advance
+    burst.push_back(beat);
+    base_idx += win_len;
+
+    // Decide if the next beat would cross a 4 KiB boundary, exceed the maximum burst length
+    // or this is the last beat
+    next_addr            = beat_addr + win_len;
+    crosses_4k_next      = ((next_addr & 12'hFFF) == 12'h000);  // next beat starts a new page
+    exceeds_burst_length = (burst.size() == SlinkBurstBeats);
+    last_beat_in_section = (beat_addr == last_aligned);
+
+    if (crosses_4k_next || exceeds_burst_length || last_beat_in_section) begin
+      // Flush accumulated beats for this page
+      fix.vip.slink_write_beats(batch_addr, fix.vip.AxiStrbBits, burst);
+      burst      = {};
+      batch_addr = next_addr;
+    end
+  end
+endtask
+
+task automatic slink_32b_elf_preload(input string binary, output bit [63:0] entry);
+  longint sec_addr, sec_len;
+
+  $display("[SLINK] Preloading ELF binary: %s", binary);
+  if (fix.vip.read_elf(binary)) $fatal(1, "[SLINK] Failed to load ELF!");
+
+  while (fix.vip.get_section(
+      sec_addr, sec_len
+  )) begin
+    byte bf[] = new[sec_len];
+    $display("[SLINK] Preloading section at 0x%h (%0d bytes)", sec_addr, sec_len);
+    if (fix.vip.read_section(sec_addr, bf, sec_len))
+      $fatal(1, "[SLINK] Failed to read ELF section!");
+    slink_write_generic(sec_addr, sec_len, bf);
+  end
+
+  void'(fix.vip.get_entry(entry));
+  $display("[SLINK] Preload complete");
+endtask

@@ -1,0 +1,9 @@
+Spatz RTL verification summary
+Generated (UTC): 2026-04-15 04:00:04
+Mode: lint
+Cluster dir: /home/yongfu/proj/score/tools/spatz/hw/system/spatz_cluster
+make generate: PASS
+Verilator lint: PASS
+make verilate: SKIPPED
+bootrom.bin: dummy
+Verilator log: /home/yongfu/proj/score/datasets/spatz/68503856/verification/verilator_lint.log

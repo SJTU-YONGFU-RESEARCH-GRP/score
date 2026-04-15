@@ -1,0 +1,73 @@
+# Copyright 2025 ETH Zurich and University of Bologna.
+# Licensed under the Apache License, Version 2.0, see LICENSE for details.
+# SPDX-License-Identifier: Apache-2.0
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+  PD_COMMIT: "4828594842a7955a8d3a3077ac6454443565da27"
+  SPU_COMMIT: "c2e8815487bd713624d74ef3e3e0465196b6d67f"
+
+# Check the cache for bender and python dependencies
+.cache-deps:
+  cache: &global_cache
+    key:
+      files:
+        - Bender.lock
+    paths:
+      - .bender
+    policy: pull
+
+# Update the cache with bender and python dependencies
+.init-deps-tpl:
+  script:
+    # Initialize the PD repository
+    - make init-pd
+    # Collect bender sources
+    - bender checkout
+  cache:
+    # inherit all global cache settings
+    <<: *global_cache
+    policy: pull-push
+  # bender checkout sometimes fails,
+  # due to rate limiting of github
+  retry: 1
+
+# Generate the RTL sources
+.generate-rtl-tpl:
+  extends:
+    - .cache-deps
+    - .init-env
+  script:
+    - make picobello-hw-all
+  artifacts:
+    paths:
+      - .bender
+      - .generated
+    expire_in: 1 day
+
+# Compile the snitch software tests
+.sn-sw-tpl:
+  stage: build
+  extends:
+    - .cache-deps
+    - .init-env
+  script:
+    - make sn-tests DEBUG=ON
+    - make sn-apps DEBUG=ON
+  artifacts:
+    paths:
+      - sw/snitch/tests/build/*.elf
+      - sw/snitch/apps/**/build/*.elf
+    expire_in: 1 day
+
+# Compile the cheshire software tests
+.chs-sw-tpl:
+  extends:
+    - .cache-deps
+    - .init-env
+  script:
+    - make chs-sw-tests
+  artifacts:
+    paths:
+      - sw/cheshire/tests/*.elf
+    expire_in: 1 day

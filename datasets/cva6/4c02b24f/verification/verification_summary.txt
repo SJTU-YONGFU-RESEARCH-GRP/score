@@ -1,0 +1,13 @@
+cva6 RTL verification summary (SCORE)
+Generated (UTC): 2026-04-15 03:31:04
+
+Bender.lock → bender path: PASS
+bender flist-plus (common_cells slice): PASS
+Verilator --lint-only (common_cells / stream_fifo): PASS
+Verilator --binary (elaboration smoke): PASS
+Verilator simulation (tb_stream_fifo): PASS
+
+Notes:
+  SCORE uses a common_cells stream_fifo slice + shared tb (scripts/assets/chimera/).
+  Full CVA6 core Verilator closure is not run by default in SCORE.
+Logs: /home/yongfu/proj/score/datasets/cva6/4c02b24f/verification/

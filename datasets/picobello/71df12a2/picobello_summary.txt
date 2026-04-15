@@ -1,0 +1,11 @@
+picobello SCORE snapshot
+Generated (UTC): 2026-04-15 04:00:33
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/picobello
+Git commit (short): 71df12a2
+Git commit (full): 71df12a2ea2c4b8a5901b2a8205e8617ceb1ae64
+bender: bender 0.31.0
+
+See https://github.com/pulp-platform/picobello and tools/picobello/README.md
+Bundle path: /home/yongfu/proj/score/datasets/picobello/71df12a2/source_snapshot
