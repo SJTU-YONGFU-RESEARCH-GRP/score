@@ -1,0 +1,1 @@
+spatz_cluster_lint|PASS|spatz_rtl_verify|/home/yongfu/proj/score/datasets/spatz/68503856/verification/verilator_lint.log|/home/yongfu/proj/score/tools/spatz/hw/system/spatz_cluster

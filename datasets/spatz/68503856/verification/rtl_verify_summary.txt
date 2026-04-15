@@ -1,5 +1,5 @@
 Spatz RTL verification summary
-Generated (UTC): 2026-04-15 11:07:35
+Generated (UTC): 2026-04-15 18:37:21
 Mode: lint
 Cluster dir: /home/yongfu/proj/score/tools/spatz/hw/system/spatz_cluster
 make generate: PASS

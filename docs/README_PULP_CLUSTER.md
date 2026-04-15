@@ -25,7 +25,7 @@ Validated dataset instance:
 - `datasets/pulp_cluster/caaa9735/`
 - Verilog RTL presence: PASS
 - Testbench artifact presence: PASS
-- Verilator evidence: PASS (`verification/verification_summary.txt`)
+- Verilator evidence: PASS (`verification/verification_summary.txt`, with smoke PASS and full-tb FAIL recorded)
 
 ## Installation Script
 
@@ -44,11 +44,14 @@ Validated dataset instance:
 2. Snapshot `tools/pulp-cluster` into `datasets/pulp_cluster/<commit>/source_snapshot/`.
 3. Build `rtl_designs/pulp_cluster_snapshot/` with representative RTL listing and smoke RTL/testbench files.
 4. Run `verilator --lint-only` on smoke artifacts.
-5. Write:
+5. Run full-target Verilator lint against upstream PULP Cluster testbench sources (`tb/pulp_cluster_tb.sv`) using Bender-generated full RTL filelist.
+6. Write:
    - `pulp_cluster_summary.txt`
    - `verification/verification_summary.txt`
    - `verification/verification_results_<timestamp>.txt`
    - `verification/pulp_cluster_smoke_verilator_lint.log`
+   - `verification/pulp_cluster_full_rtl.flist`
+   - `verification/pulp_cluster_full_verilator_lint.log`
 
 ## Output Organization
 
@@ -57,7 +60,7 @@ Validated output root:
 ```text
 datasets/pulp_cluster/caaa9735/
 ??? logs/
-?   ??? generate_20260415_234609.log
+?   ??? generate_20260416_020602.log
 ??? pulp_cluster_summary.txt
 ??? source_snapshot/
 ??? rtl_designs/
@@ -68,8 +71,10 @@ datasets/pulp_cluster/caaa9735/
 ?       ??? pulp_cluster_smoke_tb.sv
 ??? verification/
     ??? verification_summary.txt
-    ??? verification_results_20260415_234609.txt
+    ??? verification_results_20260416_020602.txt
     ??? pulp_cluster_smoke_verilator_lint.log
+    ??? pulp_cluster_full_rtl.flist
+    ??? pulp_cluster_full_verilator_lint.log
 ```
 
 ## Verification
@@ -79,8 +84,10 @@ From `datasets/pulp_cluster/caaa9735/verification/verification_summary.txt`:
 - Verilog RTL presence: PASS
 - Testbench artifacts generated: PASS
 - Verilator lint PASS: 1
-- Verilator lint FAIL: 0
+- Verilator lint FAIL: 1
 - Verilator lint SKIP: 0
+- Smoke lint target: PASS (`pulp_cluster_smoke_tb`)
+- Full upstream testbench lint target: FAIL (`pulp_cluster_tb`, see `pulp_cluster_full_verilator_lint.log`)
 
 ## Usage Examples
 
@@ -99,4 +106,5 @@ From `datasets/pulp_cluster/caaa9735/verification/verification_summary.txt`:
 
 - If `bender` is missing, run `./scripts/install_pulp_cluster.sh`.
 - If generation shows Bender warnings, inspect `tools/pulp-cluster/Bender.yml` and rerun `./scripts/generate_pulp_cluster.sh`.
-- If Verilator lint fails, inspect `datasets/pulp_cluster/<commit>/verification/pulp_cluster_smoke_verilator_lint.log`.
+- If smoke Verilator lint fails, inspect `datasets/pulp_cluster/<commit>/verification/pulp_cluster_smoke_verilator_lint.log`.
+- If full testbench Verilator lint fails, inspect `datasets/pulp_cluster/<commit>/verification/pulp_cluster_full_verilator_lint.log` (known macro/unsupported-construct issues can originate in upstream dependencies).
