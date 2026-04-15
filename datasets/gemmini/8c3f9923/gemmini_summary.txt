@@ -1,0 +1,15 @@
+gemmini SCORE snapshot (ucb-bar/gemmini via Chipyard)
+Generated (UTC): 2026-04-15 11:39:51
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/gemmini
+Git commit (short): 8c3f9923
+Git commit (full): 8c3f9923a44a2fe2c7930587be297d6d4f8c09ca
+Dataset path: /home/yongfu/proj/score/datasets/gemmini/8c3f9923
+Workshop path: /home/yongfu/proj/score/datasets/gemmini/workshop
+Simulator: vlt
+Total configurations: 3
+Successful configurations: 0
+Failed configurations: 3
+Verification summary: /home/yongfu/proj/score/datasets/gemmini/8c3f9923/verification/verification_summary.txt
+Session log: /home/yongfu/proj/score/datasets/gemmini/8c3f9923/logs/session_20260415_192238.log
