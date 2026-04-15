@@ -1,6 +1,6 @@
 # SCORE
 
-**S**ystem-on-**C**hip Verilog **R**TL modules dataset f**o**r **E**DA research: reproducible RTL snapshots from open SoC generators, driven by the install / generate / run scripts in `scripts/`.
+**S**ystem-on-**C**hip Verilog **R**TL modules dataset f**o**r **E**DA research: SCORE is an open-source dataset containing consistently generated Verilog RTL code from various state-of-the-art SoC generators and hardware construction languages. The primary motivation for this project is to address the reproducibility and consistency challenges in EDA research benchmarking.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![GitHub](https://img.shields.io/badge/GitHub-SJTU--YONGFU--RESEARCH--GRP%2Fscore-181717?logo=github)](https://github.com/SJTU-YONGFU-RESEARCH-GRP/score)
