@@ -28,6 +28,8 @@ GENERATE_EXTRA=()
 
 # shellcheck source=scripts/common_logging.sh
 source "$SCRIPT_DIR/common_logging.sh"
+# shellcheck source=scripts/common_submodule_bootstrap.sh
+source "$SCRIPT_DIR/common_submodule_bootstrap.sh"
 init_script_logging run_hero
 
 info() { log_info "$@"; }
@@ -157,13 +159,24 @@ fi
 # HERO: init without --recursive first so hero_submodule_remotes.sh can rewrite nested URLs
 # (buildroot via github.com mirror; HerculesCompiler skipped by default — private iis-git) before recursive clone.
 if [[ "$SKIP_SUBMODULE" != true ]]; then
-    info "Step 1/3: git submodule update --init $HERO_SUBMODULE"
-    git submodule update --init "$HERO_SUBMODULE"
+    if score_is_tracked_submodule_path "$HERO_SUBMODULE"; then
+        info "Step 1/3: git submodule update --init $HERO_SUBMODULE"
+        git submodule sync -- "$HERO_SUBMODULE"
+        git submodule update --init "$HERO_SUBMODULE"
+    else
+        warn "Submodule path '$HERO_SUBMODULE' is not tracked in this checkout; syncing all submodules instead."
+        info "Step 1/3: git submodule sync --recursive && git submodule update --init --recursive"
+        git submodule sync --recursive
+        git submodule update --init --recursive
+        if [[ ! -d "$HERO_SUBMODULE" ]]; then
+            warn "$HERO_SUBMODULE is still missing after submodule update; bootstrapping plain git checkout."
+            score_bootstrap_missing_checkout "$PROJECT_ROOT" "$HERO_SUBMODULE"
+        fi
+    fi
     info "Step 1/3: HERO nested submodules (remote fixes: scripts/hero_submodule_remotes.sh)"
     bash "$SCRIPT_DIR/hero_submodule_remotes.sh"
     if [[ "$SKIP_ROCKET_SUBMODULE" != true ]]; then
-        info "Step 1/3: git submodule update --init --recursive $ROCKET_SUBMODULE"
-        git submodule update --init --recursive "$ROCKET_SUBMODULE"
+        score_prepare_tool_checkout "$PROJECT_ROOT" "$ROCKET_SUBMODULE"
     fi
     ok "Submodules ready."
 else

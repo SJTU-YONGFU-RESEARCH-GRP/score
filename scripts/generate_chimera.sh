@@ -449,6 +449,10 @@ CHIMERA_DIR="$BUNDLE_DIR"
 prepare_dataset_workdir() {
     info "Staging Chimera sources into dataset workdir: $CHIMERA_DIR"
     mkdir -p "$CHIMERA_DIR"
+    # Re-runs reuse the same datasets/chimera/<sha>/source_snapshot directory.
+    # Removing stale Bender worktrees avoids rsync --delete failures like
+    # "cannot delete non-empty directory: .bender/..." that can leave corrupted checkouts.
+    rm -rf "$CHIMERA_DIR/.bender" "$CHIMERA_DIR/cheshire" "$CHIMERA_DIR/idma"
     rsync -a --delete \
         --exclude '.git/' \
         "$SOURCE_CHIMERA_DIR/" "$CHIMERA_DIR/"

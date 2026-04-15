@@ -31,36 +31,8 @@ ok() { log_success "$@"; }
 warn() { log_warning "$@"; }
 err() { log_error "$@"; }
 
-is_tracked_submodule_path() {
-    local submodule_path="$1"
-    git ls-files --error-unmatch -- "$submodule_path" >/dev/null 2>&1
-}
-
-get_submodule_url_from_gitmodules() {
-    local submodule_path="$1"
-    local key
-    key="submodule.${submodule_path}.url"
-    git config --file "$PROJECT_ROOT/.gitmodules" --get "$key" 2>/dev/null || true
-}
-
-bootstrap_missing_carfield_checkout() {
-    local carfield_url
-    carfield_url="$(get_submodule_url_from_gitmodules "$CARFIELD_SUBMODULE")"
-    if [[ -z "$carfield_url" ]]; then
-        err "Could not resolve URL for $CARFIELD_SUBMODULE from .gitmodules"
-        return 1
-    fi
-    if [[ -d "$CARFIELD_SUBMODULE/.git" ]] || git -C "$CARFIELD_SUBMODULE" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-        info "Found existing git checkout at $CARFIELD_SUBMODULE"
-        return 0
-    fi
-    if [[ -e "$CARFIELD_SUBMODULE" ]]; then
-        err "$CARFIELD_SUBMODULE exists but is not a git checkout; remove or rename it, then rerun."
-        return 1
-    fi
-    info "Bootstrapping missing checkout: git clone $carfield_url $CARFIELD_SUBMODULE"
-    git clone "$carfield_url" "$CARFIELD_SUBMODULE"
-}
+# shellcheck source=scripts/common_submodule_bootstrap.sh
+source "$SCRIPT_DIR/common_submodule_bootstrap.sh"
 
 show_help() {
     cat << EOF
@@ -161,20 +133,7 @@ else
 fi
 
 if [[ "$SKIP_SUBMODULE" != true ]]; then
-    if is_tracked_submodule_path "$CARFIELD_SUBMODULE"; then
-        info "Step 1/3: git submodule update --init --recursive $CARFIELD_SUBMODULE"
-        git submodule sync -- "$CARFIELD_SUBMODULE"
-        git submodule update --init --recursive "$CARFIELD_SUBMODULE"
-    else
-        warn "Submodule path '$CARFIELD_SUBMODULE' is not tracked in this checkout; syncing all submodules instead."
-        info "Step 1/3: git submodule sync --recursive && git submodule update --init --recursive"
-        git submodule sync --recursive
-        git submodule update --init --recursive
-        if [[ ! -d "$CARFIELD_SUBMODULE" ]]; then
-            warn "$CARFIELD_SUBMODULE is still missing after submodule update; bootstrapping plain git checkout."
-            bootstrap_missing_carfield_checkout
-        fi
-    fi
+    score_prepare_tool_checkout "$PROJECT_ROOT" "$CARFIELD_SUBMODULE"
     ok "Submodules ready."
 else
     warn "Skipped submodule step."
