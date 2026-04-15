@@ -1,0 +1,14 @@
+cheshire_ihp130_o RTL verification summary (SCORE)
+Generated (UTC): 2026-04-15 10:48:01
+
+Bender.lock → bender path: PASS
+bender script flist-plus (common_cells RTL): PASS
+Testbench sources present (.bender): PASS
+Verilator --lint-only (common_cells / stream_fifo): PASS
+Verilator elaboration: N/A
+Verilator simulation: N/A
+
+Notes:
+  Verification is based on common_cells slice checks plus testbench presence in dependencies.
+  Full SoC Verilator simulation is not part of this SCORE cheshire_ihp130_o flow.
+Logs: /home/yongfu/proj/score/datasets/cheshire_ihp130_o/560f00f1/verification/

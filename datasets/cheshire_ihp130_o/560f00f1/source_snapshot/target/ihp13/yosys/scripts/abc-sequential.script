@@ -1,0 +1,44 @@
+strash
+ifraig
+dch
+scorr
+lcorr
+scleanup
+strash
+
+&get -n
+&st
+&dch
+&nf {D}
+&put
+
+&get -n
+&st
+&syn2
+&if -g -K 6 {D}
+&synch2
+&nf {D}
+&put
+
+&get -n
+&st
+&syn2
+&if -g -K 6 {D}
+&synch2
+&nf {D}
+&put
+
+&get -n
+&st
+&syn2
+&if -g -K 6 {D}
+&synch2
+&nf {D}
+&put
+
+buffer -N 10
+topo
+nodedup
+stime -p
+upsize {D}
+dnsize {D}

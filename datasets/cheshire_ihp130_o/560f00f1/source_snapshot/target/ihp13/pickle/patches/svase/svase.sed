@@ -1,0 +1,1 @@
+s|RegOut.num_out|8'd14|g

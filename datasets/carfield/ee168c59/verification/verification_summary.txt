@@ -1,0 +1,14 @@
+carfield RTL verification summary (SCORE)
+Generated (UTC): 2026-04-15 10:39:23
+
+Bender.lock → bender path: PASS
+bender script flist-plus (common_cells RTL): PASS
+Testbench sources present (.bender): PASS
+Verilator --lint-only (common_cells / stream_fifo): PASS
+Verilator elaboration: N/A
+Verilator simulation: N/A
+
+Notes:
+  Verification is currently based on common_cells slice checks.
+  Full SoC Verilator simulation is not part of this SCORE carfield flow.
+Logs: /home/yongfu/proj/score/datasets/carfield/ee168c59/verification/

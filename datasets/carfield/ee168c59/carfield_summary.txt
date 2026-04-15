@@ -1,11 +1,20 @@
-carfield SCORE snapshot
-Generated (UTC): 2026-04-15 01:47:35
+carfield SCORE snapshot (pulp-platform/carfield)
+Generated (UTC): 2026-04-15 10:39:24
 Host: localhost.localdomain Linux x86_64
 SCORE root: /home/yongfu/proj/score
 Source repo: /home/yongfu/proj/score/tools/carfield
 Git commit (short): ee168c59
 Git commit (full): ee168c5968e7ba137493962b4fd6427b15646bd2
-bender: bender 0.31.0
+bender (PATH): bender 0.31.0
+
+Verification:
+  Deps vs Bender.lock: PASS
+  bender flist-plus (Verilator view): PASS
+  Verilator lint: PASS
+  Verilator elaboration: N/A
+  Verilator simulation: N/A
+  Logs: /home/yongfu/proj/score/datasets/carfield/ee168c59/verification/
 
 See https://github.com/pulp-platform/carfield and tools/carfield/README.md
 Bundle path: /home/yongfu/proj/score/datasets/carfield/ee168c59/source_snapshot
+Generation log: /home/yongfu/proj/score/datasets/carfield/ee168c59/logs/generate_20260415_183921.log

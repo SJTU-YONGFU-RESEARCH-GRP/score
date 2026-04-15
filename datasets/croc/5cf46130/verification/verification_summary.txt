@@ -1,5 +1,5 @@
 croc RTL verification summary (SCORE)
-Generated (UTC): 2026-04-15 03:06:08
+Generated (UTC): 2026-04-15 08:26:40
 
 Bender.lock → bender path: PASS
 bender flist-plus (common_cells slice): PASS

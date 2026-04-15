@@ -1,0 +1,74 @@
+# Copyright 2023 ETH Zurich and University of Bologna.
+# Solderpad Hardware License, Version 0.51, see LICENSE for details.
+# SPDX-License-Identifier: SHL-0.51
+
+package:
+  name: iguana
+  authors:
+    - "Thomas Benz <tbenz@iis.ee.ethz.ch>"
+    - "Jannis Schönleber <janniss@iis.ee.ethz.ch>"
+    - "Paul Scheffler <janniss@iis.ee.ethz.ch>"
+    - "Tobias Senti <tsenti@ethz.ch>"
+    - "Philippe Sauter <phsauter@ethz.ch>"
+
+dependencies:
+  axi:                { git: https://github.com/pulp-platform/axi,                version: 0.39.2   }
+  cheshire:           { git: https://github.com/pulp-platform/cheshire,           rev:    4a270afccf27bed49779d11d88e4bbb69d335c8a }
+  hyperbus:           { git: https://github.com/pulp-platform/hyperbus,           version: 0.0.4    }
+  register_interface: { git: https://github.com/pulp-platform/register_interface, version: 0.4.4    }
+
+sources:
+
+  # - asic + rtl:                        RTL only (no tech wrappers or sim models)
+  # - asic + ihp13 + rtl:                RTL with IHP13 tech wrappers (for IHP13 synthesis)
+  # - asic + ihp13 + rtl + simulation:   RTL with IHP13 tech wrappers and sim models (for IHP13 sim)
+  # - asic + ihp13 + sv2v + simulation:  Post-sv2v RTL with IHP13 tech wrappers and sim models (for IHP13 sim)
+  # - asic + ihp13 + synth + simulation: IHP13 synthesis netlist with IHP13 sim models (for post-synthesis sim)
+  # - asic + ihp13 + gate + simulation:  IHP13 PL netlist with IHP13 sim models (for PL sim)
+
+  - target: rtl
+    files:
+      - hw/iguana_pkg.sv
+      - hw/iguana_soc.sv
+      - hw/iguana_chip.sv
+      - hw/fused_muladd.sv
+
+  - target: any(test, simulation)
+    files:
+      - hw/iguana_pkg.sv
+      - target/sim/src/fixture_iguana.sv
+      - target/sim/src/tb_iguana.sv
+
+  - target: all(rtl, ihp13)
+    files:
+      - target/ihp13/src/tc_sram.sv
+      - target/ihp13/src/tc_clk.sv
+      - target/ihp13/src/mc_pad.sv
+      - target/ihp13/src/mc_delay.sv
+
+  - target: all(ihp13, simulation)
+    defines:
+      FUNCTIONAL: ~
+    files:
+      - target/ihp13/src/mc_delay/delay_line_D4_O1_6P000.behav.sv
+      - target/ihp13/pdk/ihp-sg13g2/ihp-sg13g2/libs.ref/sg13g2_stdcell/verilog/sg13g2_stdcell.v
+      - target/ihp13/pdk/ihp-sg13g2/ihp-sg13g2/libs.ref/sg13g2_sram/verilog/RM_IHPSG13_1P_core_behavioral_bm_bist.v
+      - target/ihp13/pdk/ihp-sg13g2/ihp-sg13g2/libs.ref/sg13g2_sram/verilog/RM_IHPSG13_1P_64x64_c2_bm_bist.v
+      - target/ihp13/pdk/ihp-sg13g2/ihp-sg13g2/libs.ref/sg13g2_sram/verilog/RM_IHPSG13_1P_256x48_c2_bm_bist.v
+      - target/ihp13/pdk/ihp-sg13g2/ihp-sg13g2/libs.ref/sg13g2_sram/verilog/RM_IHPSG13_1P_256x64_c2_bm_bist.v
+      - target/ihp13/pdk/ihp-sg13g2/ihp-sg13g2/libs.ref/sg13g2_sram/verilog/RM_IHPSG13_1P_512x64_c2_bm_bist.v
+      - target/ihp13/pdk/ihp-sg13g2/ihp-sg13g2/libs.ref/sg13g2_sram/verilog/RM_IHPSG13_1P_1024x64_c2_bm_bist.v
+      - target/ihp13/pdk/ihp-sg13g2/ihp-sg13g2/libs.ref/sg13g2_sram/verilog/RM_IHPSG13_1P_2048x64_c2_bm_bist.v
+      - target/ihp13/pdk/future/sg13g2_iocell/sg13g2_iocell.behav.sv
+
+  - target: all(sv2v, ihp13)
+    files:
+      - target/ihp13/pickle/out/basilisk.sv2v.v
+
+  - target: all(synth, ihp13)
+    files:
+      - target/ihp13/yosys/out/basilisk.yosys.v
+
+  - target: all(gate, ihp13)
+    files:
+      - target/ihp13/openroad/out/basilisk.v

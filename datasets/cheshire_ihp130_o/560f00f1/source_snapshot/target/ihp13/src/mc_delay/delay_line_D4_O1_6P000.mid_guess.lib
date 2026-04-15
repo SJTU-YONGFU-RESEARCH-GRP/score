@@ -1,0 +1,101 @@
+library (delay_line_D4_O1_6P000) {
+  comment                        : "";
+  delay_model                    : table_lookup;
+  simulation                     : false;
+  capacitive_load_unit (1,pF);
+  leakage_power_unit             : 1pW;
+  current_unit                   : "1A";
+  pulling_resistance_unit        : "1kohm";
+  time_unit                      : "1ns";
+  voltage_unit                   : "1V";
+  library_features(report_delay_calculation);
+
+  input_threshold_pct_rise : 50;
+  input_threshold_pct_fall : 50;
+  output_threshold_pct_rise : 50;
+  output_threshold_pct_fall : 50;
+  slew_lower_threshold_pct_rise : 20;
+  slew_lower_threshold_pct_fall : 20;
+  slew_upper_threshold_pct_rise : 80;
+  slew_upper_threshold_pct_fall : 80;
+  slew_derate_from_library : 1.0;
+
+
+  nom_process                    : 1.0;
+  nom_temperature                : 25.0;
+  nom_voltage                    : 1.20;
+
+  lu_table_template(template_1) {
+    variable_1 : total_output_net_capacitance;
+    index_1 ("0.00100,  0.04680,  0.07800,  0.12960,  0.21600,  0.36000,  0.60000");
+  }
+  type ("clk_o") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 1;
+    bit_from : 0;
+    bit_to : 0;
+  }
+  type ("delay_i") {
+    base_type : array;
+    data_type : bit;
+    bit_width : 4;
+    bit_from : 3;
+    bit_to : 0;
+  }
+
+  cell ("delay_line_D4_O1_6P000") {
+    pin("clk_i") {
+      direction : input;
+      capacitance : 0.0456;
+    }
+    bus("clk_o") {
+      bus_type : clk_o;
+      direction : output;
+      capacitance : 0.0000;
+    pin("clk_o[0]") {
+      direction : output;
+      capacitance : 0.0000;
+      timing() {
+        related_pin : "clk_i";
+        timing_sense : positive_unate;
+        timing_type : combinational;
+	cell_rise(template_1) {
+          values("3.04744,3.12904,3.17317,3.24500,3.36482,3.56428,3.89623");
+	}
+	rise_transition(template_1) {
+          values("0.02515,0.10966,0.17042,0.27307,0.44636,0.73587,1.21836");
+	}
+	cell_fall(template_1) {
+          values("3.47112,3.55395,3.59287,3.65260,3.74941,3.90916,4.17500");
+	}
+	fall_transition(template_1) {
+          values("0.03143,0.10168,0.14469,0.21757,0.34381,0.55834,0.91846");
+	}
+      }
+    }
+    }
+    bus("delay_i") {
+      bus_type : delay_i;
+      direction : input;
+      capacitance : 0.0000;
+    pin("delay_i[3]") {
+      direction : input;
+      capacitance : 0.0490;
+    }
+    pin("delay_i[2]") {
+      direction : input;
+      capacitance : 0.0264;
+    }
+    pin("delay_i[1]") {
+      direction : input;
+      capacitance : 0.0131;
+    }
+    pin("delay_i[0]") {
+      direction : input;
+      capacitance : 0.0059;
+    }
+    }
+  }
+
+}

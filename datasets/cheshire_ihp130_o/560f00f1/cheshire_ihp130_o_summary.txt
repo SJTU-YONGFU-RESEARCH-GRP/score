@@ -1,0 +1,20 @@
+cheshire_ihp130_o SCORE snapshot (pulp-platform/cheshire-ihp130-o)
+Generated (UTC): 2026-04-15 10:48:01
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/cheshire-ihp130-o
+Git commit (short): 560f00f1
+Git commit (full): 560f00f1c14a7f2f22861df6bb4816eacf7f2e7e
+bender (PATH): bender 0.31.0
+
+Verification:
+  Deps vs Bender.lock: PASS
+  bender flist-plus (Verilator view): PASS
+  Verilator lint: PASS
+  Verilator elaboration: N/A
+  Verilator simulation: N/A
+  Logs: /home/yongfu/proj/score/datasets/cheshire_ihp130_o/560f00f1/verification/
+
+See https://github.com/pulp-platform/cheshire-ihp130-o and tools/cheshire-ihp130-o/README.md
+Bundle path: /home/yongfu/proj/score/datasets/cheshire_ihp130_o/560f00f1/source_snapshot
+Generation log: /home/yongfu/proj/score/datasets/cheshire_ihp130_o/560f00f1/logs/generate_20260415_184759.log
