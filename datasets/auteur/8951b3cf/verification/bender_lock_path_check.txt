@@ -1,0 +1,5 @@
+bender path <pkg> for each Bender.lock package (from /home/yongfu/proj/score/datasets/auteur/8951b3cf/source_snapshot/Bender.lock)
+---
+OK  common_cells
+OK  common_verification
+OK  tech_cells_generic

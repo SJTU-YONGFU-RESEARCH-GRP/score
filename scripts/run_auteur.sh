@@ -96,6 +96,37 @@ validate_root() {
     fi
 }
 
+is_tracked_submodule_path() {
+    local submodule_path="$1"
+    git ls-files --error-unmatch -- "$submodule_path" >/dev/null 2>&1
+}
+
+get_submodule_url_from_gitmodules() {
+    local submodule_path="$1"
+    local key
+    key="submodule.${submodule_path}.url"
+    git config --file "$PROJECT_ROOT/.gitmodules" --get "$key" 2>/dev/null || true
+}
+
+bootstrap_missing_auteur_checkout() {
+    local auteur_url
+    auteur_url="$(get_submodule_url_from_gitmodules "$AUTEUR_SUBMODULE")"
+    if [[ -z "$auteur_url" ]]; then
+        err "Could not resolve URL for $AUTEUR_SUBMODULE from .gitmodules"
+        return 1
+    fi
+    if [[ -d "$AUTEUR_SUBMODULE/.git" ]] || git -C "$AUTEUR_SUBMODULE" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+        info "Found existing git checkout at $AUTEUR_SUBMODULE"
+        return 0
+    fi
+    if [[ -e "$AUTEUR_SUBMODULE" ]]; then
+        err "$AUTEUR_SUBMODULE exists but is not a git checkout; remove or rename it, then rerun."
+        return 1
+    fi
+    info "Bootstrapping missing checkout: git clone $auteur_url $AUTEUR_SUBMODULE"
+    git clone "$auteur_url" "$AUTEUR_SUBMODULE"
+}
+
 while [[ $# -gt 0 ]]; do
     case "$1" in
         -h|--help)
@@ -159,8 +190,20 @@ else
 fi
 
 if [[ "$SKIP_SUBMODULE" != true ]]; then
-    info "Step 1/3: git submodule update --init --recursive $AUTEUR_SUBMODULE"
-    git submodule update --init --recursive "$AUTEUR_SUBMODULE"
+    if is_tracked_submodule_path "$AUTEUR_SUBMODULE"; then
+        info "Step 1/3: git submodule update --init --recursive $AUTEUR_SUBMODULE"
+        git submodule sync -- "$AUTEUR_SUBMODULE"
+        git submodule update --init --recursive "$AUTEUR_SUBMODULE"
+    else
+        warn "Submodule path '$AUTEUR_SUBMODULE' is not tracked in this checkout; syncing all submodules instead."
+        info "Step 1/3: git submodule sync --recursive && git submodule update --init --recursive"
+        git submodule sync --recursive
+        git submodule update --init --recursive
+        if [[ ! -d "$AUTEUR_SUBMODULE" ]]; then
+            warn "$AUTEUR_SUBMODULE is still missing after submodule update; bootstrapping plain git checkout."
+            bootstrap_missing_auteur_checkout
+        fi
+    fi
     ok "Submodules ready."
 else
     warn "Skipped submodule step."
