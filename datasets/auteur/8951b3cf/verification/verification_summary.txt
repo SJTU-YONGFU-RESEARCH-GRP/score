@@ -1,0 +1,13 @@
+auteur RTL verification summary (SCORE)
+Generated (UTC): 2026-04-15 00:46:47
+
+Bender.lock → bender path: PASS
+bender script flist-plus (auteur RTL): PASS
+Verilator --lint-only (hw/auteur_fifo.sv): PASS
+Verilator --binary (elaboration smoke): PASS
+Verilator simulation (tb_auteur_fifo): PASS
+
+Notes:
+  Verilator uses module auteur_fifo only; auteur_group is omitted (Verilator generate limits).
+  Full sim uses scripts/assets/auteur/tb_auteur_fifo.sv (SCORE harness).
+Logs: /home/yongfu/proj/score/datasets/auteur/8951b3cf/verification/
