@@ -1,0 +1,9 @@
+core_type: network_variants
+config_name: xbar_Ariane_4x4
+x_tiles: 4
+y_tiles: 4
+total_tiles: 16
+simulator: vlt
+generation_date: Wed Apr 15 09:25:30 PM +08 2026
+rtl_only: true
+description: "OpenPiton network_variants configuration with 4x4 tiles"

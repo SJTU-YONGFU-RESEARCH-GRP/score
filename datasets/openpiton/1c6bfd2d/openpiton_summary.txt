@@ -1,0 +1,17 @@
+openpiton SCORE snapshot
+Generated (UTC): 2026-04-15 13:25:30
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/openpiton
+Git commit (short): 1c6bfd2d
+Git commit (full): 1c6bfd2d2ea53ddd7b6f933fa2d439d1a540e207
+Simulator: vlt
+Parallel jobs: 1
+Total configurations attempted: 41
+Build successes: 41
+Build failures: 0
+Verilator lint PASS: 41
+Verilator lint FAIL: 0
+Verilator lint SKIP: 0
+Verification summary: /home/yongfu/proj/score/datasets/openpiton/1c6bfd2d/verification/verification_summary.txt
+Session log: /home/yongfu/proj/score/datasets/openpiton/1c6bfd2d/logs/session_20260415_212508.log
