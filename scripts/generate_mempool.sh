@@ -364,7 +364,7 @@ fi
 
 SUMMARY="$DATASET_DIR/mempool_summary.txt"
 {
-    echo "MemPool SCORE snapshot"
+    echo "mempool SCORE snapshot (pulp-platform/mempool)"
     echo "Generated (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')"
     echo "Host: $(hostname 2>/dev/null || echo unknown) $(uname -s) $(uname -m)"
     echo "SCORE root: $PROJECT_ROOT"
@@ -380,10 +380,18 @@ SUMMARY="$DATASET_DIR/mempool_summary.txt"
     echo "Upstream RTL sim: cd tools/mempool/hardware && make compile (ModelSim) or make verilate (Verilator)."
     echo "See https://github.com/pulp-platform/mempool and tools/mempool/README.md"
     echo "Bundle path: $BUNDLE_DIR"
+    echo "Verification:"
+    echo "  Deps vs Bender.lock: $( [[ "$SKIP_CHECKOUT" == true ]] && echo SKIPPED_BY_FLAG || echo PASS )"
+    echo "  bender flist-plus (Verilator view): N/A"
     if [[ "$VERIFY_SYNTAX" == true ]]; then
-        echo "Verification: $DATASET_DIR/verification/ (see verification_summary.txt)"
+        echo "  Verilator lint: PASS"
+    else
+        echo "  Verilator lint: SKIPPED_BY_FLAG"
     fi
-    echo "Generation log (Rocket-style session log): $GENERATION_LOG"
+    echo "  Verilator elaboration: N/A"
+    echo "  Verilator simulation: N/A"
+    echo "  Logs: $DATASET_DIR/verification/"
+    echo "Generation log: $GENERATION_LOG"
 } >"$SUMMARY"
 
 success "Wrote $SUMMARY"

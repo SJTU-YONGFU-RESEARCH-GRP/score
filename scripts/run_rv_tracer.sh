@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #
-# End-to-end rv_tracer flow for SCORE: submodule → install → generate (Bender + dataset snapshot).
+# End-to-end rv_tracer flow for SCORE: submodule → install → generate
+# (Bender + Verilator-default verification + dataset snapshot).
 #
 # Usage (from repository root, i.e. the directory containing tools/, scripts/, datasets/):
 #   ./scripts/run_rv_tracer.sh
@@ -41,7 +42,7 @@ Usage: $0 [OPTIONS] [-- EXTRA_GENERATE_ARGS...]
 Run the full SCORE rv_tracer pipeline from the repository root:
   1. git submodule update --init --recursive ${RV_TRACER_SUBMODULE}
   2. ${INSTALL_SCRIPT} (Bender + OS packages)
-  3. ${GENERATE_SCRIPT} (bender update + snapshot under datasets/rv_tracer/...)
+  3. ${GENERATE_SCRIPT} (bender update + Verilator smoke verification + snapshot)
 
 Options:
   -h, --help           Show this help
