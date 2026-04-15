@@ -1,0 +1,20 @@
+safety_island SCORE snapshot (pulp-platform/safety_island)
+Generated (UTC): 2026-04-15 10:58:33
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/safety-island
+Git commit (short): 584eb697
+Git commit (full): 584eb697195c44ef1b1cbd1f4b7accdf5192200a
+bender (PATH): bender 0.31.0
+
+Verification:
+  Deps vs Bender.lock: PASS
+  bender flist-plus (Verilator view): N/A
+  Verilator lint: N/A
+  Verilator elaboration: N/A
+  Verilator simulation: N/A
+  Logs: /home/yongfu/proj/score/datasets/safety_island/584eb697/logs/
+
+See https://github.com/pulp-platform/safety_island and tools/safety-island/README.md
+Bundle path: /home/yongfu/proj/score/datasets/safety_island/584eb697/source_snapshot
+Generation log: /home/yongfu/proj/score/datasets/safety_island/584eb697/logs/generate_20260415_185817.log
