@@ -1,0 +1,5 @@
+{
+    "value": "@ 2>/dev/null # 2>nul & echo off & goto BOF\r\n:\nexec java  $JAVA_OPTS -cp \"$0\" 'freechips.rocketchip.diplomacy.Main' \"$@\"\nexit\n\r\n:BOF\r\nsetlocal\r\n@echo off\r\njava  %JAVA_OPTS% -cp \"%~dpnx0\" freechips.rocketchip.diplomacy.Main %*\r\nendlocal\r\nexit /B %errorlevel%\r\n",
+    "valueHash": -1825510171,
+    "inputsHash": 1965423066
+}

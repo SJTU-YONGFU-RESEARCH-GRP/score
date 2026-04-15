@@ -1,0 +1,16 @@
+{
+  "schema": "score.benchmark_manifest.v1",
+  "tool": "rocket-chip",
+  "upstream_commit": "885dd5966a49ce19512e3cc3275515926e729ba2",
+  "generated_utc": "2026-04-15T18:28:06Z",
+  "host": {
+    "platform": "Linux-5.14.0-611.45.1.el9_7.x86_64-x86_64-with-glibc2.34",
+    "machine": "x86_64"
+  },
+  "tool_versions": {
+    "java": "openjdk version \"11.0.25\" 2024-10-15 LTS",
+    "mill": "Exception in thread \"main\" java.lang.Exception: Failed to connect to server",
+    "verilator": "Verilator 5.022 2024-02-24 rev fedora-5.022",
+    "firtool": "LLVM (http://llvm.org/):"
+  }
+}

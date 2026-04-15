@@ -1,0 +1,9 @@
+{
+    "value": [
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/hardfloat/hardfloat/compile-resources",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/hardfloat/hardfloat/resources",
+        "ref:v0:566c994f:/home/yongfu/proj/score/tools/rocket-chip/out/hardfloat/6.7.0/compile.dest/classes"
+    ],
+    "valueHash": 1427184495,
+    "inputsHash": 375934757
+}

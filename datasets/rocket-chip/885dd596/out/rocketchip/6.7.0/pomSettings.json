@@ -1,0 +1,37 @@
+{
+    "value": {
+        "description": "rocketchip-6.7.0",
+        "organization": "org.chipsalliance",
+        "url": "http://github.com/chipsalliance/rocket-chip",
+        "licenses": [
+            {
+                "id": "Apache License 2.0",
+                "name": "Apache-2.0",
+                "url": "https://spdx.org/licenses/Apache-2.0.html",
+                "isOsiApproved": true,
+                "isFsfLibre": true,
+                "distribution": "repo"
+            }
+        ],
+        "versionControl": {
+            "browsableRepository": [
+                "https://github.com/chipsalliance/rocket-chip"
+            ],
+            "connection": [
+                "scm:git:git://github.com/chipsalliance/rocket-chip.git"
+            ],
+            "developerConnection": [
+                "scm:git:ssh://git@github.com:chipsalliance/rocket-chip.git"
+            ]
+        },
+        "developers": [
+            {
+                "id": "aswaterman",
+                "name": "Andrew Waterman",
+                "url": "https://aspire.eecs.berkeley.edu/author/waterman/"
+            }
+        ]
+    },
+    "valueHash": -1291148701,
+    "inputsHash": -2059631264
+}

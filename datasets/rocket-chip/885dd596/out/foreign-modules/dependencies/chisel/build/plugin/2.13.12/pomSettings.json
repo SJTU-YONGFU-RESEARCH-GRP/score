@@ -1,0 +1,31 @@
+{
+    "value": {
+        "description": "plugin",
+        "organization": "org.chipsalliance",
+        "url": "https://www.chisel-lang.org",
+        "licenses": [
+            {
+                "id": "Apache License 2.0",
+                "name": "Apache-2.0",
+                "url": "https://spdx.org/licenses/Apache-2.0.html",
+                "isOsiApproved": true,
+                "isFsfLibre": true,
+                "distribution": "repo"
+            }
+        ],
+        "versionControl": {
+            "browsableRepository": [
+                "https://github.com/chipsalliance/chisel"
+            ],
+            "connection": [
+                "scm:git:git://github.com/chipsalliance/chisel.git"
+            ],
+            "developerConnection": [
+                "scm:git:ssh://git@github.com:chipsalliance/chisel.git"
+            ]
+        },
+        "developers": []
+    },
+    "valueHash": -2113796969,
+    "inputsHash": -1148200430
+}

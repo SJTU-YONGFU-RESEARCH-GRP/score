@@ -1,0 +1,13 @@
+{
+    "value": {
+        "main": {
+            "Manifest-Version": "1.0",
+            "Created-By": "Mill 0.11.5",
+            "Tool": "Mill-0.11.5",
+            "Main-Class": "freechips.rocketchip.diplomacy.Main"
+        },
+        "groups": {}
+    },
+    "valueHash": 1734429948,
+    "inputsHash": -293139467
+}

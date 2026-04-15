@@ -1,0 +1,9 @@
+{
+    "value": [
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/compile-resources",
+        "ref:v0:2892e0a5:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/resources",
+        "ref:v0:4d2e2f14:/home/yongfu/proj/score/tools/rocket-chip/out/foreign-modules/dependencies/chisel/build/plugin/2.13.12/compile.dest/classes"
+    ],
+    "valueHash": 1521624337,
+    "inputsHash": -1178087866
+}

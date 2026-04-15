@@ -1,0 +1,19 @@
+{
+    "value": {
+        "main": {
+            "Licenses": "Apache-2.0 (Apache License 2.0)",
+            "URL": "https://www.chisel-lang.org",
+            "Manifest-Version": "1.0",
+            "Implementation-Version": "5.0-SNAPSHOT",
+            "Description": "plugin",
+            "Implementation-Vendor": "org.chipsalliance",
+            "Implementation-Title": "plugin",
+            "Scala-Version": "2.13.12",
+            "Created-By": "Mill 0.11.5",
+            "Tool": "Mill-0.11.5"
+        },
+        "groups": {}
+    },
+    "valueHash": -1586930066,
+    "inputsHash": -598496159
+}

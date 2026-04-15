@@ -1,0 +1,9 @@
+{
+    "value": [
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/diplomacy/diplomacy/compile-resources",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/diplomacy/diplomacy/resources",
+        "ref:v0:f0adcf64:/home/yongfu/proj/score/tools/rocket-chip/out/diplomacy/6.7.0/compile.dest/classes"
+    ],
+    "valueHash": 380221890,
+    "inputsHash": 348415351
+}

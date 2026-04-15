@@ -1,0 +1,14 @@
+{
+    "value": [
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/macros/compile-resources",
+        "ref:v0:5778bdf9:/home/yongfu/proj/score/tools/rocket-chip/out/macros/compile.dest/classes",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/hardfloat/hardfloat/compile-resources",
+        "ref:v0:566c994f:/home/yongfu/proj/score/tools/rocket-chip/out/hardfloat/6.7.0/compile.dest/classes",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/diplomacy/diplomacy/compile-resources",
+        "ref:v0:f0adcf64:/home/yongfu/proj/score/tools/rocket-chip/out/diplomacy/6.7.0/compile.dest/classes",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/cde/cde/compile-resources",
+        "ref:v0:3837b465:/home/yongfu/proj/score/tools/rocket-chip/out/cde/compile.dest/classes"
+    ],
+    "valueHash": -863920277,
+    "inputsHash": 1314557917
+}

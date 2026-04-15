@@ -1,0 +1,13 @@
+{
+    "value": [
+        "ref:v0:97b300ce:/home/yongfu/proj/score/tools/rocket-chip/dependencies/hardfloat/common.sc",
+        "ref:v0:f18a6578:/home/yongfu/proj/score/tools/rocket-chip/dependencies/diplomacy/common.sc",
+        "ref:v0:fcb8a0ae:/home/yongfu/proj/score/tools/rocket-chip/dependencies/cde/common.sc",
+        "ref:v0:19daa121:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/common.sc",
+        "ref:v0:a323e437:/home/yongfu/proj/score/tools/rocket-chip/common.sc",
+        "ref:v0:89308208:/home/yongfu/proj/score/tools/rocket-chip/build.sc",
+        "ref:v0:f48f7bf5:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/build.sc"
+    ],
+    "valueHash": -1907724272,
+    "inputsHash": 959040756
+}

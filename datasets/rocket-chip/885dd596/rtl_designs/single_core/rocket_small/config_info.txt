@@ -1,0 +1,8 @@
+Configuration: rocket_small
+Category: single_core
+Rocket Chip Class: freechips.rocketchip.system.DefaultSmallConfig
+Generated: Thu Apr 16 02:28:05 AM +08 2026
+Generator: Rocket Chip Generator (Chisel/FIRRTL)
+Description: RISC-V processor configuration generated from Rocket Chip
+Build Method: Multiple mill targets (mfccompiler.compile, generator.elaborate, generator.chirrtl)
+Files Generated: 14
