@@ -166,9 +166,13 @@ install_ibex_system_dependencies() {
                 curl wget git autoconf flex bison make gcc-c++ zlib-devel \
                 python3 python3-pip python3-devel \
                 elfutils-libelf-devel dtc xz \
-                cairo-devel pkgconfig srecord; then
+                cairo-devel pkgconfig; then
                 print_error "$pm install failed"
                 return 1
+            fi
+            if ! run_priv "$pm" install -y srecord; then
+                print_warning "Optional package 'srecord' is unavailable in current repos."
+                print_warning "Install srecord manually (or enable additional repos) if you need run-simple-system/compliance regression."
             fi
             ;;
         arch)

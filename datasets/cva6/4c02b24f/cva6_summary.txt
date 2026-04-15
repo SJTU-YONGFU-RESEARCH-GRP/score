@@ -1,0 +1,20 @@
+cva6 SCORE snapshot (pulp-platform/cva6)
+Generated (UTC): 2026-04-15 03:31:04
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/cva6
+Dataset workdir: /home/yongfu/proj/score/datasets/cva6/4c02b24f/source_snapshot
+Git commit (short): 4c02b24f
+Git commit (full): 4c02b24fe7c04690f626776a92274da24f80d1da
+bender: bender 0.31.0
+verilator: Verilator 5.022 2024-02-24 rev fedora-5.022
+
+Verification (see /home/yongfu/proj/score/datasets/cva6/4c02b24f/verification/verification_summary.txt):
+  Bender.lock path check: PASS
+  bender flist-plus (common_cells): PASS
+  Verilator lint (stream_fifo): PASS
+  Verilator binary (elaboration): PASS
+  Verilator simulation (testbench): PASS
+
+See https://github.com/pulp-platform/cva6 and tools/cva6/README.md
+Bundle path: /home/yongfu/proj/score/datasets/cva6/4c02b24f/source_snapshot

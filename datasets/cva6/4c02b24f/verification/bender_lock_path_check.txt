@@ -1,0 +1,8 @@
+bender path <pkg> for each Bender.lock package (from /home/yongfu/proj/score/datasets/cva6/4c02b24f/source_snapshot/Bender.lock)
+---
+OK  axi
+OK  common_cells
+OK  common_verification
+OK  fpnew
+OK  fpu_div_sqrt_mvp
+OK  tech_cells_generic

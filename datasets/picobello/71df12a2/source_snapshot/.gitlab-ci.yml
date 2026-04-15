@@ -1,0 +1,151 @@
+# Copyright 2025 ETH Zurich and University of Bologna.
+# Licensed under the Apache License, Version 2.0, see LICENSE for details.
+# SPDX-License-Identifier: Apache-2.0
+
+include:
+  - local: .gitlab/common.yml
+  - local: .gitlab/sw-tests.yml
+
+default:
+  interruptible: true
+
+stages:
+  - init
+  - build
+  - run
+
+# Sources the environment variables for the IIS environment
+.init-env:
+  before_script:
+    # Hard link cached python packages since the UV cache directory
+    # is configured to be on the same filesystem as the build directory in the CI.
+    - export UV_CACHE_DIR=$CI_BUILDS_DIR/../cache/uv
+    - export UV_LINK_MODE=hardlink
+    - source iis-env.sh
+
+##################
+# Initialization #
+##################
+
+init-deps:
+  stage: init
+  extends:
+    - .init-env
+    - .init-deps-tpl
+  artifacts:
+    paths:
+      - pd/ci.yml
+
+########################################
+# Generate RTL Sources and Addressmaps #
+########################################
+
+generate-rtl:
+  stage: build
+  extends:
+    - .generate-rtl-tpl
+
+########################
+# Build Software Tests #
+########################
+
+sn-sw:
+  stage: build
+  extends:
+    - .sn-sw-tpl
+
+chs-sw:
+  stage: build
+  extends:
+    - .chs-sw-tpl
+
+#####################
+# Build Simulations #
+#####################
+
+vsim-compile:
+  stage: build
+  extends:
+    - .cache-deps
+    - .init-env
+  needs:
+    - generate-rtl
+  extends:
+    - .init-env
+  script:
+    - make vsim-compile | tee compile.log 2>&1
+    - '! grep "\*\* Error" compile.log'
+  artifacts:
+    paths:
+      - target/sim/vsim/work
+    expire_in: 1 day
+
+###################
+# Run simulations #
+###################
+
+sim-vsim:
+  stage: run
+  extends:
+    - .cache-deps
+    - .init-env
+    - .sw-tests
+  variables:
+    LOG_FILE: target/sim/vsim/transcript
+  needs:
+    - chs-sw
+    - sn-sw
+    - vsim-compile
+  script:
+    # Run the simulation
+    - make vsim-run-batch-verify
+    # Check either success or failure for non-zero exit codes
+    - 'if [ -z "${NZ_EXIT_CODE}" ]; then grep "] SUCCESS" transcript || (exit 1); else grep "] FAILED: return code ${NZ_EXIT_CODE}" transcript || (exit 1); fi'
+    # Check for UART output
+    - 'if [ ! -z "${USTR}" ]; then (grep " \[UART\] ${USTR}" transcript); fi'
+    # Check for any fatal errors
+    - 'if grep "Fatal:" transcript; then exit 1; fi'
+    # Check for any non-fatal errors. One and only one error is expected with a non-zero exit code.
+    # Ignore all errors when using a separate verification script.
+    - 'if [ -z "${VERIFY_PY}" ]; then if [ ! -z "${NZ_EXIT_CODE}" ]; then count=$(grep -c "Error:" transcript); if [ "$count" -ne 1 ]; then exit 1; fi; else if grep -q "Error:" transcript; then exit 1; fi; fi; fi'
+  artifacts:
+    paths:
+      - transcript
+
+#####################
+# Run Experiments   #
+#####################
+
+sim-exps:
+  stage: run
+  extends:
+    - .cache-deps
+    - .init-env
+  needs:
+    - chs-sw
+    - sn-sw
+    - vsim-compile
+  parallel:
+    matrix:
+      - EXPERIMENT: multicast
+      - EXPERIMENT: reduction
+      - EXPERIMENT: barrier
+  script:
+    - cd experiments/$EXPERIMENT && ./experiments.py --ci --actions sw run -j
+  artifacts:
+    expire_in: 7 days
+
+###################
+# Physical Design #
+###################
+
+subpipe:
+  stage: build
+  interruptible: true
+  needs:
+    - init-deps
+  trigger:
+    include:
+      - artifact: pd/ci.yml
+        job: init-deps
+    strategy: depend

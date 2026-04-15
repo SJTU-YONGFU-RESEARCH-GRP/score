@@ -167,17 +167,29 @@ run_spatz_rtl_verify_lint() {
     mkdir -p "$SPATZ_CLUSTER_DIR/work-vlt"
     bender_line="$(cd "$SPATZ_CLUSTER_DIR" && make -n verilate 2>/dev/null | grep -F ' script verilator ' | head -1 || true)"
     if [[ -z "$bender_line" ]]; then
-        err "RTL verify (lint): could not extract 'bender script verilator' from make -n verilate"
-        return 1
+        warn "RTL verify (lint): could not extract 'bender script verilator' from make -n verilate; using fallback command."
+        info "RTL verify: writing Verilator file list (fallback bender script verilator)"
+        (
+            cd "$SPATZ_CLUSTER_DIR" && "$SPATZ_BENDER" script verilator \
+                -t rtl -t spatz -t spatz_test -t snitch_test \
+                --define COMMON_CELLS_ASSERTS_OFF \
+                > work-vlt/files
+        )
+    else
+        info "RTL verify: writing Verilator file list (bender script verilator)"
+        (cd "$SPATZ_CLUSTER_DIR" && eval "$bender_line")
     fi
-    info "RTL verify: writing Verilator file list (bender script verilator)"
-    (cd "$SPATZ_CLUSTER_DIR" && eval "$bender_line")
     vlt_line="$(cd "$SPATZ_CLUSTER_DIR" && make -n verilate 2>/dev/null | grep 'verilator_bin' | head -1 || true)"
     if [[ -z "$vlt_line" ]]; then
-        err "RTL verify (lint): could not extract verilator_bin command from make -n verilate"
-        return 1
+        warn "RTL verify (lint): could not extract verilator command from make -n verilate; using fallback Verilator --lint-only command."
+        # Mirror util/Makefrag VLT_FLAGS as closely as possible so lint behavior matches upstream.
+        vlt_cmd="verilator --lint-only --timing --unroll-count 1024 \
+            -Wno-BLKANDNBLK -Wno-LITENDIAN -Wno-CASEINCOMPLETE -Wno-COMBDLY -Wno-CMPCONST \
+            -Wno-WIDTH -Wno-WIDTHCONCAT -Wno-UNSIGNED -Wno-UNOPTFLAT -Wno-MODDUP -Wno-PINMISSING \
+            -Wno-fatal -f work-vlt/files --top-module testharness"
+    else
+        vlt_cmd="$(echo "$vlt_line" | sed 's/verilator_bin/verilator_bin --lint-only/; s/ --cc//g; s/ --build//g; s/ -j[[:space:]][0-9]*//g')"
     fi
-    vlt_cmd="$(echo "$vlt_line" | sed 's/verilator_bin/verilator_bin --lint-only/; s/ --cc//g; s/ --build//g; s/ -j[[:space:]][0-9]*//g')"
     info "RTL verify: Verilator --lint-only (see $VERIFY_LOG)"
     set +e
     (cd "$SPATZ_CLUSTER_DIR" && eval "$vlt_cmd") >"$VERIFY_LOG" 2>&1
