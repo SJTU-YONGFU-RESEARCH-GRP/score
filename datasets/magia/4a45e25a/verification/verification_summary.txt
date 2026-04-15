@@ -1,0 +1,16 @@
+MAGIA verification summary
+Generated (UTC): 2026-04-15 11:39:29
+Dataset: /home/yongfu/proj/score/datasets/magia/4a45e25a
+
+Checks:
+  Deps vs Bender.lock: PASS
+  bender flist-plus (Verilator view): PASS
+  Verilator lint: FAIL
+  Verilator elaboration: FAIL
+  Verilator simulation: FAIL
+
+Artifacts:
+  flist: /home/yongfu/proj/score/datasets/magia/4a45e25a/verification/magia_dv.flist
+  lint log: /home/yongfu/proj/score/datasets/magia/4a45e25a/verification/verilator_lint.log
+  elaboration log: /home/yongfu/proj/score/datasets/magia/4a45e25a/verification/verilator_elab.log
+  simulation log: /home/yongfu/proj/score/datasets/magia/4a45e25a/verification/verilator_sim.log
