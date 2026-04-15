@@ -1,0 +1,21 @@
+pulpissimo SCORE snapshot (pulp-platform/pulpissimo)
+Generated (UTC): 2026-04-15 18:10:22
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/pulpissimo
+Git commit (short): bfc3d9a1
+Git commit (full): bfc3d9a1ef72443464509a22d948f0a6f5b65b4c
+bender (PATH): bender 0.31.0
+
+Verification:
+  Deps vs Bender.lock: PASS
+  Representative RTL files listed: 200
+  Testbench artifact: /home/yongfu/proj/score/datasets/pulpissimo/bfc3d9a1/rtl_designs/pulpissimo_snapshot/pulpissimo_smoke_tb.sv
+  Verilator lint: PASS
+  Logs: /home/yongfu/proj/score/datasets/pulpissimo/bfc3d9a1/verification/
+
+See https://github.com/pulp-platform/pulpissimo and tools/pulpissimo/README.md
+Bundle path: /home/yongfu/proj/score/datasets/pulpissimo/bfc3d9a1/source_snapshot
+RTL path: /home/yongfu/proj/score/datasets/pulpissimo/bfc3d9a1/rtl_designs/pulpissimo_snapshot
+Verification summary: /home/yongfu/proj/score/datasets/pulpissimo/bfc3d9a1/verification/verification_summary.txt
+Generation log: /home/yongfu/proj/score/datasets/pulpissimo/bfc3d9a1/logs/generate_20260416_021022.log

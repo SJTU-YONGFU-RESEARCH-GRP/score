@@ -1,0 +1,5 @@
+project: pulpissimo
+config_name: pulpissimo_snapshot
+generation_date_utc: 2026-04-15 18:10:22
+git_commit_short: bfc3d9a1
+source_snapshot: /home/yongfu/proj/score/datasets/pulpissimo/bfc3d9a1/source_snapshot
