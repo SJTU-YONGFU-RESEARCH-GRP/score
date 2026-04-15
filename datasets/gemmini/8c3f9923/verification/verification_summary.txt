@@ -1,0 +1,12 @@
+gemmini RTL verification summary (SCORE)
+Generated (UTC): 2026-04-15 11:39:51
+
+Configuration builds (simulator=vlt): FAIL
+Successful configurations: 0
+Failed configurations: 3
+Verilator-backed make runs attempted: 3
+
+Notes:
+  SCORE Gemmini flow currently relies on Chipyard simulator builds for verification.
+  Inspect per-config logs under /home/yongfu/proj/score/datasets/gemmini/8c3f9923/logs/ for tool output and failure causes.
+Logs: /home/yongfu/proj/score/datasets/gemmini/8c3f9923/logs/

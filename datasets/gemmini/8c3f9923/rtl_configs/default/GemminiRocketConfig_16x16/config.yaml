@@ -1,0 +1,9 @@
+core_type: default
+config_name: GemminiRocketConfig_16x16
+simulator: vlt
+generation_date: Wed Apr 15 07:39:46 PM +08 2026
+rtl_only: true
+description: "Gemmini default configuration"
+workshop_env: true
+gemmini_home: /home/yongfu/proj/score/datasets/gemmini/workshop/gemmini_env/gemmini
+chipyard_home: /home/yongfu/proj/score/datasets/gemmini/workshop/chipyard
