@@ -1,0 +1,10 @@
+Bender.lock packages vs /home/yongfu/proj/score/tools/ara/hardware/deps
+---
+OK  apb
+OK  axi
+OK  common_cells
+OK  common_verification
+OK  cva6
+OK  fpnew
+OK  fpu_div_sqrt_mvp
+OK  tech_cells_generic

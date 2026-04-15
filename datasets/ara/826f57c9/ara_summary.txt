@@ -1,0 +1,21 @@
+ara SCORE snapshot (pulp-platform/ara)
+Generated (UTC): 2026-04-15 07:14:00
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/ara
+Git commit (short): 826f57c9
+Git commit (full): 826f57c9f8b29688d57b1e2b42786b0af88ac199
+bender (PATH): bender 0.31.0
+
+Verification:
+  Deps vs Bender.lock: PASS
+  bender flist-plus (Verilator view): PASS
+  Verilator lint: PASS
+  Verilator elaboration: N/A
+  Verilator simulation: N/A
+  Logs: /home/yongfu/proj/score/datasets/ara/826f57c9/verification/
+
+Upstream hardware sim: cd tools/ara/hardware && make compile (Questa) or make verilate (Verilator; needs install/verilator per upstream).
+See https://github.com/pulp-platform/ara and tools/ara/README.md
+Bundle path: /home/yongfu/proj/score/datasets/ara/826f57c9/source_snapshot
+Generation log: /home/yongfu/proj/score/logs/ara_generation/generation_20260415_150545.log
