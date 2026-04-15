@@ -118,6 +118,8 @@ TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 SESSION_LOG="$LOG_DIR/generate_${TIMESTAMP}.log"
 VERIFICATION_RESULTS_FILE="$VERIFICATION_DIR/verification_results_${TIMESTAMP}.txt"
 VERILATOR_LOG="$VERIFICATION_DIR/pulp_cluster_smoke_verilator_lint.log"
+FULL_RTL_FLIST="$VERIFICATION_DIR/pulp_cluster_full_rtl.flist"
+FULL_RTL_VERILATOR_LOG="$VERIFICATION_DIR/pulp_cluster_full_verilator_lint.log"
 
 mkdir -p "$LOG_DIR"
 mkdir -p "$VERIFICATION_DIR"
@@ -215,7 +217,37 @@ else
     echo "verilator not found on PATH" > "$VERILATOR_LOG"
 fi
 
-echo "pulp_cluster_smoke|${VERILATOR_STATUS}|verilator_lint|$VERILATOR_LOG|$RTL_DIR/pulp_cluster_smoke_tb.sv" > "$VERIFICATION_RESULTS_FILE"
+FULL_RTL_STATUS="SKIP"
+if command_exists verilator; then
+    pushd "$PULP_CLUSTER_DIR" >/dev/null
+    bender script flist-plus --no-default-target \
+        -t rtl -t mchan -t cluster_standalone -t scm_use_fpga_scm -t cv32e40p_use_ff_regfile \
+        > "$FULL_RTL_FLIST"
+    set +e
+    verilator --lint-only -Wall -Wno-fatal --timing \
+        --top-module pulp_cluster_tb \
+        -F "$FULL_RTL_FLIST" \
+        tb/mock_uart.sv tb/mock_uart_axi.sv tb/pulp_cluster_tb.sv >"$FULL_RTL_VERILATOR_LOG" 2>&1
+    full_vlt_rc=$?
+    set -e
+    popd >/dev/null
+    if [[ $full_vlt_rc -eq 0 ]]; then
+        FULL_RTL_STATUS="PASS"
+    else
+        FULL_RTL_STATUS="FAIL"
+    fi
+else
+    echo "verilator not found on PATH" > "$FULL_RTL_VERILATOR_LOG"
+fi
+
+{
+    echo "pulp_cluster_smoke|${VERILATOR_STATUS}|verilator_lint|$VERILATOR_LOG|$RTL_DIR/pulp_cluster_smoke_tb.sv"
+    echo "pulp_cluster_full_tb|${FULL_RTL_STATUS}|verilator_lint|$FULL_RTL_VERILATOR_LOG|$PULP_CLUSTER_DIR/tb/pulp_cluster_tb.sv"
+} > "$VERIFICATION_RESULTS_FILE"
+
+verification_pass=$(awk -F'|' '$2=="PASS"{c++} END{print c+0}' "$VERIFICATION_RESULTS_FILE")
+verification_fail=$(awk -F'|' '$2=="FAIL"{c++} END{print c+0}' "$VERIFICATION_RESULTS_FILE")
+verification_skip=$(awk -F'|' '$2=="SKIP"{c++} END{print c+0}' "$VERIFICATION_RESULTS_FILE")
 
 SUMMARY="$DATASET_DIR/pulp_cluster_summary.txt"
 {
@@ -232,7 +264,8 @@ SUMMARY="$DATASET_DIR/pulp_cluster_summary.txt"
     echo "  Deps vs Bender.lock: $( [[ "${SKIP_CHECKOUT:-false}" == true ]] && echo SKIPPED_BY_FLAG || echo PASS )"
     echo "  Representative RTL files listed: $(wc -l < "$RTL_DIR/filelist.f" 2>/dev/null || echo 0)"
     echo "  Testbench artifact: $RTL_DIR/pulp_cluster_smoke_tb.sv"
-    echo "  Verilator lint: ${VERILATOR_STATUS}"
+    echo "  Verilator lint (smoke): ${VERILATOR_STATUS}"
+    echo "  Verilator lint (full tb): ${FULL_RTL_STATUS}"
     echo "  Logs: $VERIFICATION_DIR/"
     echo ""
     echo "See https://github.com/pulp-platform/pulp_cluster and tools/pulp-cluster/README.md"
@@ -250,27 +283,15 @@ SUMMARY="$DATASET_DIR/pulp_cluster_summary.txt"
     echo "Checks:"
     echo "  Verilog RTL presence: PASS"
     echo "  Testbench artifacts generated: PASS"
-    case "$VERILATOR_STATUS" in
-        PASS)
-            echo "  Verilator lint PASS: 1"
-            echo "  Verilator lint FAIL: 0"
-            echo "  Verilator lint SKIP: 0"
-            ;;
-        FAIL)
-            echo "  Verilator lint PASS: 0"
-            echo "  Verilator lint FAIL: 1"
-            echo "  Verilator lint SKIP: 0"
-            ;;
-        *)
-            echo "  Verilator lint PASS: 0"
-            echo "  Verilator lint FAIL: 0"
-            echo "  Verilator lint SKIP: 1"
-            ;;
-    esac
+    echo "  Verilator lint PASS: $verification_pass"
+    echo "  Verilator lint FAIL: $verification_fail"
+    echo "  Verilator lint SKIP: $verification_skip"
     echo ""
     echo "Artifacts:"
     echo "  verification results: $VERIFICATION_RESULTS_FILE"
-    echo "  verilator lint log: $VERILATOR_LOG"
+    echo "  verilator lint log (smoke): $VERILATOR_LOG"
+    echo "  verilator lint log (full tb): $FULL_RTL_VERILATOR_LOG"
+    echo "  full rtl flist: $FULL_RTL_FLIST"
     echo "  verification logs dir: $VERIFICATION_DIR"
     echo "  session log: $SESSION_LOG"
 } > "$VERIFICATION_DIR/verification_summary.txt"
