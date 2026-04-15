@@ -13,6 +13,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 IBEX_SUBMODULE="tools/ibex"
+IBEX_FALLBACK_URL="${IBEX_FALLBACK_URL:-https://github.com/lowRISC/ibex.git}"
 INSTALL_SCRIPT="$SCRIPT_DIR/install_ibex.sh"
 GENERATE_SCRIPT="$SCRIPT_DIR/generate_ibex.sh"
 
@@ -66,9 +67,12 @@ EOF
 }
 
 validate_root() {
-    if [[ ! -f "$PROJECT_ROOT/.gitmodules" ]] || [[ ! -d "$PROJECT_ROOT/scripts" ]]; then
+    if [[ ! -d "$PROJECT_ROOT/scripts" ]]; then
         err "Run this script from the SCORE repo: cd /path/to/score && ./scripts/run_ibex.sh"
         exit 1
+    fi
+    if [[ ! -f "$PROJECT_ROOT/.gitmodules" ]]; then
+        warn "No .gitmodules at repo root; using fallback URL for ${IBEX_SUBMODULE}: ${IBEX_FALLBACK_URL}"
     fi
     if [[ ! -f "$INSTALL_SCRIPT" ]]; then
         err "Missing $INSTALL_SCRIPT"
@@ -136,7 +140,20 @@ fi
 
 # --- Step 1: submodules ---
 if [[ "$SKIP_SUBMODULE" != true ]]; then
-    score_prepare_tool_checkout "$PROJECT_ROOT" "$IBEX_SUBMODULE"
+    if score_is_tracked_submodule_path "$IBEX_SUBMODULE"; then
+        score_prepare_tool_checkout "$PROJECT_ROOT" "$IBEX_SUBMODULE"
+    else
+        warn "Submodule path '$IBEX_SUBMODULE' is not tracked in this checkout; bootstrapping this checkout directly."
+        info "Step 1/3: bootstrap $IBEX_SUBMODULE from .gitmodules URL (or fallback)"
+        if [[ ! -d "$PROJECT_ROOT/$IBEX_SUBMODULE" ]]; then
+            # Ibex may be intentionally absent from .gitmodules in some SCORE checkouts.
+            # Provide a stable public fallback URL so run_ibex.sh remains self-contained.
+            if ! score_bootstrap_missing_checkout "$PROJECT_ROOT" "$IBEX_SUBMODULE"; then
+                warn "No .gitmodules URL for $IBEX_SUBMODULE; trying fallback URL: $IBEX_FALLBACK_URL"
+                git clone "$IBEX_FALLBACK_URL" "$PROJECT_ROOT/$IBEX_SUBMODULE"
+            fi
+        fi
+    fi
     ok "Submodules ready."
 else
     warn "Skipped submodule step."

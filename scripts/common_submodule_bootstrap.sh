@@ -74,17 +74,12 @@ score_prepare_tool_checkout() {
             git submodule update --init --recursive "$path"
         else
             if declare -F warn >/dev/null 2>&1; then
-                warn "Submodule path '${path}' is not tracked in this checkout; syncing all submodules instead."
+                warn "Submodule path '${path}' is not tracked in this checkout; bootstrapping this checkout directly."
             fi
             if declare -F info >/dev/null 2>&1; then
-                info "Step 1/3: git submodule sync --recursive && git submodule update --init --recursive"
+                info "Step 1/3: bootstrap ${path} from .gitmodules URL"
             fi
-            git submodule sync --recursive
-            git submodule update --init --recursive
             if [[ ! -d "$path" ]]; then
-                if declare -F warn >/dev/null 2>&1; then
-                    warn "${path} is still missing after submodule update; bootstrapping plain git checkout."
-                fi
                 score_bootstrap_missing_checkout "$project_root" "$path" ""
             fi
         fi
