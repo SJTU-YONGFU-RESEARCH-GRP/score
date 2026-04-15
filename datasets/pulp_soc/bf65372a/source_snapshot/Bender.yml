@@ -1,0 +1,88 @@
+package:
+  name: pulp_soc
+  authors:
+    - "Robert Balas <balasr@iis.ee.ethz.ch>"
+    - "Pasquale Davide Schiavone <pschiavo@iis.ee.ethz.ch>"
+    - "Germain Haugou <haugoug@iis.ee.ethz.ch>"
+    - "Francesco Conti <f.conti@unibo.it>"
+    - "Pirmin Vogel <vogelpi@lowrisc.org>"
+    - "Stefan Mach <smach@iis.ee.ethz.ch>"
+    - "Antonio Pullini <pullinia@iis.ee.ethz.ch>"
+    - "Gianmarco Ottavi <gianmarco.ottavi2@unibo.it>"
+    - "Manuel Eggimann <meggiman@iis.ee.ethz.ch>"
+    - "Luca Valente <luca.valente2@unibo.it>"
+
+dependencies:
+  apb:                    { git: "https://github.com/pulp-platform/apb.git", version:  0.2.2 }
+  adv_dbg_if:             { git: "https://github.com/pulp-platform/adv_dbg_if.git", version: 0.0.2 }
+  apb2per:                { git: "https://github.com/pulp-platform/apb2per.git", version: 0.1.0 }
+  apb_adv_timer:          { git: "https://github.com/pulp-platform/apb_adv_timer.git", version: 1.0.4 }
+  apb_interrupt_cntrl:    { git: "https://github.com/pulp-platform/apb_interrupt_cntrl.git", version: 0.2.0 }
+  axi:                    { git: "https://github.com/pulp-platform/axi.git", version: 0.39.2 }
+  timer_unit:             { git: "https://github.com/pulp-platform/timer_unit.git", version: 1.0.2 }
+  common_cells:           { git: "https://github.com/pulp-platform/common_cells.git", version: 1.21.0 }
+  cluster_interconnect:   { git: "https://github.com/pulp-platform/cluster_interconnect.git", version: 1.1.1 }
+  fpnew:                  { git: "https://github.com/pulp-platform/cvfpu.git", rev: pulp-v0.1.3 }
+  jtag_pulp:              { git: "https://github.com/pulp-platform/jtag_pulp.git", version: 0.2.0 }
+  cv32e40p:               { git: "https://github.com/pulp-platform/cv32e40p.git", rev: "7a49867b2232d97344cde1b8a1e05bcb38634894"}
+  ibex:                   { git: "https://github.com/pulp-platform/ibex.git", rev: "pulpissimo-v6.1.2" }
+  scm:                    { git: "https://github.com/pulp-platform/scm.git", version: 1.0.1}
+  tech_cells_generic:     { git: "https://github.com/pulp-platform/tech_cells_generic.git", version: 0.2.3 }
+  pulp_io:                { git: "https://github.com/pulp-platform/pulp-io.git", version: 0.1.0 }
+  hwpe-mac-engine:        { git: "https://github.com/pulp-platform/hwpe-mac-engine.git", version: 1.3.3 }
+  riscv-dbg:              { git: "https://github.com/pulp-platform/riscv-dbg.git", version: 0.5.0 }
+  register_interface:     { git: "https://github.com/pulp-platform/register_interface.git", version: 0.4.1 }
+
+sources:
+  # pulp_soc
+  - include_dirs:
+      - rtl/include
+    files:
+      - rtl/pulp_soc/pkg_soc_interconnect.sv
+      - rtl/pulp_soc/contiguous_crossbar.sv
+      - rtl/pulp_soc/interleaved_crossbar.sv
+      - rtl/pulp_soc/tcdm_demux.sv
+      - rtl/pulp_soc/boot_rom.sv
+      - rtl/pulp_soc/l2_ram_multi_bank.sv
+      - rtl/pulp_soc/lint_jtag_wrap.sv
+      - rtl/pulp_soc/soc_event_arbiter.sv
+      - rtl/pulp_soc/soc_event_generator.sv
+      - rtl/pulp_soc/soc_event_queue.sv
+      - rtl/pulp_soc/tcdm_error_slave.sv
+      - rtl/pulp_soc/soc_interconnect.sv
+      - rtl/pulp_soc/soc_interconnect_wrap.sv
+      - rtl/pulp_soc/soc_ctrl_reg/src/soc_ctrl_reg_pkg.sv
+      - rtl/pulp_soc/soc_ctrl_reg/src/soc_ctrl_reg_top.sv
+      - rtl/pulp_soc/soc_peripherals.sv
+      - rtl/pulp_soc/jtag_tap_top.sv
+      - rtl/pulp_soc/pulp_soc.sv
+  # fc
+  - target: rtl
+    defines:
+      TRACE_EXECUTION: ~
+    files:
+      - rtl/fc/fc_demux.sv
+      - rtl/fc/fc_subsystem.sv
+      - rtl/fc/fc_hwpe.sv
+      - rtl/fc/cv32e40p_fp_wrapper.sv
+  - target: not(rtl)
+    files:
+      - rtl/fc/fc_demux.sv
+      - rtl/fc/fc_subsystem.sv
+      - rtl/fc/fc_hwpe.sv
+      - rtl/fc/cv32e40p_fp_wrapper.sv
+  # components
+  - files:
+      - rtl/components/pulp_interfaces.sv
+      - rtl/components/tcdm_arbiter_2x1.sv
+      - rtl/components/obi_pulp_adapter.sv
+  # components_behav
+  - files:
+      - rtl/components/tb_fs_handler.sv
+    target: all(rtl, not(synthesis))
+external_import:
+  - name: reggen
+    target_dir: "util"
+    upstream: { git: "https://github.com/pulp-platform/register_interface.git", rev: "e3a4955071fcf554febd4b29a7c7a52c7f1e7fc6"}
+    mapping:
+      - { from: 'vendor/lowrisc_opentitan/util', to: 'reggen'}

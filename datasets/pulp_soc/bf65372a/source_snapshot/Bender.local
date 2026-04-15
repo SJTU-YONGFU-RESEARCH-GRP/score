@@ -1,0 +1,4 @@
+# Written by SCORE generate_pulp_soc.sh — transitive gpio vs axi fix (do not commit in submodule).
+# Override revision: env PULP_SOC_GPIO_OVERRIDE_REV (default pinned gpio master).
+overrides:
+  gpio: { git: "https://github.com/pulp-platform/gpio.git", rev: "8a9e71e64b588c49f66794fa655e35d4ccb038cb" }
