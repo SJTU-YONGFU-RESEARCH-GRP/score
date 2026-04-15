@@ -1,0 +1,22 @@
+rv_tracer SCORE snapshot (pulp-platform/rv-tracer)
+Generated (UTC): 2026-04-15 10:58:14
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/rv-tracer
+Git commit (short): b7e65fd7
+Git commit (full): b7e65fd780ae76eeb7dc5ad67851d1fb00804929
+bender (PATH): bender 0.31.0
+verilator: Verilator 5.022 2024-02-24 rev fedora-5.022
+
+Verification:
+  Deps vs Bender.lock: PASS
+  bender flist-plus (Verilator view): N/A
+  Verilator lint: N/A
+  Verilator elaboration: N/A
+  Verilator simulation: pass
+  Notes: SCORE backend is Verilator smoke simulation; upstream run uses Questa via make run.
+  Simulation log: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/logs/verilator_smoke_20260415_185805.log
+  Logs: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/logs/
+
+Bundle path: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/source_snapshot
+Generation log: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/logs/generate_20260415_185805.log

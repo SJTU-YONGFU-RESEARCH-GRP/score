@@ -1,0 +1,17 @@
+/home/yongfu/proj/score/tools/rv-tracer/.bender/git/checkouts/common_cells-186fa784a0cf8091/src/counter.sv
+/home/yongfu/proj/score/tools/rv-tracer/.bender/git/checkouts/common_cells-186fa784a0cf8091/src/cf_math_pkg.sv
+/home/yongfu/proj/score/tools/rv-tracer/.bender/git/checkouts/common_cells-186fa784a0cf8091/src/sync.sv
+/home/yongfu/proj/score/tools/rv-tracer/.bender/git/checkouts/common_cells-186fa784a0cf8091/src/sync_wedge.sv
+/home/yongfu/proj/score/tools/rv-tracer/.bender/git/checkouts/common_cells-186fa784a0cf8091/src/edge_detect.sv
+/home/yongfu/proj/score/tools/rv-tracer/.bender/git/checkouts/tech_cells_generic-fa17af1d6ab1fe36/src/rtl/tc_clk.sv
+/home/yongfu/proj/score/tools/rv-tracer/.bender/git/checkouts/tech_cells_generic-fa17af1d6ab1fe36/src/deprecated/pulp_clk_cells.sv
+/home/yongfu/proj/score/tools/rv-tracer/include/te_pkg.sv
+/home/yongfu/proj/score/tools/rv-tracer/rtl/te_branch_map.sv
+/home/yongfu/proj/score/tools/rv-tracer/rtl/te_filter.sv
+/home/yongfu/proj/score/tools/rv-tracer/rtl/te_packet_emitter.sv
+/home/yongfu/proj/score/tools/rv-tracer/rtl/lzc.sv
+/home/yongfu/proj/score/tools/rv-tracer/rtl/te_priority.sv
+/home/yongfu/proj/score/tools/rv-tracer/rtl/te_reg.sv
+/home/yongfu/proj/score/tools/rv-tracer/rtl/te_resync_counter.sv
+/home/yongfu/proj/score/tools/rv-tracer/rtl/rv_tracer.sv
+/home/yongfu/proj/score/scripts/assets/rv_tracer/rv_tracer_smoke_top.sv
