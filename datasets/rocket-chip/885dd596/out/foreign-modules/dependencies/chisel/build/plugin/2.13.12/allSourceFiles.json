@@ -1,0 +1,13 @@
+{
+    "value": [
+        "ref:v0:fcf924eb:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/scala/chisel3/internal/plugin/BundleComponent.scala",
+        "ref:v0:942d8a44:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/scala/chisel3/internal/plugin/ChiselComponent.scala",
+        "ref:v0:fd7250a6:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/scala/chisel3/internal/plugin/ChiselPlugin.scala",
+        "ref:v0:a0c20a8e:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/scala/chisel3/internal/plugin/ChiselUtils.scala",
+        "ref:v0:7ca235fb:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/scala/chisel3/internal/plugin/DeprecateSFCComponent.scala",
+        "ref:v0:6c3afa66:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/scala/chisel3/internal/plugin/IdentifierComponent.scala",
+        "ref:v0:00dfe979:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/scala/chisel3/internal/sourceinfo/SourceInfoFileResolver.scala"
+    ],
+    "valueHash": 599316475,
+    "inputsHash": -1064005035
+}

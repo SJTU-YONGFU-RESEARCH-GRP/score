@@ -1,0 +1,41 @@
+{
+    "workerCache": {
+        "mill.scalalib.ZincWorkerModule.worker": {
+            "identityHashCode": 1605783571,
+            "inputHash": 929203066
+        }
+    },
+    "evalWatched": [
+        "ref:v0:c0c13676:/home/yongfu/proj/score/tools/rocket-chip/dependencies/hardfloat/hardfloat/src",
+        "ref:v0:8a986196:/home/yongfu/proj/score/tools/rocket-chip/dependencies/diplomacy/diplomacy/src",
+        "ref:v0:2892e0a5:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/resources",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/hardfloat/hardfloat/resources",
+        "ref:v0:bcf881ab:/home/yongfu/proj/score/tools/rocket-chip/src/main/resources",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/cde/cde/resources",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/hardfloat/hardfloat/compile-resources",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/compile-resources",
+        "ref:v0:d85b876c:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/scala",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/java",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/scala-2.13.12",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/scala-2.13",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/scala-2",
+        "ref:v0:6e78ae6c:/home/yongfu/proj/score/tools/rocket-chip/src/main/scala",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/src/main/java",
+        "ref:v0:d85b876c:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/scala",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/java",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/macros/compile-resources",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/compile-resources",
+        "ref:v0:3d5cccfa:/home/yongfu/proj/score/tools/rocket-chip/dependencies/cde/cde/src",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/macros/src/main/resources",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/diplomacy/diplomacy/compile-resources",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/cde/cde/compile-resources",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/diplomacy/diplomacy/resources",
+        "ref:v0:b776fb69:/home/yongfu/proj/score/tools/rocket-chip/macros/src/main/scala",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/macros/src/main/java"
+    ],
+    "moduleWatched": [],
+    "scriptImportGraph": [],
+    "classLoaderIdentity": [],
+    "runClasspath": [],
+    "runClasspathHash": 473519988
+}

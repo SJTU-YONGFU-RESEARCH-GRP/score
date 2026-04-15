@@ -1,0 +1,14 @@
+Rocket Chip RTL Verification Summary
+Generated: Thu Apr 16 02:28:06 AM +08 2026
+
+Total Configurations: 1
+Syntax Verified: 1
+Syntax Errors: 0
+Success Rate: 100%
+
+Verification Tools Used:
+- Verilator: true (SystemVerilog)
+- Icarus Verilog: true (Verilog)
+
+Detailed Results:
+rocket_small_syntax.log

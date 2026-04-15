@@ -1,0 +1,11 @@
+{
+    "value": [
+        "ref:v0:d85b876c:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/scala",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/java",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/scala-2.13.12",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/scala-2.13",
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/plugin/src/main/scala-2"
+    ],
+    "valueHash": 1950521380,
+    "inputsHash": 1569805037
+}

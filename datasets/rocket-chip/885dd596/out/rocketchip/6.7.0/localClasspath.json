@@ -1,0 +1,9 @@
+{
+    "value": [
+        "ref:v0:c984eca8:/home/yongfu/proj/score/tools/rocket-chip/compile-resources",
+        "ref:v0:bcf881ab:/home/yongfu/proj/score/tools/rocket-chip/src/main/resources",
+        "ref:v0:5c59f975:/home/yongfu/proj/score/tools/rocket-chip/out/rocketchip/6.7.0/compile.dest/classes"
+    ],
+    "valueHash": -257107449,
+    "inputsHash": 942147155
+}

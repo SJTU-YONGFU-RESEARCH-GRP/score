@@ -1,0 +1,63 @@
+{
+    "value": [
+        [
+            "/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/common.sc",
+            [
+                1896143463,
+                []
+            ]
+        ],
+        [
+            "/home/yongfu/proj/score/tools/rocket-chip/dependencies/cde/common.sc",
+            [
+                1969727023,
+                []
+            ]
+        ],
+        [
+            "/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/build.sc",
+            [
+                -1018104196,
+                [
+                    "/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/common.sc"
+                ]
+            ]
+        ],
+        [
+            "/home/yongfu/proj/score/tools/rocket-chip/dependencies/diplomacy/common.sc",
+            [
+                -29946154,
+                []
+            ]
+        ],
+        [
+            "/home/yongfu/proj/score/tools/rocket-chip/build.sc",
+            [
+                -610025330,
+                [
+                    "/home/yongfu/proj/score/tools/rocket-chip/dependencies/hardfloat/common.sc",
+                    "/home/yongfu/proj/score/tools/rocket-chip/dependencies/cde/common.sc",
+                    "/home/yongfu/proj/score/tools/rocket-chip/dependencies/diplomacy/common.sc",
+                    "/home/yongfu/proj/score/tools/rocket-chip/dependencies/chisel/build.sc",
+                    "/home/yongfu/proj/score/tools/rocket-chip/common.sc"
+                ]
+            ]
+        ],
+        [
+            "/home/yongfu/proj/score/tools/rocket-chip/common.sc",
+            [
+                -125287427,
+                []
+            ]
+        ],
+        [
+            "/home/yongfu/proj/score/tools/rocket-chip/dependencies/hardfloat/common.sc",
+            [
+                -677676479,
+                []
+            ]
+        ]
+    ],
+    "valueHash": 1838650639,
+    "inputsHash": -244783890
+}

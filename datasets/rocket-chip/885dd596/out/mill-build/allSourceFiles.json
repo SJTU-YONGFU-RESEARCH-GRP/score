@@ -1,0 +1,13 @@
+{
+    "value": [
+        "ref:v0:69f37a79:/home/yongfu/proj/score/tools/rocket-chip/out/mill-build/generateScriptSources.dest/millbuild/dependencies/hardfloat/common.sc",
+        "ref:v0:91242cc4:/home/yongfu/proj/score/tools/rocket-chip/out/mill-build/generateScriptSources.dest/millbuild/dependencies/diplomacy/common.sc",
+        "ref:v0:20fba483:/home/yongfu/proj/score/tools/rocket-chip/out/mill-build/generateScriptSources.dest/millbuild/dependencies/cde/common.sc",
+        "ref:v0:a96195a6:/home/yongfu/proj/score/tools/rocket-chip/out/mill-build/generateScriptSources.dest/millbuild/dependencies/chisel/common.sc",
+        "ref:v0:78583cb5:/home/yongfu/proj/score/tools/rocket-chip/out/mill-build/generateScriptSources.dest/millbuild/dependencies/chisel/build.sc",
+        "ref:v0:2d0c4ace:/home/yongfu/proj/score/tools/rocket-chip/out/mill-build/generateScriptSources.dest/millbuild/common.sc",
+        "ref:v0:3d779132:/home/yongfu/proj/score/tools/rocket-chip/out/mill-build/generateScriptSources.dest/millbuild/build.sc"
+    ],
+    "valueHash": -1831820059,
+    "inputsHash": 1703578053
+}
