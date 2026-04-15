@@ -1,0 +1,5 @@
+project: picobello
+config_name: picobello_snapshot
+generation_date_utc: 2026-04-15 15:16:49
+git_commit_short: 71df12a2
+source_snapshot: /home/yongfu/proj/score/datasets/picobello/71df12a2/source_snapshot
