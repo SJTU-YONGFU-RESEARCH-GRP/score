@@ -1,0 +1,1 @@
+pulp_cluster_smoke|PASS|verilator_lint|/home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/verification/pulp_cluster_smoke_verilator_lint.log|/home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/rtl_designs/pulp_cluster_snapshot/pulp_cluster_smoke_tb.sv
