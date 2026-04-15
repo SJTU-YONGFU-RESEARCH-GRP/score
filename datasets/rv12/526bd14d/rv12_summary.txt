@@ -1,0 +1,26 @@
+rv12 SCORE snapshot (RoaLogic/RV12)
+Generated (UTC): 2026-04-15 10:58:03
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/rv12
+Dataset workdir: /home/yongfu/proj/score/datasets/rv12/526bd14d/rtl_snapshot/rv12
+Git commit (short): 526bd14d
+Git commit (full): 526bd14da6f6eb0bf04460d5d50519f61bcbc84a
+bender (PATH): bender 0.31.0
+verilator: Verilator 5.022 2024-02-24 rev fedora-5.022
+
+Verification (see /home/yongfu/proj/score/datasets/rv12/526bd14d/verification/verification_summary.txt):
+  Deps vs Bender.lock: N/A
+  bender flist-plus (Verilator view): N/A
+  Verilator lint: PASS
+  Verilator elaboration: N/A
+  Verilator simulation: N/A
+  Logs: /home/yongfu/proj/score/datasets/rv12/526bd14d/verification/
+  Lint profile: default
+  Lint extra flags: none
+  Simulation log: /home/yongfu/proj/score/datasets/rv12/526bd14d/verification/verilator_lint_ahb3lite.log
+
+Manifest: /home/yongfu/proj/score/datasets/rv12/526bd14d/manifest.json
+Verification summary: /home/yongfu/proj/score/datasets/rv12/526bd14d/verification/verification_summary.txt
+Bundle path: /home/yongfu/proj/score/datasets/rv12/526bd14d/rtl_snapshot/rv12
+Generation log: /home/yongfu/proj/score/datasets/rv12/526bd14d/logs/session_20260415_185801.log
