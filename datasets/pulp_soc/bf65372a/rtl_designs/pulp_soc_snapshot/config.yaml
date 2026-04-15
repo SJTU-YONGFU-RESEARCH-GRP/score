@@ -1,0 +1,5 @@
+project: pulp_soc
+config_name: pulp_soc_snapshot
+generation_date_utc: 2026-04-15 18:10:18
+git_commit_short: bf65372a
+source_snapshot: /home/yongfu/proj/score/datasets/pulp_soc/bf65372a/source_snapshot
