@@ -1,0 +1,33 @@
+bender path <pkg> for each Bender.lock package (from /home/yongfu/proj/score/datasets/chimera/208b36ef/source_snapshot/Bender.lock)
+---
+OK  apb
+OK  apb_uart
+OK  axi
+OK  axi_llc
+OK  axi_riscv_atomics
+OK  axi_rt
+OK  axi_stream
+OK  axi_vga
+OK  cheshire
+OK  clic
+OK  clint
+OK  cluster_icache
+OK  cluster_interconnect
+OK  common_cells
+OK  common_verification
+OK  cva6
+OK  fpnew
+OK  fpu_div_sqrt_mvp
+OK  hyperbus
+OK  idma
+OK  irq_router
+OK  memory_island
+OK  obi
+OK  obi_peripherals
+OK  opentitan_peripherals
+OK  register_interface
+OK  scm
+OK  serial_link
+OK  snitch_cluster
+OK  tech_cells_generic
+OK  unbent

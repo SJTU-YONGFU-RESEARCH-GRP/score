@@ -1,0 +1,10 @@
+bender path <pkg> for each Bender.lock package (from /home/yongfu/proj/score/datasets/croc/5cf46130/source_snapshot/Bender.lock)
+---
+OK  apb
+OK  common_cells
+OK  common_verification
+OK  cve2
+OK  idma
+OK  obi
+OK  obi_peripherals
+OK  tech_cells_generic
