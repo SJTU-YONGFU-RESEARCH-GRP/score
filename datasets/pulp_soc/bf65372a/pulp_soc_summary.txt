@@ -1,0 +1,21 @@
+pulp_soc SCORE snapshot (pulp-platform/pulp_soc)
+Generated (UTC): 2026-04-15 10:57:56
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/pulp-soc
+Git commit (short): bf65372a
+Git commit (full): bf65372aab4edd404160170e2a4d2c63b27ab5f2
+bender (PATH): bender 0.31.0
+Bender.local (gpio override): /home/yongfu/proj/score/tools/pulp-soc/Bender.local
+
+Verification:
+  Deps vs Bender.lock: PASS
+  bender flist-plus (Verilator view): N/A
+  Verilator lint: N/A
+  Verilator elaboration: N/A
+  Verilator simulation: N/A
+  Logs: /home/yongfu/proj/score/datasets/pulp_soc/bf65372a/logs/
+
+See https://github.com/pulp-platform/pulp_soc and tools/pulp-soc/README.md
+Bundle path: /home/yongfu/proj/score/datasets/pulp_soc/bf65372a/source_snapshot
+Generation log: /home/yongfu/proj/score/datasets/pulp_soc/bf65372a/logs/generate_20260415_185711.log
