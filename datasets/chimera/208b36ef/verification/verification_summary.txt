@@ -1,0 +1,14 @@
+chimera RTL verification summary (SCORE)
+Generated (UTC): 2026-04-15 02:44:53
+
+Bender.lock → bender path: PASS
+bender flist-plus (common_cells slice): PASS
+Verilator --lint-only (common_cells / stream_fifo): PASS
+Verilator --binary (elaboration smoke): PASS
+Verilator simulation (tb_stream_fifo): PASS
+
+Notes:
+  Full Chimera SoC flist-plus may require upstream iDMA code generation; this run
+  validates Bender closure and Verilator on the common_cells stream_fifo slice.
+  Upstream SoC testbench (target/sim/) is not executed in SCORE by default.
+Logs: /home/yongfu/proj/score/datasets/chimera/208b36ef/verification/

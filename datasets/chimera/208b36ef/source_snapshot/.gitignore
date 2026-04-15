@@ -1,0 +1,44 @@
+.svlangserver
+transcript
+.bender
+.venv
+cheshire
+idma
+hyperbus
+
+# EMACS
+
+*undo-tree~
+*~
+*#
+
+# HW
+
+hw/regs/pcr.md
+cheshire
+
+# SW
+
+*.elf
+*.dump
+*.memh
+__pycache__
+*.o
+*.a
+
+# UTILS
+
+utils/verible-verilog
+
+# SIM
+
+target/sim/models
+target/sim/vsim/work
+target/sim/vsim/transcript
+target/sim/vsim/*.do
+target/sim/vsim/trace*
+modelsim.ini
+compile.tcl
+logs
+vsim.wlf
+*.transcript

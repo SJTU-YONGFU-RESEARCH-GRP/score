@@ -1,0 +1,20 @@
+chimera SCORE snapshot (pulp-platform/chimera)
+Generated (UTC): 2026-04-15 02:44:53
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/chimera
+Dataset workdir: /home/yongfu/proj/score/datasets/chimera/208b36ef/source_snapshot
+Git commit (short): 208b36ef
+Git commit (full): 208b36efafbb9b114e69b21e91058fac7962f55d
+bender: bender 0.31.0
+verilator: Verilator 5.022 2024-02-24 rev fedora-5.022
+
+Verification (see /home/yongfu/proj/score/datasets/chimera/208b36ef/verification/verification_summary.txt):
+  Bender.lock path check: PASS
+  bender flist-plus (common_cells): PASS
+  Verilator lint (stream_fifo): PASS
+  Verilator binary (elaboration): PASS
+  Verilator simulation (testbench): PASS
+
+See https://github.com/pulp-platform/chimera and tools/chimera/README.md
+Bundle path: /home/yongfu/proj/score/datasets/chimera/208b36ef/source_snapshot
