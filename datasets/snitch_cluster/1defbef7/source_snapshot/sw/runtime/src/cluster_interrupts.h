@@ -1,0 +1,55 @@
+// Copyright 2023 ETH Zurich and University of Bologna.
+// Licensed under the Apache License, Version 2.0, see LICENSE for details.
+// SPDX-License-Identifier: Apache-2.0
+
+#pragma once
+
+#include "../../deps/riscv-opcodes/encoding.h"
+
+/**
+ * @brief Write mask to the cluster-local interrupt set register
+ * @param mask set bit at X sets the interrupt of hart X
+ * @param cluster_idx Index of the cluster to which the interrupt is sent
+ */
+inline void snrt_int_cluster_set(uint32_t mask, uint32_t cluster_idx) {
+    snrt_cluster(cluster_idx)->peripheral_reg.cl_clint_set.w = (uint64_t)mask;
+}
+
+/**
+ * @brief Write mask to the cluster-local interrupt set register
+ * @param mask set bit at X sets the interrupt of hart X
+ */
+inline void snrt_int_cluster_set(uint32_t mask) {
+    snrt_int_cluster_set(mask, snrt_cluster_idx());
+}
+
+/**
+ * @brief Write mask to the cluster-local interrupt clear register
+ * @param mask set bit at X clears the interrupt of hart X
+ */
+inline void snrt_int_cluster_clr(uint32_t mask) {
+    snrt_cluster()->peripheral_reg.cl_clint_clear.f.cl_clint_clear = mask;
+}
+
+/**
+ * @brief Clear MCIP interrupt
+ * @detail The interrupt is cleared asynchronously, i.e. it may not be cleared
+ *         yet when the function returns. Use `snrt_int_clr_mcip()` or
+ *         `snrt_int_wait_mcip_clr` if you need to block until the interrupt is
+ *         cleared.
+ */
+inline void snrt_int_clr_mcip_unsafe() {
+    snrt_int_cluster_clr(1 << snrt_cluster_core_idx());
+}
+
+/**
+ * @brief Clear MCIP interrupt and wait for the write to have effect
+ */
+inline void snrt_int_clr_mcip() {
+    snrt_int_clr_mcip_unsafe();
+    snrt_fence();
+}
+
+inline void snrt_int_set_mcip() {
+    snrt_int_cluster_set(1 << snrt_cluster_core_idx());
+}

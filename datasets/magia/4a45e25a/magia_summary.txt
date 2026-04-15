@@ -1,0 +1,11 @@
+magia SCORE snapshot (pulp-platform/MAGIA)
+Generated (UTC): 2026-04-15 04:31:52
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/magia
+Git commit (short): 4a45e25a
+Git commit (full): 4a45e25a8dd3389a612a838818e529427350d304
+bender: bender 0.31.0
+
+See https://github.com/pulp-platform/MAGIA and tools/magia/README.md
+Bundle path: /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot
