@@ -1,0 +1,15 @@
+Configuration: opentitan
+Build Type: csr-test
+Generated: Wed Apr 15 12:33:48 PM +08 2026
+Build Location: /home/yongfu/proj/score/tools/ibex/build
+Output Directory: /home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/opentitan/csr-test
+
+Configuration Details:
+- IBEX_CONFIG: opentitan
+- Build Type: csr-test
+- Build Directory: /home/yongfu/proj/score/tools/ibex/build
+
+Files:
+- RTL Files: 168
+- Simulation Models: 3
+- Total Files: 172

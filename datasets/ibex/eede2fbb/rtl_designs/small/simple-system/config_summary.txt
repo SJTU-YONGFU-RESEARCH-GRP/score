@@ -1,0 +1,15 @@
+Configuration: small
+Build Type: simple-system
+Generated: Wed Apr 15 12:27:47 PM +08 2026
+Build Location: /home/yongfu/proj/score/tools/ibex/build
+Output Directory: /home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/simple-system
+
+Configuration Details:
+- IBEX_CONFIG: small
+- Build Type: simple-system
+- Build Directory: /home/yongfu/proj/score/tools/ibex/build
+
+Files:
+- RTL Files: 162
+- Simulation Models: 1
+- Total Files: 164

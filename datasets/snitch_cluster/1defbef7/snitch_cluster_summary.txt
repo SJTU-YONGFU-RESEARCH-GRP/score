@@ -1,0 +1,11 @@
+snitch_cluster SCORE snapshot
+Generated (UTC): 2026-04-15 04:35:03
+Host: localhost.localdomain Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/snitch-cluster
+Git commit (short): 1defbef7
+Git commit (full): 1defbef780cd8453068dd4cb366ce8ea68dd92d7
+bender: bender 0.31.0
+
+See https://github.com/pulp-platform/snitch_cluster and tools/snitch-cluster/README.md
+Bundle path: /home/yongfu/proj/score/datasets/snitch_cluster/1defbef7/source_snapshot

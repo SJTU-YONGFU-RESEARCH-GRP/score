@@ -1,0 +1,15 @@
+Configuration: small
+Build Type: riscv-compliance
+Generated: Wed Apr 15 12:28:40 PM +08 2026
+Build Location: /home/yongfu/proj/score/tools/ibex/build
+Output Directory: /home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/riscv-compliance
+
+Configuration Details:
+- IBEX_CONFIG: small
+- Build Type: riscv-compliance
+- Build Directory: /home/yongfu/proj/score/tools/ibex/build
+
+Files:
+- RTL Files: 164
+- Simulation Models: 2
+- Total Files: 167

@@ -1,0 +1,83 @@
+# Copyright 2023 ETH Zurich and University of Bologna.
+# Solderpad Hardware License, Version 0.51, see LICENSE for details.
+# SPDX-License-Identifier: SHL-0.51
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snitch"
+authors = [
+    {name = "Luca Colagrande", email = "colluca@iis.ee.ethz.ch"}
+]
+requires-python = ">=3.11"
+dynamic = ["version"]
+dependencies = [
+    # Alphabetically sorted.
+    "dataclasses",
+    "flake8",
+    "gitpython",
+    "humanize",
+    "json5",
+    "jsonref",
+    "jsonschema",
+    "mako",
+    "matplotlib",
+    "pandas",
+    "peakrdl",
+    "peakrdl-markdown",
+    "peakrdl-rawheader>=0.1.1",
+    "prettytable",
+    "progressbar2",
+    "psutil",
+    "pyelftools",
+    "pyflexfloat",
+    "pymakeutils>=1.4.0",
+    "pytablewriter",
+    "pytest",
+    "pyyaml",
+    "reuse",
+    "tabulate",
+    "termcolor",
+    "yamllint",
+]
+
+[project.optional-dependencies]
+kernels  = [
+    # Alphabetically sorted.
+    "numpy",
+    "scikit-learn",
+    "torch",
+]
+docs = [
+    "mkdocs",
+    "mkdocs-exclude",
+    "mkdocs-include-markdown-plugin",
+    "mkdocs-macros-plugin",
+    "mkdocs-material",
+    "mkdocstrings",
+    "mkdocstrings-python",
+]
+all = [
+    "snitch[kernels,docs]"
+]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.setuptools.package-dir]
+"snitch.dnn" = "sw/kernels/dnn"
+"snitch.blas" = "sw/kernels/blas"
+"snitch.util" = "util"
+"snitch.nonfree" = "nonfree/util"
+
+[tool.pytest.ini_options]
+testpaths = ["util/bench/tests"]

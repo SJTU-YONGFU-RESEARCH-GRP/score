@@ -1,0 +1,20 @@
+// Copyright 2020 ETH Zurich and University of Bologna.
+// Licensed under the Apache License, Version 2.0, see LICENSE for details.
+// SPDX-License-Identifier: Apache-2.0
+
+[
+    {
+        "thread": "hart_0",
+        "roi": [
+            {"idx": 1, "label": "compute"}
+        ]
+    },
+% for i in range(0, num_clusters):
+    {
+        "thread": "${f'dma_{9*(i+1)}'}",
+        "roi": [
+            {"idx": 0, "label": "dma_in"}
+        ]
+    },
+% endfor
+]
