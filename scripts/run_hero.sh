@@ -164,12 +164,9 @@ if [[ "$SKIP_SUBMODULE" != true ]]; then
         git submodule sync -- "$HERO_SUBMODULE"
         git submodule update --init "$HERO_SUBMODULE"
     else
-        warn "Submodule path '$HERO_SUBMODULE' is not tracked in this checkout; syncing all submodules instead."
-        info "Step 1/3: git submodule sync --recursive && git submodule update --init --recursive"
-        git submodule sync --recursive
-        git submodule update --init --recursive
+        warn "Submodule path '$HERO_SUBMODULE' is not tracked in this checkout; bootstrapping this checkout directly."
+        info "Step 1/3: bootstrap $HERO_SUBMODULE from .gitmodules URL"
         if [[ ! -d "$HERO_SUBMODULE" ]]; then
-            warn "$HERO_SUBMODULE is still missing after submodule update; bootstrapping plain git checkout."
             score_bootstrap_missing_checkout "$PROJECT_ROOT" "$HERO_SUBMODULE"
         fi
     fi
