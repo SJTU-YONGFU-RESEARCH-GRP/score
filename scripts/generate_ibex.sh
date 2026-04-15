@@ -35,6 +35,16 @@ if [[ -f "$PROJECT_ROOT/scripts/setup_local_env.sh" ]]; then
     source "$PROJECT_ROOT/scripts/setup_local_env.sh"
 fi
 
+# Portable srecord / other host tools from install_ibex.sh — prepend before prerequisite checks.
+score_prepend_ibex_host_tools_path() {
+    local h="$PROJECT_ROOT/tools/ibex-host-tools"
+    if [[ -d "$h/srecord/bin" ]]; then
+        export PATH="$h/srecord/bin:$PATH"
+    fi
+}
+score_prepend_ibex_host_tools_path
+hash -r 2>/dev/null || true
+
 # Create dataset directory structure (done after DATASET_DIR is defined)
 
 # Function to check if command exists
@@ -178,7 +188,7 @@ run_riscv_compliance_verification() {
         return 1
     fi
     if ! command_exists srec_cat; then
-        echo "ERROR: srec_cat missing; install OS package srecord (see scripts/install_ibex.sh)." >"$log_file"
+        echo "ERROR: srec_cat missing; run scripts/install_ibex.sh (portable tools/ibex-host-tools/srecord) or install OS package srecord." >"$log_file"
         return 1
     fi
     : >"$log_file"
@@ -214,6 +224,9 @@ activate_ibex_build_shell() {
     if [[ -d "$ibex_host/riscv/bin" ]]; then
         export PATH="$ibex_host/riscv/bin:$PATH"
     fi
+    if [[ -d "$ibex_host/srecord/bin" ]]; then
+        export PATH="$ibex_host/srecord/bin:$PATH"
+    fi
     hash -r 2>/dev/null || true
     export MAKEFLAGS="${MAKEFLAGS:+$MAKEFLAGS }-e"
     if export_verilator_root_from_path; then
@@ -236,7 +249,7 @@ run_ibex_verification() {
     case "$build_type" in
         simple-system)
             if ! command_exists srec_cat; then
-                error "srec_cat not found — install srecord (e.g. sudo dnf install srecord) for run-simple-system"
+                error "srec_cat not found — run scripts/install_ibex.sh (builds portable srecord under tools/ibex-host-tools/srecord) or install OS package srecord"
                 echo "srec_cat missing" >"$vrf_log"
                 return 1
             fi
@@ -249,7 +262,25 @@ run_ibex_verification() {
             fi
             ;;
         csr-test)
-            if make run-csr-test "IBEX_CONFIG=$config_name" >"$vrf_log" 2>&1; then
+            # FuseSoC `run` re-stages sim-verilator/ and deletes reg_dpi.so before launch; run the
+            # Verilator binary directly (rebuild the DPI .so if the staging step removed it).
+            if (
+                echo "=== CSR test: direct ./Vtb_cs_registers (fusesoc run would drop reg_dpi.so) ==="
+                sim_root="$IBEX_DIR/build/lowrisc_ibex_tb_cs_registers_0/sim-verilator"
+                dpi_root="$sim_root/src/lowrisc_ibex_tb_cs_registers_0"
+                dpi_so="$dpi_root/build/bin/reg_dpi.so"
+                sim_bin="$sim_root/Vtb_cs_registers"
+                if [[ ! -x "$sim_bin" ]]; then
+                    echo "ERROR: $sim_bin not executable; build-csr-test must succeed first"
+                    exit 1
+                fi
+                if [[ ! -f "$dpi_so" ]]; then
+                    echo "INFO: Rebuilding reg_dpi.so (missing under $dpi_so)"
+                    make -C "$dpi_root" || exit 1
+                fi
+                cd "$sim_root" || exit 1
+                ./Vtb_cs_registers
+            ) >"$vrf_log" 2>&1; then
                 success "Verification passed: $config_name (csr-test)"
             else
                 error "Verification failed: $config_name (csr-test); see $vrf_log"
@@ -314,7 +345,7 @@ check_prerequisites() {
 
     if [[ "$RUN_REGRESSION" == "true" ]]; then
         if ! command_exists srec_cat; then
-            warning "srec_cat not in PATH (install OS package srecord) — simple-system and compliance regression need it"
+            warning "srec_cat not in PATH — run scripts/install_ibex.sh (portable srecord under tools/ibex-host-tools/srecord) or install OS package srecord"
             ((prereq_failed++))
         else
             success "srec_cat found: $(command -v srec_cat)"
@@ -947,8 +978,9 @@ show_help() {
     echo "  --no-compliance-suite   During regression, skip cloning/running riscv-compliance (faster)"
     echo ""
     echo "Regression (default ON) runs after each successful Verilator build:"
-    echo "    simple-system     -> make run-simple-system"
-    echo "    csr-test          -> make run-csr-test"
+    echo "    simple-system     -> make run-simple-system (needs srec_cat on PATH)"
+    echo "    csr-test          -> ./Vtb_cs_registers in build/.../sim-verilator (not make run-csr-test;"
+    echo "                         FuseSoC run would delete reg_dpi.so before launch)"
     echo "    riscv-compliance  -> legacy Makefile suite (see below)"
     echo ""
     echo "RISC-V compliance (during regression, unless --no-compliance-suite):"

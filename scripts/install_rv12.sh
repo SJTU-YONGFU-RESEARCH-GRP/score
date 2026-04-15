@@ -12,6 +12,9 @@
 #   ./scripts/install_rv12.sh --check-only
 #   ./scripts/install_rv12.sh --no-system-deps
 #
+# If sudo times out or is unavailable, either install git/gcc/g++/make (and Verilator) yourself
+# and use --no-system-deps, or re-run: the script will try to continue when those tools exist.
+#
 
 set -euo pipefail
 
@@ -26,12 +29,18 @@ CHECK_ONLY=false
 INSTALL_VERILATOR=true
 DEBUG_MODE=false
 
+if [[ "${RV12_SKIP_SYSTEM_DEPS:-}" == "1" ]]; then
+    INSTALL_SYSTEM_DEPS=false
+fi
+
 mkdir -p "$LOG_DIR"
 
 # shellcheck source=scripts/common_logging.sh
 source "$SCRIPT_DIR/common_logging.sh"
 init_script_logging install_rv12 rv12_install
 INSTALL_LOG="$SCRIPT_LOG_FILE"
+# shellcheck source=scripts/common_submodule_bootstrap.sh
+source "$SCRIPT_DIR/common_submodule_bootstrap.sh"
 
 log() {
     log_info "$@"
@@ -116,6 +125,37 @@ run_priv() {
     fi
 }
 
+rv12_have_c_compiler() {
+    command_exists gcc || command_exists cc
+}
+
+rv12_have_cxx_compiler() {
+    command_exists g++ || command_exists c++
+}
+
+# True when git + make + C/C++ are available (distro packages not strictly required).
+rv12_have_build_essentials() {
+    command_exists git && command_exists make && rv12_have_c_compiler && rv12_have_cxx_compiler
+}
+
+# After a failed dnf/apt install, continue only if the host already has a toolchain.
+rv12_recover_from_system_deps_failure() {
+    log_warning "Distro package installation failed (sudo timeout, no password, or repo error)."
+    if rv12_have_build_essentials; then
+        log_warning "Continuing: git, make, and a C/C++ compiler are already on PATH."
+        log_warning "Tip: next time use --no-system-deps if you manage packages yourself."
+        if [[ "$INSTALL_VERILATOR" == true ]] && ! command_exists verilator; then
+            log_warning "Verilator not in PATH; generate_rv12.sh may fail until you install it or use --no-verilator."
+        fi
+        return 0
+    fi
+    log_error "Need git, make, gcc/g++, and cc/c++. Install them (with sudo) or run:"
+    log_error "  ./scripts/install_rv12.sh --no-system-deps"
+    log_error "after installing build tools. Or from the pipeline:"
+    log_error "  ./scripts/run_rv12.sh --no-system-deps"
+    return 1
+}
+
 install_rv12_system_dependencies() {
     local os
     os=$(detect_os)
@@ -197,12 +237,18 @@ install_rv12_system_dependencies() {
 }
 
 init_submodules() {
-    log "Initializing submodule $RELATIVE_SUBMODULE_PATH (recursive)..."
+    log "Preparing checkout for $RELATIVE_SUBMODULE_PATH ..."
     if ! git -C "$PROJECT_ROOT" rev-parse --git-dir >/dev/null 2>&1; then
         log_error "SCORE root is not a git checkout; cannot run submodule update."
         return 1
     fi
-    git -C "$PROJECT_ROOT" submodule update --init --recursive "$RELATIVE_SUBMODULE_PATH"
+    score_prepare_tool_checkout "$PROJECT_ROOT" "$RELATIVE_SUBMODULE_PATH"
+    if [[ ! -d "$TOOL_DIR" ]]; then
+        log_error "RV12 checkout missing after bootstrap: $TOOL_DIR"
+        return 1
+    fi
+    log "Initializing nested RV12 submodules (ahb3lite_pkg, memory)..."
+    git -C "$TOOL_DIR" submodule update --init --recursive
     log_success "Submodules ready under $TOOL_DIR"
 }
 
@@ -243,6 +289,9 @@ Options:
   --no-system-deps     Skip distro package installation (CI images)
   --no-verilator       Do not install Verilator via the package manager
   --debug              Verbose messages
+
+Environment:
+  RV12_SKIP_SYSTEM_DEPS=1   Same as --no-system-deps
 
 Upstream: https://github.com/RoaLogic/RV12
 EOF
@@ -291,9 +340,11 @@ if [[ "$CHECK_ONLY" == true ]]; then
 fi
 
 if [[ "$INSTALL_SYSTEM_DEPS" == true ]]; then
-    install_rv12_system_dependencies || exit 1
+    if ! install_rv12_system_dependencies; then
+        rv12_recover_from_system_deps_failure || exit 1
+    fi
 else
-    log "Skipping system dependencies (--no-system-deps)"
+    log "Skipping system dependencies (--no-system-deps or RV12_SKIP_SYSTEM_DEPS=1)"
 fi
 
 init_submodules || exit 1

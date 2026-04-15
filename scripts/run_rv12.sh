@@ -51,7 +51,8 @@ Options:
   --skip-install       Skip step 2
   --skip-generate      Only submodule + install
   --no-verilator       Pass --no-verilator to install (no Verilator package)
-  --no-system-deps     Pass --no-system-deps to install
+  --no-system-deps     Pass --no-system-deps to install (use when sudo is unavailable;
+                         install also continues automatically if git/gcc/g++/make exist)
 
   --                   All following arguments are passed only to generate_rv12.sh
 
