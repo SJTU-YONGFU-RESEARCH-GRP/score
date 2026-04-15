@@ -225,6 +225,47 @@ ibex_can_use_upstream_ci_deps() {
     esac
 }
 
+# Build srecord (srec_cat) from upstream tarball when distro packages omit it (common on RHEL/Alma).
+install_ibex_portable_srecord() {
+    local root="$1"
+    local cache="$2"
+    local ver="${SRECORD_VERSION:-1.64}"
+    local tar_name="srecord-${ver}.tar.gz"
+    local url="https://downloads.sourceforge.net/project/srecord/srecord/${ver}/${tar_name}"
+    local build_dir="$cache/srecord-${ver}-build"
+
+    if command -v srec_cat >/dev/null 2>&1; then
+        print_status "srec_cat already available: $(command -v srec_cat)"
+        return 0
+    fi
+    if [[ -x "$root/srecord/bin/srec_cat" ]]; then
+        print_status "Portable srecord already installed under $root/srecord"
+        return 0
+    fi
+
+    print_status "Building portable srecord ${ver} into $root/srecord (no sudo)..."
+    mkdir -p "$cache" "$root"
+    local tf="$cache/$tar_name"
+    if [[ ! -f "$tf" ]]; then
+        curl -fsSL "$url" -o "$tf"
+    fi
+    rm -rf "$build_dir"
+    mkdir -p "$build_dir"
+    tar -C "$build_dir" -xzf "$tf" --strip-components=1
+    if (
+        cd "$build_dir" || exit 1
+        # EL9 minimal images often lack libgcrypt-devel; Ibex only needs Motorola S-Record I/O.
+        ./configure --prefix="$root/srecord" --without-gcrypt
+        make -j"$(nproc 2>/dev/null || echo 4)"
+        make install
+    ); then
+        print_success "Portable srecord installed to $root/srecord/bin"
+        return 0
+    fi
+    print_warning "Portable srecord build failed (need C++ toolchain / time)."
+    return 1
+}
+
 # Project-local prebuilts (Linux x86_64) when upstream ci/install-build-deps.sh is Ubuntu-only.
 install_ibex_portable_host_tools() {
     print_status "Installing Ibex host tools into ${PROJECT_ROOT}/tools/ibex-host-tools (no sudo)..."
@@ -292,6 +333,11 @@ install_ibex_portable_host_tools() {
             print_success "Verible installed to $root/verible"
         else
             print_status "Verible already present under $root/verible"
+        fi
+
+        if ! command -v srec_cat >/dev/null 2>&1; then
+            install_ibex_portable_srecord "$root" "$cache" || print_warning \
+                "srec_cat still unavailable; Ibex simple-system / compliance regression need srecord on PATH."
         fi
     else
         print_warning "Prebuilt Verilator/Verible/cosim/toolchain tarballs target Linux x86_64."
@@ -381,6 +427,7 @@ setup_environment_variables() {
     export RISCV_TOOLCHAIN_TAR_VERSION="20220210-1"
     export RISCV_TOOLCHAIN_TAR_VARIANT="lowrisc-toolchain-gcc-rv32imcb"
     export IBEX_COSIM_VERSION="6d5b660"
+    export SRECORD_VERSION="1.64"
     
     print_success "Environment variables set"
 }
@@ -665,6 +712,9 @@ if [ -d "\$IBEX_HOST_TOOLS/verilator" ]; then
 fi
 if [ -d "\$IBEX_HOST_TOOLS/verible/bin" ]; then
     export PATH="\$IBEX_HOST_TOOLS/verible/bin:\$PATH"
+fi
+if [ -d "\$IBEX_HOST_TOOLS/srecord/bin" ]; then
+    export PATH="\$IBEX_HOST_TOOLS/srecord/bin:\$PATH"
 fi
 
 # Add local Verilator installation to PATH if it exists
