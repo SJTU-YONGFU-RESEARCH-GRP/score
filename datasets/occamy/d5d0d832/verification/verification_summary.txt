@@ -1,0 +1,25 @@
+occamy verification summary
+Generated (UTC): 2026-04-15 12:13:43
+Dataset: /home/yongfu/proj/score/datasets/occamy/d5d0d832
+
+Checks:
+  Deps vs Bender.lock: PASS
+  bender flist-plus (Verilator view): PASS
+  Verilator lint: FAIL
+  Verilator elaboration: FAIL
+  Verilator simulation: FAIL
+  Verilator reduced-scope lint (common_cells stream_fifo): PASS
+
+Policy:
+  FULL_FLOW=FAIL
+  REDUCED_SCOPE=PASS
+  OVERALL=PASS_WITH_LIMITATIONS
+
+Artifacts:
+  flist: /home/yongfu/proj/score/datasets/occamy/d5d0d832/verification/occamy_verilator.flist
+  sanitized flist: /home/yongfu/proj/score/datasets/occamy/d5d0d832/verification/occamy_verilator_sanitized.flist
+  lint log: /home/yongfu/proj/score/datasets/occamy/d5d0d832/verification/verilator_lint.log
+  elaboration log: /home/yongfu/proj/score/datasets/occamy/d5d0d832/verification/verilator_elab.log
+  simulation log: /home/yongfu/proj/score/datasets/occamy/d5d0d832/verification/verilator_sim.log
+  reduced-scope flist: /home/yongfu/proj/score/datasets/occamy/d5d0d832/verification/common_cells_reduced.flist
+  reduced-scope lint log: /home/yongfu/proj/score/datasets/occamy/d5d0d832/verification/verilator_lint_reduced.log
