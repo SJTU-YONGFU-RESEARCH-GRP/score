@@ -29,6 +29,8 @@ err() { log_error "$@"; }
 FAIL_FAST=false
 DRY_RUN=false
 LIST_ONLY=false
+VERILATOR_RTL=false
+STRICT_VERILATOR=false
 PROJECTS_CSV=""
 EXCLUDE_CSV=""
 RUNNER_EXTRA_ARGS=()
@@ -54,6 +56,8 @@ Options:
   --list                  List selected run scripts and exit
   --dry-run               Show what would be executed, then exit
   --fail-fast             Stop on first failure
+  --verilator-rtl         Enforce Verilator-oriented RTL verification where supported
+  --strict-verilator      With --verilator-rtl, fail on projects without Verilator mode
   --projects CSV          Only run these project names (e.g. "ara,araxl,spatz")
   --exclude CSV           Exclude these project names
 
@@ -63,6 +67,8 @@ Examples:
   $0
   $0 --projects "ara,araxl,spatz,rv12"
   $0 --exclude "openpiton,rocket_chip"
+  $0 --verilator-rtl --projects "araxl,spatz,openpiton"
+  $0 --verilator-rtl --strict-verilator --projects "araxl,spatz,rv12"
   $0 -- --no-system-deps
   $0 --projects "araxl,spatz" -- --skip-submodule
 EOF
@@ -127,6 +133,41 @@ build_selection() {
     done
 }
 
+verilator_mode_supported() {
+    local base="$1"
+    case "$base" in
+        # Verilator is default or available via project options.
+        run_ara.sh|run_araxl.sh|run_astral.sh|run_auteur.sh|run_carfield.sh|run_cheshire.sh|run_cheshire_ihp130_o.sh|run_chimera.sh|run_croc.sh|run_cva6.sh|run_gemmini.sh|run_hero.sh|run_ibex.sh|run_magia.sh|run_mempool.sh|run_occamy.sh|run_openpiton.sh|run_picobello.sh|run_pulp_cluster.sh|run_pulp_soc.sh|run_pulpissimo.sh|run_rocket_chip.sh|run_rv12.sh|run_rv_tracer.sh|run_safety_island.sh|run_snitch_cluster.sh|run_spatz.sh)
+            return 0
+            ;;
+        # Known non-Verilator-focused flows.
+        run_iob_soc.sh|run_neorv32_vhdl.sh|run_neorv32_verilog.sh)
+            return 1
+            ;;
+        *)
+            # Default to supported for unknown/new scripts.
+            return 0
+            ;;
+    esac
+}
+
+build_verilator_args_for_runner() {
+    local base="$1"
+    case "$base" in
+        run_openpiton.sh)
+            # Be explicit although vlt is already the default there.
+            echo "-- --simulator=vlt"
+            ;;
+        run_spatz.sh)
+            # Explicitly request RTL verification mode in generate_spatz.
+            echo "-- --verify-rtl=lint"
+            ;;
+        *)
+            echo ""
+            ;;
+    esac
+}
+
 while [[ $# -gt 0 ]]; do
     case "$1" in
         -h|--help)
@@ -143,6 +184,14 @@ while [[ $# -gt 0 ]]; do
             ;;
         --fail-fast)
             FAIL_FAST=true
+            shift
+            ;;
+        --verilator-rtl)
+            VERILATOR_RTL=true
+            shift
+            ;;
+        --strict-verilator)
+            STRICT_VERILATOR=true
             shift
             ;;
         --projects)
@@ -191,6 +240,12 @@ fi
 if [[ ${#RUNNER_EXTRA_ARGS[@]} -gt 0 ]]; then
     info "Pass-through args to each runner: ${RUNNER_EXTRA_ARGS[*]}"
 fi
+if [[ "$VERILATOR_RTL" == true ]]; then
+    info "Verilator RTL mode: enabled"
+    if [[ "$STRICT_VERILATOR" == true ]]; then
+        info "Strict Verilator mode: enabled"
+    fi
+fi
 
 if [[ "$LIST_ONLY" == true ]] || [[ "$DRY_RUN" == true ]]; then
     ok "No execution requested (--list/--dry-run)."
@@ -201,10 +256,41 @@ cd "$PROJECT_ROOT"
 
 for base in "${SELECTED_RUNNERS[@]}"; do
     local_runner="$SCRIPT_DIR/$base"
-    info "====================================================================="
-    info "Running $base"
+    runner_args=("${RUNNER_EXTRA_ARGS[@]}")
 
-    if bash "$local_runner" "${RUNNER_EXTRA_ARGS[@]}"; then
+    if [[ "$VERILATOR_RTL" == true ]]; then
+        if ! verilator_mode_supported "$base"; then
+            msg="$base does not expose a Verilator-focused RTL mode"
+            if [[ "$STRICT_VERILATOR" == true ]]; then
+                err "$msg (strict mode)."
+                FAILED_RUNNERS+=("$base")
+                if [[ "$FAIL_FAST" == true ]]; then
+                    err "Stopping due to --fail-fast."
+                    break
+                fi
+                continue
+            fi
+            warn "$msg; skipping."
+            SKIPPED_RUNNERS+=("$base")
+            continue
+        fi
+
+        extra_verilator_args="$(build_verilator_args_for_runner "$base")"
+        if [[ -n "$extra_verilator_args" ]]; then
+            # shellcheck disable=SC2206
+            tmp_args=($extra_verilator_args)
+            runner_args+=("${tmp_args[@]}")
+        fi
+    fi
+
+    info "====================================================================="
+    if [[ ${#runner_args[@]} -gt 0 ]]; then
+        info "Running $base (args: ${runner_args[*]})"
+    else
+        info "Running $base"
+    fi
+
+    if bash "$local_runner" "${runner_args[@]}"; then
         PASSED_RUNNERS+=("$base")
         ok "$base: PASS"
     else
