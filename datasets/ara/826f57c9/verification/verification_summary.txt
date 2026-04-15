@@ -1,0 +1,7 @@
+Ara verification summary
+Generated (UTC): 2026-04-15 07:13:58
+ARA_CONFIGURATION: default
+nr_lanes / vlen: 4 / 4096
+Deps vs Bender.lock: PASS
+bender script flist-plus: PASS
+Verilator lint: PASS
