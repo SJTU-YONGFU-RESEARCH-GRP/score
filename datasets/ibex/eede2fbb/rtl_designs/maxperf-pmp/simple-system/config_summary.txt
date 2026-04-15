@@ -1,6 +1,6 @@
 Configuration: maxperf-pmp
 Build Type: simple-system
-Generated: Wed Apr 15 12:40:43 PM +08 2026
+Generated: Wed Apr 15 05:48:49 PM +08 2026
 Build Location: /home/yongfu/proj/score/tools/ibex/build
 Output Directory: /home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/maxperf-pmp/simple-system
 
@@ -12,4 +12,4 @@ Configuration Details:
 Files:
 - RTL Files: 168
 - Simulation Models: 3
-- Total Files: 172
+- Total Files: 173

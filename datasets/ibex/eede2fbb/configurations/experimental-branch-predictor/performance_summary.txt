@@ -1,0 +1,24 @@
+Ibex Configuration Performance Summary
+=====================================
+
+Configuration: experimental-branch-predictor
+Generated: Wed Apr 15 05:59:58 PM +08 2026
+
+Performance Characteristics:
+- Core Type: RISC-V 32-bit
+- ISA Extensions: I, M, C, B (depending on configuration)
+- Pipeline Stages: 2-3 stages (depending on configuration)
+- Branch Prediction: Static (depending on configuration)
+
+Area Estimates (from Ibex documentation):
+- Small config: ~26.60 kGE (Yosys synthesis)
+- Micro config: ~16.85 kGE (Yosys synthesis)
+- MaxPerf config: ~32.48 kGE (Yosys synthesis)
+
+Performance Estimates (CoreMark/MHz):
+- Small config: 2.47 CoreMark/MHz
+- Micro config: 0.904 CoreMark/MHz
+- MaxPerf config: 3.13 CoreMark/MHz
+
+Note: Actual performance depends on specific configuration parameters
+and target technology library.
