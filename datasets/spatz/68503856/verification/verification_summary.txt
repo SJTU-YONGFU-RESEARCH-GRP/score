@@ -1,0 +1,17 @@
+spatz verification summary
+Generated (UTC): 2026-04-15 18:37:21
+Dataset: /home/yongfu/proj/score/datasets/spatz/68503856
+
+Checks:
+  Verilog RTL presence: PASS
+  Testbench artifacts generated: PASS
+  Verilator lint PASS: 1
+  Verilator lint FAIL: 0
+  Verilator lint SKIP: 0
+
+Artifacts:
+  verification results: /home/yongfu/proj/score/datasets/spatz/68503856/verification/verification_results_20260416_023630.txt
+  rtl verification summary: /home/yongfu/proj/score/datasets/spatz/68503856/verification/rtl_verify_summary.txt
+  rtl verification log: /home/yongfu/proj/score/datasets/spatz/68503856/verification/verilator_lint.log
+  verification logs dir: /home/yongfu/proj/score/datasets/spatz/68503856/verification
+  session log: /home/yongfu/proj/score/datasets/spatz/68503856/logs/generate_20260416_023630.log
