@@ -1,0 +1,5 @@
+project: iob-soc
+config_name: iob_soc_smoke
+generation_date_utc: 2026-04-16 01:51:31
+git_commit_short: f9cb9558
+source_repo: /home/yongfu/proj/score/tools/iob-soc

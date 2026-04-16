@@ -1,0 +1,1 @@
+iob_soc_smoke|PASS|verilator_lint|/home/yongfu/proj/score/datasets/iob-soc/f9cb9558/verification/iob_soc_smoke_verilator_lint.log|/home/yongfu/proj/score/datasets/iob-soc/f9cb9558/rtl_designs/iob_soc_smoke/iob_soc_smoke_tb.sv

@@ -1,0 +1,17 @@
+iob-soc SCORE generation summary
+Generated (UTC): 2026-04-16 01:51:31
+Source repo: /home/yongfu/proj/score/tools/iob-soc
+Git commit (short): f9cb9558
+Git commit (full): f9cb9558ddcd0b8bb335fe56c5eb0078e623fe5d
+
+Results:
+  Total configs: 48
+  Successes: 0
+  Failures: 48
+  Verilator lint: PASS
+
+Paths:
+  Builds: /home/yongfu/proj/score/datasets/iob-soc/f9cb9558/builds
+  RTL path: /home/yongfu/proj/score/datasets/iob-soc/f9cb9558/rtl_designs/iob_soc_smoke
+  Verification summary: /home/yongfu/proj/score/datasets/iob-soc/f9cb9558/verification/verification_summary.txt
+  Session log: /home/yongfu/proj/score/datasets/iob-soc/f9cb9558/logs/session_20260416_095013.log
