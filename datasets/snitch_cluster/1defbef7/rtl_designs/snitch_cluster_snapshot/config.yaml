@@ -1,0 +1,5 @@
+project: snitch_cluster
+config_name: snitch_cluster_snapshot
+generation_date_utc: 2026-04-15 18:36:16
+git_commit_short: 1defbef7
+source_snapshot: /home/yongfu/proj/score/datasets/snitch_cluster/1defbef7/source_snapshot
