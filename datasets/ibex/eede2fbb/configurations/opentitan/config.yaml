@@ -1,6 +1,6 @@
 # Ibex Configuration: opentitan
 name: opentitan
-generated: Wed Apr 15 05:59:57 PM +08 2026
+generated: Thu Apr 16 02:36:22 AM +08 2026
 source: /home/yongfu/proj/score/tools/ibex/ibex_configs.yaml
 
 parameters:
