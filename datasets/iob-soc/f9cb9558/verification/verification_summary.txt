@@ -1,0 +1,20 @@
+iob-soc verification summary
+Generated (UTC): 2026-04-16 01:51:31
+Dataset: /home/yongfu/proj/score/datasets/iob-soc/f9cb9558
+
+Checks:
+  Verilog RTL presence: PASS
+  Testbench artifacts generated: PASS
+  Setup pass/fail: 0/48
+  Simulation pass/fail: 0/0
+  Documentation pass/fail: 0/0
+  FPGA pass/fail: 0/0
+  Verilator lint PASS: 1
+  Verilator lint FAIL: 0
+  Verilator lint SKIP: 0
+
+Artifacts:
+  verification results: /home/yongfu/proj/score/datasets/iob-soc/f9cb9558/verification/verification_results_20260416_095013.txt
+  verilator lint log: /home/yongfu/proj/score/datasets/iob-soc/f9cb9558/verification/iob_soc_smoke_verilator_lint.log
+  verification logs dir: /home/yongfu/proj/score/datasets/iob-soc/f9cb9558/verification
+  session log: /home/yongfu/proj/score/datasets/iob-soc/f9cb9558/logs/session_20260416_095013.log
