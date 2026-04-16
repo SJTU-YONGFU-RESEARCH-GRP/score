@@ -1,0 +1,5 @@
+project: safety_island
+config_name: safety_island_snapshot
+generation_date_utc: 2026-04-16 01:48:28
+git_commit_short: 584eb697
+source_snapshot: /home/yongfu/proj/score/datasets/safety_island/584eb697/source_snapshot
