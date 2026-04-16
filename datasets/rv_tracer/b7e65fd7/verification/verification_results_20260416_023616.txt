@@ -1,0 +1,1 @@
+rv_tracer_smoke|PASS|verilator_smoke|/home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/logs/verilator_smoke_20260416_023616.log|/home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/rtl_designs/rv_tracer_snapshot/rv_tracer_smoke_tb.sv

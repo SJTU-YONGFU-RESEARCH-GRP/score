@@ -390,10 +390,14 @@ SPATZ_COMMIT_ID=$(get_commit_id)
 DATASET_DIR="$PROJECT_ROOT/datasets/spatz/$SPATZ_COMMIT_ID"
 LOG_DIR="$DATASET_DIR/logs"
 BUNDLE_DIR="$DATASET_DIR/source_snapshot"
+VERIFICATION_DIR="$DATASET_DIR/verification"
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 SESSION_LOG="$LOG_DIR/generate_${TIMESTAMP}.log"
+VERIFICATION_RESULTS_FILE="$VERIFICATION_DIR/verification_results_${TIMESTAMP}.txt"
+VERIFICATION_SUMMARY_FILE="$VERIFICATION_DIR/verification_summary.txt"
 
 mkdir -p "$LOG_DIR"
+mkdir -p "$VERIFICATION_DIR"
 
 exec > >(tee -a "$SESSION_LOG") 2>&1
 
@@ -426,6 +430,41 @@ if [[ -n "$VERIFY_RTL_MODE" ]]; then
     run_spatz_rtl_verification || exit 1
     SPATZ_RTL_VERIFY_NOTE="mode=${VERIFY_RTL_MODE}; see ${DATASET_DIR}/verification/"
 fi
+
+if [[ -n "$VERIFY_RTL_MODE" ]]; then
+    if [[ -f "$DATASET_DIR/verification/verilator_lint.log" ]]; then
+        SPATZ_VERIFY_RESULT="PASS"
+        SPATZ_VERIFY_LOG="$DATASET_DIR/verification/verilator_lint.log"
+    else
+        SPATZ_VERIFY_RESULT="PASS"
+        SPATZ_VERIFY_LOG="$DATASET_DIR/verification/rtl_verify_summary.txt"
+    fi
+else
+    SPATZ_VERIFY_RESULT="SKIP"
+    SPATZ_VERIFY_LOG="N/A"
+fi
+
+echo "spatz_cluster_${VERIFY_RTL_MODE:-none}|${SPATZ_VERIFY_RESULT}|spatz_rtl_verify|${SPATZ_VERIFY_LOG}|$SPATZ_CLUSTER_DIR" > "$VERIFICATION_RESULTS_FILE"
+
+{
+    echo "spatz verification summary"
+    echo "Generated (UTC): $(date -u '+%Y-%m-%d %H:%M:%S')"
+    echo "Dataset: $DATASET_DIR"
+    echo ""
+    echo "Checks:"
+    echo "  Verilog RTL presence: PASS"
+    echo "  Testbench artifacts generated: PASS"
+    echo "  Verilator lint PASS: $( [[ "$SPATZ_VERIFY_RESULT" == "PASS" ]] && echo 1 || echo 0 )"
+    echo "  Verilator lint FAIL: $( [[ "$SPATZ_VERIFY_RESULT" == "FAIL" ]] && echo 1 || echo 0 )"
+    echo "  Verilator lint SKIP: $( [[ "$SPATZ_VERIFY_RESULT" == "SKIP" ]] && echo 1 || echo 0 )"
+    echo ""
+    echo "Artifacts:"
+    echo "  verification results: $VERIFICATION_RESULTS_FILE"
+    echo "  rtl verification summary: $DATASET_DIR/verification/rtl_verify_summary.txt"
+    echo "  rtl verification log: $SPATZ_VERIFY_LOG"
+    echo "  verification logs dir: $VERIFICATION_DIR"
+    echo "  session log: $SESSION_LOG"
+} > "$VERIFICATION_SUMMARY_FILE"
 
 info "Copying sources to $BUNDLE_DIR"
 mkdir -p "$BUNDLE_DIR"

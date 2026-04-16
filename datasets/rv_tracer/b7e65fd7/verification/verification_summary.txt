@@ -1,0 +1,16 @@
+rv_tracer verification summary
+Generated (UTC): 2026-04-15 18:36:25
+Dataset: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7
+
+Checks:
+  Verilog RTL presence: PASS
+  Testbench artifacts generated: PASS
+  Verilator simulation PASS: 1
+  Verilator simulation FAIL: 0
+  Verilator simulation SKIP: 0
+
+Artifacts:
+  verification results: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/verification/verification_results_20260416_023616.txt
+  verilator smoke log: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/logs/verilator_smoke_20260416_023616.log
+  verification logs dir: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/verification
+  session log: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/logs/generate_20260416_023616.log

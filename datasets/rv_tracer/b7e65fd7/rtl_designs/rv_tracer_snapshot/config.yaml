@@ -1,0 +1,5 @@
+project: rv_tracer
+config_name: rv_tracer_snapshot
+generation_date_utc: 2026-04-15 18:36:25
+git_commit_short: b7e65fd7
+source_snapshot: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/source_snapshot
