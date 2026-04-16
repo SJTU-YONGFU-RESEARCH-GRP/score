@@ -1,6 +1,6 @@
 Configuration: small
 Build Type: riscv-compliance
-Generated: Wed Apr 15 05:36:24 PM +08 2026
+Generated: Thu Apr 16 02:13:39 AM +08 2026
 Build Location: /home/yongfu/proj/score/tools/ibex/build
 Output Directory: /home/yongfu/proj/score/datasets/ibex/eede2fbb/rtl_designs/small/riscv-compliance
 

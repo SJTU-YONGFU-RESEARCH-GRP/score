@@ -1,0 +1,16 @@
+ibex verification summary
+Generated (UTC): 2026-04-15 18:36:22
+Dataset: /home/yongfu/proj/score/datasets/ibex/eede2fbb
+
+Checks:
+  Verilog RTL presence: PASS
+  Testbench artifacts generated: PASS
+  Verilator/regression PASS: 0
+  Verilator/regression FAIL: 0
+  Verilator/regression SKIP: 0
+
+Artifacts:
+  verification results: /home/yongfu/proj/score/datasets/ibex/eede2fbb/verification/verification_results_20260416_021148.txt
+  regression logs dir: /home/yongfu/proj/score/datasets/ibex/eede2fbb/regression_logs
+  verification logs dir: /home/yongfu/proj/score/datasets/ibex/eede2fbb/verification
+  session log: /home/yongfu/proj/score/datasets/ibex/eede2fbb/logs/session_20260416_021148.log

@@ -2,7 +2,7 @@ Ibex Configuration Performance Summary
 =====================================
 
 Configuration: opentitan
-Generated: Wed Apr 15 05:59:57 PM +08 2026
+Generated: Thu Apr 16 02:36:22 AM +08 2026
 
 Performance Characteristics:
 - Core Type: RISC-V 32-bit
