@@ -1,5 +1,5 @@
 rv_tracer SCORE snapshot (pulp-platform/rv-tracer)
-Generated (UTC): 2026-04-15 10:58:14
+Generated (UTC): 2026-04-15 18:36:25
 Host: localhost.localdomain Linux x86_64
 SCORE root: /home/yongfu/proj/score
 Source repo: /home/yongfu/proj/score/tools/rv-tracer
@@ -10,13 +10,14 @@ verilator: Verilator 5.022 2024-02-24 rev fedora-5.022
 
 Verification:
   Deps vs Bender.lock: PASS
-  bender flist-plus (Verilator view): N/A
-  Verilator lint: N/A
-  Verilator elaboration: N/A
+  Representative RTL files listed: 175
+  Testbench artifact: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/rtl_designs/rv_tracer_snapshot/rv_tracer_smoke_tb.sv
   Verilator simulation: pass
   Notes: SCORE backend is Verilator smoke simulation; upstream run uses Questa via make run.
-  Simulation log: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/logs/verilator_smoke_20260415_185805.log
-  Logs: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/logs/
+  Simulation log: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/logs/verilator_smoke_20260416_023616.log
+  Logs: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/verification/
 
 Bundle path: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/source_snapshot
-Generation log: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/logs/generate_20260415_185805.log
+RTL path: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/rtl_designs/rv_tracer_snapshot
+Verification summary: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/verification/verification_summary.txt
+Generation log: /home/yongfu/proj/score/datasets/rv_tracer/b7e65fd7/logs/generate_20260416_023616.log
