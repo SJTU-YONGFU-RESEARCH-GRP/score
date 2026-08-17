@@ -33,9 +33,29 @@ fi
 if [[ "$(uname -s)" == Linux && "$(uname -m)" == x86_64 ]]; then
     url="https://github.com/pulp-platform/bender/releases/download/v${VER}/bender"
     log_info "Downloading Bender ${VER} from pulp-platform (${url})..."
-    curl -fsSL -o bender "$url"
-    chmod +x bender
-    log_success "OK: $(./bender --version 2>/dev/null | head -1 || echo installed)"
+    if curl -fsSL --retry 5 --retry-delay 2 -o bender "$url"; then
+        chmod +x bender
+        # Makefile lists `bender: Makefile`; keep binary newer than Makefile so make does not re-download.
+        touch bender
+        log_success "OK: $(./bender --version 2>/dev/null | head -1 || echo installed)"
+        exit 0
+    fi
+    log_warning "curl download of Bender ${VER} failed; trying wget"
+    rm -f bender
+    if command -v wget >/dev/null 2>&1 && wget -q -O bender "$url"; then
+        chmod +x bender
+        touch bender
+        log_success "OK (wget): $(./bender --version 2>/dev/null | head -1 || echo installed)"
+        exit 0
+    fi
+    log_warning "Download of Bender ${VER} failed; trying Bender already on PATH"
+    rm -f bender
+fi
+
+if command -v bender >/dev/null 2>&1; then
+    ln -sf "$(command -v bender)" ./bender
+    touch -h bender 2>/dev/null || touch bender
+    log_success "Using PATH Bender via symlink: $(./bender --version 2>/dev/null | head -1 || echo ok)"
     exit 0
 fi
 
@@ -45,5 +65,5 @@ if command -v lsb_release >/dev/null 2>&1; then
     exit 0
 fi
 
-log_error "Need Linux x86_64, or lsb_release + make bender (e.g. sudo dnf install -y redhat-lsb-core)."
+log_error "Need Linux x86_64 download, Bender on PATH, or lsb_release + make bender (e.g. sudo dnf install -y redhat-lsb-core)."
 exit 1
