@@ -1178,10 +1178,17 @@ setup_gemmini_environment() {
     log "Installing Gemmini software library..."
     cd "$GEMMINI_DIR"
     
-    # Install libgemmini
+    # Install libgemmini (optional for SCORE RTL generation; tree may lack Makefile)
     if [[ -d "software/libgemmini" ]]; then
-        make -C software/libgemmini install
-        success "libgemmini installed"
+        if [[ -f "software/libgemmini/Makefile" ]]; then
+            if make -C software/libgemmini install; then
+                success "libgemmini installed"
+            else
+                warning "libgemmini make install failed; continuing (RTL generate does not require it)"
+            fi
+        else
+            warning "software/libgemmini has no Makefile; skipping (RTL generate does not require it)"
+        fi
     fi
     
     # Build Gemmini software tests
