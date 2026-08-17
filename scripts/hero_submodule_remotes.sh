@@ -15,11 +15,14 @@
 #     official host with HERO_BUILDROOT_USE_OFFICIAL=1.
 #   - HerculesCompiler-public: there is no known public GitHub mirror of the ETH repo; SCORE skips
 #     cloning it by default (use HERO_HERCULES_COMPILER_URL if you mirror it yourself on GitHub).
+#   - toolchain/llvm-project: multi-GB clone often fails mid-fetch; SCORE HW RTL flow does not need
+#     it. Skip by default; set HERO_FETCH_LLVM_PROJECT=1 to clone.
 #
 # Optional environment overrides:
 #   HERO_FETCH_HERCULES_COMPILER If 1/true/yes, clone toolchain/HerculesCompiler-public (default: skip).
 #   HERO_HERCULES_COMPILER_URL   If set, submodule uses this URL and is cloned (e.g. public GitHub fork).
 #                                Omit both this and HERO_FETCH_* to skip Hercules entirely (SCORE default).
+#   HERO_FETCH_LLVM_PROJECT      If 1/true/yes, clone toolchain/llvm-project (default: skip; HW-only).
 #   HERO_BUILDROOT_URL           If set, use this URL for submodule buildroot (highest priority).
 #   HERO_BUILDROOT_USE_OFFICIAL    If 1/true/yes, do not rewrite git.buildroot.net -> GitHub.
 #   HERO_USE_SSH                 If 1/true/yes, use SSH for GitHub submodule URLs (https://github.com/…
@@ -185,24 +188,35 @@ else
     git -C "$HERO_DIR" submodule deinit -f "$hercules_path" 2>/dev/null || true
 fi
 
+# SCORE HW-only default: skip toolchain/llvm-project (multi-GB, often EOF mid-clone). generate_hero.sh
+# only needs tools/hero/hardware + Bender. Opt in with HERO_FETCH_LLVM_PROJECT=1.
+llvm_path="toolchain/llvm-project"
+fetch_llvm=false
+if [[ "${HERO_FETCH_LLVM_PROJECT:-}" == 1 || "${HERO_FETCH_LLVM_PROJECT:-}" == true || "${HERO_FETCH_LLVM_PROJECT:-}" == yes ]]; then
+    fetch_llvm=true
+fi
+if [[ "$fetch_llvm" == true ]]; then
+    echo "[hero_submodule_remotes] Will fetch ${llvm_path} (HERO_FETCH_LLVM_PROJECT)" >&2
+else
+    echo "[hero_submodule_remotes] Skipping ${llvm_path} (SCORE HW-only default). Set HERO_FETCH_LLVM_PROJECT=1 to clone." >&2
+    git -C "$HERO_DIR" submodule deinit -f "$llvm_path" 2>/dev/null || true
+fi
+
 # Do not use `submodule sync --recursive` here: it enters each nested repo before
 # `submodule update` has created a valid HEAD (e.g. interrupted clone leaves
 # HEAD -> refs/heads/.invalid), which fails with "fatal: No such ref: HEAD".
 # Top-level sync applies URL fixes from this repo's .gitmodules; update populates checkouts.
 git -C "$HERO_DIR" submodule sync
 
-if [[ "$fetch_hercules" == true ]]; then
-    git -C "$HERO_DIR" submodule update --init --recursive
+hero_other_subs=()
+while read -r _key sub_path; do
+    [[ "$sub_path" == "$hercules_path" && "$fetch_hercules" != true ]] && continue
+    [[ "$sub_path" == "$llvm_path" && "$fetch_llvm" != true ]] && continue
+    [[ -n "$sub_path" ]] || continue
+    hero_other_subs+=("$sub_path")
+done < <(git config -f "$GITMODULES" --get-regexp '^submodule\..*\.path$' 2>/dev/null || true)
+if [[ ${#hero_other_subs[@]} -eq 0 ]]; then
+    echo "[hero_submodule_remotes] Warning: no submodule paths selected for update in $GITMODULES" >&2
 else
-    hero_other_subs=()
-    while read -r _key sub_path; do
-        [[ "$sub_path" == "$hercules_path" ]] && continue
-        [[ -n "$sub_path" ]] || continue
-        hero_other_subs+=("$sub_path")
-    done < <(git config -f "$GITMODULES" --get-regexp '^submodule\..*\.path$' 2>/dev/null || true)
-    if [[ ${#hero_other_subs[@]} -eq 0 ]]; then
-        echo "[hero_submodule_remotes] Warning: no submodule paths in $GITMODULES (unexpected)" >&2
-    else
-        git -C "$HERO_DIR" submodule update --init --recursive "${hero_other_subs[@]}"
-    fi
+    git -C "$HERO_DIR" submodule update --init --recursive "${hero_other_subs[@]}"
 fi
