@@ -1,0 +1,12 @@
+diff --git a/.gitmodules b/.gitmodules
+index 9f3deb5a..430dc3eb 100644
+--- a/.gitmodules
++++ b/.gitmodules
+@@ -1,6 +1,6 @@
+ [submodule "buildroot"]
+ 	path = buildroot
+-	url = git://git.buildroot.net/buildroot
++	url = https://github.com/buildroot/buildroot.git
+ [submodule "tools/riscv-openocd"]
+ 	path = util/riscv-openocd
+ 	url = https://github.com/riscv/riscv-openocd
