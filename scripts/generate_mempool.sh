@@ -48,6 +48,8 @@ BENDER_VERIFY_CONFIGS=(minpool mempool terapool)
 
 # shellcheck source=scripts/common_logging.sh
 source "$SCRIPT_DIR/common_logging.sh"
+# shellcheck source=scripts/common_bender.sh
+source "$SCRIPT_DIR/common_bender.sh"
 init_script_logging generate_mempool
 
 err() {
