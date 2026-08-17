@@ -33,6 +33,8 @@ CHESHIRE_IHP130_O_GITCONFIG_TMP=""
 
 # shellcheck source=scripts/common_logging.sh
 source "$SCRIPT_DIR/common_logging.sh"
+# shellcheck source=scripts/common_bender.sh
+source "$SCRIPT_DIR/common_bender.sh"
 init_script_logging generate_cheshire_ihp130_o
 
 info() { log_info "$@"; }
@@ -319,10 +321,10 @@ if [[ "$SKIP_CHECKOUT" != true ]]; then
     apply_cheshire_ihp130_o_git_global
     if [[ "$BENDER_UPDATE" == true ]]; then
         warn "Running bender update (may fail if dependency graphs conflict)"
-        bender update
+        score_bender_checkout update
     else
         info "Running bender checkout (Bender.lock)"
-        bender checkout
+        score_bender_checkout checkout
     fi
     cleanup_cheshire_ihp130_o_git_global
 else
