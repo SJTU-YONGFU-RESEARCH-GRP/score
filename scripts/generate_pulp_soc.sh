@@ -31,6 +31,8 @@ PULP_SOC_GPIO_OVERRIDE_REV="${PULP_SOC_GPIO_OVERRIDE_REV:-8a9e71e64b588c49f66794
 
 # shellcheck source=scripts/common_logging.sh
 source "$SCRIPT_DIR/common_logging.sh"
+# shellcheck source=scripts/common_bender.sh
+source "$SCRIPT_DIR/common_bender.sh"
 init_script_logging generate_pulp_soc
 
 info() { log_info "$@"; }
@@ -163,10 +165,10 @@ pushd "$PULP_SOC_DIR" >/dev/null
 if [[ "$SKIP_CHECKOUT" != true ]]; then
     if [[ "$BENDER_UPDATE" == true ]]; then
         warn "Running bender update (may fail if dependency graphs conflict)"
-        bender update
+        score_bender_checkout update
     else
         info "Running bender checkout"
-        bender checkout
+        score_bender_checkout checkout
     fi
 else
     warn "Skipped bender checkout/update"
