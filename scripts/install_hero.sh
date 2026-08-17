@@ -578,11 +578,17 @@ initialize_hero_hardware() {
     cd "$HERO_DIR/hardware"
     
     install_hero_hardware_bender || return 1
-    
-    # Initialize hardware dependencies using Bender
-    info "Fetching HERO hardware dependencies..."
-    ./bender update
-    
+    # Makefile rule is `bender: Makefile`; keep binary newer than Makefile.
+    touch ./bender
+
+    # HERO Bender.yml pins deleted branch names; only run update when deps are missing.
+    if [[ -d "./deps/axi" && -d "./deps/pulp_cluster" ]]; then
+        info "hardware/deps already present; skipping ./bender update"
+    else
+        info "Fetching HERO hardware dependencies..."
+        ./bender update
+    fi
+
     # Generate compilation scripts
     info "Generating RTL compilation scripts..."
     make vsim/compile.tcl
