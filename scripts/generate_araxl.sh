@@ -51,6 +51,8 @@ ARAXL_HW_MAKE_OVERRIDES="${ARAXL_HW_MAKE_OVERRIDES:-questa_cmd=true}"
 
 # shellcheck source=scripts/common_logging.sh
 source "$SCRIPT_DIR/common_logging.sh"
+# shellcheck source=scripts/common_bender.sh
+source "$SCRIPT_DIR/common_bender.sh"
 init_script_logging generate_araxl
 
 info() { log_info "$@"; }
@@ -250,8 +252,17 @@ run_araxl_bender() {
     local subcmd="$1" st=0
     shift
     pushd "$ARAXL_HW" >/dev/null || return 1
-    ./bender "$subcmd" "$@" 2>&1 | filter_bender_w03
-    st=${PIPESTATUS[0]}
+    case "$subcmd" in
+        checkout|update)
+            # Prefer SCORE helper (E24 include dirs + skip nested PDK submodules).
+            PATH="${ARAXL_HW}:${PATH}" score_bender_checkout "$subcmd" "$@" 2>&1 | filter_bender_w03
+            st=${PIPESTATUS[0]}
+            ;;
+        *)
+            ./bender "$subcmd" "$@" 2>&1 | filter_bender_w03
+            st=${PIPESTATUS[0]}
+            ;;
+    esac
     popd >/dev/null || true
     return "$st"
 }
