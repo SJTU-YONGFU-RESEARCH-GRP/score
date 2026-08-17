@@ -41,6 +41,8 @@ CHESHIRE_TB_SV="$SCRIPT_DIR/assets/chimera/tb_stream_fifo.sv"
 
 # shellcheck source=scripts/common_logging.sh
 source "$SCRIPT_DIR/common_logging.sh"
+# shellcheck source=scripts/common_bender.sh
+source "$SCRIPT_DIR/common_bender.sh"
 init_script_logging generate_cheshire
 
 info() { log_info "$@"; }
@@ -454,10 +456,10 @@ pushd "$CHESHIRE_DIR" >/dev/null
 if [[ "$SKIP_CHECKOUT" != true ]]; then
     if [[ "$BENDER_UPDATE" == true ]]; then
         warn "Running bender update (may fail if dependency graphs conflict)"
-        bender update
+        score_bender_checkout update
     else
         info "Running bender checkout (Bender.lock)"
-        bender checkout
+        score_bender_checkout checkout
     fi
 else
     warn "Skipped bender checkout/update"
