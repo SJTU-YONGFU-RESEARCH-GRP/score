@@ -697,8 +697,11 @@ ensure_score_neorv32_submodule() {
         return 0
     fi
 
-    info "git -C \"$PROJECT_ROOT\" submodule update --init --recursive $NEORV32_SUBMODULE_REL"
-    git -C "$PROJECT_ROOT" submodule update --init --recursive "$NEORV32_SUBMODULE_REL"
+    # tools/neorv32 may be listed in .gitmodules without a gitlink in the index; use shared bootstrap.
+    # shellcheck source=scripts/common_submodule_bootstrap.sh
+    source "$SCRIPT_DIR/common_submodule_bootstrap.sh"
+    info "Preparing SCORE checkout: $NEORV32_SUBMODULE_REL"
+    score_prepare_tool_checkout "$PROJECT_ROOT" "$NEORV32_SUBMODULE_REL"
     success "NEORV32 RTL submodule ready at $TOOLS_DIR/neorv32"
 }
 
