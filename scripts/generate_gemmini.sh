@@ -394,6 +394,9 @@ setup_environment() {
 }
 
 # Link writable Gemmini copy into Chipyard generators (same as after install_gemmini + generate flow).
+# Git refuses a submodule checkout path that is a symlink (`expected submodule path
+# ... not to be a symbolic link`), which makes `git status` fail in this Chipyard
+# clone and therefore in the SCORE superproject. Drop the gitlink first.
 ensure_gemmini_linked_in_chipyard() {
     log "Linking Gemmini into Chipyard generators..."
     if [[ ! -d "$CHIPYARD_HOME" ]]; then
@@ -404,16 +407,27 @@ ensure_gemmini_linked_in_chipyard() {
         error "GEMMINI_HOME not populated: $GEMMINI_HOME"
         exit 1
     fi
-    if [[ -e "$CHIPYARD_HOME/generators/gemmini" ]]; then
-        rm -rf "$CHIPYARD_HOME/generators/gemmini"
+    local dest="$CHIPYARD_HOME/generators/gemmini"
+    if [[ -e "$dest" || -L "$dest" ]]; then
+        rm -rf "$dest"
     fi
-    if ln -sf "$GEMMINI_HOME" "$CHIPYARD_HOME/generators/gemmini" >>"$SESSION_LOG" 2>&1; then
-        success "generators/gemmini -> $GEMMINI_HOME"
-    else
-        warning "Symlink failed; copying Gemmini into generators/gemmini"
-        cp -r "$GEMMINI_HOME" "$CHIPYARD_HOME/generators/gemmini" 2>&1 | tee -a "$SESSION_LOG"
-        success "Gemmini copied into Chipyard generators"
+    if git -C "$CHIPYARD_HOME" ls-files --error-unmatch -- generators/gemmini >/dev/null 2>&1; then
+        git -C "$CHIPYARD_HOME" rm -f --cached generators/gemmini
     fi
+    local exclude="$CHIPYARD_HOME/.git/info/exclude"
+    mkdir -p "$(dirname "$exclude")"
+    if [[ ! -f "$exclude" ]] || ! grep -qxF 'generators/gemmini' "$exclude"; then
+        echo 'generators/gemmini' >> "$exclude"
+    fi
+    if ! ln -sfn "$GEMMINI_HOME" "$dest" >>"$SESSION_LOG" 2>&1; then
+        error "Failed to symlink $dest -> $GEMMINI_HOME"
+        exit 1
+    fi
+    if [[ ! -f "$dest/build.sbt" ]]; then
+        error "Gemmini overlay missing build.sbt: $dest"
+        exit 1
+    fi
+    success "generators/gemmini -> $GEMMINI_HOME"
 }
 
 # Setup Chipyard environment
