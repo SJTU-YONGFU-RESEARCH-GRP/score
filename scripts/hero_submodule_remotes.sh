@@ -1,22 +1,20 @@
 #!/usr/bin/env bash
 #
-# Normalize HERO nested submodule URLs for reliable clones in SCORE:
-#   - HerculesCompiler: upstream is ETH iis-git (private; no anonymous clone). SCORE hardware flow
-#     (generate_hero.sh, install_hero hardware/Bender) does not need it. By default we omit this path
-#     from `git submodule update` so ./scripts/run_hero.sh works without ETH credentials. Opt in:
-#     HERO_FETCH_HERCULES_COMPILER=1 (needs iis-git access or HERO_HERCULES_COMPILER_URL).
-#     Optional fork: HERO_HERCULES_COMPILER_URL=https://github.com/<you>/HerculesCompiler-public.git
-#     Opt-in SSH for iis-git: HERO_IIS_GIT_USE_SSH=1 (requires your key on iis-git).
-#   - axi_riscv_atomics (vendored under hardware/deps): old Bender.yml lists pulp-restricted/vip on
-#     iis-git; upstream pulp-platform/axi_riscv_atomics on GitHub removed that dep (uses only
-#     common_verification). We delete the vip line so ./bender update does not hit iis-git.
-#   - buildroot: prefer https://github.com/buildroot/buildroot.git (same tree, fewer EOF/corruption
-#     issues than git.buildroot.net for some networks). Override with HERO_BUILDROOT_URL or keep
-#     official host with HERO_BUILDROOT_USE_OFFICIAL=1.
-#   - HerculesCompiler-public: there is no known public GitHub mirror of the ETH repo; SCORE skips
-#     cloning it by default (use HERO_HERCULES_COMPILER_URL if you mirror it yourself on GitHub).
-#   - toolchain/llvm-project: multi-GB clone often fails mid-fetch; SCORE HW RTL flow does not need
-#     it. Skip by default; set HERO_FETCH_LLVM_PROJECT=1 to clone.
+# Normalize HERO nested submodule URLs for reliable clones in SCORE.
+#
+# SCORE-owned file edits live under overlays/hero/patches/ and are applied here
+# (do not commit dirty changes inside tools/hero — push overlays/ to SCORE GitHub).
+#
+#   - HerculesCompiler: private ETH iis-git; SCORE HW flow skips by default.
+#     Opt in: HERO_FETCH_HERCULES_COMPILER=1 or HERO_HERCULES_COMPILER_URL=<fork>.
+#   - axi_riscv_atomics vip: dropped via overlay patch (private iis-git).
+#     Keep with HERO_KEEP_AXI_RISCV_ATOMICS_VIP=1.
+#   - buildroot: GitHub HTTPS via overlay patch; override HERO_BUILDROOT_URL /
+#     HERO_BUILDROOT_USE_OFFICIAL=1.
+#   - llvm-project: skipped by default (multi-GB); HERO_FETCH_LLVM_PROJECT=1 to clone.
+#   - HERO_USE_SSH / HERO_IIS_GIT_USE_SSH: optional URL scheme rewrites after overlays.
+#
+# Expects tools/hero to exist. Idempotent.
 #
 # Optional environment overrides:
 #   HERO_FETCH_HERCULES_COMPILER If 1/true/yes, clone toolchain/HerculesCompiler-public (default: skip).
@@ -41,6 +39,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 HERO_DIR="${HERO_DIR:-$PROJECT_ROOT/tools/hero}"
+HERO_OVERLAY="${HERO_OVERLAY:-$PROJECT_ROOT/overlays/hero}"
 
 # shellcheck source=scripts/common_logging.sh
 source "$SCRIPT_DIR/common_logging.sh"
@@ -52,24 +51,42 @@ if [[ ! -f "$GITMODULES" ]]; then
     exit 0
 fi
 
-# Drop private iis-git vip dependency from vendored axi_riscv_atomics (aligns with public GitHub upstream).
-patch_hero_axi_riscv_atomics_remove_private_vip() {
-    local f="$HERO_DIR/hardware/deps/axi_riscv_atomics/Bender.yml"
-    if [[ ! -f "$f" ]]; then
-        return 0
+# Apply SCORE-owned patches from overlays/hero/patches (source of truth for GitHub).
+# Idempotent: skip if already applied; fail if present but neither apply nor reverse-check works.
+apply_hero_overlay_patches() {
+    local patches_dir="$HERO_OVERLAY/patches"
+    local p
+    if [[ ! -d "$patches_dir" ]]; then
+        echo "[hero_submodule_remotes] error: missing overlay patches dir: $patches_dir" >&2
+        exit 1
     fi
-    if ! grep -qF 'pulp-restricted/vip.git' "$f" 2>/dev/null; then
-        return 0
+    shopt -s nullglob
+    local patches=("$patches_dir"/*.patch)
+    shopt -u nullglob
+    if [[ ${#patches[@]} -eq 0 ]]; then
+        echo "[hero_submodule_remotes] error: no *.patch under $patches_dir" >&2
+        exit 1
     fi
-    sed -i '/^[[:space:]]*vip:.*pulp-restricted\/vip\.git/d' "$f"
-    echo "[hero_submodule_remotes] Removed private iis-git vip dependency from hardware/deps/axi_riscv_atomics/Bender.yml (public upstream uses common_verification only)." >&2
+    for p in "${patches[@]}"; do
+        if [[ "$(basename "$p")" == "0002-axi_riscv_atomics-drop-private-vip.patch" ]]; then
+            if [[ "${HERO_KEEP_AXI_RISCV_ATOMICS_VIP:-}" == 1 || "${HERO_KEEP_AXI_RISCV_ATOMICS_VIP:-}" == true || "${HERO_KEEP_AXI_RISCV_ATOMICS_VIP:-}" == yes ]]; then
+                echo "[hero_submodule_remotes] Skipping $p (HERO_KEEP_AXI_RISCV_ATOMICS_VIP)" >&2
+                continue
+            fi
+        fi
+        if git -C "$HERO_DIR" apply --check "$p" 2>/dev/null; then
+            git -C "$HERO_DIR" apply "$p"
+            echo "[hero_submodule_remotes] Applied overlay patch $(basename "$p")" >&2
+        elif git -C "$HERO_DIR" apply --check --reverse "$p" 2>/dev/null; then
+            echo "[hero_submodule_remotes] Overlay patch already applied: $(basename "$p")" >&2
+        else
+            echo "[hero_submodule_remotes] error: cannot apply overlay patch $p (checkout drifted?)" >&2
+            exit 1
+        fi
+    done
 }
 
-if [[ "${HERO_KEEP_AXI_RISCV_ATOMICS_VIP:-}" == 1 || "${HERO_KEEP_AXI_RISCV_ATOMICS_VIP:-}" == true || "${HERO_KEEP_AXI_RISCV_ATOMICS_VIP:-}" == yes ]]; then
-    echo "[hero_submodule_remotes] Keeping axi_riscv_atomics vip line (HERO_KEEP_AXI_RISCV_ATOMICS_VIP)" >&2
-else
-    patch_hero_axi_riscv_atomics_remove_private_vip
-fi
+apply_hero_overlay_patches
 
 changed=false
 
