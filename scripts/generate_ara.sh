@@ -39,6 +39,8 @@ MAX_PARALLEL_JOBS=16
 
 # shellcheck source=scripts/common_logging.sh
 source "$SCRIPT_DIR/common_logging.sh"
+# shellcheck source=scripts/common_bender.sh
+source "$SCRIPT_DIR/common_bender.sh"
 init_script_logging generate_ara
 
 info() { log_info "$@"; }
@@ -375,8 +377,8 @@ fi
 if [[ "$SKIP_CHECKOUT" != true ]]; then
     info "Running make -C hardware bender (-j$PARALLEL_JOBS)"
     make -C "$ARA_HW" -j"$PARALLEL_JOBS" bender
-    info "Running make -C hardware checkout (-j$PARALLEL_JOBS)"
-    make -C "$ARA_HW" -j"$PARALLEL_JOBS" checkout
+    info "Running bender checkout in hardware/ (SCORE helper; skip nested PDK submodules)"
+    (cd "$ARA_HW" && PATH="${ARA_HW}:${PATH}" score_bender_checkout checkout)
 else
     warn "Skipped make bender / make checkout (--skip-checkout)"
 fi
