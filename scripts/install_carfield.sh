@@ -21,6 +21,8 @@ SKIP_BENDER=false
 
 # shellcheck source=scripts/common_logging.sh
 source "$SCRIPT_DIR/common_logging.sh"
+# shellcheck source=scripts/common_bender.sh
+source "$SCRIPT_DIR/common_bender.sh"
 init_script_logging install_carfield
 
 info() { log_info "$@"; }
@@ -149,71 +151,6 @@ install_system_packages() {
             warn "Unknown OS; skipping package install. Ensure git, curl or wget, tar, rsync, and python3 are available."
             ;;
     esac
-}
-
-download_extract() {
-    local url="$1"
-    local dest_dir="$2"
-    mkdir -p "$dest_dir"
-    if command_exists curl; then
-        curl -fsSL "$url" | tar -xz -C "$dest_dir"
-    elif command_exists wget; then
-        wget -qO- "$url" | tar -xz -C "$dest_dir"
-    else
-        err "Need curl or wget to download Bender"
-        return 1
-    fi
-}
-
-install_bender_binary() {
-    local tag_name ver pkg url uname_s uname_m
-    local json
-    json=$(curl -fsSL "https://api.github.com/repos/pulp-platform/bender/releases/latest") || {
-        err "Failed to query pulp-platform/bender releases"
-        return 1
-    }
-    tag_name=$(echo "$json" | grep -m1 '"tag_name":' | sed 's/.*"tag_name": "//;s/".*//')
-    if [[ -z "$tag_name" ]]; then
-        err "Could not parse Bender release tag"
-        return 1
-    fi
-    ver="${tag_name#v}"
-    uname_s=$(uname -s)
-    uname_m=$(uname -m)
-    case "$uname_s" in
-        Darwin)
-            pkg="bender-${ver}-universal-apple-darwin.tar.gz"
-            ;;
-        Linux)
-            case "$uname_m" in
-                x86_64) pkg="bender-${ver}-x86_64-linux-gnu.tar.gz" ;;
-                aarch64|arm64) pkg="bender-${ver}-arm64-linux-gnu.tar.gz" ;;
-                *)
-                    err "Unsupported Linux machine type: $uname_m (need x86_64 or aarch64)"
-                    return 1
-                    ;;
-            esac
-            ;;
-        *)
-            err "Unsupported OS: $uname_s"
-            return 1
-            ;;
-    esac
-    url="https://github.com/pulp-platform/bender/releases/download/${tag_name}/${pkg}"
-    info "Installing Bender ${tag_name} from ${url}"
-    local tmp
-    tmp=$(mktemp -d)
-    download_extract "$url" "$tmp" || { rm -rf "$tmp"; return 1; }
-    if [[ ! -f "$tmp/bender" ]]; then
-        err "Archive did not contain bender binary"
-        rm -rf "$tmp"
-        return 1
-    fi
-    mkdir -p "${HOME}/.local/bin"
-    install -m0755 "$tmp/bender" "${HOME}/.local/bin/bender"
-    rm -rf "$tmp"
-    export PATH="${HOME}/.local/bin:${PATH}"
-    ok "Bender installed: $(bender --version 2>/dev/null || echo "${HOME}/.local/bin/bender")"
 }
 
 cd "$PROJECT_ROOT"
