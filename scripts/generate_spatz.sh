@@ -38,6 +38,8 @@ NO_VERIFY_RTL=false
 
 # shellcheck source=scripts/common_logging.sh
 source "$SCRIPT_DIR/common_logging.sh"
+# shellcheck source=scripts/common_bender.sh
+source "$SCRIPT_DIR/common_bender.sh"
 init_script_logging generate_spatz
 
 info() { log_info "$@"; }
@@ -415,12 +417,21 @@ if [[ "$SKIP_CHECKOUT" != true ]]; then
     fi
     info "Running make bender (install/bender/, BENDER_VERSION=${bender_version_for_make})"
     make -C "$SPATZ_DIR" bender "BENDER_VERSION=${bender_version_for_make}"
+    # Upstream pulp-platform/bender installers may place the binary in ~/.cargo/bin
+    # (cargo-dist) instead of install/bender/bender. Prefer the vendored path; else
+    # link PATH bender into install/bender/ so later steps and BENDER= stay stable.
     if [[ ! -x "$SPATZ_BENDER" ]]; then
-        err "Expected bender at $SPATZ_BENDER after make bender"
-        exit 1
+        if command_exists bender; then
+            mkdir -p "$(dirname "$SPATZ_BENDER")"
+            ln -sfn "$(command -v bender)" "$SPATZ_BENDER"
+            info "Linked PATH bender into $SPATZ_BENDER"
+        else
+            err "Expected bender at $SPATZ_BENDER after make bender (and none on PATH)"
+            exit 1
+        fi
     fi
     info "Running bender checkout (from repo root)"
-    (cd "$SPATZ_DIR" && "$SPATZ_BENDER" checkout)
+    (cd "$SPATZ_DIR" && PATH="$(dirname "$SPATZ_BENDER"):${PATH}" score_bender_checkout checkout)
 else
     warn "Skipped make bender / bender checkout (--skip-checkout)"
 fi
