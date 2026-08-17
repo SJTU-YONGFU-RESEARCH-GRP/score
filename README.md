@@ -94,6 +94,15 @@ Each row lists the **upstream GitHub repository** and the **script basename** (f
 | **Snitch cluster** | [pulp-platform/snitch_cluster](https://github.com/pulp-platform/snitch_cluster) | `install_snitch_cluster.sh` | `generate_snitch_cluster.sh` | `run_snitch_cluster.sh` |
 | **SoC Automation** | [habibagamal/SoC\_Automation](https://github.com/habibagamal/SoC_Automation) | `install_soc_automation.sh` | `generate_soc_automation.sh` | — |
 | **Spatz** | [pulp-platform/spatz](https://github.com/pulp-platform/spatz) | `install_spatz.sh` | `generate_spatz.sh` | `run_spatz.sh` |
+| **PicoRV32** | [YosysHQ/picorv32](https://github.com/YosysHQ/picorv32) | `install_picorv32.sh` | `generate_picorv32.sh` | — |
+| **DarkRISCV** | [darklife/darkriscv](https://github.com/darklife/darkriscv) | `install_darkriscv.sh` | `generate_darkriscv.sh` | — |
+| **SERV** | [olofk/serv](https://github.com/olofk/serv) | `install_serv.sh` | `generate_serv.sh` | — |
+| **Hazard3** | [Wren6991/Hazard3](https://github.com/Wren6991/Hazard3) | `install_hazard3.sh` | `generate_hazard3.sh` | — |
+| **SCR1** | [syntacore/scr1](https://github.com/syntacore/scr1) | `install_scr1.sh` | `generate_scr1.sh` | — |
+| **VexRiscv** | [SpinalHDL/VexRiscv](https://github.com/SpinalHDL/VexRiscv) | `install_vexriscv.sh` | `generate_vexriscv.sh` | — |
+| **OpenTitan** | [lowRISC/opentitan](https://github.com/lowRISC/opentitan) | `install_opentitan.sh` (full clone + venv/FuseSoC + Verilator 4.210) | `generate_opentitan.sh` (`//hw:verilator`) | — |
+| **BlackParrot** | [black-parrot/black-parrot](https://github.com/black-parrot/black-parrot) | `install_black_parrot.sh` | `generate_black_parrot.sh` | — |
+| **VeeR EL2** | [chipsalliance/Cores-VeeR-EL2](https://github.com/chipsalliance/Cores-VeeR-EL2) | `install_veer_el2.sh` | `generate_veer_el2.sh` | — |
 
 **Ibex:** the upstream core is not listed as a git submodule in `.gitmodules`; clone or link it under `tools/ibex` as expected by `install_ibex.sh` / `generate_ibex.sh`.
 
