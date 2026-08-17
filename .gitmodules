@@ -130,3 +130,39 @@
 [submodule "tools/rv12"]
 	path = tools/rv12
 	url = https://github.com/RoaLogic/RV12.git
+
+[submodule "tools/picorv32"]
+	path = tools/picorv32
+	url = https://github.com/YosysHQ/picorv32.git
+
+[submodule "tools/darkriscv"]
+	path = tools/darkriscv
+	url = https://github.com/darklife/darkriscv.git
+
+[submodule "tools/serv"]
+	path = tools/serv
+	url = https://github.com/olofk/serv.git
+
+[submodule "tools/hazard3"]
+	path = tools/hazard3
+	url = https://github.com/Wren6991/Hazard3.git
+
+[submodule "tools/scr1"]
+	path = tools/scr1
+	url = https://github.com/syntacore/scr1.git
+
+[submodule "tools/vexriscv"]
+	path = tools/vexriscv
+	url = https://github.com/SpinalHDL/VexRiscv.git
+
+[submodule "tools/opentitan"]
+	path = tools/opentitan
+	url = https://github.com/lowRISC/opentitan.git
+
+[submodule "tools/black-parrot"]
+	path = tools/black-parrot
+	url = https://github.com/black-parrot/black-parrot.git
+
+[submodule "tools/veer-el2"]
+	path = tools/veer-el2
+	url = https://github.com/chipsalliance/Cores-VeeR-EL2.git
