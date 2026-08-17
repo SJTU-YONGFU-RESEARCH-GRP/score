@@ -1,5 +1,5 @@
 Astral / Carfield RTL verification summary (SCORE)
-Generated (UTC): 2026-04-14 15:43:12
+Generated (UTC): 2026-08-10 18:58:27
 ASTRAL_CARFIELD_CONFIG (bender flist profile): carfield_l2dual_periph
 
 Bender.lock → bender path: PASS
