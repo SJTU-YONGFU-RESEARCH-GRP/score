@@ -25,5 +25,10 @@ Thumbs.db
 *.swo
 *~ 
 
-# Local ibex host toolchain artifacts (very large binaries)
+# Local host toolchain / install trees (very large binaries; do not commit)
 tools/ibex-host-tools/
+tools/opentitan-host-tools/
+tools/ghdl-install/
+tools/hero-install/
+tools/*-install/
+tools/*-host-tools/
