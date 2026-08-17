@@ -24,6 +24,8 @@ SKIP_VERILATOR_SIM=false
 
 # shellcheck source=scripts/common_logging.sh
 source "$SCRIPT_DIR/common_logging.sh"
+# shellcheck source=scripts/common_bender.sh
+source "$SCRIPT_DIR/common_bender.sh"
 init_script_logging generate_rv_tracer
 
 info() { log_info "$@"; }
@@ -133,7 +135,7 @@ pushd "$RV_TRACER_DIR" >/dev/null
 
 if [[ "$SKIP_BENDER_UPDATE" != true ]]; then
     info "Running bender update"
-    bender update
+    score_bender_checkout update
 else
     warn "Skipped bender update"
     if [[ ! -d .bender ]]; then
