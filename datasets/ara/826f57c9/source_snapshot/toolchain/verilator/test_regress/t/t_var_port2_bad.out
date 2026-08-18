@@ -1,0 +1,8 @@
+%Error: t/t_var_port2_bad.v:8:5: Input/output/inout declaration not found for port: 'portwithoin'
+    8 |     portwithoin
+      |     ^~~~~~~~~~~
+        ... See the manual at https://verilator.org/verilator_doc.html?v=latest for more assistance.
+%Error: t/t_var_port2_bad.v:10:9: Input/output/inout does not appear in port list: 'portwithin'
+   10 |   input portwithin;
+      |         ^~~~~~~~~~
+%Error: Exiting due to
