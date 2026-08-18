@@ -1,0 +1,9 @@
+core_type: sparc
+config_name: sparc_4x2
+x_tiles: 4
+y_tiles: 2
+total_tiles: 8
+simulator: vlt
+generation_date: Wed Aug 12 11:04:46 PM CST 2026
+rtl_only: true
+description: "OpenPiton sparc configuration with 4x2 tiles"
