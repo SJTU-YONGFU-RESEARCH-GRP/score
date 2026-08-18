@@ -1,0 +1,9 @@
+core_type: pico
+config_name: pico_2x1
+x_tiles: 2
+y_tiles: 1
+total_tiles: 2
+simulator: vlt
+generation_date: Wed Aug 12 11:09:52 PM CST 2026
+rtl_only: true
+description: "OpenPiton pico configuration with 2x1 tiles"
