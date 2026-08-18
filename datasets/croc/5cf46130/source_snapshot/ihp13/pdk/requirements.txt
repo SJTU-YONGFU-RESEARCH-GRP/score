@@ -1,8 +1,0 @@
-flake8
-docopt
-pandas
-klayout
-pyyaml
-gdstk
-tqdm
-termcolor
