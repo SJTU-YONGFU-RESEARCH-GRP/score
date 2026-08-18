@@ -1,0 +1,13 @@
+design_name: spi
+design_category: peripherals
+description: "SPI"
+generation_date: Wed Aug 12 11:16:30 PM CST 2026
+source_repository: riscv_vhdl
+vhdl_files: 2
+total_lines: 746
+synthesis_ready: true
+fpu_enabled: false
+debug_enabled: false
+cache_enabled: false
+target_frequency: "60MHz"
+architecture: "RISC-V"
