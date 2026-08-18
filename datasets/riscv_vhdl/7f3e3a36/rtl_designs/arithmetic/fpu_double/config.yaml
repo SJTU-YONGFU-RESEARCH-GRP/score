@@ -1,0 +1,13 @@
+design_name: fpu_double
+design_category: arithmetic
+description: "Double"
+generation_date: Wed Aug 12 11:16:35 PM CST 2026
+source_repository: riscv_vhdl
+vhdl_files: 10
+total_lines: 3038
+synthesis_ready: true
+fpu_enabled: true
+debug_enabled: false
+cache_enabled: false
+target_frequency: "60MHz"
+architecture: "RISC-V"
