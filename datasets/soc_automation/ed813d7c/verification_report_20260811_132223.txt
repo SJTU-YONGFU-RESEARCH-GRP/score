@@ -1,0 +1,19 @@
+SoC Automation RTL Generation Verification Report
+Generated: Tue Aug 11 01:22:36 PM CST 2026
+Session ID: 20260811_132223
+Verification Duration: 2s
+
+=== SUMMARY ===
+Total Errors: 12
+- Configuration Completeness Errors: 0
+- Peripheral Configuration Errors: 0  
+- RTL Syntax Errors: 12
+
+=== STATISTICS ===
+Configuration Directories: 60
+Configurations with RTL: 60
+Build Logs: 38
+Logs with Errors: 26
+
+=== VERIFICATION STATUS ===
+STATUS: FAIL - 12 verification errors found
