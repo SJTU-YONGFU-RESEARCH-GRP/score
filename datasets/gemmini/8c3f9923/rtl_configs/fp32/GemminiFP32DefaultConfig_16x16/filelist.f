@@ -1,0 +1,1 @@
+/home/yongfu/proj/score/datasets/gemmini/8c3f9923/rtl_configs/fp32/GemminiFP32DefaultConfig_16x16/GemminiFP32DefaultConfig_16x16_top.v
