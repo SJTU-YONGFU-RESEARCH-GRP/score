@@ -1,0 +1,18 @@
+[submodule "toolchain/riscv-gnu-toolchain"]
+	path = toolchain/riscv-gnu-toolchain
+	url = https://github.com/pulp-platform/pulp-riscv-gnu-toolchain.git
+[submodule "toolchain/llvm-project"]
+	path = toolchain/llvm-project
+	url = https://github.com/pulp-platform/snitch-llvm.git
+[submodule "toolchain/halide"]
+	path = toolchain/halide
+	url = https://github.com/SamuelRiedel/Halide.git
+[submodule "toolchain/verilator"]
+	path = toolchain/verilator
+	url = https://github.com/verilator/verilator.git
+[submodule "toolchain/riscv-opcodes"]
+	path = toolchain/riscv-opcodes
+	url = https://github.com/pulp-platform/riscv-opcodes.git
+[submodule "hardware/deps/dram_rtl_sim"]
+	path = hardware/deps/dram_rtl_sim
+	url = https://github.com/pulp-platform/dram_rtl_sim.git
