@@ -1,0 +1,1 @@
+pulp_soc_smoke|PASS|verilator_lint|/home/yongfu/proj/score/datasets/pulp_soc/bf65372a/verification/pulp_soc_smoke_verilator_lint.log|/home/yongfu/proj/score/datasets/pulp_soc/bf65372a/rtl_designs/pulp_soc_snapshot/pulp_soc_smoke_tb.sv
