@@ -1,0 +1,6 @@
+# Ibex Configuration: maxperf-pmp-bmfull-icache
+name: maxperf-pmp-bmfull-icache
+generated: Thu Aug 13 12:43:26 AM CST 2026
+source: /home/yongfu/proj/score/tools/ibex/ibex_configs.yaml
+
+parameters:
