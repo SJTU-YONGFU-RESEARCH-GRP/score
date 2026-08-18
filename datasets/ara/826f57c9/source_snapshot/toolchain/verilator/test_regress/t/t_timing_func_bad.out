@@ -1,0 +1,26 @@
+%Error: t/t_timing_func_bad.v:10:5: Delays are not legal in functions. Suggest use a task (IEEE 1800-2023 13.4.4)
+                                  : ... note: In instance 't'
+   10 |     #1 $stop;
+      |     ^
+        ... See the manual at https://verilator.org/verilator_doc.html?v=latest for more assistance.
+%Error: t/t_timing_func_bad.v:15:10: Timing controls are not legal in functions. Suggest use a task (IEEE 1800-2023 13.4.4)
+                                   : ... note: In instance 't'
+   15 |     f2 = #5 0;
+      |          ^
+%Error: t/t_timing_func_bad.v:21:5: Event controls are not legal in functions. Suggest use a task (IEEE 1800-2023 13.4.4)
+                                  : ... note: In instance 't'
+   21 |     @e $stop;
+      |     ^
+%Error: t/t_timing_func_bad.v:26:10: Timing controls are not legal in functions. Suggest use a task (IEEE 1800-2023 13.4.4)
+                                   : ... note: In instance 't'
+   26 |     f4 = @e 0;
+      |          ^
+%Error: t/t_timing_func_bad.v:33:5: Wait statements are not legal in functions. Suggest use a task (IEEE 1800-2023 13.4.4)
+                                  : ... note: In instance 't'
+   33 |     wait (i == 0) $stop;
+      |     ^~~~
+%Error: t/t_timing_func_bad.v:44:5: Delays are not legal in final blocks (IEEE 1800-2023 9.2.3)
+                                  : ... note: In instance 't'
+   44 |     #1;
+      |     ^
+%Error: Exiting due to
