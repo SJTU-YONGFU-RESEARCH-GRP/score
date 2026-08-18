@@ -1,0 +1,84 @@
+Rocket Chip RTL Design Dataset Summary
+Generated: Wed Aug 12 11:10:03 PM CST 2026
+Generator: Rocket Chip Generator (885dd5966)
+
+OVERVIEW
+========
+Total Configurations: 1
+Total RTL Files: 5
+Categories: 1
+Output Format: verilog
+
+CATEGORIES
+==========
+single_core: 1 configurations, 5 files
+  - rocket_small (4 Verilog files)
+
+
+CONFIGURATION DETAILS
+=====================
+rocket_rocc_example -> freechips.rocketchip.system.RoccExampleConfig (Category: special)
+rocket_mmio_port_only -> freechips.rocketchip.system.MMIOPortOnlyConfig (Category: special)
+rocket_edge_32bit -> freechips.rocketchip.system.Edge32BitConfig (Category: edge_config)
+rocket_hypervisor -> freechips.rocketchip.system.HypervisorConfig (Category: single_core)
+rocket_fp16 -> freechips.rocketchip.system.DefaultFP16Config (Category: single_core)
+rocket_eight_channel -> freechips.rocketchip.system.EightChannelConfig (Category: multi_core)
+rocket_dual_core -> freechips.rocketchip.system.DualCoreConfig (Category: multi_core)
+rocket_edge_128bit -> freechips.rocketchip.system.Edge128BitConfig (Category: edge_config)
+rocket_mem_port_only -> freechips.rocketchip.system.MemPortOnlyConfig (Category: special)
+rocket_small -> freechips.rocketchip.system.DefaultSmallConfig (Category: single_core)
+rocket_dual_channel -> freechips.rocketchip.system.DualChannelConfig (Category: multi_core)
+rocket_dual_bank -> freechips.rocketchip.system.DualBankConfig (Category: multi_core)
+rocket_big -> freechips.rocketchip.system.DefaultConfig (Category: single_core)
+rocket_tiny -> freechips.rocketchip.system.TinyConfig (Category: single_core)
+rocket_rv32_b -> freechips.rocketchip.system.DefaultRV32BConfig (Category: single_core)
+rocket_clone_tile -> freechips.rocketchip.system.CloneTileConfig (Category: special)
+rocket_rv32 -> freechips.rocketchip.system.DefaultRV32Config (Category: single_core)
+rocket_dual_channel_dual_bank -> freechips.rocketchip.system.DualChannelDualBankConfig (Category: multi_core)
+rocket_b_ext -> freechips.rocketchip.system.DefaultBConfig (Category: single_core)
+
+DIRECTORY STRUCTURE
+===================
+datasets/rocket-chip/<commit>/
+├── out/                   # Mill build output (tools/rocket-chip/out is a symlink here)
+├── target/                # Optional SBT-style build dir (tools/rocket-chip/target -> here)
+├── logs/                  # Per-config and top-level generation logs
+├── rtl_designs/           # Generated RTL files organized by category
+│   ├── single_core/       # Single-core processor configurations
+│   ├── multi_core/        # Multi-core and parallel configurations
+│   ├── fpga/              # FPGA-optimized configurations
+│   ├── benchmark/         # Performance benchmark configurations
+│   ├── edge_config/       # Edge computing configurations
+│   └── special/           # Special purpose configurations
+├── verification/          # Syntax verification logs
+└── rocket_chip_summary.txt # This summary file
+
+GENERATION OPTIONS
+==================
+Single Core: true
+Dual Core: true
+Quad Core: true
+Cluster: false
+Tiny Core: true
+FPGA: true
+Syntax Verification: true
+Testbench Generation: true
+Output Format: verilog
+Parallel Jobs: 4
+
+USAGE INSTRUCTIONS
+==================
+1. Each configuration directory contains:
+   - Generated Verilog/SystemVerilog files (*.v, *.sv)
+   - FIRRTL intermediate files (*.fir, *.anno.json)
+   - Configuration info (config_info.txt)
+   - Optional placeholder testbench (*_tb.sv) — does not instantiate TestHarness
+
+2. For functional simulation use upstream Rocket Chip flows, e.g.:
+   ./scripts/generate_rocket_chip.sh --riscv-isa-smoke
+   or Mill emulator + riscv-tests (see rocket-chip README / build.sc).
+
+3. For FPGA synthesis, use the main module files with your preferred tools.
+
+4. Check verification/ directory for syntax verification results.
+5. See manifest.json for commit id, host, and tool versions (SCORE benchmarking).
