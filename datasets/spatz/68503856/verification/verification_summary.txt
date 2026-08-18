@@ -1,5 +1,5 @@
 spatz verification summary
-Generated (UTC): 2026-04-15 18:37:21
+Generated (UTC): 2026-08-11 04:04:08
 Dataset: /home/yongfu/proj/score/datasets/spatz/68503856
 
 Checks:
@@ -10,8 +10,8 @@ Checks:
   Verilator lint SKIP: 0
 
 Artifacts:
-  verification results: /home/yongfu/proj/score/datasets/spatz/68503856/verification/verification_results_20260416_023630.txt
+  verification results: /home/yongfu/proj/score/datasets/spatz/68503856/verification/verification_results_20260811_120343.txt
   rtl verification summary: /home/yongfu/proj/score/datasets/spatz/68503856/verification/rtl_verify_summary.txt
   rtl verification log: /home/yongfu/proj/score/datasets/spatz/68503856/verification/verilator_lint.log
   verification logs dir: /home/yongfu/proj/score/datasets/spatz/68503856/verification
-  session log: /home/yongfu/proj/score/datasets/spatz/68503856/logs/generate_20260416_023630.log
+  session log: /home/yongfu/proj/score/datasets/spatz/68503856/logs/generate_20260811_120343.log
