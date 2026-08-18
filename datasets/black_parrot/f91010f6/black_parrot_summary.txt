@@ -1,0 +1,6 @@
+black_parrot SCORE snapshot (black-parrot/black-parrot)
+Commit: f91010f6
+Dataset: /home/yongfu/proj/score/datasets/black_parrot/f91010f6
+SV/V files: 1045
+Lint: SKIPPED
+Note: full chip lint needs BaseJump STL include paths and BP make env; SCORE snapshots RTL sources.
