@@ -1,5 +1,5 @@
 pulp_soc verification summary
-Generated (UTC): 2026-04-15 18:10:18
+Generated (UTC): 2026-08-10 18:35:11
 Dataset: /home/yongfu/proj/score/datasets/pulp_soc/bf65372a
 
 Checks:
@@ -10,7 +10,7 @@ Checks:
   Verilator lint SKIP: 0
 
 Artifacts:
-  verification results: /home/yongfu/proj/score/datasets/pulp_soc/bf65372a/verification/verification_results_20260416_021018.txt
+  verification results: /home/yongfu/proj/score/datasets/pulp_soc/bf65372a/verification/verification_results_20260811_023406.txt
   verilator lint log: /home/yongfu/proj/score/datasets/pulp_soc/bf65372a/verification/pulp_soc_smoke_verilator_lint.log
   verification logs dir: /home/yongfu/proj/score/datasets/pulp_soc/bf65372a/verification
-  session log: /home/yongfu/proj/score/datasets/pulp_soc/bf65372a/logs/generate_20260416_021018.log
+  session log: /home/yongfu/proj/score/datasets/pulp_soc/bf65372a/logs/generate_20260811_023406.log
