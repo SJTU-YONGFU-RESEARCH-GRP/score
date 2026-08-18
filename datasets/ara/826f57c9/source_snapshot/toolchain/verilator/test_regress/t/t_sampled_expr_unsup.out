@@ -1,0 +1,6 @@
+%Error-UNSUPPORTED: t/t_sampled_expr_unsup.v:18:37: Unsupported: Write to variable in sampled expression
+                                                  : ... note: In instance 't'
+   18 |   assert property (@(posedge clk) f(a) >= 0);
+      |                                     ^
+                    ... For error description see https://verilator.org/warn/UNSUPPORTED?v=latest
+%Error: Exiting due to
