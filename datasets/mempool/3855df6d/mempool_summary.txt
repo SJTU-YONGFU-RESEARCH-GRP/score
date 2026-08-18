@@ -1,0 +1,24 @@
+mempool SCORE snapshot (pulp-platform/mempool)
+Generated (UTC): 2026-08-11 06:45:49
+Host: river Linux x86_64
+SCORE root: /home/yongfu/proj/score
+Source repo: /home/yongfu/proj/score/tools/mempool
+Dataset workdir: /home/yongfu/proj/score/datasets/mempool/3855df6d/source_snapshot
+Git commit (short): 3855df6d
+Git commit (full): 3855df6da1893a5d18f34f3feaca5486d681738e
+bender (PATH): bender 0.32.1
+bender (install/bender): bender 0.31.0
+RTL verification enabled: true
+
+RTL roots in snapshot: /home/yongfu/proj/score/datasets/mempool/3855df6d/source_snapshot/hardware (top-level SV) and /home/yongfu/proj/score/datasets/mempool/3855df6d/source_snapshot/hardware/deps (Bender IPs).
+Upstream RTL sim: cd tools/mempool/hardware && make compile (ModelSim) or make verilate (Verilator).
+See https://github.com/pulp-platform/mempool and tools/mempool/README.md
+Bundle path: /home/yongfu/proj/score/datasets/mempool/3855df6d/source_snapshot
+Verification:
+  Deps vs Bender.lock: PASS
+  bender flist-plus (Verilator view): N/A
+  Verilator lint: PASS
+  Verilator elaboration: N/A
+  Verilator simulation: N/A
+  Logs: /home/yongfu/proj/score/datasets/mempool/3855df6d/verification/
+Generation log: /home/yongfu/proj/score/logs/mempool_generation/generation_20260811_144510.log
