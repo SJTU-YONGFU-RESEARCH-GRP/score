@@ -1,0 +1,9 @@
+core_type: fp16
+config_name: GemminiFP16DefaultConfig_8x8
+simulator: vlt
+generation_date: Thu Aug 13 04:54:28 AM CST 2026
+rtl_only: true
+description: "Gemmini fp16 configuration"
+workshop_env: true
+gemmini_home: /home/yongfu/proj/score/datasets/gemmini/workshop/gemmini_env/gemmini
+chipyard_home: /home/yongfu/proj/score/datasets/gemmini/workshop/chipyard
