@@ -1,0 +1,6 @@
+vexriscv SCORE snapshot (SpinalHDL/VexRiscv)
+Commit: 68075606
+Dataset: /home/yongfu/proj/score/datasets/vexriscv/68075606
+sbt configs OK: 3  failed: 0
+Generated Verilog files: 6
+Lint: PASS
