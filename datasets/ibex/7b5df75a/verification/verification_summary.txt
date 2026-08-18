@@ -1,0 +1,16 @@
+ibex verification summary
+Generated (UTC): 2026-08-12 16:43:26
+Dataset: /home/yongfu/proj/score/datasets/ibex/7b5df75a
+
+Checks:
+  Verilog RTL presence: PASS
+  Testbench artifacts generated: PASS
+  Verilator/regression PASS: 8
+  Verilator/regression FAIL: 8
+  Verilator/regression SKIP: 0
+
+Artifacts:
+  verification results: /home/yongfu/proj/score/datasets/ibex/7b5df75a/verification/verification_results_20260813_000400.txt
+  regression logs dir: /home/yongfu/proj/score/datasets/ibex/7b5df75a/regression_logs
+  verification logs dir: /home/yongfu/proj/score/datasets/ibex/7b5df75a/verification
+  session log: /home/yongfu/proj/score/datasets/ibex/7b5df75a/logs/session_20260813_000400.log
