@@ -1,0 +1,1 @@
+snitch_cluster_smoke|PASS|verilator_lint|/home/yongfu/proj/score/datasets/snitch_cluster/1defbef7/verification/snitch_cluster_smoke_verilator_lint.log|/home/yongfu/proj/score/datasets/snitch_cluster/1defbef7/rtl_designs/snitch_cluster_snapshot/snitch_cluster_smoke_tb.sv
