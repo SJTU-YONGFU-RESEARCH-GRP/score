@@ -1,0 +1,13 @@
+design_name: integer_mul
+design_category: arithmetic
+description: "Integer"
+generation_date: Wed Aug 12 11:16:33 PM CST 2026
+source_repository: riscv_vhdl
+vhdl_files: 1
+total_lines: 227
+synthesis_ready: true
+fpu_enabled: false
+debug_enabled: false
+cache_enabled: false
+target_frequency: "60MHz"
+architecture: "RISC-V"
