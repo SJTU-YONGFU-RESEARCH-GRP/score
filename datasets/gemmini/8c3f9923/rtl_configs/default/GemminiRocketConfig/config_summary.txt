@@ -1,0 +1,8 @@
+Configuration: GemminiRocketConfig
+Type: default
+Simulator: vlt
+Generated: Thu Aug 13 05:32:04 AM CST 2026
+Build Location: /home/yongfu/proj/score/datasets/gemmini/workshop/chipyard/sims/verilator
+Workshop Environment: true
+Gemmini Home: /home/yongfu/proj/score/datasets/gemmini/workshop/gemmini_env/gemmini
+Chipyard Home: /home/yongfu/proj/score/datasets/gemmini/workshop/chipyard
