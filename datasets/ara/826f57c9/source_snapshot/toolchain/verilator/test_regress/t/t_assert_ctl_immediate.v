@@ -1,0 +1,65 @@
+// DESCRIPTION: Verilator: Verilog Test module
+//
+// This file ONLY is placed under the Creative Commons Public Domain
+// SPDX-FileCopyrightText: 2024 Antmicro
+// SPDX-License-Identifier: CC0-1.0
+
+module t (
+    input clk
+);
+
+  module_with_assert module_with_assert (clk);
+  module_with_assertctl module_with_assertctl (clk);
+
+  always @(posedge clk) begin
+    assert (0);
+  end
+
+  always @(negedge clk) begin
+    $write("*-* All Finished *-*\n");
+    $finish;
+  end
+endmodule
+
+module module_with_assert (
+    input clk
+);
+  always @(posedge clk) assert (0);
+endmodule
+
+module module_with_assertctl (
+    input clk
+);
+  function void assert_off;
+    begin
+      $assertoff;
+    end
+  endfunction
+  function void assert_on;
+    begin
+      $asserton;
+    end
+  endfunction
+  function void f_assert;
+    begin
+      assert (0);
+    end
+  endfunction
+
+  initial begin
+    assert_on();
+    assert (0);
+    assert_off();
+    assert_off();
+    assert (0);
+    assert_on();
+    assert_on();
+    assert (0);
+
+    f_assert();
+    f_assert();
+    assert_off();
+    f_assert();
+    f_assert();
+  end
+endmodule
