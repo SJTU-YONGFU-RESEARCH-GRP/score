@@ -1,0 +1,44 @@
+{
+    "design": "n5_1x2_advanced",
+    "license": 1,
+    "version": "1.0",
+    "release_date": {
+        "day": 11,
+        "month": 8,
+        "year": 2026
+    },
+    "masters_type": 1,
+    "masters": [
+        {"id": "2", "cfg": {"mul": 1, "irq": 1}}
+    ],
+    "address_space": 32,
+    "page_bits": 8,
+    "testbench": {
+        "hex_file": "main.hex",
+        "load_into": "uut.openstriVe_soc_mem_Sys0_S0.mem",
+        "ticks": 100000,
+        "vcd": "n5_1x2_advanced_dump.vcd"
+    },
+    "buses": [
+        {
+            "id": 0,
+            "type": 0,
+            "starting_page": "0",
+            "number_of_pages": 4,
+            "masters": ["2"],
+            "slaves": [
+        {"type": 2, "description": "AHBSRAM", "page": "20", "connected_to": 0, "cfg": {}},
+        {"type": 3, "description": "GPIO", "page": "48", "connected_to": 0, "cfg": {}},
+        {"type": 8, "description": "UART", "page": "52", "connected_to": 0, "cfg": {}},
+        {"type": 2, "description": "Program SRAM", "page": "00", "connected_to": 0, "cfg": {}}],
+            "subsystems": [
+                {
+                    "id": 0,
+                    "page": "48",
+                    "starting_page": "48",
+                    "number_of_pages": 16
+                }
+            ]
+        }
+    ]
+}
