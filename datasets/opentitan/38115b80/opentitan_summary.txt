@@ -1,0 +1,7 @@
+opentitan SCORE snapshot (lowRISC/opentitan)
+Commit: 38115b80
+Dataset: /home/yongfu/proj/score/datasets/opentitan/38115b80
+SV/V files: 964
+UART lint: SKIPPED
+GPIO lint: SKIPPED
+Note: Earl Grey top lint needs FuseSoC + hw/vendor; SCORE snapshots RTL sources.
