@@ -1,0 +1,5 @@
+Configuration: n5_1x1_advanced
+Master Type: n5
+Simulator: iverilog
+Generated: Tue Aug 11 01:22:30 PM CST 2026
+Build Location: /home/yongfu/proj/score/datasets/soc_automation/ed813d7c/rtl_designs/n5/n5_1x1_advanced
