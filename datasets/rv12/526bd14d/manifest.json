@@ -1,9 +1,9 @@
 {
   "project": "RoaLogic/RV12",
   "commit_short": "526bd14d",
-  "dataset_name": "AlmaLinux",
-  "generated_at_utc": "2026-04-15T10:58:01Z",
+  "dataset_name": "Red Hat Enterprise Linux",
+  "generated_at_utc": "2026-08-11T04:04:55Z",
   "host": "Linux x86_64",
-  "os_pretty": "AlmaLinux 9.7 (Moss Jungle Cat)",
+  "os_pretty": "Red Hat Enterprise Linux 9.7 (Plow)",
   "verilator": "Verilator 5.022 2024-02-24 rev fedora-5.022"
 }
