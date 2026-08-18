@@ -1,0 +1,4 @@
+[submodule "gvsoc"]
+	path = gvsoc
+	url = https://github.com/gvsoc/gvsoc.git
+	branch = main
