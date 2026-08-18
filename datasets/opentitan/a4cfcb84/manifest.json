@@ -1,0 +1,9 @@
+{
+  "project": "lowRISC/opentitan",
+  "commit_short": "a4cfcb84",
+  "dataset_name": "opentitan",
+  "generated_at_utc": "2026-08-14T16:02:28Z",
+  "host": "Linux x86_64",
+  "os_pretty": "Red Hat Enterprise Linux 9.7 (Plow)",
+  "verilator": "Verilator 4.210 2021-07-07 rev v4.210"
+}
