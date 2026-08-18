@@ -1,5 +1,5 @@
 pulp_cluster verification summary
-Generated (UTC): 2026-04-15 18:06:05
+Generated (UTC): 2026-08-10 18:36:30
 Dataset: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735
 
 Checks:
@@ -10,9 +10,9 @@ Checks:
   Verilator lint SKIP: 0
 
 Artifacts:
-  verification results: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/verification/verification_results_20260416_020602.txt
+  verification results: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/verification/verification_results_20260811_023529.txt
   verilator lint log (smoke): /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/verification/pulp_cluster_smoke_verilator_lint.log
   verilator lint log (full tb): /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/verification/pulp_cluster_full_verilator_lint.log
   full rtl flist: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/verification/pulp_cluster_full_rtl.flist
   verification logs dir: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/verification
-  session log: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/logs/generate_20260416_020602.log
+  session log: /home/yongfu/proj/score/datasets/pulp_cluster/caaa9735/logs/generate_20260811_023529.log
