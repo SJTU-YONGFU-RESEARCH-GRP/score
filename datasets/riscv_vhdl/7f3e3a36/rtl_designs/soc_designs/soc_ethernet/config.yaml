@@ -1,0 +1,13 @@
+design_name: soc_ethernet
+design_category: soc_designs
+description: "SoC with Ethernet support"
+generation_date: Wed Aug 12 11:16:24 PM CST 2026
+source_repository: riscv_vhdl
+vhdl_files: 92
+total_lines: 36375
+synthesis_ready: true
+fpu_enabled: true
+debug_enabled: false
+cache_enabled: true
+target_frequency: "60MHz"
+architecture: "RISC-V"
