@@ -1,0 +1,1 @@
+picobello_smoke|PASS|verilator_lint|/home/yongfu/proj/score/datasets/picobello/71df12a2/verification/picobello_smoke_verilator_lint.log|/home/yongfu/proj/score/datasets/picobello/71df12a2/rtl_designs/picobello_snapshot/picobello_smoke_tb.sv
