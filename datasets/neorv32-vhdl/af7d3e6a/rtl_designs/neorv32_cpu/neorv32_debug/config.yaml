@@ -1,0 +1,17 @@
+design_name: neorv32_debug
+design_category: neorv32_cpu
+description: "NEORV32"
+generation_date: Thu Aug 13 04:46:26 AM CST 2026
+source_repository: neorv32
+vhdl_files: 57
+total_lines: 23498
+synthesis_ready: true
+fpu_enabled: true
+debug_enabled: true
+cache_enabled: true
+uart_enabled: true
+spi_enabled: true
+ethernet_enabled: false
+target_frequency: "100MHz"
+architecture: "RISC-V"
+isa_extensions: "RV32I/M/A/C/B/U/Zicsr/Zifencei"
