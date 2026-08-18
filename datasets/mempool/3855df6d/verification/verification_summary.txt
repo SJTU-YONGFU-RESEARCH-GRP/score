@@ -1,0 +1,11 @@
+MemPool verification summary
+Generated (UTC): 2026-08-11 06:45:48
+MEMPOOL_DIR: /home/yongfu/proj/score/datasets/mempool/3855df6d/source_snapshot
+
+bender_spyglass_files_minpool: PASSED
+bender_spyglass_files_mempool: PASSED
+bender_spyglass_files_terapool: PASSED
+verilator_toolchain: SKIPPED (no verilator binary)
+
+Counts: bender_failures=0 verilator_toolchain_failures=0
+Logs under: /home/yongfu/proj/score/datasets/mempool/3855df6d/verification
