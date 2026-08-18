@@ -1,0 +1,15 @@
+Configuration: maxperf-pmp-bmfull
+Build Type: csr-test
+Generated: Thu Aug 13 12:33:39 AM CST 2026
+Build Location: /home/yongfu/proj/score/tools/ibex/build
+Output Directory: /home/yongfu/proj/score/datasets/ibex/7b5df75a/rtl_designs/maxperf-pmp-bmfull/csr-test
+
+Configuration Details:
+- IBEX_CONFIG: maxperf-pmp-bmfull
+- Build Type: csr-test
+- Build Directory: /home/yongfu/proj/score/tools/ibex/build
+
+Files:
+- RTL Files: 178
+- Simulation Models: 2
+- Total Files: 181
