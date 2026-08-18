@@ -1,0 +1,13 @@
+design_name: river_fpu
+design_category: river_cpu
+description: "River"
+generation_date: Wed Aug 12 11:16:13 PM CST 2026
+source_repository: riscv_vhdl
+vhdl_files: 31
+total_lines: 11230
+synthesis_ready: true
+fpu_enabled: false
+debug_enabled: false
+cache_enabled: true
+target_frequency: "60MHz"
+architecture: "RISC-V"
