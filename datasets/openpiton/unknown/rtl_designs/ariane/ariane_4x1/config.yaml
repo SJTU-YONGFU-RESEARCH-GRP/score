@@ -1,0 +1,9 @@
+core_type: ariane
+config_name: ariane_4x1
+x_tiles: 4
+y_tiles: 1
+total_tiles: 4
+simulator: vlt
+generation_date: Wed Aug 12 11:07:44 PM CST 2026
+rtl_only: true
+description: "OpenPiton ariane configuration with 4x1 tiles"
