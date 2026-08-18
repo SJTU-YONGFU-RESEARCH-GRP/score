@@ -1,0 +1,17 @@
+design_name: dma
+design_category: neorv32_peripherals
+description: "Direct Memory Access Controller"
+generation_date: Thu Aug 13 04:46:39 AM CST 2026
+source_repository: neorv32
+vhdl_files: 2
+total_lines: 1672
+synthesis_ready: true
+fpu_enabled: false
+debug_enabled: false
+cache_enabled: false
+uart_enabled: false
+spi_enabled: false
+ethernet_enabled: false
+target_frequency: "100MHz"
+architecture: "RISC-V"
+isa_extensions: "RV32I/M/A/C/B/U/Zicsr/Zifencei"
