@@ -1,0 +1,9 @@
+core_type: fp32
+config_name: GemminiFP32DefaultConfig_16x16
+simulator: vlt
+generation_date: Thu Aug 13 04:57:30 AM CST 2026
+rtl_only: true
+description: "Gemmini fp32 configuration"
+workshop_env: true
+gemmini_home: /home/yongfu/proj/score/datasets/gemmini/workshop/gemmini_env/gemmini
+chipyard_home: /home/yongfu/proj/score/datasets/gemmini/workshop/chipyard
