@@ -1,0 +1,15 @@
+{
+    "id": 0,
+    "design": "n5_1x2_basic_APB_SYS",
+    "license": 1,
+    "version": "1.0",
+    "release_date": {
+        "day": 11,
+        "month": 8,
+        "year": 2026
+    },
+    "bus_type": 1,
+    "subpage_bits": 4,
+    "slaves": [
+        {"type": 1, "description": "TIMER 0", "connected_to": 0, "cfg": {}}]
+}
