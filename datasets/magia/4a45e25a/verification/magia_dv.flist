@@ -31,6 +31,7 @@
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/tech_cells_generic-f438fbeea5549eb1/src/rtl/tc_sram.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/tech_cells_generic-f438fbeea5549eb1/src/rtl/tc_sram_impl.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/tech_cells_generic-f438fbeea5549eb1/src/rtl/tc_clk.sv
+/home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/tech_cells_generic-f438fbeea5549eb1/src/rtl/tc_sync.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/tech_cells_generic-f438fbeea5549eb1/src/deprecated/cluster_pwr_cells.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/tech_cells_generic-f438fbeea5549eb1/src/deprecated/generic_memory.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/tech_cells_generic-f438fbeea5549eb1/src/deprecated/generic_rom.sv
@@ -146,6 +147,7 @@
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/apb-11ddb4ff61ea9fc6/src/apb_cdc.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/apb-11ddb4ff61ea9fc6/src/apb_demux.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/axi-d9b1c9e2b697ad6b/src/axi_pkg.sv
+/home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/axi-d9b1c9e2b697ad6b/src/axi_demux_id_counters.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/axi-d9b1c9e2b697ad6b/src/axi_intf.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/axi-d9b1c9e2b697ad6b/src/axi_atop_filter.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/axi-d9b1c9e2b697ad6b/src/axi_burst_splitter_gran.sv
@@ -313,6 +315,7 @@
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-stream-15944f434ca4f9ed/rtl/basic/hwpe_stream_demux_static.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-stream-15944f434ca4f9ed/rtl/basic/hwpe_stream_deserialize.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-stream-15944f434ca4f9ed/rtl/basic/hwpe_stream_fence.sv
+/home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-stream-15944f434ca4f9ed/rtl/basic/hwpe_stream_fence_asymmetric.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-stream-15944f434ca4f9ed/rtl/basic/hwpe_stream_merge.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-stream-15944f434ca4f9ed/rtl/basic/hwpe_stream_mux_static.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-stream-15944f434ca4f9ed/rtl/basic/hwpe_stream_serialize.sv
@@ -322,6 +325,7 @@
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-stream-15944f434ca4f9ed/rtl/streamer/hwpe_stream_addressgen.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-stream-15944f434ca4f9ed/rtl/streamer/hwpe_stream_addressgen_v2.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-stream-15944f434ca4f9ed/rtl/streamer/hwpe_stream_addressgen_v3.sv
+/home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-stream-15944f434ca4f9ed/rtl/streamer/hwpe_stream_addressgen_v4.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-stream-15944f434ca4f9ed/rtl/streamer/hwpe_stream_sink_realign.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-stream-15944f434ca4f9ed/rtl/streamer/hwpe_stream_source_realign.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-stream-15944f434ca4f9ed/rtl/streamer/hwpe_stream_strbgen.sv
@@ -529,19 +533,24 @@
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/ecc/hci_ecc_manager_reg_top.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/core/hci_core_assign.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/core/hci_core_assign_expand.sv
+/home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/core/hci_core_cut.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/core/hci_core_fifo.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/core/hci_core_mux_dynamic.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/core/hci_core_mux_static.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/core/hci_core_mux_ooo.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/core/hci_core_r_valid_filter.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/core/hci_core_r_id_filter.sv
+/home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/core/hci_core_rob.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/core/hci_core_source.sv
+/home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/core/hci_core_source_v2.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/core/hci_core_split.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/ecc/hci_ecc_dec.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/ecc/hci_ecc_enc.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/ecc/hci_ecc_manager.sv
+/home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/variablelatency/hci_variablelatency_assign.sv
+/home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/variablelatency/hci_variablelatency_tocore.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/interco/hci_log_interconnect.sv
-/home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/interco/hci_log_interconnect_l2.sv
+/home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/interco/deprecated/hci_log_interconnect_l2.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/interco/hci_new_log_interconnect.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/interco/hci_arbiter.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/interco/hci_arbiter_tree.sv
@@ -550,6 +559,7 @@
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/parity/hci_copy_sink.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/core/hci_core_sink.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/ecc/hci_ecc_source.sv
+/home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/core/hci_core_sink_v2.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/interco/hci_router.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/ecc/hci_ecc_interconnect.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hci-9735e618c7595dc6/rtl/ecc/hci_ecc_sink.sv
@@ -559,6 +569,7 @@
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-ctrl-4b569c90ded814ca/rtl/deprecated/hwpe_ctrl_regfile_ff.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-ctrl-4b569c90ded814ca/rtl/deprecated/hwpe_ctrl_regfile_latch.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-ctrl-4b569c90ded814ca/rtl/hwpe_ctrl_seq_mult.sv
+/home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-ctrl-4b569c90ded814ca/rtl/hwpe_ctrl_partial_mult.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-ctrl-4b569c90ded814ca/rtl/hwpe_ctrl_uloop.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-ctrl-4b569c90ded814ca/rtl/hwpe_ctrl_target.sv
 /home/yongfu/proj/score/datasets/magia/4a45e25a/source_snapshot/.bender/git/checkouts/hwpe-ctrl-4b569c90ded814ca/rtl/deprecated/hwpe_ctrl_regfile_latch_test_wrap.sv
