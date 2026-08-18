@@ -1,0 +1,9 @@
+opentitan SCORE snapshot (lowRISC/opentitan)
+Commit: a4cfcb84
+Dataset: /home/yongfu/proj/score/datasets/opentitan/a4cfcb84
+SV/V files: 1467
+Bazel target: //hw:verilator
+Bazel result: 0
+Generated out: /home/yongfu/proj/score/datasets/opentitan/a4cfcb84/rtl_generated/bazel-bin/hw
+Verilator: Verilator 4.210 2021-07-07 rev v4.210
+FuseSoC: 2.4.5
