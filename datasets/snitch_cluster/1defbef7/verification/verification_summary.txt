@@ -1,5 +1,5 @@
 snitch_cluster verification summary
-Generated (UTC): 2026-04-15 18:36:16
+Generated (UTC): 2026-08-11 06:15:58
 Dataset: /home/yongfu/proj/score/datasets/snitch_cluster/1defbef7
 
 Checks:
@@ -10,7 +10,7 @@ Checks:
   Verilator lint SKIP: 0
 
 Artifacts:
-  verification results: /home/yongfu/proj/score/datasets/snitch_cluster/1defbef7/verification/verification_results_20260416_023613.txt
+  verification results: /home/yongfu/proj/score/datasets/snitch_cluster/1defbef7/verification/verification_results_20260811_141544.txt
   verilator lint log: /home/yongfu/proj/score/datasets/snitch_cluster/1defbef7/verification/snitch_cluster_smoke_verilator_lint.log
   verification logs dir: /home/yongfu/proj/score/datasets/snitch_cluster/1defbef7/verification
-  session log: /home/yongfu/proj/score/datasets/snitch_cluster/1defbef7/logs/generate_20260416_023613.log
+  session log: /home/yongfu/proj/score/datasets/snitch_cluster/1defbef7/logs/generate_20260811_141544.log
