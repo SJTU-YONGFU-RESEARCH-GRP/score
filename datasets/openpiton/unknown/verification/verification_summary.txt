@@ -1,0 +1,15 @@
+openpiton verification summary
+Generated (UTC): 2026-08-12 15:18:42
+Dataset: /home/yongfu/proj/score/datasets/openpiton/unknown
+
+Checks:
+  Verilog RTL presence: PASS
+  Testbench artifacts generated: PASS
+  Verilator lint PASS: 24
+  Verilator lint FAIL: 0
+  Verilator lint SKIP: 0
+
+Artifacts:
+  verification results: /home/yongfu/proj/score/datasets/openpiton/unknown/verification/verification_results_20260812_225953.txt
+  verification logs dir: /home/yongfu/proj/score/datasets/openpiton/unknown/verification
+  session log: /home/yongfu/proj/score/datasets/openpiton/unknown/logs/session_20260812_225953.log
