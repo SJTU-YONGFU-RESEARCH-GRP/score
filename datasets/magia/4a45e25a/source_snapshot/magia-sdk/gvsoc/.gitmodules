@@ -1,0 +1,12 @@
+[submodule "core"]
+	path = core
+	url = https://github.com/TheSSDGuy/gvsoc-core.git
+[submodule "pulp"]
+	path = pulp
+	url = https://github.com/TheSSDGuy/gvsoc-pulp.git
+[submodule "plptest"]
+	path = plptest
+	url =  https://github.com/gvsoc/plptest.git
+[submodule "tests/gvsoc-external-tests"]
+	path = tests/gvsoc-external-tests
+	url =  https://github.com/gvsoc/gvsoc-external-tests.git
