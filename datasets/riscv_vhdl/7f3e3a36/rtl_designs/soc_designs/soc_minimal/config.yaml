@@ -1,0 +1,13 @@
+design_name: soc_minimal
+design_category: soc_designs
+description: "Minimal SoC with River CPU"
+generation_date: Wed Aug 12 11:16:18 PM CST 2026
+source_repository: riscv_vhdl
+vhdl_files: 85
+total_lines: 31506
+synthesis_ready: true
+fpu_enabled: true
+debug_enabled: false
+cache_enabled: true
+target_frequency: "60MHz"
+architecture: "RISC-V"
