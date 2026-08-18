@@ -1,0 +1,7 @@
+veer_el2 SCORE snapshot (chipsalliance/Cores-VeeR-EL2)
+Commit: e8822c6a
+Dataset: /home/yongfu/proj/score/datasets/veer_el2/e8822c6a
+veer.config: OK
+SV/V/VH files: 62
+Lint: SKIPPED
+Note: Verilator lint of design/flist.lint needs generated snapshots/default; run configs/veer.config first. SCORE snapshots design + config output.
