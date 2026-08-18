@@ -1,0 +1,17 @@
+design_name: neorv32_soc_up5k
+design_category: neorv32_soc
+description: "NEORV32"
+generation_date: Thu Aug 13 04:46:32 AM CST 2026
+source_repository: neorv32
+vhdl_files: 60
+total_lines: 24610
+synthesis_ready: true
+fpu_enabled: true
+debug_enabled: true
+cache_enabled: true
+uart_enabled: true
+spi_enabled: true
+ethernet_enabled: false
+target_frequency: "100MHz"
+architecture: "RISC-V"
+isa_extensions: "RV32I/M/A/C/B/U/Zicsr/Zifencei"
