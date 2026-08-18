@@ -1,0 +1,9 @@
+core_type: pico
+config_name: pico_4x4
+x_tiles: 4
+y_tiles: 4
+total_tiles: 16
+simulator: vlt
+generation_date: Wed Aug 12 11:12:53 PM CST 2026
+rtl_only: true
+description: "OpenPiton pico configuration with 4x4 tiles"
