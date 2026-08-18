@@ -1,0 +1,17 @@
+design_name: test_approm
+design_category: neorv32_tests
+description: "Application"
+generation_date: Thu Aug 13 04:46:40 AM CST 2026
+source_repository: neorv32
+vhdl_files: 64
+total_lines: 25253
+synthesis_ready: true
+fpu_enabled: true
+debug_enabled: true
+cache_enabled: true
+uart_enabled: true
+spi_enabled: true
+ethernet_enabled: false
+target_frequency: "100MHz"
+architecture: "RISC-V"
+isa_extensions: "RV32I/M/A/C/B/U/Zicsr/Zifencei"
