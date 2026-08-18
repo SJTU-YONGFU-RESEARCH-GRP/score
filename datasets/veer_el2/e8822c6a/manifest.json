@@ -1,0 +1,9 @@
+{
+  "project": "chipsalliance/Cores-VeeR-EL2",
+  "commit_short": "e8822c6a",
+  "dataset_name": "veer_el2",
+  "generated_at_utc": "2026-08-13T15:54:32Z",
+  "host": "Linux x86_64",
+  "os_pretty": "Red Hat Enterprise Linux 9.7 (Plow)",
+  "verilator": "Verilator 5.022 2024-02-24 rev fedora-5.022"
+}
