@@ -40,3 +40,12 @@ tools/*-host-tools/
 **/site-packages/
 **/venv/
 **/.venv/
+
+# Compiled simulation binaries (too large for GitHub, rebuild from source)
+**/Vchip_sim_tb
+**/Vara_tb_verilator
+**/*.verilator
+**/*_tb_verilator__ALL.a
+**/verilator_bin_dbg
+**/*.jar
+**/*.gds
