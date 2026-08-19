@@ -32,3 +32,11 @@ tools/ghdl-install/
 tools/hero-install/
 tools/*-install/
 tools/*-host-tools/
+
+# Local Python/conda installs under datasets (do not commit)
+**/miniconda3/
+**/miniconda/
+**/anaconda3/
+**/site-packages/
+**/venv/
+**/.venv/

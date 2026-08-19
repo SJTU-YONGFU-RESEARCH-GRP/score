@@ -1,0 +1,1 @@
+/home/yongfu/proj/score/.score-run-logs/opentitan_uart_smoketest_20260815T135324Z.log

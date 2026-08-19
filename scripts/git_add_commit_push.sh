@@ -64,13 +64,29 @@ is_secret_path() {
     local p="$1"
     local base
     base="$(basename "$p")"
+    # Basename-only checks (avoid matching package names like libsecret/).
     case "$base" in
-        .env|.env.*|*.pem|*.key|id_rsa|id_ed25519|credentials.json|secrets.json)
+        .env|.env.*|id_rsa|id_rsa.*|id_ed25519|id_ed25519.*|credentials.json|secrets.json|.secrets)
             return 0
+            ;;
+        cacert.pem|ca-bundle.pem|ca-certificates.pem|cert.pem|certs.pem)
+            # Public CA / TLS trust stores (e.g. Python certifi), not secrets.
+            return 1
+            ;;
+        *.pem)
+            case "$base" in
+                *private*.pem|*secret*.pem|id_*.pem|*.key.pem) return 0 ;;
+            esac
+            ;;
+        *.key)
+            # Private keys only when clearly named; skip generic FPGA/IP .key files.
+            case "$base" in
+                *private*.key|*secret*.key|id_*.key) return 0 ;;
+            esac
             ;;
     esac
     case "$p" in
-        *.env|*/.env|*/.env.*|*credentials*|*secret*)
+        */.env|*/.env.*|*/credentials.json|*/secrets.json|*/.secrets|/*/.secrets/*|*/.aws/credentials)
             return 0
             ;;
     esac
@@ -88,6 +104,15 @@ is_local_install_path() {
             return 0
             ;;
         tools/ibex-host-tools|tools/ibex-host-tools/*|tools/opentitan-host-tools|tools/opentitan-host-tools/*)
+            return 0
+            ;;
+        */miniconda3|*/miniconda3/*|*/miniconda|*/miniconda/*|*/anaconda3|*/anaconda3/*)
+            return 0
+            ;;
+        */site-packages|*/site-packages/*|*/venv|*/venv/*|*/.venv|*/.venv/*)
+            return 0
+            ;;
+        */node_modules|*/node_modules/*|*/__pycache__|*/__pycache__/*)
             return 0
             ;;
     esac
@@ -204,12 +229,17 @@ clean_submodule_worktree() {
     echo "clean: $p"
     git -C "$p" restore --source=HEAD --staged --worktree -- . 2>/dev/null || true
     git -C "$p" clean -fdx 2>/dev/null || true
-    # Nested dirty gitlinks (e.g. openpiton aws): force checkout recorded SHA.
+    # Nested dirty gitlinks (e.g. datasets/gemmini/workshop/chipyard): force checkout recorded SHA.
     local nested
     while read -r nested; do
         [[ -n "$nested" ]] || continue
         git -C "$p" submodule update --force --checkout -- "$nested" 2>/dev/null || true
     done < <(git -C "$p" submodule status --recursive 2>/dev/null | awk '/^-|^\+|U /{print $2}')
+    # Staged deletions inside nested submodules (common after partial gemmini/chipyard builds).
+    git -C "$p" diff --cached --name-only --diff-filter=D 2>/dev/null | while read -r d; do
+        [[ -n "$d" ]] || continue
+        git -C "$p" restore --staged --worktree -- "$d" 2>/dev/null || true
+    done
 }
 
 clean_dirty_submodules_under_pathspecs() {
@@ -340,11 +370,8 @@ fi
 
 if [[ ${#TO_COMMIT[@]} -eq 0 ]]; then
     if [[ ${#DIRTY_SUBMODULES[@]} -gt 0 ]]; then
-        die "nothing stageable under pathspecs; only dirty submodules remain.
-Clean or overlay each submodule, e.g.:
-  (cd tools/hero && git restore --worktree -- . && cd ../.. && bash scripts/hero_submodule_remotes.sh)
-  (cd tools/spatz && git restore --worktree -- . && git clean -fdX)
-Then re-run, or commit overlays/scripts instead of tools/."
+        echo "Nothing to add or commit (only dirty submodule worktrees under pathspecs)."
+        exit 0
     fi
     echo "Nothing to add or commit."
     exit 0
