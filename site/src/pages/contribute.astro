@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Contribute" description="How to propose new open-source SoC projects for the SCORE registry.">
+  <div class="page prose">
+    <h1>Contribute</h1>
+    <p class="lede">
+      The survey paper is a fixed snapshot at submission time. The GitHub registry and this site stay updateable. Add projects with evidence — do not invent digests.
+    </p>
+
+    <h2>What belongs here</h2>
+    <p>
+      Entries must match <a href="https://github.com/SJTU-YONGFU-RESEARCH-GRP/score_publications/blob/main/papers/inclusion_criteria.md"><code class="mono">publications/papers/inclusion_criteria.md</code></a>:
+      processor cores, full/near-complete SoC platforms, interconnect/NoC fabrics, peripheral IP for SoC integration, SoC generators, or EDA/verification toolchains that are part of an SoC construction story.
+    </p>
+    <p>
+      Excluded venues for literature digests: <strong>all MDPI journals</strong> and <strong>IEEE Access</strong>.
+    </p>
+
+    <h2>How to propose a project</h2>
+    <ol>
+      <li>
+        Open a pull request against
+        <a href="https://github.com/SJTU-YONGFU-RESEARCH-GRP/score_publications">SJTU-YONGFU-RESEARCH-GRP/score_publications</a>
+        (private registry submodule).
+      </li>
+      <li>
+        Append a row to <code class="mono">publications/papers/projects.csv</code> with public repository URL, open license signal, category, and SoC-relevance evidence pointers.
+      </li>
+      <li>
+        Add a matching row to <code class="mono">publications/papers/architecture_index.csv</code>
+        (<code class="mono">page_slug</code>, track, digest or source-note path, <code class="mono">score_integrated</code>).
+      </li>
+      <li>
+        Track <strong>A</strong>: add a strict-validated <code class="mono">publications/papers/&lt;slug&gt;/analysis.md</code> only when a suitable primary paper exists.
+        Track <strong>B</strong>: add <code class="mono">publications/papers/source_notes/&lt;slug&gt;.md</code> from upstream README/LICENSE/docs using the source-note template.
+      </li>
+      <li>Log the change in <code class="mono">publications/papers/CHANGELOG.md</code>.</li>
+    </ol>
+
+    <h2>Build check</h2>
+    <p>
+      From <code class="mono">site/</code>, run <code class="mono">npm run sync</code>. The sync script fails fast if a registry row lacks an index join or points at a missing file.
+    </p>
+
+    <p>
+      <a class="btn btn--solid" href={`${base}architectures/`}>Back to catalog</a>
+    </p>
+  </div>
+</BaseLayout>

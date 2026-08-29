@@ -12,6 +12,7 @@ SCORE is an open-source dataset containing consistently generated Verilog RTL co
   - [Motivation](#motivation)
   - [How SCORE addresses this](#how-score-addresses-this)
 - [Overview](#overview)
+- [Website](#website)
 - [Architectures supported via `scripts/`](#architectures-supported-via-scripts)
 - [Repository layout](#repository-layout)
 - [Typical workflow](#typical-workflow)
@@ -55,6 +56,14 @@ SCORE collects **versioned RTL snapshots** under `datasets/<architecture>/<commi
 Not every architecture defines a `run_*.sh` script yet (for example, **SoC Automation** and **RISC-V VHDL** currently stop after generation).
 
 **Licensing:** RTL snapshots and submodule trees follow **each upstream project’s license**. SCORE-authored material in this repo (for example `scripts/` and docs) is offered under **CC BY 4.0** — see [Licensing](#licensing).
+
+## Website
+
+The living open-architecture platform (catalog, project pages, registry updates) is a static site under [`site/`](site/), deployed to GitHub Pages:
+
+**https://SJTU-YONGFU-RESEARCH-GRP.github.io/score/**
+
+Survey manuscript and evidence corpus live in the private [`score_publications`](https://github.com/SJTU-YONGFU-RESEARCH-GRP/score_publications) repo, linked as the [`publications/`](publications/) git submodule — see [`publications/README.md`](publications/README.md). The site builds from `publications/papers/projects.csv`, `publications/papers/architecture_index.csv`, digests, source notes, and `publications/papers/CHANGELOG.md`. Local build and Pages setup notes are in [`site/README.md`](site/README.md).
 
 ## Architectures supported via `scripts/`
 
@@ -117,6 +126,8 @@ score/
 ├── datasets/       # Versioned RTL snapshots (per architecture / commit)
 ├── tools/          # Upstream generator clones (git submodules) and local tool trees
 ├── scripts/        # install_*, generate_*, run_*, env helpers, submodule utilities
+├── publications/   # Private survey submodule (score_publications): writings/ + papers/
+├── site/           # GitHub Pages platform (Astro) for the open-architecture catalog
 ├── docs/           # Additional documentation
 ├── installations/  # Install logs / records where used
 └── plots/          # Analysis outputs (when produced)
@@ -130,6 +141,7 @@ score/
    git clone https://github.com/SJTU-YONGFU-RESEARCH-GRP/score.git
    cd score
    ./scripts/init-submodules.sh              # all submodules, or pass paths
+   git submodule update --init publications  # private survey corpus (requires repo access)
    ```
 
 2. **Install** dependencies for one architecture:

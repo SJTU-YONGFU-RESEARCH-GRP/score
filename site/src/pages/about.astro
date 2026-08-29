@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import registry from "../data/registry.json";
+
+const base = import.meta.env.BASE_URL;
+const scoreCount = registry.projects.filter((p) => p.score_integrated).length;
+---
+
+<BaseLayout title="About" description="About the SCORE open-architecture platform and open-source SoC survey.">
+  <div class="page prose">
+    <h1>About</h1>
+    <p class="lede">
+      SCORE is both a reproducible RTL dataset and the living front door for an open-source SoC survey spanning cores, platforms, interconnects, peripheral IP, and toolchains.
+    </p>
+
+    <h2>Why this platform exists</h2>
+    <p>
+      Prior work covers application-class cores, flagship platforms, or open EDA enablement in isolation. This project targets the integrative gap: cross-layer comparison plus a maintained, machine-readable registry that the community can extend after any paper snapshot is fixed for review.
+    </p>
+
+    <h2>Research questions</h2>
+    <ol>
+      <li>What categories best organize the modern open-source SoC landscape?</li>
+      <li>Which design choices distinguish educational, research, and production-oriented open SoCs?</li>
+      <li>How mature are projects in verification, software support, and tapeout evidence?</li>
+      <li>How open is the stack in practice, from RTL through toolchain and physical design?</li>
+      <li>Where are the biggest technical and ecosystem bottlenecks?</li>
+    </ol>
+
+    <h2>How evidence is staged</h2>
+    <ul>
+      <li><strong>Registry</strong> — exhaustive catalog in <code class="mono">publications/papers/projects.csv</code> ({registry.count} entries; {scoreCount} SCORE-integrated).</li>
+      <li><strong>Track A digests</strong> — structured <code class="mono">analysis.md</code> for fetchable primary papers (non-MDPI / non-IEEE Access).</li>
+      <li><strong>Track B source notes</strong> — README/docs-grounded notes when no suitable primary paper exists.</li>
+    </ul>
+
+    <h2>Read more in the repo</h2>
+    <ul>
+      <li><a href="https://github.com/SJTU-YONGFU-RESEARCH-GRP/score_publications/blob/main/writings/csur/PAPER.md">publications/writings/csur/PAPER.md</a> — survey plan (private repo)</li>
+      <li><a href="https://github.com/SJTU-YONGFU-RESEARCH-GRP/score_publications/blob/main/papers/METHODOLOGY.md">publications/papers/METHODOLOGY.md</a> — methodology draft</li>
+      <li><a href="https://github.com/SJTU-YONGFU-RESEARCH-GRP/score_publications/blob/main/papers/inclusion_criteria.md">publications/papers/inclusion_criteria.md</a> — inclusion rules</li>
+      <li><a href="https://github.com/SJTU-YONGFU-RESEARCH-GRP/score_publications/blob/main/papers/related_work_gap.md">publications/papers/related_work_gap.md</a> — related-work gap table</li>
+    </ul>
+
+    <p>
+      <a class="btn btn--solid" href={`${base}architectures/`}>Explore the catalog</a>
+      <a class="btn btn--outline" href={`${base}contribute/`} style="margin-left: 0.5rem;">Contribute</a>
+    </p>
+  </div>
+</BaseLayout>
