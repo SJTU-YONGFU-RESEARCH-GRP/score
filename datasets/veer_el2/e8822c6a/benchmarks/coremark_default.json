@@ -1,0 +1,27 @@
+{
+  "schema": "score.benchmark_results.v1",
+  "evidence_class": "score_measured",
+  "core": "veer_el2",
+  "upstream_commit": "e8822c6a",
+  "profile": "mcu_verilator",
+  "workload": "coremark",
+  "config": "default",
+  "metrics": {
+    "coremark_per_mhz": 2.5593,
+    "iterations": 1,
+    "total_cycles": 390735,
+    "validated": true,
+    "simulator": "verilator",
+    "veer_test": "cmark",
+    "firmware_source": "canned_hex"
+  },
+  "generated_utc": "2026-09-03T09:38:21Z",
+  "host": {
+    "hostname": "river",
+    "platform": "Linux-5.14.0-611.54.1.el9_7.x86_64-x86_64-with-glibc2.34",
+    "python": "3.9.25"
+  },
+  "tool_versions": {
+    "verilator": "5.022"
+  }
+}

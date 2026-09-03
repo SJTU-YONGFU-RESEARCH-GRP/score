@@ -1,0 +1,26 @@
+{
+  "schema": "score.benchmark_results.v1",
+  "evidence_class": "score_measured",
+  "core": "ibex",
+  "upstream_commit": "7b5df75a",
+  "profile": "mcu_verilator",
+  "workload": "coremark",
+  "config": "small",
+  "metrics": {
+    "coremark_per_mhz": 2.4609,
+    "iterations": 10,
+    "total_cycles": 4063528,
+    "validated": true,
+    "rv_isa": "rv32im",
+    "ibex_config": "small"
+  },
+  "generated_utc": "2026-08-31T17:01:36Z",
+  "host": {
+    "hostname": "river",
+    "platform": "Linux-5.14.0-611.54.1.el9_7.x86_64-x86_64-with-glibc2.34",
+    "python": "3.9.25"
+  },
+  "tool_versions": {
+    "verilator": "5.022"
+  }
+}

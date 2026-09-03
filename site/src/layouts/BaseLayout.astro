@@ -1,0 +1,70 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Open-source SoC architecture registry and living companion to the SCORE survey." } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const path = Astro.url.pathname;
+const pageTitle = title === "SCORE" ? "SCORE — Open Architecture Platform" : `${title} · SCORE`;
+
+function navCurrent(href: string) {
+  const normalized = href.endsWith("/") ? href : `${href}/`;
+  return path === normalized || path.startsWith(normalized) ? "page" : undefined;
+}
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;600&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a class="brand" href={base}>
+            <span class="brand__name">SCORE</span>
+            <span class="brand__tag">Open architecture platform</span>
+          </a>
+          <nav class="nav" aria-label="Primary">
+            <a href={`${base}architectures/`} aria-current={navCurrent(`${base}architectures/`)}>Architectures</a>
+            <a href={`${base}updates/`} aria-current={navCurrent(`${base}updates/`)}>Updates</a>
+            <a href={`${base}score/`} aria-current={navCurrent(`${base}score/`)}>Dataset</a>
+            <a href={`${base}contribute/`} aria-current={navCurrent(`${base}contribute/`)}>Contribute</a>
+            <a href={`${base}about/`} aria-current={navCurrent(`${base}about/`)}>About</a>
+          </nav>
+        </div>
+      </header>
+      <main class="site-main">
+        <slot />
+      </main>
+      <footer class="site-footer">
+        <div class="site-footer__inner">
+          <p>
+            Living registry for open-source SoC architectures. Source of truth:
+            <code class="mono">publications/papers/projects.csv</code>.
+          </p>
+          <p>
+            <a href="https://github.com/SJTU-YONGFU-RESEARCH-GRP/score">GitHub</a>
+            ·
+            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> (SCORE-authored material)
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

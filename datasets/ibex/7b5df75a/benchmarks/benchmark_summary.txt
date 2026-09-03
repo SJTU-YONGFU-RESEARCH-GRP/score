@@ -1,0 +1,5 @@
+Ibex CoreMark benchmark summary (SCORE)
+Commit: 7b5df75a
+Profile: mcu_verilator
+Configs: small
+Results: /home/yongfu/proj/score/datasets/ibex/7b5df75a/benchmarks

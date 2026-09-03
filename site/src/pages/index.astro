@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="SCORE" description="SCORE — living platform for open-source SoC architectures, registries, and reproducible RTL datasets.">
+  <section class="hero">
+    <div class="hero__inner">
+      <p class="hero__brand">SCORE</p>
+      <h1 class="hero__headline">Open-source SoC architectures, in one place.</h1>
+      <p class="hero__support">
+        Browse the global registry, read evidence-backed digests, and follow updates as the catalog grows beyond any single paper snapshot.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn--primary" href={`${base}architectures/`}>Browse architectures</a>
+        <a class="btn btn--ghost" href={`${base}updates/`}>See updates</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

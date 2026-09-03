@@ -1,0 +1,16 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { loadChangelogHtml } from "../lib/content";
+
+const html = loadChangelogHtml();
+---
+
+<BaseLayout title="Updates" description="Registry changelog for the SCORE open-architecture platform.">
+  <div class="page">
+    <h1>Updates</h1>
+    <p class="lede">
+      Sourced from <code class="mono">publications/papers/CHANGELOG.md</code>. This is the living update stream for the registry and digests.
+    </p>
+    <article class="prose" set:html={html} />
+  </div>
+</BaseLayout>

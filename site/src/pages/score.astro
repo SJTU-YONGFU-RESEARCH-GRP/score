@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="SCORE dataset" description="How to generate reproducible open-source SoC RTL snapshots with SCORE scripts.">
+  <div class="page prose">
+    <h1>SCORE dataset</h1>
+    <p class="lede">
+      SCORE (System-on-Chip Verilog RTL modules dataset for EDA research) pins upstream revisions and documents one install → generate → run path per architecture so EDA experiments share the same RTL artifacts.
+    </p>
+
+    <h2>Typical workflow</h2>
+    <ol>
+      <li>
+        <strong>Install</strong> — <code class="mono">scripts/install_&lt;arch&gt;.sh</code> prepares toolchains and dependencies.
+      </li>
+      <li>
+        <strong>Generate</strong> — <code class="mono">scripts/generate_&lt;arch&gt;.sh</code> exports RTL under
+        <code class="mono">datasets/&lt;architecture&gt;/&lt;commit&gt;/</code> with logs beside the snapshot.
+      </li>
+      <li>
+        <strong>Run</strong> — where present, <code class="mono">scripts/run_&lt;arch&gt;.sh</code> replays smoke/simulation checks.
+      </li>
+    </ol>
+
+    <h2>Coverage</h2>
+    <p>
+      Architectures wired through SCORE scripts are marked <span class="chip chip--ember">SCORE integrated</span> in the
+      <a href={`${base}architectures/`}>catalog</a>. External registry entries (for example Chipyard, ESP, LiteX, Basilisk, BOOM) appear for survey completeness even when they are not yet in the generate harness.
+    </p>
+
+    <h2>Licensing</h2>
+    <p>
+      RTL snapshots and submodule trees follow each upstream project’s license. SCORE-authored scripts and docs are offered under
+      <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+    </p>
+
+    <p>
+      Full details live in the repository
+      <a href="https://github.com/SJTU-YONGFU-RESEARCH-GRP/score/blob/main/README.md">README.md</a>.
+    </p>
+  </div>
+</BaseLayout>

@@ -1,0 +1,286 @@
+# Snitch Cluster RTL Organization Documentation
+
+This document describes the snitch_cluster scripts used within SCORE and the structure of the datasets they produce.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Installation Script](#installation-script)
+- [Generation Script](#generation-script)
+- [Available Designs](#available-designs)
+- [Output Organization](#output-organization)
+- [Dataset Structure](#dataset-structure)
+- [Usage Examples](#usage-examples)
+- [Troubleshooting](#troubleshooting)
+
+## Overview
+
+The snitch_cluster scripts provide a workflow for resolving IP dependencies with Bender, snapshotting the full RTL tree, and running a Verilator lint check on a synthetic smoke module. The RTL is stored in `datasets/snitch_cluster/<commit>/`.
+
+Snitch Cluster is a PULP Platform multi-core RISC-V cluster design featuring the Snitch integer core.
+
+### Scripts Overview
+
+1. **`install_snitch_cluster.sh`**: Installs host packages (git, curl/wget, tar, python3, rsync) and downloads the Bender binary.
+2. **`generate_snitch_cluster.sh`**: Runs `bender checkout` (or `bender update`) to resolve IP dependencies, rsyncs the full tree to `datasets/snitch_cluster/<commit>/source_snapshot/`, and performs a Verilator lint check on a synthetic smoke testbench.
+
+### Upstream
+
+- Repository: [pulp-platform/snitch_cluster](https://github.com/pulp-platform/snitch_cluster)
+- Local tool path: `tools/snitch-cluster`
+
+## Installation Script
+
+### Overview
+
+`install_snitch_cluster.sh` installs OS packages and the Bender dependency manager. Verilator is not installed by the script; the generate script runs Verilator lint only if `verilator` is already on PATH.
+
+### Basic Usage
+
+```bash
+# Full setup
+./scripts/install_snitch_cluster.sh
+
+# Skip distro package installation
+./scripts/install_snitch_cluster.sh --no-system-deps
+
+# Skip Bender download
+./scripts/install_snitch_cluster.sh --skip-bender
+```
+
+### Command-Line Options
+
+| Option | Description |
+|--------|-------------|
+| `-h, --help` | Show help message |
+| `--no-system-deps` | Do not install distro packages; requires git, curl/wget, tar, python3, and rsync to be present |
+| `--skip-bender` | Do not download Bender |
+
+### Dependencies Installed
+
+| Package | Purpose |
+|---------|---------|
+| git, curl, wget, ca-certificates, tar | Source management and downloads |
+| rsync | Used by generate script to snapshot sources |
+| python3 (python3-venv on Debian/Ubuntu) | Required by upstream tooling |
+
+Supported OS families: Ubuntu/Debian, Fedora/RHEL/Amazon, Arch, openSUSE, macOS (Homebrew).
+
+### What the Script Does
+
+1. Verifies that `tools/snitch-cluster` is present (exits with error if not).
+2. Installs system packages via the detected package manager.
+3. Checks that `git`, `tar`, `python3`, `rsync`, and one of `curl`/`wget` are available.
+4. If Bender is not already on PATH (and `--skip-bender` is not set), calls `install_bender_binary` from `common_bender.sh`.
+
+### After Installation
+
+```bash
+source scripts/snitch_cluster_env.sh
+./scripts/generate_snitch_cluster.sh
+```
+
+## Generation Script
+
+### Overview
+
+`generate_snitch_cluster.sh` runs `bender checkout` (honoring `Bender.lock`) to materialize IP checkouts, rsyncs the full `tools/snitch-cluster` tree to `datasets/snitch_cluster/<commit>/source_snapshot/`, and runs Verilator `--lint-only` on a synthetic smoke testbench (not on the full snitch_cluster RTL).
+
+### Basic Usage
+
+```bash
+# Full workflow: bender checkout + rsync + Verilator lint
+./scripts/generate_snitch_cluster.sh
+
+# Skip bender checkout (reuse existing .bender/)
+./scripts/generate_snitch_cluster.sh --skip-checkout
+
+# Use bender update instead of checkout (experimental; may fail)
+./scripts/generate_snitch_cluster.sh --bender-update
+```
+
+### Command-Line Options
+
+| Option | Description |
+|--------|-------------|
+| `-h, --help` | Show help message |
+| `--skip-checkout` | Do not run bender; requires `.bender/` to already exist |
+| `--bender-update` | Run `bender update` instead of `bender checkout` (experimental; may fail if manifests conflict) |
+
+### Bender Behavior
+
+The default is `bender checkout`, which reads `Bender.lock` and checks out pinned dependency versions. This is the stable option. `bender update` resolves fresh versions from manifests and may fail if dependency graphs conflict.
+
+### Verilator Lint Check
+
+The generate script creates a minimal synthetic module and testbench (`snitch_cluster_smoke_top.v` / `snitch_cluster_smoke_tb.sv`) and runs:
+
+```bash
+verilator --lint-only -Wall -Wno-fatal --timing \
+    --top-module snitch_cluster_smoke_tb \
+    snitch_cluster_smoke_top.v snitch_cluster_smoke_tb.sv
+```
+
+This checks that Verilator is functional and produces a lint result (PASS/FAIL/SKIP). The full snitch_cluster RTL is not linted by SCORE.
+
+If `verilator` is not on PATH, the lint result is SKIP.
+
+## Available Designs
+
+snitch_cluster is a single cluster design. SCORE produces one snapshot per commit. There are no named configuration variants generated by the scripts.
+
+## Output Organization
+
+### Directory Structure
+
+```
+datasets/snitch_cluster/<8-char-commit>/
+├── source_snapshot/                   # rsync of tools/snitch-cluster (excluding .git/)
+│   ├── hw/                            # SystemVerilog RTL sources
+│   ├── .bender/                       # Resolved IP checkouts from bender checkout
+│   ├── Bender.yml
+│   ├── Bender.lock
+│   └── ...
+├── rtl_designs/
+│   └── snitch_cluster_snapshot/
+│       ├── filelist.f                 # List of up to 200 .sv/.v files in source_snapshot
+│       ├── config.yaml                # Project metadata
+│       ├── snitch_cluster_smoke_top.v # Synthetic smoke module
+│       └── snitch_cluster_smoke_tb.sv # Synthetic smoke testbench
+├── verification/
+│   ├── snitch_cluster_smoke_verilator_lint.log
+│   ├── verification_results_<timestamp>.txt
+│   └── verification_summary.txt
+├── logs/
+│   └── generate_<timestamp>.log
+└── snitch_cluster_summary.txt
+```
+
+### Key Files
+
+- **`source_snapshot/`**: Full tree including `.bender/` IP checkouts required for downstream use.
+- **`rtl_designs/snitch_cluster_snapshot/filelist.f`**: Auto-generated list of up to 200 `.sv`/`.v` files found in `source_snapshot/`.
+- **`verification/snitch_cluster_smoke_verilator_lint.log`**: Verilator lint output for the smoke module.
+- **`snitch_cluster_summary.txt`**: Human-readable summary including bender checkout status, file count, and lint result.
+
+## Dataset Structure
+
+### config.yaml
+
+```yaml
+project: snitch_cluster
+config_name: snitch_cluster_snapshot
+generation_date_utc: <timestamp>
+git_commit_short: <8-char hash>
+source_snapshot: datasets/snitch_cluster/<commit>/source_snapshot
+```
+
+### Verification Results File
+
+```
+snitch_cluster_smoke|<PASS|FAIL|SKIP>|verilator_lint|<log path>|<rtl dir>
+```
+
+### Verification Summary (`verification/verification_summary.txt`)
+
+```
+snitch_cluster verification summary
+...
+Checks:
+  Verilog RTL presence: PASS
+  Testbench artifacts generated: PASS
+  Verilator lint PASS: 1|0
+  Verilator lint FAIL: 0|1
+  Verilator lint SKIP: 0|1
+Artifacts:
+  verification results: ...
+  verilator lint log: ...
+```
+
+## Usage Examples
+
+### Basic Workflow
+
+```bash
+# 1. Initialize the submodule
+git submodule update --init --recursive tools/snitch-cluster
+
+# 2. Install dependencies
+./scripts/install_snitch_cluster.sh
+
+# 3. Source environment (if snitch_cluster_env.sh exists)
+source scripts/snitch_cluster_env.sh
+
+# 4. Generate the dataset
+./scripts/generate_snitch_cluster.sh
+
+# 5. Check results
+cat datasets/snitch_cluster/*/snitch_cluster_summary.txt
+```
+
+### Skip Bender Checkout (Fast Re-run)
+
+```bash
+# Reuse existing .bender/ from a previous run
+./scripts/generate_snitch_cluster.sh --skip-checkout
+```
+
+### Use Bender Update
+
+```bash
+# Resolve fresh dependency versions (may fail if manifests conflict)
+./scripts/generate_snitch_cluster.sh --bender-update
+```
+
+### CI Environment
+
+```bash
+./scripts/install_snitch_cluster.sh --no-system-deps
+source scripts/snitch_cluster_env.sh
+./scripts/generate_snitch_cluster.sh
+```
+
+## Troubleshooting
+
+**Problem**: `Missing tools/snitch-cluster`
+```
+Solution: git submodule update --init --recursive tools/snitch-cluster
+```
+
+**Problem**: `bender not found on PATH`
+```
+Solution: Run ./scripts/install_snitch_cluster.sh to install Bender.
+```
+
+**Problem**: `rsync not found`
+```
+rsync is required to copy the source tree.
+Solution: Install rsync (./scripts/install_snitch_cluster.sh will include it), or install manually.
+```
+
+**Problem**: `.bender missing; run without --skip-checkout first`
+```
+Solution: Run ./scripts/generate_snitch_cluster.sh without --skip-checkout to perform bender checkout.
+```
+
+**Problem**: `bender update` fails
+```
+Solution: Use the default bender checkout instead (do not pass --bender-update). Upstream manifests may conflict during update resolution.
+```
+
+**Problem**: Verilator lint FAIL on smoke module
+```
+Solution: Check datasets/snitch_cluster/<commit>/verification/snitch_cluster_smoke_verilator_lint.log.
+The smoke module is synthetic; failures here indicate a Verilator installation issue rather than RTL problems.
+```
+
+### Getting Help
+
+- Installation log: created by `common_logging.sh`
+- Generation log: `datasets/snitch_cluster/<commit>/logs/generate_<timestamp>.log`
+- Lint log: `datasets/snitch_cluster/<commit>/verification/snitch_cluster_smoke_verilator_lint.log`
+- Use `--help` on any script for option details
+
+---
+
+**Note**: This documentation reflects the SCORE wrapper scripts. For full snitch_cluster design documentation, refer to the [upstream repository](https://github.com/pulp-platform/snitch_cluster) and `tools/snitch-cluster/README.md`.

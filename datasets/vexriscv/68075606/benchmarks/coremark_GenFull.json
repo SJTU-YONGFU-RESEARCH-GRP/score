@@ -1,0 +1,27 @@
+{
+  "schema": "score.benchmark_results.v1",
+  "evidence_class": "score_measured",
+  "core": "vexriscv",
+  "upstream_commit": "68075606",
+  "profile": "mcu_verilator",
+  "workload": "coremark",
+  "config": "GenFull",
+  "metrics": {
+    "coremark_per_mhz": 2.3487,
+    "iterations": 10,
+    "total_cycles": 4257755,
+    "validated": true,
+    "simulator": "verilator",
+    "vexriscv_config": "GenFull",
+    "rtl_source": "/home/yongfu/proj/score/datasets/vexriscv/68075606/rtl_generated/GenFull/VexRiscv.v"
+  },
+  "generated_utc": "2026-09-03T10:15:55Z",
+  "host": {
+    "hostname": "river",
+    "platform": "Linux-5.14.0-611.54.1.el9_7.x86_64-x86_64-with-glibc2.34",
+    "python": "3.9.25"
+  },
+  "tool_versions": {
+    "verilator": "5.022"
+  }
+}

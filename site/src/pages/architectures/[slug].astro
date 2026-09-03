@@ -1,0 +1,144 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import registry from "../../data/registry.json";
+import { extractTldrHtml, loadMarkdown, renderMarkdown } from "../../lib/content";
+
+export function getStaticPaths() {
+  return registry.projects.map((p) => ({
+    params: { slug: p.page_slug },
+    props: { project: p },
+  }));
+}
+
+const { project } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+let tldrHtml: string | null = null;
+let bodyHtml: string | null = null;
+let contentLabel = "No digest yet";
+
+if (project.content_kind === "digest" && project.content_relpath) {
+  const md = loadMarkdown(project.content_relpath);
+  tldrHtml = extractTldrHtml(md);
+  contentLabel = `Primary digest (\`publications/papers/${project.content_relpath}\`)`;
+} else if (project.content_kind === "source-note" && project.content_relpath) {
+  const md = loadMarkdown(project.content_relpath);
+  bodyHtml = renderMarkdown(md);
+  contentLabel = `Source note (\`publications/papers/${project.content_relpath}\`)`;
+}
+
+const fields: Array<[string, string]> = [
+  ["Category", project.category],
+  ["Organization", project.organization],
+  ["ISA", project.primary_isa],
+  ["Language / generator", project.language_or_generator_framework],
+  ["License", project.license],
+  ["Deliverable", project.top_level_deliverable],
+  ["Target class", project.target_class],
+  ["Bus / NoC", project.bus_or_noc_type],
+  ["Depth of analysis", project.depth_of_analysis],
+  ["Verification", project.verification_evidence],
+  ["FPGA", project.fpga_evidence],
+  ["Silicon", project.silicon_evidence],
+  ["Software", project.software_stack_support],
+  ["Documentation", project.documentation_quality],
+  ["Maintenance", project.maintenance_activity],
+];
+---
+
+<BaseLayout title={project.project_name} description={`${project.project_name} — open-source SoC registry entry in SCORE.`}>
+  <div class="page">
+    <p>
+      <a href={`${base}architectures/`}>← Architectures</a>
+    </p>
+    <h1>{project.project_name}</h1>
+    <div class="meta-strip">
+      <span class="chip chip--sea">Track {project.track}</span>
+      <span class="chip">{project.status}</span>
+      <span class="chip">{project.category}</span>
+      {
+        project.score_integrated ? (
+          <span class="chip chip--ember">SCORE integrated</span>
+        ) : (
+          <span class="chip">Registry only</span>
+        )
+      }
+    </div>
+
+    <p class="lede">
+      {
+        project.repository_url ? (
+          <>
+            Upstream:{" "}
+            <a href={project.repository_url} rel="noopener noreferrer">
+              {project.repository_url}
+            </a>
+          </>
+        ) : (
+          "No repository URL in registry."
+        )
+      }
+    </p>
+
+    {
+      project.notable_strengths && (
+        <p>
+          <strong>Strengths:</strong> {project.notable_strengths}
+        </p>
+      )
+    }
+    {
+      project.notable_limitations && (
+        <p>
+          <strong>Limitations:</strong> {project.notable_limitations}
+        </p>
+      )
+    }
+
+    <h2>Registry fields</h2>
+    <div class="detail-grid">
+      {
+        fields.map(([label, value]) => (
+          <dl class="kv">
+            <dt>{label}</dt>
+            <dd>{value || "unknown"}</dd>
+          </dl>
+        ))
+      }
+    </div>
+
+    <h2>Evidence summary</h2>
+    <p class="lede" style="margin-bottom: 0.75rem;">{contentLabel}</p>
+
+    {
+      tldrHtml ? (
+        <div class="tldr prose">
+          <strong>TL;DR</strong>
+          <div set:html={tldrHtml} />
+        </div>
+      ) : null
+    }
+
+    {
+      bodyHtml ? (
+        <div class="prose" set:html={bodyHtml} />
+      ) : null
+    }
+
+    {
+      !tldrHtml && !bodyHtml ? (
+        <div class="callout">
+          No digest or source note is linked for this entry yet. Registry metadata above is still authoritative; do not invent narrative text.
+        </div>
+      ) : null
+    }
+
+    {
+      project.content_kind === "digest" && !tldrHtml ? (
+        <div class="callout">
+          Digest file exists but has no <code class="mono">## TL;DR</code> section to extract.
+        </div>
+      ) : null
+    }
+  </div>
+</BaseLayout>

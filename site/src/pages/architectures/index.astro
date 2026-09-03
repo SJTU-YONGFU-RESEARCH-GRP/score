@@ -1,0 +1,151 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import registry from "../../data/registry.json";
+
+const base = import.meta.env.BASE_URL;
+const projects = registry.projects;
+
+const categories = [...new Set(projects.map((p) => p.category))].sort();
+const tracks = [...new Set(projects.map((p) => p.track))].sort();
+const depths = [...new Set(projects.map((p) => p.depth_of_analysis))].sort();
+const isas = [...new Set(projects.map((p) => p.primary_isa).filter(Boolean))].sort();
+---
+
+<BaseLayout title="Architectures" description="Filterable catalog of open-source SoC architectures in the SCORE registry.">
+  <div class="page">
+    <h1>Architectures</h1>
+    <p class="lede">
+      {registry.count} projects from <code class="mono">publications/papers/projects.csv</code>, joined to digests and source notes via
+      <code class="mono">architecture_index.csv</code>.
+    </p>
+
+    <form class="filters" id="catalog-filters" aria-label="Filter architectures">
+      <div class="filters__row">
+        <div class="field">
+          <label for="q">Search</label>
+          <input id="q" name="q" type="search" placeholder="Name, org, ISA…" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="category">Category</label>
+          <select id="category" name="category">
+            <option value="">All</option>
+            {categories.map((c) => <option value={c}>{c}</option>)}
+          </select>
+        </div>
+        <div class="field">
+          <label for="track">Track</label>
+          <select id="track" name="track">
+            <option value="">All</option>
+            {tracks.map((t) => <option value={t}>{t}</option>)}
+          </select>
+        </div>
+        <div class="field">
+          <label for="depth">Depth</label>
+          <select id="depth" name="depth">
+            <option value="">All</option>
+            {depths.map((d) => <option value={d}>{d}</option>)}
+          </select>
+        </div>
+        <div class="field">
+          <label for="isa">ISA</label>
+          <select id="isa" name="isa">
+            <option value="">All</option>
+            {isas.map((i) => <option value={i}>{i}</option>)}
+          </select>
+        </div>
+        <div class="field">
+          <label for="score">SCORE integrated</label>
+          <select id="score" name="score">
+            <option value="">All</option>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+        </div>
+      </div>
+    </form>
+
+    <p id="catalog-count" class="lede" style="margin-bottom: 0.75rem;"></p>
+
+    <div class="catalog-table-wrap">
+      <table class="catalog-table" id="catalog-table">
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Category</th>
+            <th>Track</th>
+            <th>ISA</th>
+            <th>Depth</th>
+            <th>SCORE</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            projects.map((p) => (
+              <tr
+                data-name={p.project_name.toLowerCase()}
+                data-org={(p.organization || "").toLowerCase()}
+                data-category={p.category}
+                data-track={p.track}
+                data-depth={p.depth_of_analysis}
+                data-isa={p.primary_isa}
+                data-score={String(p.score_integrated)}
+                data-search={`${p.project_name} ${p.organization} ${p.primary_isa} ${p.category}`.toLowerCase()}
+              >
+                <td>
+                  <a href={`${base}architectures/${p.page_slug}/`}>{p.project_name}</a>
+                </td>
+                <td>{p.category}</td>
+                <td>
+                  <span class="chip chip--sea">Track {p.track}</span>
+                </td>
+                <td>{p.primary_isa || "—"}</td>
+                <td>{p.depth_of_analysis || "—"}</td>
+                <td>{p.score_integrated ? "Yes" : "No"}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+      <p class="catalog-empty" id="catalog-empty" hidden>No architectures match these filters.</p>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  const form = document.getElementById("catalog-filters") as HTMLFormElement | null;
+  const table = document.getElementById("catalog-table");
+  const empty = document.getElementById("catalog-empty");
+  const countEl = document.getElementById("catalog-count");
+  if (form && table) {
+    const rows = Array.from(table.querySelectorAll("tbody tr"));
+
+    function apply() {
+      const q = ((form!.elements.namedItem("q") as HTMLInputElement).value || "").trim().toLowerCase();
+      const category = (form!.elements.namedItem("category") as HTMLSelectElement).value;
+      const track = (form!.elements.namedItem("track") as HTMLSelectElement).value;
+      const depth = (form!.elements.namedItem("depth") as HTMLSelectElement).value;
+      const isa = (form!.elements.namedItem("isa") as HTMLSelectElement).value;
+      const score = (form!.elements.namedItem("score") as HTMLSelectElement).value;
+
+      let visible = 0;
+      for (const row of rows) {
+        const el = row as HTMLElement;
+        const matchQ = !q || (el.dataset.search || "").includes(q);
+        const matchCat = !category || el.dataset.category === category;
+        const matchTrack = !track || el.dataset.track === track;
+        const matchDepth = !depth || el.dataset.depth === depth;
+        const matchIsa = !isa || el.dataset.isa === isa;
+        const matchScore = !score || el.dataset.score === score;
+        const show = matchQ && matchCat && matchTrack && matchDepth && matchIsa && matchScore;
+        el.hidden = !show;
+        if (show) visible++;
+      }
+      if (empty) empty.hidden = visible > 0;
+      if (countEl) countEl.textContent = `Showing ${visible} of ${rows.length}`;
+    }
+
+    form.addEventListener("input", apply);
+    form.addEventListener("change", apply);
+    apply();
+  }
+</script>

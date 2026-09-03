@@ -1,0 +1,24 @@
+{
+  "schema": "score.benchmark_results.v1",
+  "evidence_class": "score_measured",
+  "core": "picorv32",
+  "upstream_commit": "a473fc8f",
+  "profile": "mcu_verilator",
+  "workload": "dhrystone",
+  "config": "default",
+  "metrics": {
+    "dhrystone_dmips_per_mhz": 0.406,
+    "simulator": "icarus",
+    "total_cycles": 139791,
+    "validated": true
+  },
+  "generated_utc": "2026-08-30T01:46:30Z",
+  "host": {
+    "hostname": "river",
+    "platform": "Linux-5.14.0-611.54.1.el9_7.x86_64-x86_64-with-glibc2.34",
+    "python": "3.9.25"
+  },
+  "tool_versions": {
+    "verilator": "5.022"
+  }
+}

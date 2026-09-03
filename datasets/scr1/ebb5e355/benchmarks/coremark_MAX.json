@@ -1,0 +1,29 @@
+{
+  "schema": "score.benchmark_results.v1",
+  "evidence_class": "score_measured",
+  "core": "scr1",
+  "upstream_commit": "ebb5e355",
+  "profile": "mcu_verilator",
+  "workload": "coremark",
+  "config": "MAX",
+  "metrics": {
+    "coremark_per_mhz": 2.013,
+    "iterations": 1,
+    "total_cycles": 496780,
+    "validated": false,
+    "simulator": "verilator",
+    "scr1_cfg": "MAX",
+    "scr1_bus": "AHB",
+    "iterations_config": 1,
+    "timing": "rdcycle"
+  },
+  "generated_utc": "2026-09-03T07:25:28Z",
+  "host": {
+    "hostname": "river",
+    "platform": "Linux-5.14.0-611.54.1.el9_7.x86_64-x86_64-with-glibc2.34",
+    "python": "3.9.25"
+  },
+  "tool_versions": {
+    "verilator": "5.022"
+  }
+}
